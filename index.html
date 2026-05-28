@@ -6,14 +6,12 @@
   <title>캐릿 뉴스 클리핑</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
       background: #f5f5f7;
       color: #1d1d1f;
       min-height: 100vh;
     }
-
     header {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
@@ -25,39 +23,19 @@
       top: 0;
       z-index: 10;
     }
-
-    header h1 {
-      font-size: 18px;
-      font-weight: 700;
-      color: #111;
-    }
-
-    header span {
-      font-size: 13px;
-      color: #888;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px;
-    }
-
-    .date-section {
-      margin-bottom: 40px;
-    }
-
+    header h1 { font-size: 18px; font-weight: 700; color: #111; }
+    header span { font-size: 13px; color: #888; }
+    .container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+    .date-section { margin-bottom: 40px; }
     .date-label {
       font-size: 13px;
       font-weight: 600;
       color: #888;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
       margin-bottom: 12px;
       padding-bottom: 8px;
       border-bottom: 1px solid #e0e0e0;
     }
-
     .article-item {
       display: flex;
       align-items: flex-start;
@@ -70,14 +48,8 @@
       transition: background 0.15s;
       border: 2px solid transparent;
     }
-
     .article-item:hover { background: #f9f9f9; }
-
-    .article-item.selected {
-      border-color: #007aff;
-      background: #f0f6ff;
-    }
-
+    .article-item.selected { border-color: #007aff; background: #f0f6ff; }
     .article-item input[type="checkbox"] {
       margin-top: 2px;
       width: 18px;
@@ -86,9 +58,7 @@
       accent-color: #007aff;
       flex-shrink: 0;
     }
-
     .article-content { flex: 1; }
-
     .article-title {
       font-size: 15px;
       font-weight: 500;
@@ -96,9 +66,7 @@
       color: #1d1d1f;
       text-decoration: none;
     }
-
     .article-title:hover { color: #007aff; }
-
     .article-meta {
       margin-top: 5px;
       font-size: 12px;
@@ -106,7 +74,6 @@
       display: flex;
       gap: 10px;
     }
-
     .keyword-tag {
       background: #f0f0f5;
       color: #666;
@@ -114,7 +81,6 @@
       border-radius: 4px;
       font-size: 11px;
     }
-
     .bottom-bar {
       position: fixed;
       bottom: 0;
@@ -127,14 +93,8 @@
       align-items: center;
       justify-content: space-between;
     }
-
-    .selected-count {
-      font-size: 14px;
-      color: #555;
-    }
-
+    .selected-count { font-size: 14px; color: #555; }
     .selected-count strong { color: #007aff; }
-
     .copy-btn {
       background: #007aff;
       color: #fff;
@@ -146,10 +106,8 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-
     .copy-btn:hover { background: #0066dd; }
     .copy-btn:disabled { background: #ccc; cursor: not-allowed; }
-
     .empty-state {
       text-align: center;
       padding: 60px 20px;
@@ -157,7 +115,6 @@
       font-size: 15px;
       line-height: 2;
     }
-
     .toast {
       position: fixed;
       top: 80px;
@@ -173,16 +130,25 @@
       z-index: 100;
       pointer-events: none;
     }
-
     .toast.show { opacity: 1; }
-
-    .warning {
-      font-size: 12px;
-      color: #ff6b35;
-      margin-top: 4px;
-    }
-
+    .warning { font-size: 12px; color: #ff6b35; margin-top: 4px; }
     pb { padding-bottom: 80px; display: block; }
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+      font-size: 15px;
+    }
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid #e0e0e0;
+      border-top-color: #007aff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
@@ -193,7 +159,10 @@
 </header>
 
 <div class="container" id="app">
-  <div class="empty-state">뉴스를 불러오는 중...</div>
+  <div class="loading">
+    <div class="spinner"></div>
+    뉴스를 불러오는 중...
+  </div>
 </div>
 
 <pb></pb>
@@ -225,23 +194,12 @@
     }
   }
 
-  function groupByDate(items) {
-    const groups = {};
-    for (const item of items) {
-      if (!groups[item.date]) groups[item.date] = [];
-      groups[item.date].push(item);
-    }
-    return groups;
-  }
-
   function formatDate(dateStr) {
     const d = new Date(dateStr);
     const today = new Date();
     const yesterday = new Date();
     yesterday.setDate(today.getDate() - 1);
-
     const fmt = (dt) => `${dt.getFullYear()}.${String(dt.getMonth()+1).padStart(2,'0')}.${String(dt.getDate()).padStart(2,'0')}`;
-
     if (fmt(d) === fmt(today)) return `오늘 · ${fmt(d)}`;
     if (fmt(d) === fmt(yesterday)) return `어제 · ${fmt(d)}`;
     return fmt(d);
@@ -255,32 +213,30 @@
     }
 
     const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
-    const grouped = groupByDate(articles);
-
     document.getElementById('last-updated').textContent = `마지막 업데이트: ${dates[0] || ''}`;
 
-    let html = '';
-    for (const date of dates) {
-      const items = grouped[date].slice(0, 30);
-      html += `<div class="date-section">`;
-      html += `<div class="date-label">${formatDate(date)} · ${items.length}개</div>`;
-      for (let i = 0; i < items.length; i++) {
-        const a = items[i];
-        const id = `${date}-${i}`;
-        html += `
-          <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${articles.indexOf(a)})">
-            <input type="checkbox" id="cb-${id}" onclick="event.stopPropagation(); toggleSelect('${id}', ${articles.indexOf(a)})">
-            <div class="article-content">
-              <a class="article-title" href="${a.url}" target="_blank" onclick="event.stopPropagation()">${a.title}</a>
-              <div class="article-meta">
-                <span>${a.source}</span>
-                <span class="keyword-tag">${a.keyword}</span>
-              </div>
+    const top30 = articles.slice(0, 30);
+
+    let html = `<div class="date-section">`;
+    html += `<div class="date-label">TOP ${top30.length}개</div>`;
+
+    for (let i = 0; i < top30.length; i++) {
+      const a = top30[i];
+      const id = `top-${i}`;
+      html += `
+        <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${i})">
+          <input type="checkbox" id="cb-${id}" onclick="event.stopPropagation(); toggleSelect('${id}', ${i})">
+          <div class="article-content">
+            <a class="article-title" href="${a.url}" target="_blank" onclick="event.stopPropagation()">${a.title}</a>
+            <div class="article-meta">
+              <span>${formatDate(a.date)}</span>
+              <span>${a.source}</span>
+              <span class="keyword-tag">${a.keyword}</span>
             </div>
-          </div>`;
-      }
-      html += `</div>`;
+          </div>
+        </div>`;
     }
+    html += `</div>`;
 
     document.getElementById('app').innerHTML = html;
   }
@@ -289,7 +245,6 @@
     const key = String(idx);
     const item = document.getElementById(`item-${id}`);
     const cb = document.getElementById(`cb-${id}`);
-
     if (selected.has(key)) {
       selected.delete(key);
       item.classList.remove('selected');
@@ -299,7 +254,6 @@
       item.classList.add('selected');
       cb.checked = true;
     }
-
     updateBar();
   }
 
