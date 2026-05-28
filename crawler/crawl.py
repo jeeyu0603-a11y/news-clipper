@@ -15,7 +15,7 @@ KEYWORD_PRIORITY = {
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
     "열풍": 2, "핫플": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
     # 3점
-    "완판": 3, "품귀현상": 3, "품절대란": 3,
+    "품절": 3, "완판": 3, "품귀현상": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
     "인스타그램": 3, "틱톡": 3, "SNS": 3, "패션 트렌드": 3,
@@ -182,20 +182,14 @@ def main():
                 continue
 
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
-
-            # 기본 점수
             base_score = 3 if tier1_in_title else 0
 
-            # 제목 추가 키워드 점수 (+1씩)
             first_keyword = keywords_in_title[0]
             title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
-
-            # 요약 키워드 점수 (제목 키워드 제외, +1씩)
             desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
 
             article_score = base_score + title_bonus + desc_score
 
-            # 0점이면 제외
             if article_score == 0:
                 filtered_keyword_title += 1
                 continue
@@ -225,24 +219,11 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    # 점수 높을수록 상단, 같은 점수 안에서 날짜 최신순
     all_items.sort(key=lambda x: (-x.get("score", 0), x["date"]))
 
+    combined = all_items[:300]
+
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
-    if os.path.exists(data_path):
-        with open(data_path, "r", encoding="utf-8") as f:
-            existing = json.load(f)
-    else:
-        existing = []
-
-    seen_combined = set()
-    combined = []
-    for item in all_items + existing:
-        if item["url"] not in seen_combined:
-            seen_combined.add(item["url"])
-            combined.append(item)
-    combined = combined[:300]
-
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump(combined, f, ensure_ascii=False, indent=2)
 
