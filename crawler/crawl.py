@@ -19,6 +19,7 @@ KEYWORD_PRIORITY = {
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
     "인스타그램": 3, "틱톡": 3, "SNS": 3, "패션 트렌드": 3,
+    "시니어 트렌드": 3, "검색량 증가": 3, "여행 트렌드": 3,
     # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
     # 5점
@@ -44,7 +45,7 @@ EXCLUDE_KEYWORDS = [
     "정치", "선거", "국회", "대통령", "대선", "총선", "여당", "야당",
     "여의도", "민주당", "국민의힘", "정당", "창당", "탄핵", "개헌",
     "의원", "당대표", "장관", "총리", "청와대", "대통령실",
-    "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보",
+    "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보", "접전",
     # 법/수사/범죄
     "사건", "사고", "재판", "수사", "검찰", "경찰", "법원", "판결", "기소",
     "구속", "체포", "검거", "고소", "고발", "형사", "소송",
@@ -182,15 +183,22 @@ def main():
 
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
 
-            if tier1_in_title:
-                desc_score = sum(1 for kw, v in KEYWORD_PRIORITY.items() if v >= 2 and kw in description)
-                article_score = 3 + desc_score
-            else:
-                desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
-                if desc_score == 0:
-                    filtered_keyword_title += 1
-                    continue
-                article_score = desc_score
+            # 기본 점수
+            base_score = 3 if tier1_in_title else 0
+
+            # 제목 추가 키워드 점수 (+1씩)
+            first_keyword = keywords_in_title[0]
+            title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
+
+            # 요약 키워드 점수 (제목 키워드 제외, +1씩)
+            desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
+
+            article_score = base_score + title_bonus + desc_score
+
+            # 0점이면 제외
+            if article_score == 0:
+                filtered_keyword_title += 1
+                continue
 
             if is_similar_title(title, seen_titles):
                 filtered_duplicate += 1
@@ -217,6 +225,7 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
+    # 점수 높을수록 상단, 같은 점수 안에서 날짜 최신순
     all_items.sort(key=lambda x: (-x.get("score", 0), x["date"]))
 
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
