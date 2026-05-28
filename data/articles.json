@@ -1,5 +1,581 @@
 [
   {
+    "title": "[주간 베스트셀러] '지식 브리핑' 열풍부터 세계사·만화 강세까지...세...",
+    "url": "https://www.nc.press/news/articleView.html?idxno=616667",
+    "source": "www.nc.press",
+    "date": "2026-05-28",
+    "description": "1020세대를 중심으로 인기를 얻은 만화 단행본 '불가항력의 I LOVE YOU 8', '가르쳐줘 집사 2', '카구라바치 10 트리플 특전판'이 상위권에 이름을 올리며 서점가의 세대 소비를 견인했다. 웹콘텐츠와 애니메이션, 팬덤 문화에...",
+    "keyword": "1020세대"
+  },
+  {
+    "title": "파이리부터 김도영까지…편의점 '랜덤 보상' 마케팅에 '진심'",
+    "url": "https://www.smarttoday.co.kr/ko-kr/articles/107898",
+    "source": "www.smarttoday.co.kr",
+    "date": "2026-05-28",
+    "description": "CU, 포켓몬 카드팩 3일 만에 25만 개…큰손은 2030세대 27일 편의점 업계에 따르면, CU의 이달 1일부터 11일까지 완구류 매출은 전년 동기 대비 75.1% 증가했다. 어린이날을 겨냥한 캐릭터 협업 상품이 매출 상승을...",
+    "keyword": "2030세대"
+  },
+  {
+    "title": "어르신 노쇠 예방관리 시범사업",
+    "url": "https://www.naeil.com/news/read/590082?ref=naver",
+    "source": "www.naeil.com",
+    "date": "2026-05-28",
+    "description": "특히 베이비부머(1968~1974년생) 세대의 후기고령층(75세 이상) 진입이 본격화되면서 지역사회 기반의 사전... 100곳, 2030년 전국 264개소로 확대한다. 정보통신기술과 인공지능을 활용한 디지털 건강관리 기반도 함께 만들...",
+    "keyword": "2030세대"
+  },
+  {
+    "title": "&quot;캔으로 마시는 하이볼?&quot;…5년 만에 8200만캔 팔렸다",
+    "url": "https://www.hankyung.com/article/202605283340i",
+    "source": "www.hankyung.com",
+    "date": "2026-05-28",
+    "description": "도수, 제로슈거, 과일 풍미를 결합한 제품으로 진화하고 있어서다. 특히 2030세대를 중심으로 “취하기 위한 술”보다 맛과 분위기, 가벼운 음용 경험을 중시하는 소비가 늘면서 RTD 제품 수요가 커지고 있다는 분석이다.",
+    "keyword": "2030세대"
+  },
+  {
+    "title": "[2026금융증권포럼] 표영호 굿마이크 대표 &quot;자산시장 판도 바뀌겠지만…...",
+    "url": "https://www.dailian.co.kr/news/view/1649701/?sc=Naver",
+    "source": "www.dailian.co.kr",
+    "date": "2026-05-28",
+    "description": "이어 &quot;연령별로 보면 2030의 금융 자산이 부동산보다 훨씬 많다&quot;면서도 &quot;부동산을 대체할 강력한 대체제가... 세대 교체와 인구 구조의 변동도 장기적으로 영향을 미칠 거란 견해다. 표 대표는 &quot;인구를 늘리겠다는 명목으로...",
+    "keyword": "2030세대"
+  },
+  {
+    "title": "LG엔솔, 美최대 에너지사 DTE와 2.4조원 수주…'북미 ESS 맹주' 굳히기",
+    "url": "http://www.wikileaks-kr.org/news/articleView.html?idxno=187900",
+    "source": "www.wikileaks-kr.org",
+    "date": "2026-05-28",
+    "description": "미시간 동남부 도심과 핵심 산업 밀집 권역을 중심으로 약 230만 가구의 전력 고객과 연 매출 158억달러(약... 시장 수요가 급증하고 있는 ESS용 LFP(리튬인산철) 라인으로의 포트폴리오 전환을 선제적으로 단행한바...",
+    "keyword": "매출 급증"
+  },
+  {
+    "title": "무신사, 1분기 수출 11배 급증",
+    "url": "https://www.naeil.com/news/read/590061?ref=naver",
+    "source": "www.naeil.com",
+    "date": "2026-05-28",
+    "description": "무신사 글로벌 스토어의 1분기 거래액은 전년동기대비 48% 이상 증가했으며 수출액은 약 153억원으로 1년 전보다 11.9배 급증했다. 전체 매출에서 수출이 차지하는 비중도 지난해 1분기 0.44%에서 올해 4.2%까지 확대됐다.",
+    "keyword": "매출 급증"
+  },
+  {
+    "title": "유럽 5월 폭염에 익사 빈발…48도 인도서는 열사병 사망 속출(종합)",
+    "url": "https://www.yna.co.kr/view/AKR20260528071451009?input=1195m",
+    "source": "www.yna.co.kr",
+    "date": "2026-05-28",
+    "description": "영국 전자제품 유통업체 커리스에서는 5월 '뱅크 홀리데이' 연휴에 선풍기 등 냉방 제품 매출이 작년 동기 대비 2천758% 급증했다. 영국 백화점 존 루이스의 모회사 존 루이스 파트너십도 같은 기간 냉방 제품 매출이 800...",
+    "keyword": "매출 급증"
+  },
+  {
+    "title": "[특징주] PKC, 삼성전자 '반도체용 염소' 증산 요청에 상승…HCl 핵심 공...",
+    "url": "https://www.cstimes.com/news/articleView.html?idxno=707584",
+    "source": "www.cstimes.com",
+    "date": "2026-05-28",
+    "description": "사용량이 급증하고 있기 때문이다. 특히 삼성전자가 기존 D램 중심이던 PKC의 HCl 적용 범위를 낸드와... 올해 1분기 소재 사업 매출은 전년 동기 대비 37.5% 증가했으며, 영업이익률도 2023년 이후 1분기 기준 최고...",
+    "keyword": "매출 급증"
+  },
+  {
+    "title": "[올댓차이나] 中 최대 D램 CXMT 커촹판 상장 승인…최대 7.5조원 자금 조...",
+    "url": "https://www.newsis.com/view/NISX20260528_0003647394",
+    "source": "www.newsis.com",
+    "date": "2026-05-28",
+    "description": "순이익은 247억6200만 위안으로 1688% 급증했다. 일일 평균 이익은 2억7500만 위안 정도다. 창신과기는 상반기 매출을 1100억∼1200억 위안으로 예상한다. 증가율은 전년 대비 612.53∼677.31%다. 상반기 순이익은 2200...",
+    "keyword": "매출 급증"
+  },
+  {
+    "title": "강진 ‘반값여행’ 연중 운영 체계 구축…‘365일 관광도시’ 실험 통할...",
+    "url": "https://www.betanews.net/article/view/beta202605280032",
+    "source": "www.betanews.net",
+    "date": "2026-05-28",
+    "description": "일반 관광객은 여행경비의 50%, 청년층은 최대 70%까지 지원받을 수 있다. 신청은 포털에서 ‘강진 반값여행’을 검색하거나 강진반값여행 홈페이지를 통해 가능하다.",
+    "keyword": "청년층"
+  },
+  {
+    "title": "제주 ‘이주 열풍’은 옛말, 이젠 ‘탈 제주’",
+    "url": "https://www.chosun.com/national/regional/2026/05/28/PXKRWELLUBDGVODWXAEYVNJAFY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+    "source": "www.chosun.com",
+    "date": "2026-05-28",
+    "description": "특히 청년층을 중심으로 양질의 일자리를 찾아 수도권으로 이동이 이어지면서 노령화 사회가 가속화될... 연령대별로는 청년층 유출이 두드러졌다. 20대 순유출률은 3.2%를 기록했으며, 10대와 30대 역시 순이동률이...",
+    "keyword": "청년층"
+  },
+  {
+    "title": "흥행 대박 홍성 '마라야주' 전통시장 활성화 새 모델 제시",
+    "url": "https://www.ggilbo.com/news/articleView.html?idxno=1160755",
+    "source": "www.ggilbo.com",
+    "date": "2026-05-28",
+    "description": "우리에게 익숙한 소주와 맥주 문화를 청년 감성으로 재해석한 야간 콘텐츠 '마라야주'는 단순 야시장을 넘어 공연, 버스킹, 체험, 참여형 이벤트가 결합된 야간형 문화시장으로 운영해 청년층과 외부 방문객 등으로부터 큰...",
+    "keyword": "청년층"
+  },
+  {
+    "title": "부산창경, 서구 워케이션 네트워킹 프로그램 ‘휴앤커넥트’ 성료",
+    "url": "https://www.viva100.com/article/20260528500523",
+    "source": "www.viva100.com",
+    "date": "2026-05-28",
+    "description": "특히 의료관광특구인 서구의 특성을 반영한 메디케이션(의료·웰니스 연계) 프로그램과 청년층 역량 강화를... 강연에서는 실생활에 적용 가능한 금융·재무관리 내용을 중심으로 청년층의 관심을 끌었으며, 행사...",
+    "keyword": "청년층"
+  },
+  {
+    "title": "고양시, ‘일자리 438개 프로젝트’ 가동…AI·바이오 중심 고용 체질 전...",
+    "url": "https://www.viva100.com/article/20260528500463",
+    "source": "www.viva100.com",
+    "date": "2026-05-28",
+    "description": "청년층을 대상으로는 취업과 창업을 연계한 ‘청년일자리 미래패키지’를 운영한다. 단순 채용 지원을 넘어 일경험과 실무 역량 확보에 무게를 둔 것이 특징이다. 동시에 중장년층과 경력단절여성 등 취업 취약계층 대상...",
+    "keyword": "청년층"
+  },
+  {
+    "title": "강진군 '반값여행' 전국 확산…문체부 사업으로 확대",
+    "url": "https://www.newspim.com/news/view/20260528000606",
+    "source": "www.newspim.com",
+    "date": "2026-05-28",
+    "description": "오는 31일까지 1차 사전신청을 마감하고 내달 10일부터 '지역사랑 휴가지원사업'을 시행한다. 일반 관광객은 여행경비의 50%, 청년층은 최대 70%까지 지원받는다. 신청은 포털 검색 또는 공식 홈페이지에서 가능하다.",
+    "keyword": "청년층"
+  },
+  {
+    "title": "춘천시산림조합 &quot;생산만 하세요···판매는 우리가 책임집니다&quot;",
+    "url": "https://www.agrinet.co.kr/news/articleView.html?idxno=404509",
+    "source": "www.agrinet.co.kr",
+    "date": "2026-05-28",
+    "description": "또 다른 임업인은 &quot;막연하게 산을 사두기만 했는데 판매장터에서 완판되는 모습을 보면서 본격적으로 임업에 도전해보고 싶다는 생각이 들었다&quot;고 전했다. 실제 성과도 나타나고 있다. 춘천시산림조합에 따르면 2023년부터...",
+    "keyword": "완판"
+  },
+  {
+    "title": "'갤럭시 워치8'로 비만약 부작용 잡는다… 하버드 의대 병원과 공동 연...",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=260738",
+    "source": "www.financialpost.co.kr",
+    "date": "2026-05-28",
+    "description": "최근 세계적인 품귀 현상을 빚을 만큼 수요가 폭증했지만, 치명적인 한계도 존재한다. 체중이 줄어들 때 지방과 함께 근육량이 급격히 빠지는 현상이다. 학계에서는 통상 감량된 체중 20~40%를 근육 손실로 추산한다....",
+    "keyword": "품귀현상"
+  },
+  {
+    "title": "반려동물 샴푸·향수 출시 빨라진다",
+    "url": "https://www.livesnews.com/news/article.html?no=61688",
+    "source": "www.livesnews.com",
+    "date": "2026-05-28",
+    "description": "이 때문에 소비자 수요 변화와 유행에 맞춘 신제품 개발과 빠른 출시가 어렵다는 지적이 이어져 왔다. 이에 따라 검역본부는 제품 사용기간 설정에 필요한 가속시험 기간을 기존 ‘6개월 이상’에서 ‘3개월 이상’으로...",
+    "keyword": "유행"
+  },
+  {
+    "title": "아서 헤이즈, XRP 버렸다...다음 강세장 3대 알트코인 새로 지목",
+    "url": "http://coinreaders.com/238979",
+    "source": "coinreaders.com",
+    "date": "2026-05-28",
+    "description": "시간이 지나며 배출량을 낮출 수 있도록 거버넌스 개혁을 추진하고 있다고 설명했다. 다음 강세장의 중심축이 단순 유행이 아니라 프라이버시, 인공지능, 실질 매출, 토큰 이코노미로 이동하고 있다는 평가다.",
+    "keyword": "유행"
+  },
+  {
+    "title": "[비트서밋] 세상에 이렇게 귀여운 리듬게임이 있다구? '할로원더밴드'",
+    "url": "https://www.thisisgame.com/articles/424771",
+    "source": "www.thisisgame.com",
+    "date": "2026-05-28",
+    "description": "이번이 저희 팀의 첫 해외 전시였던 만큼 기대도 컸지만, 동시에 걱정도 많았던 행사였습니다.&quot; &quot;일본어를 잘하지 못하지만, 그래도 직접 게임을 설명하고 싶어서 한국-일본 여행에서 유행했던 티셔츠에서 영감을 받아...",
+    "keyword": "유행"
+  },
+  {
+    "title": "'치명률 최대 90%' 에볼라 공습...유입 차단 총력",
+    "url": "http://www.00news.co.kr/news/articleView.html?idxno=104098",
+    "source": "www.00news.co.kr",
+    "date": "2026-05-28",
+    "description": "평균 치명률은 약 50% 수준이며, 유행 상황에 따라 최대 90%에 달하는 것으로 알려져 있다. 세계보건기구(WHO)... 대상으로 유행지역 방문 자제 안내와 여행경보 준수 캠페인을 강화할 계획이다. 김기남 질병청 차장은...",
+    "keyword": "유행"
+  },
+  {
+    "title": "다양해진 스킨부스터, 피부 상태별 선택 기준은",
+    "url": "https://www.vegannews.co.kr/news/article.html?no=382947",
+    "source": "www.vegannews.co.kr",
+    "date": "2026-05-28",
+    "description": "스킨부스터 선택 기준은 유행 여부보다 피부 진단과 목적 설정에 맞춰야 한다. 성분 특징과 시술 후 예상 반응, 회복 과정의 차이를 확인한 뒤 개인별 피부 상태에 맞는 계획을 세우는 것이 중요하다. 이석환 대표원장.",
+    "keyword": "유행"
+  },
+  {
+    "title": "여야 '고면역원성 인플루엔자 백신' 공약…NIP 도입 기대감 증폭",
+    "url": "https://www.bosa.co.kr/news/articleView.html?idxno=3005228",
+    "source": "www.bosa.co.kr",
+    "date": "2026-05-28",
+    "description": "이 기간 지출된 총 요양급여비 역시 6,295억 원에 달해 2009년 신종플루 대유행 당시를 넘어섰다. 현행 NIP... 2차 유행 시 예방 공백이 발생하기 쉽다. 여기에 면역노화와 반복 접종에 따른 면역각인 효과, 백신주와 유행...",
+    "keyword": "유행"
+  },
+  {
+    "title": "&quot;진짜 美쳤다&quot;… 개봉 1주일 남겨놓고 벌써부터 예매율 1위→'군체' 대항...",
+    "url": "https://mhnse.com/news/articleView.html?idxno=1391151",
+    "source": "mhnse.com",
+    "date": "2026-05-28",
+    "description": "특히 영화 상영 전부터 관객들이 작품을 향한 기대감을 드러내며 극 중 '성곤'의 유행어 '러브 유'를 다 함께 떼창하는 진풍경을 연출하기도 했다. 실시간 웃음 소리를 측정하는 컨셉 시사회답게, 본 영화가 상영되는...",
+    "keyword": "유행"
+  },
+  {
+    "title": "[창간 62주년] 르포-현대차 제주 V2G 실증 현장을 가다",
+    "url": "https://www.electimes.com/news/articleView.html?idxno=368484",
+    "source": "www.electimes.com",
+    "date": "2026-05-28",
+    "description": "주철규 팀장은 &quot;요즘 트렌드가 5C~6C(10~12분 만에 완충하는 속도)까지 올라가는 초급속 충전인데 그 속도가 배터리 열화에 가장 큰 영향을 미친다&quot;며 &quot;반면 V2G 실증에서 사용하는 방식은 AC 11kW급 충전기의 저속...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "국립부경대, 부산 AI디지털배움터 출범·디지털포용 확대",
+    "url": "https://www.inthenews.co.kr/news/article.html?no=87398",
+    "source": "www.inthenews.co.kr",
+    "date": "2026-05-28",
+    "description": "허정필 총괄은 ‘글로벌 AI 산업 트렌드’를 주제로 생성형 AI 확산 흐름과 빅테크 기업들의 대응 전략을 소개하며 참가자들의 관심을 모았습니다. 이어 두 번째 세션에서는 임호섭 ㈜싸인랩 대표가 ‘디지털 포용과 AI의...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "[부산은 오늘] 경남정보대·부산시교육청·국립부경대",
+    "url": "http://www.iminju.net/news/articleView.html?idxno=164424",
+    "source": "www.iminju.net",
+    "date": "2026-05-28",
+    "description": "산학협력단, ㈜비앤케이에듀케이션 등이 컨소시엄으로 참여한다. 허정필 텐센트 클라우드 한국 총괄은 '글로벌 AI 산업 트렌드'를, 임호섭 ㈜싸인랩 대표는 '디지털 포용과 AI의 사회적 가치'를 주제로 발표했다.",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "환희, 스타트렌드 트로트 남자 투표 1위…158만 표로 확인한 강한 팬심",
+    "url": "https://www.stardailynews.co.kr/news/articleView.html?idxno=537522",
+    "source": "www.stardailynews.co.kr",
+    "date": "2026-05-28",
+    "description": "지난 5월 27일, 환희가 스타트렌드 트로트 남자 부문 일간 투표에서 1,581,471표를 획득하며 1위에 올랐다. 150만 표를 훌쩍 넘긴 높은 득표수는 환희를 향한 팬들의 꾸준한 응원과 강한 결집력을 보여주는 결과로...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "구성환, &quot;저 여기서 잘게요!&quot; 매트리스 난관에 폭소",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16073825",
+    "source": "www.topstarnews.net",
+    "date": "2026-05-28",
+    "description": "마음가짐을 어떻게 집 안으로 확장하고 있는지 보여준다. '나 혼자 산다'는 1인 가구 스타들의 다양한 일상을 담는 싱글라이프 트렌드 리더 방송으로, 구성환의 '리플래쉬 데이' 에피소드는 29일 밤 11시 10분에 만나볼 수 있다.",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "[진단_음료업계 ⑤롯데칠성음료] 박윤기 대표 체제의 롯데칠성음료, 공...",
+    "url": "http://www.newsworker.co.kr/news/articleView.html?idxno=428832",
+    "source": "www.newsworker.co.kr",
+    "date": "2026-05-28",
+    "description": "최근에는 '헬시플레저' 트렌드에 따라 제로 칼로리 음료 및 제로 슈거 소주 등이 인기를 누리고 있다. 그러나 롯데칠성음료의 지배구조 최상단에는 롯데지주(의결권 있는 주식 기준 지분율 45%)와 일본 롯데홀딩스로...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "에코마케팅 안다르, 신주쿠 이세탄 또 뚫었다…일본 시장 공략 가속",
+    "url": "https://www.theguru.co.kr/news/article.html?no=102349",
+    "source": "www.theguru.co.kr",
+    "date": "2026-05-28",
+    "description": "특히 러닝·필라테스·웰니스 트렌드 확산과 함께 통기성, 흡한속건, 경량성 등 기능성 요소가 구매 기준으로 자리 잡고 있다. 이에 안다르는 기능성과 패션성을 동시에 강조하는 일본 소비 트렌드에 맞춰 '입는 순간...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "[연중기획-IT트렌드 캐처] 하이엔드 게이머와 AI 위한 스토리지... 샌디...",
+    "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=59450",
+    "source": "www.ilovepc.co.kr",
+    "date": "2026-05-28",
+    "description": "디지털포스트(PC사랑) 남지율 기자 = '샌디스크 옵티머스 GX 프로 8100' 언박싱&amp;체험 분석 '8세대 SANDISK BiCS TLC 3D CBA NAND' 채택 최대 읽기 성능 14,900MB/s PCIe NVMe 5.0 규격 &lt;편집자 주&gt; 하루에도 수백 종의...",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "빈폴×헌터, 클래식에 기능성 더했다...기후 대응 패션 경쟁 본격화",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=522058",
+    "source": "www.joongangenews.com",
+    "date": "2026-05-28",
+    "description": "특히 이번 컬렉션은 최근 패션업계 화두로 떠오른 '웨더웨어' 트렌드를 적극 반영했다. 무더위와 장마, 변덕스러운 기후 환경이 반복되면서 기능성과 스타일을 동시에 갖춘 의류 수요가 빠르게 늘고 있기 때문이다....",
+    "keyword": "트렌드"
+  },
+  {
+    "title": "인천문화재단, '인천 화교 생활사–개항기에서 오늘까지' 강좌 진행",
+    "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3024292",
+    "source": "www.kihoilbo.co.kr",
+    "date": "2026-05-28",
+    "description": "「한국 중화요리의 탄생」(2024)을 저술하고 '개항 이후 인천의 외국인들', '인천의 근대 각석' 등의 조사에 참여했으며 현재까지 화교 연구에 매진하고 있다. 1강 '개항과 함께 온 사람들–인천 화교 사회의 형성'은 개항...",
+    "keyword": "매진"
+  },
+  {
+    "title": "‘리버풀 레전드’ DF, 토트넘행 임박…“원칙적 합의 완료”",
+    "url": "https://isplus.com/article/view/isp202605280079",
+    "source": "isplus.com",
+    "date": "2026-05-28",
+    "description": "한편 로버트슨은 리버풀에서의 최종전을 마치고 “9년 동안 안필드(리버풀의 홈구장)는 언제나 매진이었다. 팬들에게 모든 공을 돌린다. 그들이야말로 클럽의 심장”이라며 감사 인사를 전했다.",
+    "keyword": "매진"
+  },
+  {
+    "title": "경상국립대, 대학원생 대상 '마음 쉼표 힐링캠프' 운영",
+    "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5025050",
+    "source": "www.shinailbo.co.kr",
+    "date": "2026-05-28",
+    "description": "행사 첫날에는 대학원 부원장 신승구 에너지공학과 교수가 참석해 연구에 매진하는 대학원생들을 격려하고 응원의 메시지를 전했다. 캠프는 참여자들의 심리적 회복과 자기 성찰을 돕는 다양한 프로그램으로 구성됐다....",
+    "keyword": "매진"
+  },
+  {
+    "title": "김종국, 30주년 콘서트 서울 앵콜…블루스퀘어서 다시 만난다",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16073815",
+    "source": "www.topstarnews.net",
+    "date": "2026-05-28",
+    "description": "당시 공연은 터보 시절 히트곡부터 솔로 대표곡까지 30년 음악 여정을 총망라하는 구성으로 꾸며졌으며, 티켓 오픈과 동시에 전 회차 전석 매진을 기록해 변함없는 티켓 파워를 입증했다. 이어 전국 주요...",
+    "keyword": "매진"
+  },
+  {
+    "title": "나나, 시크 스포티즘부터 글램 스트리트 화보 공개",
+    "url": "https://www.slist.kr/news/articleView.html?idxno=741853",
+    "source": "www.slist.kr",
+    "date": "2026-05-28",
+    "description": "E.B.M은 28일부터 오프라인 매장 및 공식 온라인 스토어를 통해 '26 여름 컬렉션 론칭 기념 프로모션을 진행한다. 10% 할인 혜택을 비롯해 30만원 이상 구매 시 '[EXCLUSIVE] 로고 장식 버킷햇'을 증정한다.",
+    "keyword": "론칭"
+  },
+  {
+    "title": "[ESG] &quot;아이들의 꿈에 버프 더한다&quot;... 스마일게이트 희망스튜디오 기부...",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=522205",
+    "source": "www.joongangenews.com",
+    "date": "2026-05-28",
+    "description": "희망스튜디오는 28일 기부 캠페인 '달애X희망스튜디오, 아이들의 꿈에 버프 더하기' FUNding을 공식 론칭했다고 밝혔다. 이번 캠페인은 희망스튜디오 플랫폼에서 운영 중인 유저 참여형 재능 나눔 프로젝트 '재능ON 희망ON'의...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "[피벗 인사이트] 넷마블 DNA 심는 코웨이, 가전 렌탈 넘어 '초개인화 플...",
+    "url": "http://www.dailypop.kr/news/articleView.html?idxno=99202",
+    "source": "www.dailypop.kr",
+    "date": "2026-05-28",
+    "description": "매트리스·안마의자 브랜드 '비렉스(BEREX)'의 안착과 가정용 의료기기 브랜드 '테라솔' 론칭 등 포트폴리오 확장이 실적을 견인했다. 여기에 안주하지 않고 금융, 여가, 모빌리티를 연결하는 플랫폼 전환을 서두르는...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "홍콩 옹핑360, 20주년 기념 한국 여행업계 초청 리셉션 개최",
+    "url": "https://www.gukjenews.com/news/articleView.html?idxno=3594171",
+    "source": "www.gukjenews.com",
+    "date": "2026-05-28",
+    "description": "새롭게 론칭했다. 옹핑360은 바닥을 포함해 80% 이상이 유리로 된 프리미엄 '크리스탈 플러스', 바닥이 유리로 된 '크리스탈', 일반 '스탠다드' 등 3가지 유형의 캐빈을 운영한다. 옹핑360은 홍콩 국제공항에서 15분...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "심파텍스, 지속가능성으로 아웃도어 시장 공략 가속화",
+    "url": "http://okfashion.co.kr/detail.php?number=63622&thread=81r47r03",
+    "source": "okfashion.co.kr",
+    "date": "2026-05-28",
+    "description": "지난 2023년 10월 국내에 론칭한 시에라디자인은 단기간에 경량다운 ‘하프돔’ ‘뮤어’을 비롯해 ‘겟다운’ ‘스타게이저’ 등 헤비다운까지 다양한 히트 아이템을 출시하며, 프리미엄 아웃도어 브랜드로...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "재능 기부 게이머 '달애', 스마일게이트 희망스튜디오와 함께 취약 계층...",
+    "url": "https://www.gamechosun.co.kr/webzine/article/view.php?no=222306",
+    "source": "www.gamechosun.co.kr",
+    "date": "2026-05-28",
+    "description": "FUNding을 론칭했다고 28일 밝혔다. 이번 캠페인은 희망스튜디오 기부 플랫폼에서 운영 중인 유저의 재능 나눔 프로젝트 ‘재능ON 희망ON’ 일환으로 진행된다. 희망스튜디오 기부자이자 대한민국 대표 MMORPG ‘로스트아크’...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "비오레, 올리브영 '올영픽' 브랜드 선정",
+    "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=841142",
+    "source": "www.hansbiz.co.kr",
+    "date": "2026-05-28",
+    "description": "비오레 UV 아쿠아 리치 아쿠아 프로텍트 미스트는 3월 국내 공식 론칭 직후 올리브영 공식 온라인몰 케어... 비오레는 3월 국내 정식 론칭 후 트와이스 사나를 모델로 발탁하고 올리브영 N성수에서 팝업스토어를 운영하는...",
+    "keyword": "론칭"
+  },
+  {
+    "title": "[현장] 1주년 맞은 케데헌...더현대 팝업스토어 오픈",
+    "url": "https://www.betanews.net/article/view/beta202605280038",
+    "source": "www.betanews.net",
+    "date": "2026-05-28",
+    "description": "팬덤 비즈니스 기업 비마이프렌즈가 넷플릭스와 함께 ‘케이팝 데몬 헌터스(Kpop Demon Hunters, 이하 케데헌)’ 1주년을 맞이해 공식 팝업스토어를 21일 서울 더현대에서 오픈했다. 지난해 성수에서 열린 케디헌 팝업 이후 두...",
+    "keyword": "팝업스토어"
+  },
+  {
+    "title": "god 데뷔 10,000일 축제 막 올랐다... 연예계 축하 물결",
+    "url": "https://www.newsinside.kr/news/articleView.html?idxno=4712180",
+    "source": "www.newsinside.kr",
+    "date": "2026-05-28",
+    "description": "이번 행사는 사흘간 에버랜드 전역을 god를 상징하는 하늘색 물결로 채우며 대규모 팝업스토어, 아카이브 전시 및 체험형 콘텐츠, 멤버별 특별 이벤트 등 다채로운 프로그램이 마련됐다. 전날 베일을 벗은 축하...",
+    "keyword": "팝업스토어"
+  },
+  {
+    "title": "네파키즈 '아이엠아이', 신세계 강남서 팝업스토어 운영",
+    "url": "http://www.ktnews.com/news/articleView.html?idxno=146264",
+    "source": "www.ktnews.com",
+    "date": "2026-05-28",
+    "description": "네파키즈의 주니어 브랜드 '아이엠아이(IAMI)'가 신세계백화점 강남점에서 팝업스토어를 운영하고 오는 6월 리뉴얼 매장을 선보인다. 지난 25일 시작한 이번 팝업스토어는 오는 6월 14일까지 약 3주간 신세계백화점...",
+    "keyword": "팝업스토어"
+  },
+  {
+    "title": "써스데이 아일랜드, 잠실 롯데월드몰서 다양한 색채 어우러진 팝업스토...",
+    "url": "http://www.fashionn.com/board/read_new.php?table=1006&number=61174",
+    "source": "www.fashionn.com",
+    "date": "2026-05-28",
+    "description": "지엔코(대표 김석주)의 컨템퍼러리 브랜드 ‘써스데이 아일랜드(Thursday Island)’가 오는 5월 27일부터 6월 9일까지 서울 롯데월드몰에서 팝업스토어 ‘다채(多彩)’를 선보인다. 이번 팝업의 메인 테마인 ‘다채’는...",
+    "keyword": "팝업스토어"
+  },
+  {
+    "title": "신세계백화점, 서울 청년 창업 돕는 '넥스트로컬' 팝업스토어 운영",
+    "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4086087",
+    "source": "news.bbsi.co.kr",
+    "date": "2026-05-28",
+    "description": "신세계백화점이 서울시와 손잡고 청년 창업가들을 지원하기 위한 '넥스트로컬' 팝업스토어를 운영한다고 오늘 밝혔습니다. 신세계백화점 강남점 스위트파크에서 다음 달 3일까지 열리는 이번 팝업에서는 청년 창업가들이...",
+    "keyword": "팝업스토어"
+  },
+  {
+    "title": "네이버, 5년간 1조 투자…AI 인용 보상 '메이트'로 콘텐츠 판 키운다",
+    "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=263107",
+    "source": "www.whitepaper.co.kr",
+    "date": "2026-05-28",
+    "description": "올 하반기에는 숏폼 서비스 '클립' 창작자까지 대상을 넓히고, 연말까지 베타 운영을 거쳐 제도를 정교화할 계획이다. 이일구 콘텐츠 서비스 부문장은 &quot;창작자들의 실제 경험과 인사이트가 담긴 UGC는 AI의 다양성과...",
+    "keyword": "숏폼"
+  },
+  {
+    "title": "박한별, 요즘 뭐하나 했더니 한가롭게 해외여행…수영 중 &quot;치앙마이 앓...",
+    "url": "https://www.tenasia.co.kr/article/2026052838354",
+    "source": "www.tenasia.co.kr",
+    "date": "2026-05-28",
+    "description": "또한 숏폼 드라마 '청소부의 두 번째 결혼'에도 출연했다. 지난 1월 공개된 '청소부의 두 번째 결혼'은 글로벌 바이오 그룹의 창립자가 아들 부부와의 갈등 끝에 집을 떠나게 되면서 일을 그린 작품이다.",
+    "keyword": "숏폼"
+  },
+  {
+    "title": "유통계산기 AI, 숏폼 마케팅 전문기업 스타트뷰와 MOU 체결",
+    "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=205670",
+    "source": "www.kdpress.co.kr",
+    "date": "2026-05-28",
+    "description": "기반 숏폼 마케팅 전문기업 스타트뷰(대표 이기훈)와 지난 17일, 기술·마케팅 분야 상호협력 파트너십 협약... 유통계산기 AI는 마진 관리 분야, 스타트뷰는 숏폼 마케팅 분야의 공식 솔루션으로 각각 선정되어 전국 5...",
+    "keyword": "숏폼"
+  },
+  {
+    "title": "목나경 치어리더 '반전 섹시 매력 발산'[엑's 숏폼]",
+    "url": "https://www.xportsnews.com/article/2154098",
+    "source": "www.xportsnews.com",
+    "date": "2026-05-28",
+    "description": "27일 오후 부산 동래구 사직야구장에서 열린 '2026 신한 SOL Bank KBO리그' LG 트윈스와 롯데 자이언츠의 경기, 목나경 치어리더가 멋진 공연을 선보이고 있다.",
+    "keyword": "숏폼"
+  },
+  {
+    "title": "트와이스 지효 동생도 데뷔 임박…'연예인 자매' 계보 잇는다",
+    "url": "http://www.queen.co.kr/news/articleView.html?idxno=457663",
+    "source": "www.queen.co.kr",
+    "date": "2026-05-28",
+    "description": "하이브 산하 신규 레이블 ABD는 지난 26일 공식 홈페이지와 SNS 채널을 통해 브랜드 방향성을 담은 숏폼 영상 6편을 공개했다. 감각적인 그래픽과 키치한 분위기의 영상에는 올 하반기 데뷔 예정인 걸그룹 멤버 일부가...",
+    "keyword": "숏폼"
+  },
+  {
+    "title": "“‘K컬처’ 목표, 400조원으로 상향…개념도 재정의”",
+    "url": "https://www.munhwa.com/article/11591913?ref=naver",
+    "source": "www.munhwa.com",
+    "date": "2026-05-28",
+    "description": "K푸드·뷰티·패션 수출액)이 합쳐진 개념”으로 재정의한 데 따른 것이라고 설명했다. 기존에는... 다만 K푸드·뷰티·패션 수출 규모가 K컬처에 새롭게 포함되면서, 다른 부처 영역과 중복되는 것이 아니냐는 지적이...",
+    "keyword": "K-푸드"
+  },
+  {
+    "title": "김관영, 농어촌 7대 공약 발표…&quot;미래 신산업 메카로&quot;",
+    "url": "https://www.newsis.com/view/NISX20260528_0003647416",
+    "source": "www.newsis.com",
+    "date": "2026-05-28",
+    "description": "조성 ▲새만금 K-푸드 수출허브단지 및 익산 국가식품클러스터 2단계 고도화 ▲푸드테크 기반 체류형 미식관광 활성화 ▲권역별 메가 클러스터 연계 14개 시·군 상생 균형발전 등을 약속했다. 군산과 김제 간 첨예한 갈등...",
+    "keyword": "K-푸드"
+  },
+  {
+    "title": "[李정부1주년:K컬처] '뺄거 빼고 더할거 더했다' K컬처 재정의…목표액...",
+    "url": "https://www.news1.kr/life-culture/general-cultural/6180212",
+    "source": "www.news1.kr",
+    "date": "2026-05-28",
+    "description": "문체부는 새 범주에 외국인 방한 관광과 K푸드, K뷰티, K패션 수요를 반영하고, 기존 산업 분류상 억지로 들어간 요소는 덜어내는 방식으로 기준을 다시 짰다. 최 장관은 &quot;누가 봐도 K-컬처라고 할 수 있는 영역은...",
+    "keyword": "K-푸드"
+  },
+  {
+    "title": "고래사어묵, 'BTS 더 시티 아리랑 부산' 공식 F&amp;B 선정…글로벌 K-푸드 접...",
+    "url": "http://www.e2news.com/news/articleView.html?idxno=330804",
+    "source": "www.e2news.com",
+    "date": "2026-05-28",
+    "description": "고래사어묵이 부산에서 진행되는 도심형 프로젝트 'BTS 더 시티 아리랑 부산(BTS THE CITY ARIRANG BUSAN)'의 공식 F&amp;B(식음료) 파트너로 참여하며 K-푸드 대표 먹거리인 어묵의 글로벌 시장 확대에 나선다. 'BTS THE CITY ARIRANG...",
+    "keyword": "K-푸드"
+  },
+  {
+    "title": "“골프장 위를 자전거로 달린다”… 제주, 이번엔 ‘미니벨로 감성’에...",
+    "url": "https://www.jibs.co.kr/news/articles/articlesDetail/61684?feed=na",
+    "source": "www.jibs.co.kr",
+    "date": "2026-05-28",
+    "description": "골프장 잔디 위를 자전거로 가로지르고 해안도로를 따라 속도를 늦춘 뒤, 제주 고유 식재료와 K-푸드를 함께 즐기는 일정입니다. 제주자치도와 제주관광공사는 오는 9월 12일부터 13일까지 서귀포시 중문골프장과 중문...",
+    "keyword": "K-푸드"
+  },
+  {
+    "title": "&quot;韓 공연·전시 전 세계 누빈다 &quot; 문체부 '투어링 K-아츠' 지원",
+    "url": "https://biz.sbs.co.kr/article_hub/20000313072?division=NAVER",
+    "source": "biz.sbs.co.kr",
+    "date": "2026-05-28",
+    "description": "다음 달에는 한식의 문화적 의미를 소개하는 ‘맛멋상자’가 중국 베이징에서 열리고, ‘찾아가는 K-뷰티 메이크업 클래스’는 오는 10월부터 11월까지 일본 도쿄와 오사카에서 진행됩니다. 이 밖에도 국립무형유산원의...",
+    "keyword": "K-뷰티"
+  },
+  {
+    "title": "콜마 오너가 분쟁 사실상 마무리",
+    "url": "https://www.naeil.com/news/read/590136?ref=naver",
+    "source": "www.naeil.com",
+    "date": "2026-05-28",
+    "description": "업계 안팎에서는 최근 이른바 ‘K뷰티’ 성장세 속에서 오너가 갈등이 장기화할 경우 실적과 기업 이미지에 부담이 될 수 있다는 우려도 영향을 미친 것으로 보고 있다.",
+    "keyword": "K-뷰티"
+  },
+  {
+    "title": "중진공, 상하이 3개 대학과 K-뷰티·실무 인재 양성 맞손",
+    "url": "https://weeklytrade.co.kr/news/view.html?section=1&category=5&item=&no=99973",
+    "source": "weeklytrade.co.kr",
+    "date": "2026-05-28",
+    "description": "이들 학교는 모두 한국어학과를 운영 중이며, 중진공은 이들 대학과 함께 실무형 한국어 인재 양성에 나선다.이번 협약의 핵심은 기존의 언어 교육을 넘어 K-뷰티와 소셜미디어(SNS) 마케팅 역량을 결합한 실용...",
+    "keyword": "K-뷰티"
+  },
+  {
+    "title": "[오늘의 유통街] 오뚜기, 6·25 참전유공자·유족 대상 맞춤형 지원…호...",
+    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=260736",
+    "source": "www.financialpost.co.kr",
+    "date": "2026-05-28",
+    "description": "◆대상 청정원 호밍스, 여름철 보양식 '남도식 추어탕' 출시…&quot;국내산 미꾸라지를 전통 방식으로&quot; 대상 청정원의 간편식 브랜드 '호밍스(HOME:INGS)'가 '남도식 추어탕' 신제품을 출시한다. 이번 '남도식 추어탕'은 국내산...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "브리즘, 러닝·등산 겨냥 맞춤형 아웃도어 선글라스 ‘어반쉐이드’ 출...",
+    "url": "https://www.cnet.co.kr/view/?no=20260528120756",
+    "source": "www.cnet.co.kr",
+    "date": "2026-05-28",
+    "description": "퍼스널 아이웨어 브랜드 브리즘이 데일리 아웃도어 스포츠 라인업 ‘어반쉐이드(Urban Shade)’를 출시했다고... 이번 신제품은 렌즈 커브와 프레임 커브를 분리하는 설계를 적용했다. 렌즈는 일반 도수 가공이 가능한...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "아이피타임, USB-C 타입 5 in 1 멀티 허브 'ipTIME UC305HDMI2' 출시",
+    "url": "https://www.betanews.net/article/view/beta202605280035",
+    "source": "www.betanews.net",
+    "date": "2026-05-28",
+    "description": "를 출시했다. 아이피타임 UC305HDMI2는 USB 3.2 Gen2 Type-C 인터페이스를 기반으로 1개의 HDMI 포트와 1개의 PD(Power Delivery) 포트, 3개의 USB 3.2 Gen2 Type-A 포트가 결합된 USB 멀티 허브 제품이다. 이번 신제품...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "배스킨라빈스, 토이 스토리 5 테마 신제품 출시",
+    "url": "https://mdtoday.co.kr/news/view/1065585537782566",
+    "source": "mdtoday.co.kr",
+    "date": "2026-05-28",
+    "description": "(사진= 배스킨라빈스 제공) 배스킨라빈스가 월트디즈니 컴퍼니 코리아와 협업해 애니메이션 &lt;토이 스토리 5&gt;를 테마로 한 6월 이달의 맛 2종과 아이스크림 케이크 4종을 출시한다. 오는 6월 17일 &lt;토이 스토리 5&gt; 개봉을...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "종이처럼 얇고 코드 빼도 그대로···LG전자, '이페이퍼 디스플레이' 출...",
+    "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2433802",
+    "source": "www.enewstoday.co.kr",
+    "date": "2026-05-28",
+    "description": "LG전자는 내달 초 국내를 시작으로 LG 이페이퍼 디스플레이를 유럽 등 해외 시장에 순차 출시한다고 28일 밝혔다. 신제품은 종이 포스터와 비슷한 질감을 구현하면서 전력 공급 없이도 화면을 유지할 수 있는 상업용...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "양하주창, 한국 진출 10주년 프리미엄 백주 시장 공략",
+    "url": "https://sports.khan.co.kr/article/202605281256003?pt=nv",
+    "source": "sports.khan.co.kr",
+    "date": "2026-05-28",
+    "description": "독점 수입사 남경무역㈜과 함께 지난 10년간 브랜드 안착에 집중해 온 양하주창은 향후 다각적인 협업과 신제품 출시로 한국 시장 공략에 속도를 낼 방침이다. 양하주창은 중국 강소성(장쑤성)을 대표하는 브랜드로, 1...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "삼성전자, 강남·홍대에 2026년형 오디세이 게이밍 모니터 체험 공간 운...",
+    "url": "https://www.etnews.com/20260528000242",
+    "source": "www.etnews.com",
+    "date": "2026-05-28",
+    "description": "할인 등 기존 신제품 출시 혜택도 제공한다. 김용훈 삼성전자 한국총괄 상무는 “체험존에서 플래그십 게이밍 모니터가 선사하는 압도적인 몰입감을 직접 경험하고 다양한 혜택도 함께 누리시길 바란다“고 말했다.",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "멜킨스포츠, 가정용 스텝밀 '클라임맥스 엘리트 X' 출시",
+    "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=270243",
+    "source": "www.businesskorea.co.kr",
+    "date": "2026-05-28",
+    "description": "홈트레이닝 전문 브랜드 멜킨스포츠가 기존 클럽형 스텝밀의 성능과 안정성을 한층 업그레이드한 프리미엄 가정용 스텝밀 '클라임맥스 엘리트 X'를 새롭게 출시했다고 28일 밝혔다. 이번 신제품은 기존 '클라임맥스...",
+    "keyword": "신제품 출시"
+  },
+  {
+    "title": "피프티피프티, 스타트렌드 걸그룹 1위…신보 프리뷰 포토로 컴백 기대감...",
+    "url": "https://www.joongangenews.com/news/articleView.html?idxno=522179",
+    "source": "www.joongangenews.com",
+    "date": "2026-05-28",
+    "description": "페어리코어까지 다양한 콘셉트 포토를 선보인 바 있다. 각기 다른 분위기를 소화한 멤버들의 달라진 비주얼은 팬들 사이에서 뜨거운 반응을 얻고 있다. 이번 스타트렌드 투표 결과 역시 컴백을 향한 관심과 팬덤의...",
+    "keyword": "코어 트렌드"
+  },
+  {
     "title": "삼성전자 이어 카카오까지…IT 업계 덮친 '성과급 도미노' 현상",
     "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000038131",
     "source": "www.jnilbo.com",
@@ -1822,333 +2398,5 @@
     "date": "2026-05-28",
     "description": "단순히 외부 유명 브랜드를 가져와 팔던 홈쇼핑 유통 채널이 트렌드를 직접 선도하는 '패션 하우스'로 진화하고 있다. GS샵이 자체 기획한 패션 브랜드(PB) '코어 어센틱(CHOR AUTHENTIC)'이 의류의 성공을 발판 삼아 잡화와...",
     "keyword": "코어 트렌드"
-  },
-  {
-    "title": "[유통단신] CJ대한통운, 데이터 모니터링 가능 자체 개발 '로이스 온도'...",
-    "url": "https://www.getnews.co.kr/news/articleView.html?idxno=871050",
-    "source": "www.getnews.co.kr",
-    "date": "2026-05-27",
-    "description": "◆CU가 뷰티 브랜드 토니모리와 손잡고 1020 잘파세대를 겨냥한 가성비 색조 화장품 확대에 나선다. 지난해 편의점 신성장 카테고리 중 하나로 화장품 상품군을 적극 육성하기 위해 뷰티 특화점을 전국 600여 점까지...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "CU, 토니모리 색조 라인업 단독 선론칭... &quot;잘파세대 공략&quot;",
-    "url": "http://www.thefirstmedia.net/news/articleView.html?idxno=200055",
-    "source": "www.thefirstmedia.net",
-    "date": "2026-05-27",
-    "description": "이번에 출시되는 제품은 최근 잘파세대 사이에서 인기를 끌고 있는 내추럴하면서도 보송한 메이크업 트렌드를 반영한 것이 특징이다. 립틴트와 립오일글로스, 블러치크 등 다양한 제형으로 구성해 취향에 따라 선택할...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "“뽀용 메이크업 뜬다”⋯ CU, 토니모리 손잡고 색조 화장품 강화",
-    "url": "https://www.viva100.com/article/20260527501027",
-    "source": "www.viva100.com",
-    "date": "2026-05-27",
-    "description": "BGF리테일 관계자는 “편의점이 잘파 세대와 뷰티 브랜드를 연결하는 주요 유통 채널로 자리 잡고 있다”면서 “뷰티 특화 편의점을 확대하고 차별화 상품도 지속 강화할 계획”이라고 말했다.",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "CU, '가성비 뷰티' 강화…토니모리 손잡고 색조 라인업 확대",
-    "url": "https://sports.hankooki.com/news/articleView.html?idxno=6933715",
-    "source": "sports.hankooki.com",
-    "date": "2026-05-27",
-    "description": "특히 잘파세대를 중심으로 접근성과 가성비를 중시하는 소비 패턴이 확산되면서 편의점 업계의 뷰티 특화 전략도 이어질 전망이다. CU 관계자는 &quot;중고등학교와 학원가, 관광지 등을 중심으로 뷰티 특화점을 지속...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "‘만원 이하 화장품’ 통했다…유통업계, 가성비 뷰티 키운다",
-    "url": "https://www.news2day.co.kr/article/20260527500152",
-    "source": "www.news2day.co.kr",
-    "date": "2026-05-27",
-    "description": "CU 뷰티 카테고리 매출의 70%는 1020 잘파세대가 차지하고 있다. 이에 CU는 1020 소비자와의 접점을 늘리기 위해 올해 중고등학교, 학원가 등을 중심으로 뷰티 특화 편의점을 지속해서 확대할 계획이다. GS25는 ‘손앤박’...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "잘파세대 겨냥…CU, 토니모리와 가성비 색조 화장품 출시",
-    "url": "https://zdnet.co.kr/view/?no=20260527090336",
-    "source": "zdnet.co.kr",
-    "date": "2026-05-27",
-    "description": "편의점 CU가 국내 뷰티 브랜드인 토니모리와 손잡고 1020 잘파세대를 겨냥한 가성비 색조 화장품을 선보인다. 편의점 내 화장품 카테고리 매출이 급증하면서 차별화 상품으로 육성한다는 전략이다. CU는 오는 28일 400여...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "&quot;뷰티부터 막걸리까지&quot;…편의점업계, 'MZ 공략전' 본격화",
-    "url": "https://www.youthdaily.co.kr/news/article.html?no=219771",
-    "source": "www.youthdaily.co.kr",
-    "date": "2026-05-27",
-    "description": "가성비와 접근성을 앞세운 편의점 화장품이 잘파세대 소비 트렌드와 맞물리며 새로운 구매 채널로 자리잡고 있다는 분석이다. 이에 CU는 이달 28일부터 전국 400여 개 뷰티 특화점에서 토니모리 립 메이크업 신제품...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "CU, 잘파세대 뷰티 수요 공략…토니모리와 협업, 신제품 9종 선 출시",
-    "url": "http://www.sisafocus.co.kr/news/articleView.html?idxno=360549",
-    "source": "www.sisafocus.co.kr",
-    "date": "2026-05-27",
-    "description": "CU가 토니모리와 손잡고 잘파세대를 겨냥한 색조 화장품 신제품 9종을 선 출시한다. ⓒBGF리테일 BGF리테일이 운영하는 편의점 CU가 뷰티 브랜드 토니모리와 손잡고 잘파(Gen.Z+Alpha)세대를 겨냥한 가성비 색조화장품...",
-    "keyword": "잘파세대"
-  },
-  {
-    "title": "[시사천국] '깜깜이' 돌입 직전…판세 흔드는 막판 변수는?",
-    "url": "https://news.cpbc.co.kr/article/1173201?division=NAVER",
-    "source": "news.cpbc.co.kr",
-    "date": "2026-05-27",
-    "description": "젊은 세대들이 이제는 신물을 느끼게 만들어요. 66세의 추경호라는 시장이 자기 힘으로 대구에서 시장 선거를... ▶신지호: 평택을만 보면 단일화하면 플러스알파 효과가 당연히 있겠죠. 유의동 후보로 되면. 그 7~8%인지 10...",
-    "keyword": "알파세대"
-  },
-  {
-    "title": "CU-토니모리,1020 대상 색조 화장품 출시",
-    "url": "http://www.lawissue.co.kr/view.php?ud=202605271941551975204ead0791_12",
-    "source": "www.lawissue.co.kr",
-    "date": "2026-05-27",
-    "description": "CU가 토니모리와 협업해 1020세대를 대상으로 한 색조 화장품 라인업을 확대한다. CU는 28일부터 400여 곳의... 현재 CU 화장품 매출의 약 70%가 1020세대에서 나오고 있다. 또한 메리몽드의 슈퍼트임 펜 아이라이너...",
-    "keyword": "1020세대"
-  },
-  {
-    "title": "'다둥이父' 김동현, 넷째 발표 후 턱받이만 9만 원어치 받았다…&quot;막둥이...",
-    "url": "https://www.tenasia.co.kr/article/2026052724604",
-    "source": "www.tenasia.co.kr",
-    "date": "2026-05-27",
-    "description": "특히, 해당 턱받이는 개당 14000원에 판매되며 평소 신생아 부모들 사이에서 품절 대란을 일으킨 제품인 것으로 알려져 눈길을 끌었다. 이는 김동현의 넷째 임신 소식을 축하하는 의미의 센스 넘치는 선물로 전해져...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "[유프로의 AI 픽] &quot;반바지 대신 버뮤다팬츠! 쿨링 패드 대란&quot;…패션·뷰...",
-    "url": "https://www.mediapen.com/news/view/1101204",
-    "source": "www.mediapen.com",
-    "date": "2026-05-27",
-    "description": "일시 품절 및 뷰티 랭킹 1~3위를 장악한 하드 데이터 확인 완료! 왜 떴는데?: 이른 폭염과 강한 자외선이 예고되면서 코덕들의 스킨케어 지갑이 '쿨링'과 '진정'으로 활짝 열렸습니다. 번거로운 스킨케어 단계를 줄이고...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "품절대란 나겠네…BTS 만나 ‘한정판'으로 출시된 '레전드 과자' 정체",
-    "url": "https://www.wikitree.co.kr/articles/1138576",
-    "source": "www.wikitree.co.kr",
-    "date": "2026-05-27",
-    "description": "※ 해당 글은 아무 대가 없이 작성됐음을 밝힙니다.품절 대란이 예고되는 역대급 협업 제품이 등장했다. 전 세계인이 사랑하는 ‘레전드 과자’ 오레오가 글로벌 팝 아티스트 그룹 방탄소년단(BTS)을 만나 특별한 한정판...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "'돈명태' 완판 이어 또 대란? 조폐공사 이번엔 '돈키링'",
-    "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000037949",
-    "source": "www.jnilbo.com",
-    "date": "2026-05-27",
-    "description": "&quot;진짜 돈 조각 들어있다는데 어디서 사요?&quot; 최근 '돈명태 마그넷'으로 품절 대란을 일으켰던 한국조폐공사가 새로운 화폐 굿즈를 출시했다. 조선시대 법정화폐였던 상평통보를 모티프로 한 '상평통보 돈키링'이다. 이번...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "“이거 먹어봤어?” SNS 달군 화제의 메뉴 BEST 3",
-    "url": "https://www.bntnews.co.kr/article/view/bnt202605260135",
-    "source": "www.bntnews.co.kr",
-    "date": "2026-05-27",
-    "description": "동대문엽기떡볶이 ‘국물무뼈닭발’ “이거 먹어봤어?” SNS 달군 화제의 메뉴 BEST 3 (출처: 동대문엽기떡볶이) 한동안 품절 대란을 일으켰던 동대문엽기떡볶이의 ‘국물무뼈닭발’. “닭발은 먹고 싶지만 뼈 바르는 건...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "[글로벌 K-브랜드⑩] 젠틀몬스터, ‘낯선 시각’으로 세계를 홀리다",
-    "url": "https://www.mydaily.co.kr/page/view/2026052711261394457",
-    "source": "www.mydaily.co.kr",
-    "date": "2026-05-27",
-    "description": "2020년부터 메인 뮤즈 블랙핑크 제니와 컬렉션 ‘젠틀 홈’, ‘젠틀 가든’이 출시와 동시에 공식 홈페이지 서버를 다운시키며 분 단위 품절 대란을 일으켰다. 감각적인 스페셜 패키지와 한정판 전략은 글로벌 MZ세대의...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "패션 매장에 등장한 한정판 과자…‘올다무’의 큰그림? [푸드360]",
-    "url": "https://biz.heraldcorp.com/article/10756807?ref=naver",
-    "source": "biz.heraldcorp.com",
-    "date": "2026-05-27",
-    "description": "오리온의 ‘촉촉한 황치즈칩’은 다이소에서 2000원에 출시 직후 품절 대란을 일으켰다. 식품업계가 올다무를 택한 이유는 MZ세대의 주요 유통채널로 자리를 잡았기 때문이다. SNS(사회관계망서비스)를 이용하는 젊은...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "삼례명품 수박, 초여름 입맛 잡는다",
-    "url": "https://www.jjan.kr/article/20260527500058",
-    "source": "www.jjan.kr",
-    "date": "2026-05-27",
-    "description": "삼례농협의 대표브랜드인 ‘블랙위너’ 수박은 일반 수박보다 높은 당도와 독보적인 아삭한 식감으로 이미 매년 여름철 품절 대란을 일으키는 등 소비자들 사이에서 큰 호응을 얻고 있다. 국내 대표 종자기업인...",
-    "keyword": "품절대란"
-  },
-  {
-    "title": "[베트남 증시] 자금 이탈 압력 가중, 혼조세...빈그룹 주식 등 부동산株...",
-    "url": "https://www.newspim.com/news/view/20260527001242",
-    "source": "www.newspim.com",
-    "date": "2026-05-27",
-    "description": "바오 단 비엣에 따르면, 이날 하락 종목의 거래액은 약 3조 798억 동(약 1755억 원)에 달했다. 이는 상승 종목 거래액(약 9422억 동)의 세 배를 넘어선 것으로, 시장의 자금 유출 압력이...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "'삼전닉스 레버리지' 하루새 10조 손바뀜… 장중 60% 뛰기도[단일종목 2...",
-    "url": "http://www.fnnews.com/news/202605271800379754",
-    "source": "www.fnnews.com",
-    "date": "2026-05-27",
-    "description": "거래되면서 거래액 3·4위를 기록했다. '톱2' 운용사를 제외하고는 곱버스(인버스 2배) ETF가 관심을... SK하이닉스가 하루 만에 9.31% 급등하면서 하락 가능성에 베팅하는 투자자도 늘어난 것으로 풀이된다. 'PLUS...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "‘단일종목 레버리지’ 상장 첫날 합산 시총 4.9조…거센 단타 움직임,...",
-    "url": "https://biz.heraldcorp.com/article/10757342?ref=naver",
-    "source": "biz.heraldcorp.com",
-    "date": "2026-05-27",
-    "description": "‘KODEX SK하이닉스’ 거래액 1위 ‘TIGER SK하이닉스’ 개인 순매수 1위 특정 종목 절반은 매수 후 매도... 유일하게 SK하이닉스 주가 하락 시 수익률을 두 배로 얻는 곱버스 상품을 출시한 신한자산운용의 ‘SOL...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "[기획] 첫날 10조 뭉칫돈… ‘삼전닉스 2X’ 광풍",
-    "url": "https://www.dt.co.kr/article/12064605?ref=naver",
-    "source": "www.dt.co.kr",
-    "date": "2026-05-27",
-    "description": "폭발적인 거래액을 기록했다. 일부 상품은 가격제한폭까지 급등하고 투자자 교육 사이트 접속 장애... 기초자산 가격이 상승과 하락을 반복할 경우 이른바 '음의 복리효과'가 발생해 누적 수익률이 단순히 기초자산...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "'단일종목 레버리지' 상장 첫날…거래대금 10.4조, 시총 4.9조",
-    "url": "https://www.yna.co.kr/view/AKR20260527136600008?input=1195m",
-    "source": "www.yna.co.kr",
-    "date": "2026-05-27",
-    "description": "'KODEX SK하이닉스' 거래액 1위, 'TIGER SK하이닉스' 개인 순매수 1위 &quot;코스피 견인&quot;…'특정종목 절반은 매수... 유일하게 SK하이닉스 주가 하락 시 수익률을 두 배로 얻는 곱버스 상품을 출시한 신한자산운용의 'SOL...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "대형사·하닉 레버리지 ETF에 거래 쏠림...장 초반 60% 급등도",
-    "url": "http://www.fnnews.com/news/202605271258442315",
-    "source": "www.fnnews.com",
-    "date": "2026-05-27",
-    "description": "거래되면서 거래액 3·4위를 기록했다. '톱2' 운용사를 제외하고는 곱버스(인버스 2배) ETF가 관심을... SK하이닉스가 하루 만에 9.31% 급등하면서 하락 가능성에 베팅하는 투자자도 늘어난 것으로 풀이된다. 'PLUS...",
-    "keyword": "거래액 하락"
-  },
-  {
-    "title": "[패트롤] 광주시-안성시-여주시-오산시-이천시-평택시",
-    "url": "https://www.ekn.kr/web/view.php?key=20260527021498408",
-    "source": "www.ekn.kr",
-    "date": "2026-05-27",
-    "description": "1분기 실적 급증에 공급업체 협의회 소집…스타필드·휴게소에 홍보판매관 설치 안성=에너지경제신문... 오는 7월부터 유동 인구가 많은 대형 유통시설인 '스타필드 안성'과 주요 간선도로 길목인 '고삼호수휴게소' 등...",
-    "keyword": "유동인구 급증"
-  },
-  {
-    "title": "범죄·이민단속·공실 폭등… 침체 심화되는 LA다운타운",
-    "url": "http://www.koreatimes.com/article/1614859",
-    "source": "www.koreatimes.com",
-    "date": "2026-05-27",
-    "description": "LA 시 재무국 자료에 따르면 2021~2023년 잠시 주춤했던 다운타운 사업체 이탈은 최근 2년 동안 다시 급증했다.... 패션·원단·도매 업계와 연계된 한인 업주들은 유동인구 감소와 소비 위축으로 매출 부진이 이어지고 있다고...",
-    "keyword": "유동인구 급증"
-  },
-  {
-    "title": "성남시, 유가 급등·폭염 대비 민생대책 점검",
-    "url": "http://www.metroseoul.co.kr/article/20260527500403",
-    "source": "www.metroseoul.co.kr",
-    "date": "2026-05-27",
-    "description": "성남시는 27일 민생경제 점검회의를 열고 여름철 전력 수요 급증과 중동 정세 불안에 따른 에너지 가격 상승... 폭염 대응을 위해 유동 인구가 많은 지역에는 차양시설과 쿨링포그 설치를 늘리는 방안도 검토 중이다. 성남시...",
-    "keyword": "유동인구 급증"
-  },
-  {
-    "title": "공공 디스플레이 확대 속 소방 기준 강화··· '준불연' LED 시장 열리나",
-    "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=306770",
-    "source": "www.greenpostkorea.co.kr",
-    "date": "2026-05-27",
-    "description": "최근 철도 역사, 공항, 터미널 등 유동 인구가 많은 다중이용시설 내 대형 LED 디스플레이 설치가 급증하고 있다. 이에 따라 과거 '선명도'와 '밝기'에 집중됐던 공공 프로젝트의 선정 기준이 최근 '화재 안전 성능'으로...",
-    "keyword": "유동인구 급증"
-  },
-  {
-    "title": "외로움도 소비가 된다…미국서 커지는 '관계 대체 시장'",
-    "url": "http://www.dailypop.kr/news/articleView.html?idxno=99166",
-    "source": "www.dailypop.kr",
-    "date": "2026-05-27",
-    "description": "미국 조사기관 Talker Research가 2026년 진행한 설문에서는 미국인의 38%가 &quot;지난 1년 동안 친구나 가족과 연락을 끊은 적이 있다&quot;고 답했다. 특히 Z세대 응답자의 60%가 같은 경험을 했다고 답해 젊은 세대일수록 '관계 정리...",
-    "keyword": "미국 Z세대"
-  },
-  {
-    "title": "美 진출 앞두고 디저트 승부수 띄운 투썸",
-    "url": "https://www.hankyung.com/article/2026052725481",
-    "source": "www.hankyung.com",
-    "date": "2026-05-27",
-    "description": "회사 측은 “커스터마이징, 페어링 등 놀이형 디저트 문화에 열광하는 Z세대 취향을 반영했다”고 설명했다. 투썸플레이스는 이와 함께 미국 프리미엄 아이스크림 브랜드 ‘밴루엔’과 국내 마스터 프랜차이즈 계약(MFA)...",
-    "keyword": "미국 Z세대"
-  },
-  {
-    "title": "투썸플레이스, 아박에 크런치 입혔다…29일 2종 출시",
-    "url": "https://www.kmib.co.kr/article/view.asp?arcid=0029881464&code=61141611&cp=nv",
-    "source": "www.kmib.co.kr",
-    "date": "2026-05-27",
-    "description": "Z세대를 중심으로 유행하는 꾸덕하고 바삭한 식감 트렌드를 반영한 제품이다. 투썸플레이스는 27일 서울... ‘떠먹는 아박’은 1920년대 미국의 아이스박스 케이크를 모티브로 2015년 재해석한 제품이다. 칼과 포크 대신...",
-    "keyword": "미국 Z세대"
-  },
-  {
-    "title": "올여름 '스마트 여행소비' 확산…가성비·근거리·숨은 여행지 뜬다",
-    "url": "https://www.tournews21.com/news/articleView.html?idxno=135672",
-    "source": "www.tournews21.com",
-    "date": "2026-05-27",
-    "description": "사라고사, 미국 테네시주 세비어빌 등은 대표적인 재발견 여행지로 꼽히며, 예약률 증가와 함께 새로운 여행 축으로 부상하고 있다. 에어비앤비 측은 &quot;전체 여행객의 86%와 Z세대의 94%가 소도시 여행에 관심을 보이고...",
-    "keyword": "미국 Z세대"
-  },
-  {
-    "title": "중국 톈진 대해부 시리즈 ③ '트렌드 팔로워'가 집결한 中 톈진 소비시...",
-    "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=241338",
-    "source": "dream.kotra.or.kr",
-    "date": "2026-05-27",
-    "description": "소비 주역의 교체: Z세대, '정서적 소비'로 시장을 바꾼다 최초 톈진 소비자들은 인기 장소로의 집중... 일본 IP가 주로 애니메이션 서사와 세계관 중심의 콘텐츠 기반을 구축하는 것과 달리, 한국 IP는 비교적 가볍고...",
-    "keyword": "일본 Z세대"
-  },
-  {
-    "title": "에너지 위기에 Z세대 분노까지…‘혼돈의 인도’ 모디, 美로 기우나",
-    "url": "https://www.joongang.co.kr/article/25431670",
-    "source": "www.joongang.co.kr",
-    "date": "2026-05-27",
-    "description": "최근 인도 Z세대(1997~2011년생) 사이에선 정부와 기성 정치권을 풍자하는 온라인 단체 ‘바퀴벌레국민당(CJP)... 인도 정부는 26일 미국·인도·일본·호주 안보 협의체 쿼드(Quad) 외교장관 회의에 참석해 “호르무즈해협을...",
-    "keyword": "일본 Z세대"
-  },
-  {
-    "title": "&quot;경계 너머 우리만의 고유함으로&quot;…하입프린세스, 한일 젠지가 그려낼 ...",
-    "url": "https://www.newsis.com/view/NISX20260527_0003644918",
-    "source": "www.newsis.com",
-    "date": "2026-05-27",
-    "description": "한국과 일본의 10대, 20대 '젠지(Gen Z)' 세대가 서로의 문화를 편견 없이 수용하고 열광하는 이 시대에, 하입프린세스는 그 문화적 융합의 최전선에 서서 '힙합'이라는 공용어로 새로운 생태계를 개척하려 한다....",
-    "keyword": "일본 Z세대"
-  },
-  {
-    "title": "온라인 전용 신라면 신제품 내놓은 농심..인도 젊은 소비자 사로잡을까",
-    "url": "http://www.fnnews.com/news/202605261527094560",
-    "source": "www.fnnews.com",
-    "date": "2026-05-27",
-    "description": "농심은 이를 통해 글로벌 음식 경험을 적극적으로 소비하는 인도 Z세대와 밀레니얼 세대를 집중 공략한다는... 그는 이어 &quot;현재 최대 시장은 중국이지만, 향후 5년 내 인도가 가장 빠른 성장 시장이 될 가능성이 크다&quot;고...",
-    "keyword": "중국 Z세대"
-  },
-  {
-    "title": "GPT급 성능에 가격은 75%↓…딥시크 수익성 비밀 '메모리'",
-    "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=669306",
-    "source": "www.digitaltoday.co.kr",
-    "date": "2026-05-27",
-    "description": "중국의 알리바바와 지푸AI(Z.ai) 역시 첨단 모델 무료 공개 흐름에 동참하고 있지만, 이들은 에이전트... 실제로 딥시크-V4-프로는 이전 세대 모델 대비 약 3.7분의 1 수준의 연산량으로 동작하며, 딥시크-V4-플래시는 약 9....",
-    "keyword": "중국 Z세대"
-  },
-  {
-    "title": "[정책의 맥]산업 新르네상스, 기업과 함께 싸워줄 공학교육 전환기",
-    "url": "https://view.asiae.co.kr/article/2026052608214983177",
-    "source": "view.asiae.co.kr",
-    "date": "2026-05-27",
-    "description": "미국과 중국의 기술 패권 경쟁, 공급망의 재편, 고금리 금융 자본 중심의 경제구조 등은 한국 공학의 존립... 공학이 고른 분야에서 신르네상스를 맞이하도록 정부의 각종 대학 지원과 MZ세대(밀레니얼+Z세대)를 위한 대학생...",
-    "keyword": "중국 Z세대"
-  },
-  {
-    "title": "[현장] AI 진화, K뷰티 해외 진출 방식 '검증 후 접근' 전환",
-    "url": "http://www.sisafocus.co.kr/news/articleView.html?idxno=360564",
-    "source": "www.sisafocus.co.kr",
-    "date": "2026-05-27",
-    "description": "인스타그램과 틱톡 등 비주얼 SNS에서는 소비자 주도 콘텐츠가 짧은 시간 안에 확산되고 소진된다. 트렌드... 멀티모달 AI는 텍스트와 해시태그에 한정됐던 분석 범위를 이미지와 영상으로 넓혀 소비자가 보여준 장면까지...",
-    "keyword": "틱톡 해시태그"
-  },
-  {
-    "title": "엔비디아 '007 퍼스트 라이트' 등 최신 게임에 DLSS 적용 확대하고 게이...",
-    "url": "https://gamefocus.co.kr/detail.php?number=176171",
-    "source": "gamefocus.co.kr",
-    "date": "2026-05-27",
-    "description": "(Instagram), 틱톡(TikTok), X, 레딧(Reddit) 등 엔비디아 공식 채널의 ‘007 퍼스트 라이트’ 관련 게시물에 ‘#007FirstLightRTX’ 해시태그와 함께 댓글을 남기면 된다. 당첨자는 행사 대상 국가에서 추첨을 통해...",
-    "keyword": "틱톡 해시태그"
-  },
-  {
-    "title": "데이터와 팬덤, 새로운 셀럽 권력 만들다",
-    "url": "https://www.forbeskorea.co.kr/news/articleView.html?idxno=401952",
-    "source": "www.forbeskorea.co.kr",
-    "date": "2026-05-27",
-    "description": "하지만 유튜브·틱톡·넷플릭스 등 대형 플랫폼 시대가 열리면서 그 권력 구조가 바뀌었다. 오늘날 스타의... 해시태그 캠페인과 X(구 트위터) 트렌드 진입은 단순한 응원을 넘어 미디어 노출과 신규 팬 유입으로 이어지는...",
-    "keyword": "틱톡 해시태그"
   }
 ]
