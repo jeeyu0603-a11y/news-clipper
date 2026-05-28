@@ -7,15 +7,24 @@ from datetime import datetime, timedelta
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
-KEYWORDS = [
-    "Z세대", "MZ세대", "잘파세대", "알파세대", "1020세대", "2030세대",
-    "매출 급증", "청년층", "완판", "품귀현상", "유행", "품절대란",
+# 우선순위 높은 키워드 (상단 노출)
+PRIORITY_KEYWORDS = [
+    "Z세대", "MZ세대", "잘파세대", "알파세대", "1020세대",
+    "2030", "20대", "30대",
+    "완판", "품귀현상", "유행", "품절대란",
     "거래액 증가", "거래액 하락", "트렌드", "유동인구 급증",
-    "매진", "론칭", "미국 Z세대", "일본 Z세대", "중국 Z세대",
-    "틱톡 트렌드", "틱톡 해시태그", "팝업스토어", "숏폼",
+    "매진", "미국 Z세대", "일본 Z세대", "중국 Z세대", "해외 Z세대", "글로벌 Z세대",
+    "틱톡 트렌드", "틱톡 해시태그",
+]
+
+# 우선순위 낮은 키워드 (하단 노출)
+SECONDARY_KEYWORDS = [
+    "팝업스토어", "숏폼", "청년층", "론칭",
     "K-푸드", "K-뷰티", "K-패션", "신제품 출시", "소비 트렌드", "구매 트렌드",
     "오픈 1호점", "코어 트렌드"
 ]
+
+KEYWORDS = PRIORITY_KEYWORDS + SECONDARY_KEYWORDS
 
 EXCLUDE_KEYWORDS = [
     # 정치/사회
@@ -118,7 +127,15 @@ def main():
                 "keyword": keyword
             })
 
-    all_items.sort(key=lambda x: x["date"], reverse=True)
+    priority_items = sorted(
+        [a for a in all_items if a["keyword"] in PRIORITY_KEYWORDS],
+        key=lambda x: x["date"], reverse=True
+    )
+    secondary_items = sorted(
+        [a for a in all_items if a["keyword"] not in PRIORITY_KEYWORDS],
+        key=lambda x: x["date"], reverse=True
+    )
+    all_items = priority_items + secondary_items
 
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
     if os.path.exists(data_path):
