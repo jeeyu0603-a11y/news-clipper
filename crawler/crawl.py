@@ -57,10 +57,11 @@ EXCLUDE_KEYWORDS = [
     "여의도", "민주당", "국민의힘", "정당", "창당", "탄핵", "개헌",
     "의원", "당대표", "장관", "총리", "청와대", "대통령실",
     "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보",
-    # 법/수사
-    "재판", "수사", "검찰", "경찰", "법원", "판결", "기소",
+    # 법/수사/범죄
+    "사건", "사고", "재판", "수사", "검찰", "경찰", "법원", "판결", "기소",
     "구속", "체포", "검거", "고소", "고발", "형사", "소송",
     "처벌", "징역", "벌금", "무죄", "유죄", "항소",
+    "살해", "살인", "폭행", "보복", "강도", "절도", "납치", "방화", "피의자", "범행",
     # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
@@ -86,7 +87,7 @@ STOP_WORDS = {
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
 
-def fetch_news(keyword, display=50):
+def fetch_news(keyword, display=100):
     enc_keyword = urllib.parse.quote(keyword)
     url = f"https://openapi.naver.com/v1/search/news.json?query={enc_keyword}&display={display}&sort=date"
     request = urllib.request.Request(url)
@@ -145,7 +146,7 @@ def main():
     filtered_duplicate = 0
 
     for keyword in KEYWORDS:
-        items = fetch_news(keyword, display=50)
+        items = fetch_news(keyword, display=100)
         for item in items:
             total_raw += 1
             url = item.get("originallink") or item.get("link")
