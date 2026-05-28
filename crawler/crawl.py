@@ -137,30 +137,44 @@ def main():
     seen_urls = set()
     seen_titles = []
 
+    total_raw = 0
+    filtered_domain = 0
+    filtered_exclude = 0
+    filtered_date = 0
+    filtered_keyword_title = 0
+    filtered_duplicate = 0
+
     for keyword in KEYWORDS:
         items = fetch_news(keyword, display=50)
         for item in items:
+            total_raw += 1
             url = item.get("originallink") or item.get("link")
             if url in seen_urls:
+                filtered_duplicate += 1
                 continue
 
             domain = url.split("/")[2] if url else ""
             if not any(allowed in domain for allowed in ALLOWED_DOMAINS):
+                filtered_domain += 1
                 continue
 
             if not is_relevant(item):
+                filtered_exclude += 1
                 continue
 
             pub_date = parse_date(item.get("pubDate", ""))
             if pub_date not in [today, yesterday, day_before, day_before2]:
+                filtered_date += 1
                 continue
 
             title = clean_html(item.get("title", ""))
 
             if keyword not in title:
+                filtered_keyword_title += 1
                 continue
 
             if is_similar_title(title, seen_titles):
+                filtered_duplicate += 1
                 continue
 
             seen_urls.add(url)
@@ -173,6 +187,15 @@ def main():
                 "description": clean_html(item.get("description", "")),
                 "keyword": keyword
             })
+
+    print(f"=== 필터 단계별 결과 ===")
+    print(f"총 수집 시도: {total_raw}개")
+    print(f"도메인 필터 제거: {filtered_domain}개")
+    print(f"제외 키워드 제거: {filtered_exclude}개")
+    print(f"날짜 필터 제거: {filtered_date}개")
+    print(f"키워드-제목 불일치 제거: {filtered_keyword_title}개")
+    print(f"중복 제거: {filtered_duplicate}개")
+    print(f"최종 통과: {len(all_items)}개")
 
     all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
     sorted_items = []
