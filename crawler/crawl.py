@@ -3,7 +3,6 @@ import json
 import urllib.request
 import urllib.parse
 from datetime import datetime, timedelta
-from itertools import groupby
 
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
@@ -19,6 +18,7 @@ KEYWORD_PRIORITY = {
     "완판": 3, "품귀현상": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
+    "인스타그램": 3, "틱톡": 3, "SNS": 3, "패션 트렌드": 3,
     # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
     # 5점
@@ -28,6 +28,7 @@ KEYWORD_PRIORITY = {
 }
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
+TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
 
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
@@ -49,6 +50,7 @@ EXCLUDE_KEYWORDS = [
     "구속", "체포", "검거", "고소", "고발", "형사", "소송",
     "처벌", "징역", "벌금", "무죄", "유죄", "항소",
     "살해", "살인", "폭행", "보복", "강도", "절도", "납치", "방화", "피의자", "범행",
+    "학대", "죽인", "죽이다",
     # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
@@ -66,6 +68,12 @@ EXCLUDE_KEYWORDS = [
     "포착", "커플", "애프터파티",
     # 예능/방송
     "예능", "방영", "편성", "첫방", "송출", "재개", "시즌",
+    # 마케팅/보도자료
+    "선보여", "출시했다", "개최", "MOU", "체결", "업무협약",
+    "증정", "프로모션", "패키지", "선착순", "할인",
+    "기념해", "고객 감사", "오픈 소식",
+    "체험단", "모집", "공식 쇼핑몰", "기획전", "단독 판매",
+    "부사장", "지분", "인수",
 ]
 
 STOP_WORDS = {
@@ -160,10 +168,25 @@ def main():
                 continue
 
             title = clean_html(item.get("title", ""))
+            description = clean_html(item.get("description", ""))
 
-            if keyword not in title:
+            keywords_in_title = [kw for kw in KEYWORD_PRIORITY if kw in title]
+
+            if not keywords_in_title:
                 filtered_keyword_title += 1
                 continue
+
+            tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
+
+            if tier1_in_title:
+                desc_score = sum(1 for kw, v in KEYWORD_PRIORITY.items() if v >= 2 and kw in description)
+                article_score = 3 + desc_score
+            else:
+                desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
+                if desc_score == 0:
+                    filtered_keyword_title += 1
+                    continue
+                article_score = desc_score
 
             if is_similar_title(title, seen_titles):
                 filtered_duplicate += 1
@@ -176,8 +199,9 @@ def main():
                 "url": url,
                 "source": url.split("/")[2] if url else "",
                 "date": pub_date,
-                "description": clean_html(item.get("description", "")),
-                "keyword": keyword
+                "description": description,
+                "keyword": keyword,
+                "score": article_score
             })
 
     print(f"=== 필터 단계별 결과 ===")
@@ -189,11 +213,7 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
-    sorted_items = []
-    for score, group in groupby(all_items_by_score, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99)):
-        sorted_items.extend(sorted(group, key=lambda x: x["date"], reverse=True))
-    all_items = sorted_items
+    all_items.sort(key=lambda x: (-x.get("score", 0), x["date"]))
 
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
     if os.path.exists(data_path):
