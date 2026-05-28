@@ -29,26 +29,12 @@ KEYWORD_PRIORITY = {
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 
 ALLOWED_DOMAINS = [
-    "biz.chosun.com",
-    "hankyung.com",
-    "magazine.hankyung.com",
-    "mk.co.kr",
-    "biz.heraldcorp.com",
-    "mt.co.kr",
-    "edaily.co.kr",
-    "sedaily.com",
-    "asiae.co.kr",
-    "fnnews.com",
-    "yna.co.kr",
-    "newsis.com",
-    "joongang.co.kr",
-    "donga.com",
-    "kmib.co.kr",
-    "insight.co.kr",
-    "dailypop.kr",
-    "apparelnews.co.kr",
-    "zdnet.co.kr",
-    "etnews.com",
+    "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
+    "mk.co.kr", "biz.heraldcorp.com", "mt.co.kr", "edaily.co.kr",
+    "sedaily.com", "asiae.co.kr", "fnnews.com", "yna.co.kr",
+    "newsis.com", "joongang.co.kr", "donga.com", "kmib.co.kr",
+    "insight.co.kr", "dailypop.kr", "apparelnews.co.kr",
+    "zdnet.co.kr", "etnews.com",
 ]
 
 EXCLUDE_KEYWORDS = [
@@ -103,7 +89,10 @@ def fetch_news(keyword, display=100):
 
 def clean_html(text):
     import re
-    return re.sub(r"<[^>]+>", "", text).strip()
+    import html
+    text = re.sub(r"<[^>]+>", "", text)
+    text = html.unescape(text)
+    return text.strip()
 
 def is_relevant(item):
     title = clean_html(item.get("title", ""))
@@ -183,7 +172,7 @@ def main():
             all_items.append({
                 "title": title,
                 "url": url,
-                "source": item.get("originallink", "").split("/")[2] if item.get("originallink") else "",
+                "source": url.split("/")[2] if url else "",
                 "date": pub_date,
                 "description": clean_html(item.get("description", "")),
                 "keyword": keyword
