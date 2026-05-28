@@ -86,7 +86,7 @@ STOP_WORDS = {
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
 
-def fetch_news(keyword, display=10):
+def fetch_news(keyword, display=50):
     enc_keyword = urllib.parse.quote(keyword)
     url = f"https://openapi.naver.com/v1/search/news.json?query={enc_keyword}&display={display}&sort=date"
     request = urllib.request.Request(url)
@@ -138,7 +138,7 @@ def main():
     seen_titles = []
 
     for keyword in KEYWORDS:
-        items = fetch_news(keyword, display=10)
+        items = fetch_news(keyword, display=50)
         for item in items:
             url = item.get("originallink") or item.get("link")
             if url in seen_urls:
