@@ -9,27 +9,45 @@ CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
 KEYWORD_PRIORITY = {
-    "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1,
+    # 1점 - 최우선
+    "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1,
+    # 2점
     "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
-    "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2,
-    "완판": 3, "품귀현상": 3, "유행": 3, "품절대란": 3,
+    "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
+    # 3점
+    "완판": 3, "품귀현상": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
+    "브랜드": 3, "1위": 3,
+    # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
+    # 5점
     "팝업스토어": 5, "숏폼": 5, "청년층": 5, "론칭": 5,
     "K-푸드": 5, "K-뷰티": 5, "K-패션": 5,
-    "신제품 출시": 5, "소비 트렌드": 5, "구매 트렌드": 5,
-    "오픈 1호점": 5, "코어 트렌드": 5,
+    "신제품 출시": 5, "소비 트렌드": 5, "구매 트렌드": 5, "코어": 5,
 }
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 
 EXCLUDE_KEYWORDS = [
-    "정치", "사건", "사고", "수사", "재판", "선거", "국회", "대통령",
-    "판세", "깜깜이", "여론조사", "후보",
+    # 정치
+    "정치", "선거", "국회", "대통령", "대선", "총선", "여당", "야당",
+    "여의도", "민주당", "국민의힘", "정당", "창당", "탄핵", "개헌",
+    "의원", "당대표", "장관", "총리", "청와대", "대통령실",
+    "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보",
+    # 법/수사
+    "재판", "수사", "검찰", "경찰", "법원", "판결", "기소",
+    "구속", "체포", "검거", "고소", "고발", "형사", "소송",
+    "처벌", "징역", "벌금", "무죄", "유죄", "항소",
+    # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
+    # 부동산
+    "분양", "청약", "아파트", "재개발", "재건축", "입주", "전세", "월세", "매매", "부동산", "임대", "LH",
+    # 지자체/행정
     "구청", "민생대책", "점검회의", "지자체", "청렴", "공모전",
-    "분양", "청약", "아파트", "재개발", "재건축", "입주 예정",
+    # 순수 과학
+    "논문", "학술", "임상시험", "우주", "천문", "물리", "화학반응", "유전자", "세포", "분자", "방사선", "지진", "화산",
+    # 개인사
     "임신", "출산", "이혼",
 ]
 
@@ -103,6 +121,9 @@ def main():
 
             title = clean_html(item.get("title", ""))
 
+            if keyword not in title:
+                continue
+
             if is_similar_title(title, seen_titles):
                 continue
 
@@ -117,6 +138,7 @@ def main():
                 "keyword": keyword
             })
 
+    # 점수별 그룹화 후 각 그룹 안에서 날짜 최신순
     all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
     sorted_items = []
     for score, group in groupby(all_items_by_score, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99)):
@@ -130,16 +152,19 @@ def main():
     else:
         existing = []
 
-    existing_urls = {a["url"] for a in existing}
-    new_items = [a for a in all_items if a["url"] not in existing_urls]
-
-    combined = new_items + existing
+    # 조건 통과한 기사 우선, 기존 기사 뒤에 붙이고 URL 중복 제거
+    seen_combined = set()
+    combined = []
+    for item in all_items + existing:
+        if item["url"] not in seen_combined:
+            seen_combined.add(item["url"])
+            combined.append(item)
     combined = combined[:300]
 
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump(combined, f, ensure_ascii=False, indent=2)
 
-    print(f"수집 완료: {len(new_items)}개 신규 기사 추가 (총 {len(combined)}개)")
+    print(f"수집 완료: 오늘 {len(all_items)}개 기사 수집 (총 {len(combined)}개 저장)")
 
 if __name__ == "__main__":
     main()
