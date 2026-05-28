@@ -28,6 +28,29 @@ KEYWORD_PRIORITY = {
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 
+ALLOWED_DOMAINS = [
+    "biz.chosun.com",
+    "hankyung.com",
+    "magazine.hankyung.com",
+    "mk.co.kr",
+    "biz.heraldcorp.com",
+    "mt.co.kr",
+    "edaily.co.kr",
+    "sedaily.com",
+    "asiae.co.kr",
+    "fnnews.com",
+    "yna.co.kr",
+    "newsis.com",
+    "joongang.co.kr",
+    "donga.com",
+    "kmib.co.kr",
+    "insight.co.kr",
+    "dailypop.kr",
+    "apparelnews.co.kr",
+    "zdnet.co.kr",
+    "etnews.com",
+]
+
 EXCLUDE_KEYWORDS = [
     # 정치
     "정치", "선거", "국회", "대통령", "대선", "총선", "여당", "야당",
@@ -49,6 +72,11 @@ EXCLUDE_KEYWORDS = [
     "논문", "학술", "임상시험", "우주", "천문", "물리", "화학반응", "유전자", "세포", "분자", "방사선", "지진", "화산",
     # 개인사
     "임신", "출산", "이혼",
+    # 연예/엔터
+    "컴백", "차트", "뮤직비디오", "음원", "앨범", "팬미팅", "콘서트", "배우", "캐스팅", "출연",
+    "주인공", "주연", "조연", "맹활약", "열연", "극중", "촬영",
+    # 예능/방송
+    "예능", "방영", "편성", "첫방", "송출", "재개", "시즌",
 ]
 
 STOP_WORDS = {
@@ -113,8 +141,14 @@ def main():
             url = item.get("originallink") or item.get("link")
             if url in seen_urls:
                 continue
+
+            domain = url.split("/")[2] if url else ""
+            if not any(allowed in domain for allowed in ALLOWED_DOMAINS):
+                continue
+
             if not is_relevant(item):
                 continue
+
             pub_date = parse_date(item.get("pubDate", ""))
             if pub_date not in [today, yesterday]:
                 continue
@@ -138,7 +172,6 @@ def main():
                 "keyword": keyword
             })
 
-    # 점수별 그룹화 후 각 그룹 안에서 날짜 최신순
     all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
     sorted_items = []
     for score, group in groupby(all_items_by_score, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99)):
@@ -152,7 +185,6 @@ def main():
     else:
         existing = []
 
-    # 조건 통과한 기사 우선, 기존 기사 뒤에 붙이고 URL 중복 제거
     seen_combined = set()
     combined = []
     for item in all_items + existing:
