@@ -3,28 +3,31 @@ import json
 import urllib.request
 import urllib.parse
 from datetime import datetime, timedelta
+from itertools import groupby
 
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
-# 우선순위 높은 키워드 (상단 노출)
-PRIORITY_KEYWORDS = [
-    "Z세대", "MZ세대", "잘파세대", "알파세대", "1020세대",
-    "2030", "20대", "30대",
-    "완판", "품귀현상", "유행", "품절대란",
-    "거래액 증가", "거래액 하락", "트렌드", "유동인구 급증",
-    "매진", "미국 Z세대", "일본 Z세대", "중국 Z세대", "해외 Z세대", "글로벌 Z세대",
-    "틱톡 트렌드", "틱톡 해시태그",
-]
+# 키워드별 우선순위 점수 (낮을수록 상단)
+KEYWORD_PRIORITY = {
+    # 1점 - 최우선
+    "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1,
+    # 2점
+    "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
+    "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2,
+    # 3점
+    "완판": 3, "품귀현상": 3, "유행": 3, "품절대란": 3,
+    "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
+    # 4점
+    "2030세대": 4, "20대": 4, "30대": 4,
+    # 5점
+    "팝업스토어": 5, "숏폼": 5, "청년층": 5, "론칭": 5,
+    "K-푸드": 5, "K-뷰티": 5, "K-패션": 5,
+    "신제품 출시": 5, "소비 트렌드": 5, "구매 트렌드": 5,
+    "오픈 1호점": 5, "코어 트렌드": 5,
+}
 
-# 우선순위 낮은 키워드 (하단 노출)
-SECONDARY_KEYWORDS = [
-    "팝업스토어", "숏폼", "청년층", "론칭",
-    "K-푸드", "K-뷰티", "K-패션", "신제품 출시", "소비 트렌드", "구매 트렌드",
-    "오픈 1호점", "코어 트렌드"
-]
-
-KEYWORDS = PRIORITY_KEYWORDS + SECONDARY_KEYWORDS
+KEYWORDS = list(KEYWORD_PRIORITY.keys())
 
 EXCLUDE_KEYWORDS = [
     # 정치/사회
@@ -127,15 +130,12 @@ def main():
                 "keyword": keyword
             })
 
-    priority_items = sorted(
-        [a for a in all_items if a["keyword"] in PRIORITY_KEYWORDS],
-        key=lambda x: x["date"], reverse=True
-    )
-    secondary_items = sorted(
-        [a for a in all_items if a["keyword"] not in PRIORITY_KEYWORDS],
-        key=lambda x: x["date"], reverse=True
-    )
-    all_items = priority_items + secondary_items
+    # 점수별로 그룹화 후 각 그룹 안에서 날짜 최신순
+    all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
+    sorted_items = []
+    for score, group in groupby(all_items_by_score, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99)):
+        sorted_items.extend(sorted(group, key=lambda x: x["date"], reverse=True))
+    all_items = sorted_items
 
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
     if os.path.exists(data_path):
