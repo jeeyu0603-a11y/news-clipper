@@ -111,10 +111,14 @@ def is_relevant(item):
             return False
     return True
 
-def is_similar_title(new_title, existing_titles, threshold=3):
-    new_words = set(new_title.split()) - STOP_WORDS
+def normalize_title(text):
+    import re
+    return re.sub(r'[^\w\s]', ' ', text)
+
+def is_similar_title(new_title, existing_titles, threshold=2):
+    new_words = set(normalize_title(new_title).split()) - STOP_WORDS
     for existing_title in existing_titles:
-        existing_words = set(existing_title.split()) - STOP_WORDS
+        existing_words = set(normalize_title(existing_title).split()) - STOP_WORDS
         common = new_words & existing_words
         if len(common) >= threshold:
             return True
