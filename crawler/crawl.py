@@ -130,6 +130,8 @@ def parse_date(pub_date_str):
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    day_before = (datetime.now() - timedelta(days=2)).strftime("%Y-%m-%d")
+    day_before2 = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%d")
 
     all_items = []
     seen_urls = set()
@@ -150,7 +152,7 @@ def main():
                 continue
 
             pub_date = parse_date(item.get("pubDate", ""))
-            if pub_date not in [today, yesterday]:
+            if pub_date not in [today, yesterday, day_before, day_before2]:
                 continue
 
             title = clean_html(item.get("title", ""))
