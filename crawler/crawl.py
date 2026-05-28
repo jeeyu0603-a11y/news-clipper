@@ -8,19 +8,13 @@ from itertools import groupby
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
-# 키워드별 우선순위 점수 (낮을수록 상단)
 KEYWORD_PRIORITY = {
-    # 1점 - 최우선
     "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1,
-    # 2점
     "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2,
-    # 3점
     "완판": 3, "품귀현상": 3, "유행": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
-    # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
-    # 5점
     "팝업스토어": 5, "숏폼": 5, "청년층": 5, "론칭": 5,
     "K-푸드": 5, "K-뷰티": 5, "K-패션": 5,
     "신제품 출시": 5, "소비 트렌드": 5, "구매 트렌드": 5,
@@ -30,17 +24,12 @@ KEYWORD_PRIORITY = {
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 
 EXCLUDE_KEYWORDS = [
-    # 정치/사회
-    "정치", "정책", "사건", "사고", "수사", "재판", "선거", "국회", "대통령",
+    "정치", "사건", "사고", "수사", "재판", "선거", "국회", "대통령",
     "판세", "깜깜이", "여론조사", "후보",
-    # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
-    # 지자체/행정
-    "시청", "구청", "민생대책", "점검회의", "지자체", "청렴", "공모전",
-    # 부동산
+    "구청", "민생대책", "점검회의", "지자체", "청렴", "공모전",
     "분양", "청약", "아파트", "재개발", "재건축", "입주 예정",
-    # 개인사
     "임신", "출산", "이혼",
 ]
 
@@ -71,10 +60,8 @@ def clean_html(text):
 
 def is_relevant(item):
     title = clean_html(item.get("title", ""))
-    description = clean_html(item.get("description", ""))
-    text = title + " " + description
     for word in EXCLUDE_KEYWORDS:
-        if word in text:
+        if word in title:
             return False
     return True
 
@@ -130,7 +117,6 @@ def main():
                 "keyword": keyword
             })
 
-    # 점수별로 그룹화 후 각 그룹 안에서 날짜 최신순
     all_items_by_score = sorted(all_items, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99))
     sorted_items = []
     for score, group in groupby(all_items_by_score, key=lambda x: KEYWORD_PRIORITY.get(x["keyword"], 99)):
