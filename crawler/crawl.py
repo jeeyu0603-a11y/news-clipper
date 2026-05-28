@@ -17,7 +17,27 @@ KEYWORDS = [
     "오픈 1호점", "코어 트렌드"
 ]
 
-EXCLUDE_KEYWORDS = ["정치", "사건", "사고", "수사", "재판", "선거", "국회", "대통령"]
+EXCLUDE_KEYWORDS = [
+    # 정치/사회
+    "정치", "정책", "사건", "사고", "수사", "재판", "선거", "국회", "대통령",
+    "판세", "깜깜이", "여론조사", "후보",
+    # 금융/주식
+    "ETF", "레버리지", "코스피", "코스닥",
+    "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
+    # 지자체/행정
+    "시청", "구청", "민생대책", "점검회의", "지자체", "청렴", "공모전",
+    # 부동산
+    "분양", "청약", "아파트", "재개발", "재건축", "입주 예정",
+    # 개인사
+    "임신", "출산", "이혼",
+]
+
+STOP_WORDS = {
+    '및', '와', '과', '이', '가', '을', '를', '은', '는', '의', '에', '로', '으로',
+    '하는', '하고', '하며', '통해', '위해', '대한', '관련', '등', '도', '도록',
+    '위한', '따른', '한', '된', '되는', '있는', '있다', '있어', '통한', '에서',
+    '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
+}
 
 def fetch_news(keyword, display=10):
     enc_keyword = urllib.parse.quote(keyword)
@@ -39,10 +59,21 @@ def clean_html(text):
 
 def is_relevant(item):
     title = clean_html(item.get("title", ""))
+    description = clean_html(item.get("description", ""))
+    text = title + " " + description
     for word in EXCLUDE_KEYWORDS:
-        if word in title:
+        if word in text:
             return False
     return True
+
+def is_similar_title(new_title, existing_titles, threshold=3):
+    new_words = set(new_title.split()) - STOP_WORDS
+    for existing_title in existing_titles:
+        existing_words = set(existing_title.split()) - STOP_WORDS
+        common = new_words & existing_words
+        if len(common) >= threshold:
+            return True
+    return False
 
 def parse_date(pub_date_str):
     try:
@@ -57,6 +88,7 @@ def main():
 
     all_items = []
     seen_urls = set()
+    seen_titles = []
 
     for keyword in KEYWORDS:
         items = fetch_news(keyword, display=10)
@@ -69,9 +101,16 @@ def main():
             pub_date = parse_date(item.get("pubDate", ""))
             if pub_date not in [today, yesterday]:
                 continue
+
+            title = clean_html(item.get("title", ""))
+
+            if is_similar_title(title, seen_titles):
+                continue
+
             seen_urls.add(url)
+            seen_titles.append(title)
             all_items.append({
-                "title": clean_html(item.get("title", "")),
+                "title": title,
                 "url": url,
                 "source": item.get("originallink", "").split("/")[2] if item.get("originallink") else "",
                 "date": pub_date,
