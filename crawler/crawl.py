@@ -2,7 +2,7 @@ import os
 import json
 import urllib.request
 import urllib.parse
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
@@ -15,7 +15,7 @@ KEYWORD_PRIORITY = {
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
     "열풍": 2, "핫플": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
     # 3점
-    "품절": 3, "완판": 3, "품귀현상": 3, "품절대란": 3,
+    "완판": 3, "품귀현상": 3, "품절대란": 3, "품절": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
     "인스타그램": 3, "틱톡": 3, "SNS": 3, "패션 트렌드": 3,
@@ -130,13 +130,16 @@ def parse_date(pub_date_str):
         dt = datetime.strptime(pub_date_str, "%a, %d %b %Y %H:%M:%S +0900")
         return dt.strftime("%Y-%m-%d")
     except:
-        return datetime.now().strftime("%Y-%m-%d")
+        KST = timezone(timedelta(hours=9))
+        return datetime.now(KST).strftime("%Y-%m-%d")
 
 def main():
-    today = datetime.now().strftime("%Y-%m-%d")
-    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    day_before = (datetime.now() - timedelta(days=2)).strftime("%Y-%m-%d")
-    day_before2 = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%d")
+    KST = timezone(timedelta(hours=9))
+    now = datetime.now(KST)
+    today = now.strftime("%Y-%m-%d")
+    yesterday = (now - timedelta(days=1)).strftime("%Y-%m-%d")
+    day_before = (now - timedelta(days=2)).strftime("%Y-%m-%d")
+    day_before2 = (now - timedelta(days=3)).strftime("%Y-%m-%d")
 
     all_items = []
     seen_urls = set()
