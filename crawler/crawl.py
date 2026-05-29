@@ -24,6 +24,7 @@ KEYWORD_PRIORITY = {
     "완판": 3, "품귀현상": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
+    "틱톡": 3, "인스타그램": 3, "SNS": 3,
     # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
     # 5점
@@ -101,7 +102,7 @@ EXCLUDE_KEYWORDS = [
     "부사장", "지분", "인수",
     # 기타
     "종영", "중고차", "창호", "시공", "적립", "소비자추천", "연속 선정",
-    "장애인", "폭로", "재입고", "세일",
+    "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을",
 ]
 
 # 제목 유사도 중복 제거용 불용어
@@ -206,14 +207,14 @@ def main():
             title = clean_html(item.get("title", ""))
             description = clean_html(item.get("description", ""))
 
-            # 제목에 실제로 있는 키워드 찾기 (검색 키워드 아님)
+            # 제목에 실제로 있는 키워드 찾기
             keywords_in_title = [kw for kw in KEYWORD_PRIORITY if kw in title]
 
             if not keywords_in_title:
                 filtered_keyword_title += 1
                 continue
 
-            # "앱" 단독 제목은 제외 (다른 키워드도 함께 있어야 통과)
+            # "앱" 단독 제목은 제외
             if all(kw in STRICT_KEYWORDS for kw in keywords_in_title):
                 filtered_keyword_title += 1
                 continue
@@ -221,22 +222,16 @@ def main():
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
 
             if tier1_in_title:
-                # Case 1: 1순위 키워드 제목에 있음 → 기본 3점
                 base_score = 3
             else:
-                # Case 2: 2~5순위 키워드만 제목에 있음 → 기본 0점
                 base_score = 0
 
-            # 제목의 추가 키워드 점수 (첫 키워드 제외하고 나머지 +1씩)
             first_keyword = keywords_in_title[0]
             title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
-
-            # 요약의 키워드 점수 (제목 키워드 제외 +1씩)
             desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
 
             article_score = base_score + title_bonus + desc_score
 
-            # 0점이면 제외
             if article_score == 0:
                 filtered_keyword_title += 1
                 continue
@@ -266,9 +261,7 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    # 1차: 점수 높은 순 정렬
     all_items.sort(key=lambda x: -x.get("score", 0))
-    # 2차: 날짜 최신순 정렬 (stable sort - 같은 날짜 안에서 점수 순 유지)
     all_items.sort(key=lambda x: x["date"], reverse=True)
 
     combined = all_items[:300]
