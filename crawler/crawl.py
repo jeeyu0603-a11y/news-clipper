@@ -7,25 +7,23 @@ from datetime import datetime, timedelta, timezone
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
+# 키워드별 우선순위 점수 (낮을수록 상단)
 KEYWORD_PRIORITY = {
     # 1점 - 최우선
     "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1,
-       # 2점
+    # 2점
     "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
-    "日 Z세대": 2, "日本 Z세대": 2, "中 Z세대": 2, "中國 Z세대": 2, "美 Z세대": 2,
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
-    "열풍": 2, "핫플": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
+    "열풍": 2, "핫플": 2, "오픈런": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
     "대학생": 2, "대학교": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
     "다이소": 2, "올리브영": 2, "무신사": 2, "올다무": 2, "올다아무": 2, "방한 외국인": 2,
     "트렌드 리포트": 2,
     "앱스토어": 2, "검색어": 2, "급상승 검색어": 2, "구글 트렌드": 2, "직장인": 2,
     "앱": 2,
     # 3점
-    "완판": 3, "품귀현상": 3, "품절대란": 3, "품절": 3,
+    "완판": 3, "품귀현상": 3, "품절대란": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
-    "인스타그램": 3, "틱톡": 3, "SNS": 3, "패션 트렌드": 3,
-    "시니어 트렌드": 3, "검색량 증가": 3, "여행 트렌드": 3,
     # 4점
     "2030세대": 4, "20대": 4, "30대": 4,
     # 5점
@@ -36,15 +34,34 @@ KEYWORD_PRIORITY = {
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
-STRICT_KEYWORDS = ["앱"]  # 단독으로는 통과 불가, 다른 키워드와 함께 있어야 통과
+STRICT_KEYWORDS = ["앱"]
 
+# 허용 미디어 도메인 (여기 없는 출처는 수집 안 함)
 ALLOWED_DOMAINS = [
-    "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
-    "mk.co.kr", "biz.heraldcorp.com", "mt.co.kr", "edaily.co.kr",
-    "sedaily.com", "asiae.co.kr", "fnnews.com", "yna.co.kr",
-    "newsis.com", "joongang.co.kr", "donga.com", "kmib.co.kr",
-    "insight.co.kr", "dailypop.kr", "apparelnews.co.kr",
-    "zdnet.co.kr", "etnews.com",
+    # 경제/비즈니스
+    "biz.chosun.com",       # 조선비즈
+    "hankyung.com",          # 한국경제 / 한경
+    "magazine.hankyung.com", # 한경비즈니스
+    "mk.co.kr",              # 매일경제
+    "biz.heraldcorp.com",    # 헤럴드경제
+    "mt.co.kr",              # 머니투데이
+    "edaily.co.kr",          # 이데일리
+    "sedaily.com",           # 서울경제
+    "asiae.co.kr",           # 아시아경제
+    "fnnews.com",            # 파이낸셜뉴스
+    # 종합
+    "yna.co.kr",             # 연합뉴스
+    "newsis.com",            # 뉴시스
+    "joongang.co.kr",        # 중앙일보
+    "donga.com",             # 동아일보
+    "kmib.co.kr",            # 국민일보
+    "insight.co.kr",         # 인사이트
+    # 유통/소비
+    "dailypop.kr",           # 데일리팝
+    "apparelnews.co.kr",     # 어패럴뉴스
+    # IT/디지털
+    "zdnet.co.kr",           # 지디넷
+    "etnews.com",            # 전자신문
 ]
 
 EXCLUDE_KEYWORDS = [
@@ -52,7 +69,7 @@ EXCLUDE_KEYWORDS = [
     "정치", "선거", "국회", "대통령", "대선", "총선", "여당", "야당",
     "여의도", "민주당", "국민의힘", "정당", "창당", "탄핵", "개헌",
     "의원", "당대표", "장관", "총리", "청와대", "대통령실",
-    "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보", "접전",
+    "공천", "출마", "당선", "판세", "깜깜이", "여론조사", "후보",
     # 법/수사/범죄
     "사건", "사고", "재판", "수사", "검찰", "경찰", "법원", "판결", "기소",
     "구속", "체포", "검거", "고소", "고발", "형사", "소송",
@@ -84,8 +101,10 @@ EXCLUDE_KEYWORDS = [
     "부사장", "지분", "인수",
     # 기타
     "종영", "중고차", "창호", "시공", "적립", "소비자추천", "연속 선정",
+    "장애인", "폭로", "재입고", "세일",
 ]
 
+# 제목 유사도 중복 제거용 불용어
 STOP_WORDS = {
     '및', '와', '과', '이', '가', '을', '를', '은', '는', '의', '에', '로', '으로',
     '하는', '하고', '하며', '통해', '위해', '대한', '관련', '등', '도', '도록',
@@ -93,7 +112,7 @@ STOP_WORDS = {
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
 
-def fetch_news(keyword, display=100):
+def fetch_news(keyword, display=10):
     enc_keyword = urllib.parse.quote(keyword)
     url = f"https://openapi.naver.com/v1/search/news.json?query={enc_keyword}&display={display}&sort=date"
     request = urllib.request.Request(url)
@@ -139,8 +158,7 @@ def parse_date(pub_date_str):
         dt = datetime.strptime(pub_date_str, "%a, %d %b %Y %H:%M:%S +0900")
         return dt.strftime("%Y-%m-%d")
     except:
-        KST = timezone(timedelta(hours=9))
-        return datetime.now(KST).strftime("%Y-%m-%d")
+        return datetime.now().strftime("%Y-%m-%d")
 
 def main():
     KST = timezone(timedelta(hours=9))
@@ -170,6 +188,7 @@ def main():
                 filtered_duplicate += 1
                 continue
 
+            # 허용 도메인 체크
             domain = url.split("/")[2] if url else ""
             if not any(allowed in domain for allowed in ALLOWED_DOMAINS):
                 filtered_domain += 1
@@ -187,26 +206,37 @@ def main():
             title = clean_html(item.get("title", ""))
             description = clean_html(item.get("description", ""))
 
+            # 제목에 실제로 있는 키워드 찾기 (검색 키워드 아님)
             keywords_in_title = [kw for kw in KEYWORD_PRIORITY if kw in title]
 
             if not keywords_in_title:
                 filtered_keyword_title += 1
                 continue
 
-            # STRICT_KEYWORDS 단독 제목은 제외
+            # "앱" 단독 제목은 제외 (다른 키워드도 함께 있어야 통과)
             if all(kw in STRICT_KEYWORDS for kw in keywords_in_title):
                 filtered_keyword_title += 1
                 continue
 
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
-            base_score = 3 if tier1_in_title else 0
 
+            if tier1_in_title:
+                # Case 1: 1순위 키워드 제목에 있음 → 기본 3점
+                base_score = 3
+            else:
+                # Case 2: 2~5순위 키워드만 제목에 있음 → 기본 0점
+                base_score = 0
+
+            # 제목의 추가 키워드 점수 (첫 키워드 제외하고 나머지 +1씩)
             first_keyword = keywords_in_title[0]
             title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
+
+            # 요약의 키워드 점수 (제목 키워드 제외 +1씩)
             desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
 
             article_score = base_score + title_bonus + desc_score
 
+            # 0점이면 제외
             if article_score == 0:
                 filtered_keyword_title += 1
                 continue
@@ -236,8 +266,9 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    # 최신 날짜 우선 → 같은 날짜 안에서 점수 높은 순
+    # 1차: 점수 높은 순 정렬
     all_items.sort(key=lambda x: -x.get("score", 0))
+    # 2차: 날짜 최신순 정렬 (stable sort - 같은 날짜 안에서 점수 순 유지)
     all_items.sort(key=lambda x: x["date"], reverse=True)
 
     combined = all_items[:300]
