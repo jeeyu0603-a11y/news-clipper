@@ -6,35 +6,70 @@
   <title>캐릿 뉴스 클리핑</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
       background: #f5f5f7;
       color: #1d1d1f;
       min-height: 100vh;
     }
+
     header {
       background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 20px 40px;
+      border-bottom: 1px solid #ebebeb;
+      padding: 0 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 10;
+      height: 60px;
     }
-    header h1 { font-size: 18px; font-weight: 700; color: #111; }
-    .container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+
+    .header-left {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: -0.3px;
+    }
+
+    header .header-sub {
+      font-size: 12px;
+      color: #bbb;
+      font-weight: 400;
+    }
+
+    header span {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
     .date-section { margin-bottom: 40px; }
+
     .date-label {
       font-size: 13px;
       font-weight: 600;
       color: #888;
       letter-spacing: 0.05em;
+      text-transform: uppercase;
       margin-bottom: 12px;
       padding-bottom: 8px;
       border-bottom: 1px solid #e0e0e0;
     }
+
     .sort-bar {
       display: flex;
       gap: 16px;
@@ -51,6 +86,7 @@
       font-weight: 600;
       border-bottom: 2px solid #1d1d1f;
     }
+
     .article-item {
       display: flex;
       align-items: flex-start;
@@ -63,8 +99,14 @@
       transition: background 0.15s;
       border: 2px solid transparent;
     }
+
     .article-item:hover { background: #f9f9f9; }
-    .article-item.selected { border-color: #007aff; background: #f0f6ff; }
+
+    .article-item.selected {
+      border-color: #007aff;
+      background: #f0f6ff;
+    }
+
     .article-item input[type="checkbox"] {
       margin-top: 2px;
       width: 18px;
@@ -73,7 +115,9 @@
       accent-color: #007aff;
       flex-shrink: 0;
     }
+
     .article-content { flex: 1; }
+
     .article-title {
       font-size: 15px;
       font-weight: 500;
@@ -81,7 +125,9 @@
       color: #1d1d1f;
       text-decoration: none;
     }
+
     .article-title:hover { color: #007aff; }
+
     .article-meta {
       margin-top: 5px;
       font-size: 12px;
@@ -89,6 +135,7 @@
       display: flex;
       gap: 10px;
     }
+
     .keyword-tag {
       background: #f0f0f5;
       color: #666;
@@ -96,6 +143,7 @@
       border-radius: 4px;
       font-size: 11px;
     }
+
     .bottom-bar {
       position: fixed;
       bottom: 0; left: 0; right: 0;
@@ -106,8 +154,10 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .selected-count { font-size: 14px; color: #555; }
     .selected-count strong { color: #007aff; }
+
     .copy-btn {
       background: #007aff;
       color: #fff;
@@ -121,6 +171,7 @@
     }
     .copy-btn:hover { background: #0066dd; }
     .copy-btn:disabled { background: #ccc; cursor: not-allowed; }
+
     .empty-state {
       text-align: center;
       padding: 60px 20px;
@@ -128,6 +179,7 @@
       font-size: 15px;
       line-height: 2;
     }
+
     .toast {
       position: fixed;
       top: 80px;
@@ -144,14 +196,22 @@
       pointer-events: none;
     }
     .toast.show { opacity: 1; }
-    .warning { font-size: 12px; color: #ff6b35; margin-top: 4px; }
+
+    .warning {
+      font-size: 12px;
+      color: #ff6b35;
+      margin-top: 4px;
+    }
+
     pb { padding-bottom: 80px; display: block; }
+
     .loading {
       text-align: center;
       padding: 60px 20px;
       color: #888;
       font-size: 15px;
     }
+
     .spinner {
       width: 36px;
       height: 36px;
@@ -161,30 +221,35 @@
       animation: spin 0.8s linear infinite;
       margin: 0 auto 16px;
     }
+
     @keyframes spin { to { transform: rotate(360deg); } }
+
     .update-btn {
-      background: #34c759;
-      color: #fff;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 600;
+      background: transparent;
+      color: #555;
+      border: 1px solid #ddd;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
       cursor: pointer;
-      transition: background 0.15s;
+      transition: all 0.15s;
     }
-    .update-btn:hover { background: #28a745; }
-    .update-btn:disabled { background: #aaa; cursor: not-allowed; }
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
-    .update-status { font-size: 11px; color: #888; }
+    .update-btn:hover { border-color: #999; color: #111; background: #fafafa; }
+    .update-btn:disabled { color: #bbb; border-color: #eee; cursor: not-allowed; }
+    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+    .update-status { font-size: 11px; color: #bbb; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>📋 캐릿 뉴스 클리핑</h1>
+  <div class="header-left">
+    <h1>캐릿 뉴스 클리핑</h1>
+    <span class="header-sub">Z세대 트렌드 · 마케팅 · 소비</span>
+  </div>
   <div class="header-right">
-    <button class="update-btn" id="update-btn" onclick="triggerUpdate()">🔄 지금 업데이트</button>
+    <button class="update-btn" id="update-btn" onclick="triggerUpdate()">업데이트</button>
     <span class="update-status" id="update-status"></span>
   </div>
 </header>
@@ -213,13 +278,7 @@
 <script>
   let articles = [];
   let selected = new Set();
-  let sortMode = 'score'; // 기본: 관련도순
-
-  function setSort(mode) {
-    sortMode = mode;
-    selected = new Set();
-    render();
-  }
+  let sortMode = 'score';
 
   async function loadArticles() {
     try {
@@ -228,7 +287,7 @@
       render();
     } catch (e) {
       document.getElementById('app').innerHTML =
-        '<div class="empty-state">기사를 불러올 수 없어요.<br>업데이트 버튼을 눌러주세요.</div>';
+        '<div class="empty-state">기사를 불러올 수 없어요.<br>크롤러가 아직 실행되지 않았거나 데이터가 없어요.</div>';
     }
   }
 
@@ -243,44 +302,49 @@
     return fmt(d);
   }
 
-  function render() {
-    if (!articles.length) {
-      document.getElementById('app').innerHTML =
-        '<div class="empty-state">수집된 기사가 없어요.<br>업데이트 버튼을 눌러주세요.</div>';
-      return;
-    }
-
-    const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
-    document.getElementById('update-status').textContent = `마지막 업데이트: ${dates[0] || ''}`;
-
-    // 정렬
-    let sorted = [...articles];
+  function getSortedArticles() {
+    const arr = [...articles];
     if (sortMode === 'score') {
-      // 관련도순: 점수 높은 순
-      sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
+      arr.sort((a, b) => (b.score || 0) - (a.score || 0));
     } else {
-      // 최신순: 날짜 먼저, 같은 날짜 안에서 점수순
-      sorted.sort((a, b) => {
+      arr.sort((a, b) => {
         if (b.date !== a.date) return b.date.localeCompare(a.date);
         return (b.score || 0) - (a.score || 0);
       });
     }
+    return arr.slice(0, 50);
+  }
 
-    const top50 = sorted.slice(0, 50);
+  function render() {
+    if (!articles.length) {
+      document.getElementById('app').innerHTML =
+        '<div class="empty-state">수집된 기사가 없어요.<br>GitHub Actions를 실행하면 매일 자동으로 채워집니다.</div>';
+      return;
+    }
 
-    let html = `<div class="date-section">`;
-    html += `<div class="sort-bar">
-      <span class="sort-option ${sortMode === 'score' ? 'active' : ''}" onclick="setSort('score')">관련도순</span>
-      <span class="sort-option ${sortMode === 'date' ? 'active' : ''}" onclick="setSort('date')">최신순</span>
-    </div>`;
-    html += `<div class="date-label">TOP ${top50.length}개</div>`;
+    const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
+    const statusEl = document.getElementById('update-status');
+    if (statusEl && !statusEl.textContent) {
+      statusEl.textContent = `마지막 업데이트: ${dates[0] || ''}`;
+    }
+
+    const top50 = getSortedArticles();
+
+    let html = `
+      <div class="sort-bar">
+        <span class="sort-option ${sortMode === 'score' ? 'active' : ''}" onclick="setSort('score')">관련도순</span>
+        <span class="sort-option ${sortMode === 'date' ? 'active' : ''}" onclick="setSort('date')">최신순</span>
+      </div>
+      <div class="date-section">
+        <div class="date-label">TOP ${top50.length}개</div>`;
 
     for (let i = 0; i < top50.length; i++) {
       const a = top50[i];
       const id = `top-${i}`;
+      const globalIdx = articles.indexOf(a);
       html += `
-        <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${i})">
-          <input type="checkbox" id="cb-${id}" onclick="event.stopPropagation(); toggleSelect('${id}', ${i})">
+        <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${globalIdx})">
+          <input type="checkbox" id="cb-${id}" onclick="event.stopPropagation(); toggleSelect('${id}', ${globalIdx})">
           <div class="article-content">
             <a class="article-title" href="${a.url}" target="_blank" onclick="event.stopPropagation()">${a.title}</a>
             <div class="article-meta">
@@ -293,6 +357,13 @@
     }
     html += `</div>`;
     document.getElementById('app').innerHTML = html;
+  }
+
+  function setSort(mode) {
+    sortMode = mode;
+    selected.clear();
+    updateBar();
+    render();
   }
 
   function toggleSelect(id, idx) {
@@ -319,18 +390,7 @@
   }
 
   function copyPrompt() {
-    const items = [...selected].map(idx => {
-      const sorted = [...articles];
-      if (sortMode === 'score') {
-        sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
-      } else {
-        sorted.sort((a, b) => {
-          if (b.date !== a.date) return b.date.localeCompare(a.date);
-          return (b.score || 0) - (a.score || 0);
-        });
-      }
-      return sorted[parseInt(idx)];
-    }).filter(Boolean);
+    const items = [...selected].map(idx => articles[parseInt(idx)]).filter(Boolean);
     if (!items.length) return;
 
     const articleList = items.map((a, i) =>
@@ -384,14 +444,13 @@ ${articleList}`;
     const prevFirstUrl = articles[0]?.url || null;
 
     btn.disabled = true;
-    btn.textContent = '업데이트 중...';
-    status.textContent = '수집 시작...';
+    btn.textContent = '수집 중...';
+    status.textContent = '';
 
     document.getElementById('app').innerHTML = `
       <div class="loading">
         <div class="spinner"></div>
-        뉴스를 수집하고 있어요...<br>
-        <span style="font-size:13px;color:#aaa;margin-top:8px;display:block">약 3~5분 소요됩니다</span>
+        뉴스를 수집하고 있어요...
       </div>`;
 
     try {
@@ -412,7 +471,7 @@ ${articleList}`;
         localStorage.removeItem('gh_token');
         alert('토큰이 유효하지 않아요. 다시 입력해주세요.');
         btn.disabled = false;
-        btn.textContent = '🔄 지금 업데이트';
+        btn.textContent = '업데이트';
         loadArticles();
         return;
       }
@@ -422,7 +481,7 @@ ${articleList}`;
     } catch (e) {
       status.textContent = '오류 발생. 다시 시도해주세요.';
       btn.disabled = false;
-      btn.textContent = '🔄 지금 업데이트';
+      btn.textContent = '업데이트';
       loadArticles();
     }
   }
@@ -435,10 +494,8 @@ ${articleList}`;
 
     const interval = setInterval(async () => {
       attempts++;
-      const totalSec = attempts * 10;
-      const min = Math.floor(totalSec / 60);
-      const sec = totalSec % 60;
-      const elapsed = min > 0 ? `${min}분 ${sec}초` : `${sec}초`;
+      const elapsed = Math.floor(attempts * 10 / 60);
+      const sec = (attempts * 10) % 60;
 
       try {
         if (!workflowDone) {
@@ -451,9 +508,9 @@ ${articleList}`;
 
           if (run && run.status === 'completed') {
             workflowDone = true;
-            status.textContent = `수집 완료, 페이지 반영 중... (${elapsed})`;
+            status.textContent = `수집 완료, 페이지 반영 중...`;
           } else {
-            status.textContent = `뉴스 수집 중... (${elapsed})`;
+            status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
           }
         }
 
@@ -465,20 +522,20 @@ ${articleList}`;
           if (newFirstUrl !== prevFirstUrl && newArticles.length > 0) {
             clearInterval(interval);
             articles = newArticles;
-            status.textContent = `마지막 업데이트: ${new Date().toLocaleString('ko-KR')}`;
+            status.textContent = `마지막 업데이트: ${new Date().toLocaleTimeString('ko-KR')}`;
             btn.disabled = false;
-            btn.textContent = '🔄 지금 업데이트';
+            btn.textContent = '업데이트';
             render();
             return;
           }
-          status.textContent = `페이지 반영 중... (${elapsed})`;
+          status.textContent = `페이지 반영 중... (${elapsed}분 ${sec}초)`;
         }
 
         if (attempts > 30) {
           clearInterval(interval);
           status.textContent = '시간 초과. 새로고침 해주세요.';
           btn.disabled = false;
-          btn.textContent = '🔄 지금 업데이트';
+          btn.textContent = '업데이트';
           loadArticles();
         }
       } catch (e) {
