@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>캐릿 뉴스 클리핑</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -43,12 +43,12 @@
     }
 
     .header-title {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 14px;
       color: #555;
-      font-weight: 300;
-      letter-spacing: 0.12em;
-      text-transform: lowercase;
+      font-weight: 400;
+      letter-spacing: 0.02em;
     }
 
     .container {
@@ -533,6 +533,7 @@
   async function pollWorkflow(token, prevFirstUrl) {
     const btn = document.getElementById('update-btn');
     const status = document.getElementById('update-status');
+    const startTime = new Date();
     let attempts = 0;
     let workflowDone = false;
 
@@ -542,6 +543,7 @@
       const sec = (attempts * 10) % 60;
 
       try {
+        // 1단계: 워크플로우 완료 체크
         if (!workflowDone) {
           const res = await fetch(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
@@ -557,11 +559,18 @@
           }
         }
 
+        // 2단계: articles.json 커밋 시간으로 반영 여부 확인
         if (workflowDone) {
-          const dataRes = await fetch('data/articles.json?t=' + Date.now());
-          const newArticles = await dataRes.json();
-          const newFirstUrl = newArticles[0]?.url || null;
-          if (newFirstUrl !== prevFirstUrl && newArticles.length > 0) {
+          const commitRes = await fetch(
+            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=data/articles.json&per_page=1`,
+            { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
+          );
+          const commits = await commitRes.json();
+          const lastCommitTime = new Date(commits[0]?.commit?.committer?.date);
+
+          if (lastCommitTime > startTime) {
+            const dataRes = await fetch('data/articles.json?t=' + Date.now());
+            const newArticles = await dataRes.json();
             clearInterval(interval);
             articles = newArticles;
             status.textContent = `마지막 업데이트: ${new Date().toLocaleTimeString('ko-KR')}`;
@@ -573,7 +582,8 @@
           status.textContent = `페이지 반영 중... (${elapsed}분 ${sec}초)`;
         }
 
-        if (attempts > 30) {
+        // 10분 초과 시 타임아웃
+        if (attempts > 60) {
           clearInterval(interval);
           status.textContent = '시간 초과. 새로고침 해주세요.';
           btn.disabled = false;
