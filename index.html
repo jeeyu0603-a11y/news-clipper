@@ -1,13 +1,14 @@
-```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>캐릿 뉴스 클리핑</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: #f5f5f7; }
 
     body {
       font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
@@ -17,8 +18,8 @@
     }
 
     header {
-      background: #fff;
-      border-bottom: 1px solid #ebebeb;
+      background: #CCFF00;
+      border-bottom: none;
       padding: 0 40px;
       display: flex;
       align-items: center;
@@ -36,23 +37,18 @@
     }
 
     .header-logo {
-      height: 28px;
+      height: 36px;
       width: auto;
       display: block;
     }
 
-    .header-divider {
-      width: 1px;
-      height: 16px;
-      background: #ddd;
-    }
-
     .header-title {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 15px;
-      color: #999;
-      font-weight: 400;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: #555;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: lowercase;
     }
 
     .container {
@@ -260,9 +256,16 @@
       transition: all 0.15s;
     }
     .update-btn:hover { background: #333; }
-    .update-btn:disabled { background: #ccc; cursor: not-allowed; }
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; }
-    .update-status { font-size: 11px; color: #bbb; }
+    .update-btn:disabled { background: rgba(0,0,0,0.2); color: rgba(0,0,0,0.4); cursor: not-allowed; }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 4px;
+      height: 72px;
+    }
+    .update-status { font-size: 11px; color: #555; }
   </style>
 </head>
 <body>
@@ -270,7 +273,6 @@
 <header>
   <div class="header-left">
     <img src="logo.png.png" alt="Careet" class="header-logo">
-    <div class="header-divider"></div>
     <span class="header-title">News clipping</span>
   </div>
   <div class="header-right">
@@ -590,4 +592,3 @@
 
 </body>
 </html>
-```
