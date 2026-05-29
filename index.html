@@ -40,12 +40,6 @@
       letter-spacing: -0.3px;
     }
 
-    header .header-sub {
-      font-size: 12px;
-      color: #bbb;
-      font-weight: 400;
-    }
-
     header span {
       font-size: 13px;
       color: #888;
@@ -60,30 +54,29 @@
     .date-section { margin-bottom: 40px; }
 
     .date-label {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 600;
-      color: #888;
-      letter-spacing: 0.05em;
+      color: #bbb;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 10px;
     }
 
     .sort-bar {
       display: flex;
-      gap: 16px;
-      margin-bottom: 16px;
+      gap: 20px;
+      margin-bottom: 20px;
       font-size: 13px;
     }
     .sort-option {
       cursor: pointer;
-      color: #aaa;
+      color: #bbb;
       padding: 4px 0;
+      letter-spacing: -0.2px;
     }
     .sort-option.active {
       color: #1d1d1f;
-      font-weight: 600;
+      font-weight: 700;
       border-bottom: 2px solid #1d1d1f;
     }
 
@@ -91,57 +84,79 @@
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      padding: 14px 16px;
+      padding: 16px 20px;
       background: #fff;
-      border-radius: 10px;
-      margin-bottom: 8px;
+      border-radius: 12px;
+      margin-bottom: 6px;
       cursor: pointer;
-      transition: background 0.15s;
-      border: 2px solid transparent;
+      transition: all 0.15s;
+      border: 1.5px solid transparent;
     }
 
-    .article-item:hover { background: #f9f9f9; }
+    .article-item:hover { background: #fafafa; border-color: #ebebeb; }
 
     .article-item.selected {
-      border-color: #007aff;
-      background: #f0f6ff;
+      border-color: #111;
+      background: #fff;
     }
 
-    .article-item input[type="checkbox"] {
-      margin-top: 2px;
-      width: 18px;
-      height: 18px;
-      cursor: pointer;
-      accent-color: #007aff;
+    .article-num {
+      font-size: 12px;
+      color: #ddd;
+      font-weight: 600;
+      min-width: 20px;
+      padding-top: 2px;
       flex-shrink: 0;
+      text-align: right;
     }
+
+    .article-item.selected .article-num { color: #111; }
+
+    .article-item input[type="checkbox"] { display: none; }
 
     .article-content { flex: 1; }
 
     .article-title {
       font-size: 15px;
       font-weight: 500;
-      line-height: 1.5;
+      line-height: 1.55;
       color: #1d1d1f;
       text-decoration: none;
+      letter-spacing: -0.2px;
     }
 
-    .article-title:hover { color: #007aff; }
+    .article-title:hover { color: #555; }
+    .article-item.selected .article-title { font-weight: 600; }
 
     .article-meta {
-      margin-top: 5px;
+      margin-top: 6px;
       font-size: 12px;
-      color: #aaa;
+      color: #c0c0c0;
       display: flex;
-      gap: 10px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-dot {
+      width: 2px;
+      height: 2px;
+      background: #ddd;
+      border-radius: 50%;
+      flex-shrink: 0;
     }
 
     .keyword-tag {
-      background: #f0f0f5;
-      color: #666;
+      background: #f4f4f4;
+      color: #888;
       padding: 2px 8px;
-      border-radius: 4px;
+      border-radius: 100px;
       font-size: 11px;
+      font-weight: 500;
+    }
+
+    .article-item.selected .keyword-tag {
+      background: #111;
+      color: #fff;
     }
 
     .bottom-bar {
@@ -225,18 +240,18 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     .update-btn {
-      background: transparent;
-      color: #555;
-      border: 1px solid #ddd;
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 500;
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
       cursor: pointer;
       transition: all 0.15s;
     }
-    .update-btn:hover { border-color: #999; color: #111; background: #fafafa; }
-    .update-btn:disabled { color: #bbb; border-color: #eee; cursor: not-allowed; }
+    .update-btn:hover { background: #333; }
+    .update-btn:disabled { background: #ccc; cursor: not-allowed; }
     .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
     .update-status { font-size: 11px; color: #bbb; }
   </style>
@@ -246,7 +261,6 @@
 <header>
   <div class="header-left">
     <h1>캐릿 뉴스 클리핑</h1>
-    <span class="header-sub">Z세대 트렌드 · 마케팅 · 소비</span>
   </div>
   <div class="header-right">
     <button class="update-btn" id="update-btn" onclick="triggerUpdate()">업데이트</button>
@@ -302,6 +316,10 @@
     return fmt(d);
   }
 
+  function cleanSource(source) {
+    return (source || '').replace('www.', '');
+  }
+
   function getSortedArticles() {
     const arr = [...articles];
     if (sortMode === 'score') {
@@ -322,9 +340,9 @@
       return;
     }
 
-    const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
     const statusEl = document.getElementById('update-status');
     if (statusEl && !statusEl.textContent) {
+      const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
       statusEl.textContent = `마지막 업데이트: ${dates[0] || ''}`;
     }
 
@@ -336,7 +354,7 @@
         <span class="sort-option ${sortMode === 'date' ? 'active' : ''}" onclick="setSort('date')">최신순</span>
       </div>
       <div class="date-section">
-        <div class="date-label">TOP ${top50.length}개</div>`;
+        <div class="date-label">TOP ${top50.length}</div>`;
 
     for (let i = 0; i < top50.length; i++) {
       const a = top50[i];
@@ -344,12 +362,15 @@
       const globalIdx = articles.indexOf(a);
       html += `
         <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${globalIdx})">
-          <input type="checkbox" id="cb-${id}" onclick="event.stopPropagation(); toggleSelect('${id}', ${globalIdx})">
+          <input type="checkbox" id="cb-${id}">
+          <span class="article-num">${i + 1}</span>
           <div class="article-content">
             <a class="article-title" href="${a.url}" target="_blank" onclick="event.stopPropagation()">${a.title}</a>
             <div class="article-meta">
               <span>${formatDate(a.date)}</span>
-              <span>${a.source}</span>
+              <span class="meta-dot"></span>
+              <span>${cleanSource(a.source)}</span>
+              <span class="meta-dot"></span>
               <span class="keyword-tag">${a.keyword}</span>
             </div>
           </div>
@@ -450,7 +471,8 @@ ${articleList}`;
     document.getElementById('app').innerHTML = `
       <div class="loading">
         <div class="spinner"></div>
-        뉴스를 수집하고 있어요...
+        뉴스를 수집하고 있어요...<br>
+        <span style="font-size:12px;color:#bbb;margin-top:8px;display:block">약 3~5분 소요됩니다</span>
       </div>`;
 
     try {
