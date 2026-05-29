@@ -205,7 +205,7 @@
       render();
     } catch (e) {
       document.getElementById('app').innerHTML =
-        '<div class="empty-state">기사를 불러올 수 없어요.<br>크롤러가 아직 실행되지 않았거나 데이터가 없어요.</div>';
+        '<div class="empty-state">기사를 불러올 수 없어요.<br>업데이트 버튼을 눌러주세요.</div>';
     }
   }
 
@@ -230,13 +230,13 @@
     const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
     document.getElementById('update-status').textContent = `마지막 업데이트: ${dates[0] || ''}`;
 
-    const top30 = articles.slice(0, 30);
+    const top50 = articles.slice(0, 50);
 
     let html = `<div class="date-section">`;
-    html += `<div class="date-label">TOP ${top30.length}개</div>`;
+    html += `<div class="date-label">TOP ${top50.length}개</div>`;
 
-    for (let i = 0; i < top30.length; i++) {
-      const a = top30[i];
+    for (let i = 0; i < top50.length; i++) {
+      const a = top50[i];
       const id = `top-${i}`;
       html += `
         <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${i})">
