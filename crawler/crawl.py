@@ -10,10 +10,16 @@ CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 KEYWORD_PRIORITY = {
     # 1점 - 최우선
     "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1,
-    # 2점
+       # 2점
     "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
+    "日 Z세대": 2, "日本 Z세대": 2, "中 Z세대": 2, "中國 Z세대": 2, "美 Z세대": 2,
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
     "열풍": 2, "핫플": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
+    "대학생": 2, "대학교": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
+    "다이소": 2, "올리브영": 2, "무신사": 2, "올다무": 2, "올다아무": 2, "방한 외국인": 2,
+    "트렌드 리포트": 2,
+    "앱스토어": 2, "검색어": 2, "급상승 검색어": 2, "구글 트렌드": 2, "직장인": 2,
+    "앱": 2,
     # 3점
     "완판": 3, "품귀현상": 3, "품절대란": 3, "품절": 3,
     "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
@@ -30,6 +36,7 @@ KEYWORD_PRIORITY = {
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
+STRICT_KEYWORDS = ["앱"]  # 단독으로는 통과 불가, 다른 키워드와 함께 있어야 통과
 
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
@@ -75,6 +82,8 @@ EXCLUDE_KEYWORDS = [
     "기념해", "고객 감사", "오픈 소식",
     "체험단", "모집", "공식 쇼핑몰", "기획전", "단독 판매",
     "부사장", "지분", "인수",
+    # 기타
+    "종영", "중고차", "창호", "시공", "적립", "소비자추천", "연속 선정",
 ]
 
 STOP_WORDS = {
@@ -184,6 +193,11 @@ def main():
                 filtered_keyword_title += 1
                 continue
 
+            # STRICT_KEYWORDS 단독 제목은 제외
+            if all(kw in STRICT_KEYWORDS for kw in keywords_in_title):
+                filtered_keyword_title += 1
+                continue
+
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
             base_score = 3 if tier1_in_title else 0
 
@@ -222,7 +236,9 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    all_items.sort(key=lambda x: (-x.get("score", 0), x["date"]))
+    # 최신 날짜 우선 → 같은 날짜 안에서 점수 높은 순
+    all_items.sort(key=lambda x: -x.get("score", 0))
+    all_items.sort(key=lambda x: x["date"], reverse=True)
 
     combined = all_items[:300]
 
