@@ -35,6 +35,22 @@
       padding-bottom: 8px;
       border-bottom: 1px solid #e0e0e0;
     }
+    .sort-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .sort-option {
+      cursor: pointer;
+      color: #aaa;
+      padding: 4px 0;
+    }
+    .sort-option.active {
+      color: #1d1d1f;
+      font-weight: 600;
+      border-bottom: 2px solid #1d1d1f;
+    }
     .article-item {
       display: flex;
       align-items: flex-start;
@@ -197,6 +213,13 @@
 <script>
   let articles = [];
   let selected = new Set();
+  let sortMode = 'score'; // 기본: 관련도순
+
+  function setSort(mode) {
+    sortMode = mode;
+    selected = new Set();
+    render();
+  }
 
   async function loadArticles() {
     try {
@@ -230,9 +253,26 @@
     const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
     document.getElementById('update-status').textContent = `마지막 업데이트: ${dates[0] || ''}`;
 
-    const top50 = articles.slice(0, 50);
+    // 정렬
+    let sorted = [...articles];
+    if (sortMode === 'score') {
+      // 관련도순: 점수 높은 순
+      sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
+    } else {
+      // 최신순: 날짜 먼저, 같은 날짜 안에서 점수순
+      sorted.sort((a, b) => {
+        if (b.date !== a.date) return b.date.localeCompare(a.date);
+        return (b.score || 0) - (a.score || 0);
+      });
+    }
+
+    const top50 = sorted.slice(0, 50);
 
     let html = `<div class="date-section">`;
+    html += `<div class="sort-bar">
+      <span class="sort-option ${sortMode === 'score' ? 'active' : ''}" onclick="setSort('score')">관련도순</span>
+      <span class="sort-option ${sortMode === 'date' ? 'active' : ''}" onclick="setSort('date')">최신순</span>
+    </div>`;
     html += `<div class="date-label">TOP ${top50.length}개</div>`;
 
     for (let i = 0; i < top50.length; i++) {
@@ -279,7 +319,18 @@
   }
 
   function copyPrompt() {
-    const items = [...selected].map(idx => articles[parseInt(idx)]).filter(Boolean);
+    const items = [...selected].map(idx => {
+      const sorted = [...articles];
+      if (sortMode === 'score') {
+        sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
+      } else {
+        sorted.sort((a, b) => {
+          if (b.date !== a.date) return b.date.localeCompare(a.date);
+          return (b.score || 0) - (a.score || 0);
+        });
+      }
+      return sorted[parseInt(idx)];
+    }).filter(Boolean);
     if (!items.length) return;
 
     const articleList = items.map((a, i) =>
@@ -330,15 +381,17 @@ ${articleList}`;
 
     const btn = document.getElementById('update-btn');
     const status = document.getElementById('update-status');
+    const prevFirstUrl = articles[0]?.url || null;
 
     btn.disabled = true;
     btn.textContent = '업데이트 중...';
-    status.textContent = '워크플로우 실행 중...';
+    status.textContent = '수집 시작...';
 
     document.getElementById('app').innerHTML = `
       <div class="loading">
         <div class="spinner"></div>
-        뉴스를 수집하고 있어요... (약 30~60초 소요)
+        뉴스를 수집하고 있어요...<br>
+        <span style="font-size:13px;color:#aaa;margin-top:8px;display:block">약 3~5분 소요됩니다</span>
       </div>`;
 
     try {
@@ -364,7 +417,7 @@ ${articleList}`;
         return;
       }
 
-      await pollWorkflow(token);
+      await pollWorkflow(token, prevFirstUrl);
 
     } catch (e) {
       status.textContent = '오류 발생. 다시 시도해주세요.';
@@ -374,32 +427,54 @@ ${articleList}`;
     }
   }
 
-  async function pollWorkflow(token) {
+  async function pollWorkflow(token, prevFirstUrl) {
     const btn = document.getElementById('update-btn');
     const status = document.getElementById('update-status');
     let attempts = 0;
+    let workflowDone = false;
 
     const interval = setInterval(async () => {
       attempts++;
-      try {
-        const res = await fetch(
-          `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
-          { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
-        );
-        const data = await res.json();
-        const run = data.workflow_runs?.[0];
+      const totalSec = attempts * 10;
+      const min = Math.floor(totalSec / 60);
+      const sec = totalSec % 60;
+      const elapsed = min > 0 ? `${min}분 ${sec}초` : `${sec}초`;
 
-        if (run && run.status === 'completed') {
-          clearInterval(interval);
-          status.textContent = `마지막 업데이트: ${new Date().toLocaleString('ko-KR')}`;
-          btn.disabled = false;
-          btn.textContent = '🔄 지금 업데이트';
-          setTimeout(() => loadArticles(), 3000);
-        } else {
-          status.textContent = `수집 중... (${attempts * 5}초 경과)`;
+      try {
+        if (!workflowDone) {
+          const res = await fetch(
+            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
+            { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
+          );
+          const data = await res.json();
+          const run = data.workflow_runs?.[0];
+
+          if (run && run.status === 'completed') {
+            workflowDone = true;
+            status.textContent = `수집 완료, 페이지 반영 중... (${elapsed})`;
+          } else {
+            status.textContent = `뉴스 수집 중... (${elapsed})`;
+          }
         }
 
-        if (attempts > 24) {
+        if (workflowDone) {
+          const dataRes = await fetch('data/articles.json?t=' + Date.now());
+          const newArticles = await dataRes.json();
+          const newFirstUrl = newArticles[0]?.url || null;
+
+          if (newFirstUrl !== prevFirstUrl && newArticles.length > 0) {
+            clearInterval(interval);
+            articles = newArticles;
+            status.textContent = `마지막 업데이트: ${new Date().toLocaleString('ko-KR')}`;
+            btn.disabled = false;
+            btn.textContent = '🔄 지금 업데이트';
+            render();
+            return;
+          }
+          status.textContent = `페이지 반영 중... (${elapsed})`;
+        }
+
+        if (attempts > 30) {
           clearInterval(interval);
           status.textContent = '시간 초과. 새로고침 해주세요.';
           btn.disabled = false;
@@ -410,7 +485,7 @@ ${articleList}`;
         clearInterval(interval);
         loadArticles();
       }
-    }, 5000);
+    }, 10000);
   }
 
   loadArticles();
