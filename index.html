@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>캐릿 뉴스 클리핑</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,25 +25,33 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      height: 60px;
+      height: 64px;
     }
 
     .header-left {
       display: flex;
-      align-items: baseline;
-      gap: 12px;
+      align-items: center;
+      gap: 10px;
     }
 
-    header h1 {
+    .header-logo {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    .header-divider {
+      width: 1px;
+      height: 16px;
+      background: #ddd;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
       font-size: 15px;
-      font-weight: 700;
-      color: #111;
-      letter-spacing: -0.3px;
-    }
-
-    header span {
-      font-size: 13px;
-      color: #888;
+      color: #999;
+      font-weight: 400;
     }
 
     .container {
@@ -111,9 +120,7 @@
     }
 
     .article-item.selected .article-num { color: #111; }
-
     .article-item input[type="checkbox"] { display: none; }
-
     .article-content { flex: 1; }
 
     .article-title {
@@ -159,6 +166,20 @@
       color: #fff;
     }
 
+    .copy-link-btn {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: #ccc;
+      opacity: 0;
+      transition: opacity 0.15s, color 0.15s;
+      align-self: center;
+    }
+    .article-item:hover .copy-link-btn { opacity: 1; }
+    .copy-link-btn:hover { color: #555; }
+
     .bottom-bar {
       position: fixed;
       bottom: 0; left: 0; right: 0;
@@ -171,21 +192,21 @@
     }
 
     .selected-count { font-size: 14px; color: #555; }
-    .selected-count strong { color: #007aff; }
+    .selected-count strong { color: #111; }
 
     .copy-btn {
-      background: #007aff;
+      background: #111;
       color: #fff;
       border: none;
-      padding: 10px 24px;
+      padding: 10px 28px;
       border-radius: 8px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
       transition: background 0.15s;
     }
-    .copy-btn:hover { background: #0066dd; }
-    .copy-btn:disabled { background: #ccc; cursor: not-allowed; }
+    .copy-btn:hover { background: #333; }
+    .copy-btn:disabled { background: #ddd; cursor: not-allowed; }
 
     .empty-state {
       text-align: center;
@@ -211,12 +232,6 @@
       pointer-events: none;
     }
     .toast.show { opacity: 1; }
-
-    .warning {
-      font-size: 12px;
-      color: #ff6b35;
-      margin-top: 4px;
-    }
 
     pb { padding-bottom: 80px; display: block; }
 
@@ -252,7 +267,7 @@
     }
     .update-btn:hover { background: #333; }
     .update-btn:disabled { background: #ccc; cursor: not-allowed; }
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+    .header-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 5px; }
     .update-status { font-size: 11px; color: #bbb; }
   </style>
 </head>
@@ -260,7 +275,9 @@
 
 <header>
   <div class="header-left">
-    <h1>캐릿 뉴스 클리핑</h1>
+    <img src="logo.png" alt="Careet" class="header-logo">
+    <div class="header-divider"></div>
+    <span class="header-title">News clipping</span>
   </div>
   <div class="header-right">
     <button class="update-btn" id="update-btn" onclick="triggerUpdate()">업데이트</button>
@@ -280,14 +297,13 @@
 <div class="bottom-bar">
   <div>
     <div class="selected-count">선택된 기사: <strong id="count">0</strong>개</div>
-    <div class="warning" id="warning" style="display:none">3개 이하로 선택해 주세요</div>
   </div>
-  <button class="copy-btn" id="copy-btn" disabled onclick="copyPrompt()">
-    Claude.ai 프롬프트 복사
+  <button class="copy-btn" id="copy-btn" disabled onclick="adoptArticles()">
+    채택
   </button>
 </div>
 
-<div class="toast" id="toast">클립보드에 복사됐어요!</div>
+<div class="toast" id="toast"></div>
 
 <script>
   let articles = [];
@@ -320,8 +336,15 @@
     return (source || '').replace('www.', '');
   }
 
+  function getAdoptedUrls() {
+    try {
+      return new Set(JSON.parse(localStorage.getItem('adopted_urls') || '[]'));
+    } catch { return new Set(); }
+  }
+
   function getSortedArticles() {
-    const arr = [...articles];
+    const adopted = getAdoptedUrls();
+    const arr = articles.filter(a => !adopted.has(a.url));
     if (sortMode === 'score') {
       arr.sort((a, b) => (b.score || 0) - (a.score || 0));
     } else {
@@ -360,6 +383,7 @@
       const a = top50[i];
       const id = `top-${i}`;
       const globalIdx = articles.indexOf(a);
+      const safeUrl = a.url.replace(/'/g, "\\'");
       html += `
         <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${globalIdx})">
           <input type="checkbox" id="cb-${id}">
@@ -374,6 +398,11 @@
               <span class="keyword-tag">${a.keyword}</span>
             </div>
           </div>
+          <button class="copy-link-btn" onclick="event.stopPropagation(); copyLink('${safeUrl}')" title="링크 복사">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+          </button>
         </div>`;
     }
     html += `</div>`;
@@ -407,40 +436,37 @@
     const count = selected.size;
     document.getElementById('count').textContent = count;
     document.getElementById('copy-btn').disabled = count === 0;
-    document.getElementById('warning').style.display = count > 3 ? 'block' : 'none';
   }
 
-  function copyPrompt() {
+  function adoptArticles() {
     const items = [...selected].map(idx => articles[parseInt(idx)]).filter(Boolean);
     if (!items.length) return;
+    const adopted = getAdoptedUrls();
+    items.forEach(a => adopted.add(a.url));
+    localStorage.setItem('adopted_urls', JSON.stringify([...adopted]));
+    selected.clear();
+    updateBar();
+    render();
+    showToast(`${items.length}개 기사를 채택했어요`);
+  }
 
-    const articleList = items.map((a, i) =>
-      `[기사 ${i+1}]\n제목: ${a.title}\nURL: ${a.url}\n${a.description ? '본문 요약: ' + a.description : ''}`
-    ).join('\n\n');
-
-    const prompt = `아래 뉴스 기사를 캐릿 스타일로 요약해줘.
-캐릿은 Z세대 트렌드 미디어로, 소비·마케팅·트렌드 인사이트를 다루는 매체야.
-각 기사를 3~4줄로 핵심만 요약해줘. 숫자와 구체적인 데이터 위주로 써줘.
-
-${articleList}`;
-
-    navigator.clipboard.writeText(prompt).then(() => {
-      showToast();
-    }).catch(() => {
+  function copyLink(url) {
+    navigator.clipboard.writeText(url).catch(() => {
       const ta = document.createElement('textarea');
-      ta.value = prompt;
+      ta.value = url;
       document.body.appendChild(ta);
       ta.select();
       document.execCommand('copy');
       document.body.removeChild(ta);
-      showToast();
     });
+    showToast('링크 복사됐어요');
   }
 
-  function showToast() {
+  function showToast(msg) {
     const t = document.getElementById('toast');
+    t.textContent = msg || '완료';
     t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 2000);
+    setTimeout(() => t.classList.remove('show'), 2500);
   }
 
   const REPO_OWNER = 'jeeyu0603-a11y';
@@ -527,7 +553,6 @@ ${articleList}`;
           );
           const data = await res.json();
           const run = data.workflow_runs?.[0];
-
           if (run && run.status === 'completed') {
             workflowDone = true;
             status.textContent = `수집 완료, 페이지 반영 중...`;
@@ -540,7 +565,6 @@ ${articleList}`;
           const dataRes = await fetch('data/articles.json?t=' + Date.now());
           const newArticles = await dataRes.json();
           const newFirstUrl = newArticles[0]?.url || null;
-
           if (newFirstUrl !== prevFirstUrl && newArticles.length > 0) {
             clearInterval(interval);
             articles = newArticles;
