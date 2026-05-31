@@ -182,11 +182,26 @@
   let articles = [];
   let selected = new Set();
   let sortMode = 'score';
+  let crawledAt = '';
+
+  function formatNow() {
+    const now = new Date();
+    const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+    return `${dateStr} ${timeStr}`;
+  }
 
   async function loadArticles() {
     try {
       const res = await fetch('data/articles.json?t=' + Date.now());
-      articles = await res.json();
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        articles = data;
+        crawledAt = '';
+      } else {
+        articles = data.items || [];
+        crawledAt = data.crawled_at || '';
+      }
       render();
     } catch (e) {
       document.getElementById('app').innerHTML =
@@ -229,13 +244,6 @@
     return arr.slice(0, 50);
   }
 
-  function formatNow() {
-    const now = new Date();
-    const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
-    const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
-    return `${dateStr} ${timeStr}`;
-  }
-
   function render() {
     if (!articles.length) {
       document.getElementById('app').innerHTML =
@@ -244,7 +252,7 @@
     }
     const statusEl = document.getElementById('update-status');
     if (statusEl && !statusEl.textContent) {
-      statusEl.textContent = `마지막 업데이트: ${formatNow()}`;
+      statusEl.textContent = `마지막 업데이트: ${crawledAt || formatNow()}`;
     }
     const top50 = getSortedArticles();
     let html = `
@@ -375,7 +383,7 @@
     const prevSnapshot = (articles[0]?.url || '') + articles.length;
     btn.disabled = true;
     btn.textContent = '수집 중...';
-    status.textContent = '';
+    status.textContent = '수집 시작...';
     document.getElementById('app').innerHTML = `
       <div class="loading">
         <div class="spinner"></div>
@@ -426,6 +434,7 @@
 
       // 1단계: 워크플로우 완료 체크
       if (!workflowDone) {
+        status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
         try {
           const res = await fetchWithTimeout(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
@@ -436,8 +445,6 @@
           if (run && run.status === 'completed') {
             workflowDone = true;
             status.textContent = `수집 완료, 페이지 반영 중...`;
-          } else {
-            status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
           }
         } catch (e) { /* 재시도 */ }
 
@@ -454,12 +461,15 @@
       pagesAttempts++;
       try {
         const dataRes = await fetchWithTimeout('data/articles.json?t=' + Date.now());
-        const newArticles = await dataRes.json();
-        const newSnapshot = newArticles[0]?.url + newArticles.length;
+        const newData = await dataRes.json();
+        const newItems = Array.isArray(newData) ? newData : (newData.items || []);
+        const newSnapshot = (newItems[0]?.url || '') + newItems.length;
+
         if (newSnapshot !== prevSnapshot) {
           clearInterval(interval);
-          articles = newArticles;
-          status.textContent = `마지막 업데이트: ${formatNow()}`;
+          articles = newItems;
+          crawledAt = Array.isArray(newData) ? '' : (newData.crawled_at || '');
+          status.textContent = `마지막 업데이트: ${crawledAt || formatNow()}`;
           btn.disabled = false;
           btn.textContent = '업데이트';
           render();
@@ -467,11 +477,10 @@
         }
       } catch (e) { /* 재시도 */ }
 
-      // fetch 실패하거나 내용 안 바뀌어도 3분 지나면 강제 반영
       if (pagesAttempts >= 18) {
         clearInterval(interval);
         loadArticles().then(() => {
-          status.textContent = `마지막 업데이트: ${formatNow()}`;
+          status.textContent = `마지막 업데이트: ${crawledAt || formatNow()}`;
           btn.disabled = false;
           btn.textContent = '업데이트';
         });
