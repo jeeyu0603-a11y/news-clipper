@@ -102,6 +102,41 @@
     .article-item:hover { background: #fafafa; border-color: #ebebeb; }
     .article-item.selected { border-color: #111; background: #fff; }
 
+    .article-item input[type="checkbox"] { display: none; }
+
+    .article-checkbox {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #ddd;
+      border-radius: 4px;
+      margin-top: 2px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+      background: #fff;
+    }
+
+    .article-item.selected .article-checkbox {
+      background: #111;
+      border-color: #111;
+    }
+
+    .article-checkbox::after {
+      content: '';
+      display: none;
+      width: 5px;
+      height: 9px;
+      border: 2px solid #fff;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .article-item.selected .article-checkbox::after { display: block; }
+
     .article-num {
       font-size: 12px;
       color: #ddd;
@@ -113,7 +148,6 @@
     }
 
     .article-item.selected .article-num { color: #111; }
-    .article-item input[type="checkbox"] { display: none; }
     .article-content { flex: 1; }
 
     .article-title {
@@ -155,6 +189,18 @@
     }
 
     .article-item.selected .keyword-tag { background: #111; color: #fff; }
+
+    .article-desc {
+      display: none;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #777;
+      line-height: 1.6;
+      padding-top: 10px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .article-item.expanded .article-desc { display: block; }
 
     .copy-link-btn {
       flex-shrink: 0;
@@ -381,8 +427,9 @@
       const globalIdx = articles.indexOf(a);
       const safeUrl = a.url.replace(/'/g, "\\'");
       html += `
-        <div class="article-item" id="item-${id}" onclick="toggleSelect('${id}', ${globalIdx})">
+        <div class="article-item" id="item-${id}" onclick="toggleExpand('${id}')">
           <input type="checkbox" id="cb-${id}">
+          <div class="article-checkbox" onclick="event.stopPropagation(); toggleSelect('${id}', ${globalIdx})"></div>
           <span class="article-num">${i + 1}</span>
           <div class="article-content">
             <a class="article-title" href="${a.url}" target="_blank" onclick="event.stopPropagation()">${a.title}</a>
@@ -393,6 +440,7 @@
               <span class="meta-dot"></span>
               <span class="keyword-tag">${a.keyword}</span>
             </div>
+            ${a.description ? `<div class="article-desc">${a.description}</div>` : ''}
           </div>
           <button class="copy-link-btn" onclick="event.stopPropagation(); copyLink('${safeUrl}')" title="링크 복사">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -412,18 +460,20 @@
     render();
   }
 
+  function toggleExpand(id) {
+    const item = document.getElementById(`item-${id}`);
+    item.classList.toggle('expanded');
+  }
+
   function toggleSelect(id, idx) {
     const key = String(idx);
     const item = document.getElementById(`item-${id}`);
-    const cb = document.getElementById(`cb-${id}`);
     if (selected.has(key)) {
       selected.delete(key);
       item.classList.remove('selected');
-      cb.checked = false;
     } else {
       selected.add(key);
       item.classList.add('selected');
-      cb.checked = true;
     }
     updateBar();
   }
@@ -543,7 +593,6 @@
       const sec = (attempts * 10) % 60;
 
       try {
-        // 1단계: 워크플로우 완료 체크
         if (!workflowDone) {
           const res = await fetch(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
@@ -559,7 +608,6 @@
           }
         }
 
-        // 2단계: articles.json 커밋 시간으로 반영 여부 확인
         if (workflowDone) {
           const commitRes = await fetch(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=data/articles.json&per_page=1`,
@@ -582,7 +630,6 @@
           status.textContent = `페이지 반영 중... (${elapsed}분 ${sec}초)`;
         }
 
-        // 10분 초과 시 타임아웃
         if (attempts > 60) {
           clearInterval(interval);
           status.textContent = '시간 초과. 새로고침 해주세요.';
