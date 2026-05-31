@@ -7,7 +7,6 @@ from datetime import datetime, timedelta, timezone
 CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
-# 키워드별 우선순위 점수 (낮을수록 상단)
 KEYWORD_PRIORITY = {
     # 1점 - 최우선
     "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1,
@@ -37,7 +36,6 @@ KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
 STRICT_KEYWORDS = ["앱"]
 
-# 허용 미디어 도메인
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
     "mk.co.kr", "biz.heraldcorp.com", "mt.co.kr", "edaily.co.kr",
@@ -84,10 +82,10 @@ EXCLUDE_KEYWORDS = [
     "부사장", "지분", "인수",
     # 기타
     "종영", "중고차", "창호", "시공", "적립", "소비자추천", "연속 선정",
-    "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을", "군대",
+    "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을",
+    "군대", "참변", "발대식", "해단식",
 ]
 
-# 제목 유사도 중복 제거용 불용어
 STOP_WORDS = {
     '및', '와', '과', '이', '가', '을', '를', '은', '는', '의', '에', '로', '으로',
     '하는', '하고', '하며', '통해', '위해', '대한', '관련', '등', '도', '도록',
