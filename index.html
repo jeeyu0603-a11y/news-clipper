@@ -120,8 +120,7 @@
     }
     .toast {
       position: fixed;
-      top: 50%;
-      left: 50%;
+      top: 50%; left: 50%;
       transform: translateX(-50%) translateY(-50%);
       background: #1d1d1f; color: #fff; padding: 12px 24px; border-radius: 10px;
       font-size: 14px; opacity: 0; transition: opacity 0.3s; z-index: 100;
@@ -230,6 +229,13 @@
     return arr.slice(0, 50);
   }
 
+  function formatNow() {
+    const now = new Date();
+    const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+    return `${dateStr} ${timeStr}`;
+  }
+
   function render() {
     if (!articles.length) {
       document.getElementById('app').innerHTML =
@@ -238,8 +244,7 @@
     }
     const statusEl = document.getElementById('update-status');
     if (statusEl && !statusEl.textContent) {
-      const dates = [...new Set(articles.map(a => a.date))].sort((a,b) => b.localeCompare(a));
-      statusEl.textContent = `마지막 업데이트: ${dates[0] || ''}`;
+      statusEl.textContent = `마지막 업데이트: ${formatNow()}`;
     }
     const top50 = getSortedArticles();
     let html = `
@@ -434,7 +439,7 @@
           } else {
             status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
           }
-        } catch (e) { /* 8초 초과 또는 네트워크 오류 → 재시도 */ }
+        } catch (e) { /* 재시도 */ }
 
         if (attempts > 40) {
           clearInterval(interval);
@@ -451,18 +456,29 @@
         const dataRes = await fetchWithTimeout('data/articles.json?t=' + Date.now());
         const newArticles = await dataRes.json();
         const newSnapshot = newArticles[0]?.url + newArticles.length;
-
-        if (newSnapshot !== prevSnapshot || pagesAttempts >= 18) {
+        if (newSnapshot !== prevSnapshot) {
           clearInterval(interval);
           articles = newArticles;
-          status.textContent = `마지막 업데이트: ${new Date().toLocaleTimeString('ko-KR')}`;
+          status.textContent = `마지막 업데이트: ${formatNow()}`;
           btn.disabled = false;
           btn.textContent = '업데이트';
           render();
-        } else {
-          status.textContent = `페이지 반영 중... (${pagesAttempts * 10}초)`;
+          return;
         }
       } catch (e) { /* 재시도 */ }
+
+      // fetch 실패하거나 내용 안 바뀌어도 3분 지나면 강제 반영
+      if (pagesAttempts >= 18) {
+        clearInterval(interval);
+        loadArticles().then(() => {
+          status.textContent = `마지막 업데이트: ${formatNow()}`;
+          btn.disabled = false;
+          btn.textContent = '업데이트';
+        });
+        return;
+      }
+
+      status.textContent = `페이지 반영 중... (${pagesAttempts * 10}초)`;
     }, 10000);
   }
 
