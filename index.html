@@ -119,10 +119,13 @@
       text-align: center; padding: 60px 20px; color: #aaa; font-size: 15px; line-height: 2;
     }
     .toast {
-      position: fixed; top: 80px; left: 50%; transform: translateX(-50%);
-      background: #1d1d1f; color: #fff; padding: 10px 20px; border-radius: 8px;
-      font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 100; pointer-events: none;
-      white-space: nowrap;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background: #1d1d1f; color: #fff; padding: 12px 24px; border-radius: 10px;
+      font-size: 14px; opacity: 0; transition: opacity 0.3s; z-index: 100;
+      pointer-events: none; white-space: nowrap;
     }
     .toast.show { opacity: 1; }
     pb { padding-bottom: 80px; display: block; }
@@ -352,12 +355,19 @@
     return token;
   }
 
+  function fetchWithTimeout(url, options = {}, ms = 8000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), ms);
+    return fetch(url, { ...options, signal: controller.signal })
+      .finally(() => clearTimeout(timer));
+  }
+
   async function triggerUpdate() {
     const token = getToken();
     if (!token) return;
     const btn = document.getElementById('update-btn');
     const status = document.getElementById('update-status');
-    const prevFirstUrl = articles[0]?.url || null;
+    const prevSnapshot = (articles[0]?.url || '') + articles.length;
     btn.disabled = true;
     btn.textContent = '수집 중...';
     status.textContent = '';
@@ -368,7 +378,7 @@
         <span style="font-size:12px;color:#bbb;margin-top:8px;display:block">약 3~5분 소요됩니다</span>
       </div>`;
     try {
-      const res = await fetch(
+      const res = await fetchWithTimeout(
         `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
         {
           method: 'POST',
@@ -388,7 +398,7 @@
         loadArticles();
         return;
       }
-      await pollWorkflow(token, prevFirstUrl);
+      await pollWorkflow(token, prevSnapshot);
     } catch (e) {
       status.textContent = '오류 발생. 다시 시도해주세요.';
       btn.disabled = false;
@@ -397,19 +407,22 @@
     }
   }
 
-  async function pollWorkflow(token, prevFirstUrl) {
+  async function pollWorkflow(token, prevSnapshot) {
     const btn = document.getElementById('update-btn');
     const status = document.getElementById('update-status');
-    const startTime = new Date();
     let attempts = 0;
     let workflowDone = false;
+    let pagesAttempts = 0;
+
     const interval = setInterval(async () => {
       attempts++;
       const elapsed = Math.floor(attempts * 10 / 60);
       const sec = (attempts * 10) % 60;
-      try {
-        if (!workflowDone) {
-          const res = await fetch(
+
+      // 1단계: 워크플로우 완료 체크
+      if (!workflowDone) {
+        try {
+          const res = await fetchWithTimeout(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
             { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
           );
@@ -421,38 +434,35 @@
           } else {
             status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
           }
-        }
-        if (workflowDone) {
-          const commitRes = await fetch(
-            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=data/articles.json&per_page=1`,
-            { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
-          );
-          const commits = await commitRes.json();
-          const lastCommitTime = new Date(commits[0]?.commit?.committer?.date);
-          if (lastCommitTime > startTime) {
-            const dataRes = await fetch('data/articles.json?t=' + Date.now());
-            const newArticles = await dataRes.json();
-            clearInterval(interval);
-            articles = newArticles;
-            status.textContent = `마지막 업데이트: ${new Date().toLocaleTimeString('ko-KR')}`;
-            btn.disabled = false;
-            btn.textContent = '업데이트';
-            render();
-            return;
-          }
-          status.textContent = `페이지 반영 중... (${elapsed}분 ${sec}초)`;
-        }
-        if (attempts > 60) {
+        } catch (e) { /* 8초 초과 또는 네트워크 오류 → 재시도 */ }
+
+        if (attempts > 40) {
           clearInterval(interval);
-          status.textContent = '시간 초과. 새로고침 해주세요.';
           btn.disabled = false;
           btn.textContent = '업데이트';
           loadArticles();
         }
-      } catch (e) {
-        clearInterval(interval);
-        loadArticles();
+        return;
       }
+
+      // 2단계: articles.json 직접 비교
+      pagesAttempts++;
+      try {
+        const dataRes = await fetchWithTimeout('data/articles.json?t=' + Date.now());
+        const newArticles = await dataRes.json();
+        const newSnapshot = newArticles[0]?.url + newArticles.length;
+
+        if (newSnapshot !== prevSnapshot || pagesAttempts >= 18) {
+          clearInterval(interval);
+          articles = newArticles;
+          status.textContent = `마지막 업데이트: ${new Date().toLocaleTimeString('ko-KR')}`;
+          btn.disabled = false;
+          btn.textContent = '업데이트';
+          render();
+        } else {
+          status.textContent = `페이지 반영 중... (${pagesAttempts * 10}초)`;
+        }
+      } catch (e) { /* 재시도 */ }
     }, 10000);
   }
 
