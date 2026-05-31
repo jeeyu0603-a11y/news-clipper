@@ -14,7 +14,7 @@ KEYWORD_PRIORITY = {
     # 2점
     "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
-    "열풍": 2, "핫플": 2, "오픈런": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
+    "열풍": 2, "핫플": 2, "핫플레이스": 2, "오픈런": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2,
     "대학생": 2, "대학교": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
     "다이소": 2, "올리브영": 2, "무신사": 2, "올다무": 2, "올다아무": 2, "방한 외국인": 2,
     "트렌드 리포트": 2,
@@ -37,32 +37,14 @@ KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
 STRICT_KEYWORDS = ["앱"]
 
-# 허용 미디어 도메인 (여기 없는 출처는 수집 안 함)
+# 허용 미디어 도메인
 ALLOWED_DOMAINS = [
-    # 경제/비즈니스
-    "biz.chosun.com",       # 조선비즈
-    "hankyung.com",          # 한국경제 / 한경
-    "magazine.hankyung.com", # 한경비즈니스
-    "mk.co.kr",              # 매일경제
-    "biz.heraldcorp.com",    # 헤럴드경제
-    "mt.co.kr",              # 머니투데이
-    "edaily.co.kr",          # 이데일리
-    "sedaily.com",           # 서울경제
-    "asiae.co.kr",           # 아시아경제
-    "fnnews.com",            # 파이낸셜뉴스
-    # 종합
-    "yna.co.kr",             # 연합뉴스
-    "newsis.com",            # 뉴시스
-    "joongang.co.kr",        # 중앙일보
-    "donga.com",             # 동아일보
-    "kmib.co.kr",            # 국민일보
-    "insight.co.kr",         # 인사이트
-    # 유통/소비
-    "dailypop.kr",           # 데일리팝
-    "apparelnews.co.kr",     # 어패럴뉴스
-    # IT/디지털
-    "zdnet.co.kr",           # 지디넷
-    "etnews.com",            # 전자신문
+    "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
+    "mk.co.kr", "biz.heraldcorp.com", "mt.co.kr", "edaily.co.kr",
+    "sedaily.com", "asiae.co.kr", "fnnews.com",
+    "yna.co.kr", "newsis.com", "joongang.co.kr", "donga.com",
+    "kmib.co.kr", "insight.co.kr", "dailypop.kr", "apparelnews.co.kr",
+    "zdnet.co.kr", "etnews.com",
 ]
 
 EXCLUDE_KEYWORDS = [
@@ -102,7 +84,7 @@ EXCLUDE_KEYWORDS = [
     "부사장", "지분", "인수",
     # 기타
     "종영", "중고차", "창호", "시공", "적립", "소비자추천", "연속 선정",
-    "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을",
+    "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을", "군대",
 ]
 
 # 제목 유사도 중복 제거용 불용어
@@ -189,7 +171,6 @@ def main():
                 filtered_duplicate += 1
                 continue
 
-            # 허용 도메인 체크
             domain = url.split("/")[2] if url else ""
             if not any(allowed in domain for allowed in ALLOWED_DOMAINS):
                 filtered_domain += 1
@@ -207,24 +188,18 @@ def main():
             title = clean_html(item.get("title", ""))
             description = clean_html(item.get("description", ""))
 
-            # 제목에 실제로 있는 키워드 찾기
             keywords_in_title = [kw for kw in KEYWORD_PRIORITY if kw in title]
 
             if not keywords_in_title:
                 filtered_keyword_title += 1
                 continue
 
-            # "앱" 단독 제목은 제외
             if all(kw in STRICT_KEYWORDS for kw in keywords_in_title):
                 filtered_keyword_title += 1
                 continue
 
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
-
-            if tier1_in_title:
-                base_score = 3
-            else:
-                base_score = 0
+            base_score = 3 if tier1_in_title else 0
 
             first_keyword = keywords_in_title[0]
             title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
