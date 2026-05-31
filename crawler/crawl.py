@@ -92,6 +92,13 @@ EXCLUDE_KEYWORDS = [
     "의혹", "논란", "해명", "결별", "열애설", "매치", "결승전", "감독", "무역수지",
     "임명", "선임", "인사", "영입", "정기주주총회", "주총", "기자간담회", "설명회", "IR", "전략적 파트너십",
 ]
+
+STOP_WORDS = {
+    '및', '와', '과', '이', '가', '을', '를', '은', '는', '의', '에', '로', '으로',
+    '하는', '하고', '하며', '통해', '위해', '대한', '관련', '등', '도', '도록',
+    '위한', '따른', '한', '된', '되는', '있는', '있다', '있어', '통한', '에서',
+    '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
+}
 def fetch_news(keyword, display=10):
     enc_keyword = urllib.parse.quote(keyword)
     url = f"https://openapi.naver.com/v1/search/news.json?query={enc_keyword}&display={display}&sort=date"
