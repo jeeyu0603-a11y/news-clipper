@@ -99,6 +99,7 @@ STOP_WORDS = {
     '위한', '따른', '한', '된', '되는', '있는', '있다', '있어', '통한', '에서',
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
+
 def fetch_news(keyword, display=10):
     enc_keyword = urllib.parse.quote(keyword)
     url = f"https://openapi.naver.com/v1/search/news.json?query={enc_keyword}&display={display}&sort=date"
@@ -243,13 +244,16 @@ def main():
     all_items.sort(key=lambda x: -x.get("score", 0))
     all_items.sort(key=lambda x: x["date"], reverse=True)
 
-    combined = all_items[:300]
+    output = {
+        "crawled_at": now.strftime("%Y-%m-%d %H:%M"),
+        "items": all_items[:300]
+    }
 
     data_path = os.path.join(os.path.dirname(__file__), "..", "data", "articles.json")
     with open(data_path, "w", encoding="utf-8") as f:
-        json.dump(combined, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"수집 완료: 오늘 {len(all_items)}개 기사 수집 (총 {len(combined)}개 저장)")
+    print(f"수집 완료: 오늘 {len(all_items)}개 기사 수집 (총 {len(output['items'])}개 저장)")
 
 if __name__ == "__main__":
     main()
