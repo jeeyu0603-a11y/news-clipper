@@ -3,11 +3,13 @@ name: 매일 뉴스 수집
 on:
   schedule:
     - cron: '0 1 * * *'  # 매일 오전 10시 (KST = UTC+9)
-  workflow_dispatch:       # 수동 실행도 가능
+  workflow_dispatch:
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write        # ← 이 줄 추가
     steps:
       - uses: actions/checkout@v3
 
