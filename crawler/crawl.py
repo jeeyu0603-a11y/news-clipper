@@ -9,14 +9,15 @@ CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 
 KEYWORD_PRIORITY = {
     # 1점 - 최우선
-    "Z세대": 1, "MZ세대": 1, "MZ": 1, "잘파세대": 1, "잘파": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1, "젠지": 1,
-    "미국 Z세대": 1, "일본 Z세대": 1, "중국 Z세대": 1, "해외 Z세대": 1, "글로벌 Z세대": 1,
-    "日 Z세대": 1, "日本 Z세대": 1, "中 Z세대": 1, "中國 Z세대": 1, "美 Z세대": 1,
+    "Z세대": 1, "MZ세대": 1, "잘파세대": 1, "알파세대": 1, "1020세대": 1, "Z세대 트렌드": 1,
     # 2점
+    "MZ": 2, "잘파": 2, "젠지": 2,
+    "미국 Z세대": 2, "일본 Z세대": 2, "중국 Z세대": 2, "해외 Z세대": 2, "글로벌 Z세대": 2,
+    "日 Z세대": 2, "日本 Z세대": 2, "中 Z세대": 2, "中國 Z세대": 2, "美 Z세대": 2,
     "틱톡 트렌드": 2, "틱톡 해시태그": 2, "트렌드": 2, "유행": 2,
     "열풍": 2, "핫플": 2, "핫플레이스": 2, "오픈런": 2, "요즘": 2, "화제": 2, "팬덤": 2, "덕질": 2, "덕후": 2, "팬심": 2, "굿즈": 2,
     "성지": 2, "뜨는": 2, "역대급 인파": 2,
-    "대학생": 2, "대학교": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
+    "대학생": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
     "다이소": 2, "올리브영": 2, "무신사": 2, "올다무": 2, "올다아무": 2, "방한 외국인": 2,
     "디저트": 2,
     "트렌드 리포트": 2,
@@ -24,7 +25,8 @@ KEYWORD_PRIORITY = {
     "앱": 2,
     # 3점
     "완판": 3, "품귀현상": 3, "품절대란": 3, "품절": 3, "대란": 3,
-    "거래액 증가": 3, "거래액 하락": 3, "유동인구 급증": 3, "매진": 3,
+    "거래액": 3, "거래액 증가": 3, "거래액 하락": 3,
+    "거래량": 3, "유동인구 급증": 3, "매진": 3,
     "1위": 3, "소비력": 3, "글로벌 소비": 3,
     "틱톡": 3, "인스타그램": 3, "SNS": 3,
     "패션 트렌드": 3, "시니어 트렌드": 3, "여행 트렌드": 3,
@@ -40,7 +42,12 @@ KEYWORD_PRIORITY = {
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
-STRICT_KEYWORDS = ["앱", "성지", "뜨는", "역대급 인파", "요즘", "디저트"]
+
+STRICT_KEYWORDS = ["앱", "성지", "뜨는", "역대급 인파", "요즘", "디저트", "품절", "대란", "거래액", "거래량", "화제", "열풍", "1위"]
+
+SYNONYM_GROUPS = [
+    {"품절", "대란", "품절대란", "품절 대란"},
+]
 
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
@@ -62,7 +69,7 @@ EXCLUDE_KEYWORDS = [
     "구속", "체포", "검거", "고소", "고발", "형사", "소송",
     "처벌", "징역", "벌금", "무죄", "유죄", "항소",
     "살해", "살인", "폭행", "보복", "강도", "절도", "납치", "방화", "피의자", "범행",
-    "학대", "죽인", "죽이다", "피해자", "가해자",
+    "학대", "죽인", "죽이다", "피해자", "가해자", "범죄", "불법", "적발", "압수", "수색",
     # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
@@ -91,6 +98,7 @@ EXCLUDE_KEYWORDS = [
     "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을", "군대", "참변", "발대식", "해단식", "합의금", "대표팀", "수법", "과속", "투표율", "손해배상",
     "의혹", "논란", "해명", "결별", "열애설", "매치", "결승전", "감독", "무역수지",
     "임명", "선임", "인사", "영입", "정기주주총회", "주총", "기자간담회", "설명회", "IR", "전략적 파트너십",
+    "MZ 톡톡", "코트라", "인터뷰", "이벤트 진행", "하차", "포럼", "투자자", "유치",
 ]
 
 STOP_WORDS = {
@@ -99,6 +107,25 @@ STOP_WORDS = {
     '위한', '따른', '한', '된', '되는', '있는', '있다', '있어', '통한', '에서',
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
+
+def get_synonym_group(kw):
+    for i, group in enumerate(SYNONYM_GROUPS):
+        if kw in group:
+            return i
+    return None
+
+def deduplicate_by_synonym(keywords_list):
+    result = []
+    used_groups = set()
+    for kw in keywords_list:
+        group_idx = get_synonym_group(kw)
+        if group_idx is not None:
+            if group_idx not in used_groups:
+                used_groups.add(group_idx)
+                result.append(kw)
+        else:
+            result.append(kw)
+    return result
 
 def fetch_news(keyword, display=10):
     enc_keyword = urllib.parse.quote(keyword)
@@ -206,9 +233,12 @@ def main():
             tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
             base_score = 3 if tier1_in_title else 0
 
-            first_keyword = keywords_in_title[0]
-            title_bonus = sum(1 for kw in KEYWORD_PRIORITY if kw != first_keyword and kw in title)
-            desc_score = sum(1 for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description)
+            deduped = deduplicate_by_synonym(keywords_in_title)
+            title_bonus = len(deduped) - 1
+
+            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description]
+            deduped_desc = deduplicate_by_synonym(desc_keywords)
+            desc_score = len(deduped_desc)
 
             article_score = base_score + title_bonus + desc_score
 
