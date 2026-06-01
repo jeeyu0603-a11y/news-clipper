@@ -1,4 +1,3 @@
-
 import os
 import re
 import json
@@ -21,6 +20,7 @@ KEYWORD_PRIORITY = {
     "성지": 2, "뜨는": 2, "역대급 인파": 2,
     "대학생": 2, "고등학생": 2, "취준생": 2, "취업준비생": 2,
     "다이소": 2, "올리브영": 2, "무신사": 2, "올다무": 2, "올다아무": 2, "방한 외국인": 2,
+    "유통업계": 2,
     "디저트": 2,
     "트렌드 리포트": 2,
     "앱스토어": 2, "검색어": 2, "급상승 검색어": 2, "구글 트렌드": 2, "직장인": 2,
@@ -39,20 +39,21 @@ KEYWORD_PRIORITY = {
     "숏폼": 5, "청년층": 5,
     "K-푸드": 5, "K-뷰티": 5, "K-패션": 5,
     "K푸드": 5, "K뷰티": 5, "K패션": 5,
-    "신제품 출시": 5, "소비 트렌드": 5, "구매 트렌드": 5,
+    "소비 트렌드": 5, "구매 트렌드": 5,
 }
 
 KEYWORDS = list(KEYWORD_PRIORITY.keys())
 TIER1_KEYWORDS = [k for k, v in KEYWORD_PRIORITY.items() if v == 1]
 
-STRICT_KEYWORDS = ["앱", "성지", "뜨는", "역대급 인파", "요즘", "디저트", "품절", "대란", "거래액", "거래량", "화제", "열풍", "1위"]
+STRICT_KEYWORDS = ["앱", "성지", "뜨는", "역대급 인파", "요즘", "디저트", "품절", "대란", "거래액", "거래량", "화제", "열풍", "1위", "유통업계"]
+
+DESC_EXCLUDED_KEYWORDS = {"유통업계"}
 
 SYNONYM_GROUPS = [
     {"품절", "대란", "품절대란", "품절 대란"},
 ]
 
-# 단어 경계 체크 필요 키워드 (앞에 한글이 오면 다른 단어의 일부로 판단)
-WORD_BOUNDARY_KEYWORDS = {"화제", "1위"}
+WORD_BOUNDARY_KEYWORDS = {"화제", "1위", "매진"}
 
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
@@ -78,6 +79,7 @@ EXCLUDE_KEYWORDS = [
     # 금융/주식
     "ETF", "레버리지", "코스피", "코스닥",
     "펀드", "채권", "증시", "배당", "공모", "IPO", "선물", "옵션",
+    "과세", "세금",
     # 부동산
     "분양", "청약", "아파트", "재개발", "재건축", "입주", "전세", "월세", "매매", "부동산", "임대", "LH",
     # 지자체/행정
@@ -93,7 +95,7 @@ EXCLUDE_KEYWORDS = [
     # 예능/방송
     "예능", "방영", "편성", "첫방", "송출", "재개", "시즌",
     # 마케팅/보도자료
-    "선보여", "출시했다", "개최", "MOU", "체결", "업무협약",
+    "선보여", "출시했다", "개최", "MOU", "체결", "업무협약", "협약",
     "증정", "프로모션", "패키지", "선착순", "할인",
     "기념해", "고객 감사", "오픈 소식",
     "체험단", "모집", "공식 쇼핑몰", "기획전", "단독 판매",
@@ -104,6 +106,7 @@ EXCLUDE_KEYWORDS = [
     "의혹", "논란", "해명", "결별", "열애설", "매치", "결승전", "감독", "무역수지",
     "임명", "선임", "인사", "영입", "정기주주총회", "주총", "기자간담회", "설명회", "IR", "전략적 파트너십",
     "MZ 톡톡", "코트라", "인터뷰", "이벤트 진행", "하차", "포럼", "투자자", "유치",
+    "론칭 방송", "런칭 방송",
 ]
 
 STOP_WORDS = {
@@ -114,7 +117,6 @@ STOP_WORDS = {
 }
 
 def keyword_in_text(kw, text):
-    """키워드가 텍스트에 독립적으로 포함됐는지 확인"""
     if kw in WORD_BOUNDARY_KEYWORDS:
         pattern = r'(?<![가-힣])' + re.escape(kw)
         return bool(re.search(pattern, text))
@@ -246,7 +248,7 @@ def main():
             deduped = deduplicate_by_synonym(keywords_in_title)
             title_bonus = len(deduped) - 1
 
-            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in deduped and keyword_in_text(kw, description)]
+            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in deduped and kw not in DESC_EXCLUDED_KEYWORDS and keyword_in_text(kw, description)]
             deduped_desc = deduplicate_by_synonym(desc_keywords)
             desc_score = len(deduped_desc)
 
