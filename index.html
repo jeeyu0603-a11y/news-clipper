@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -383,7 +384,7 @@
     const prevSnapshot = (articles[0]?.url || '') + articles.length;
     btn.disabled = true;
     btn.textContent = '수집 중...';
-    status.textContent = '수집 시작...';
+    status.textContent = '';
     document.getElementById('app').innerHTML = `
       <div class="loading">
         <div class="spinner"></div>
@@ -429,12 +430,9 @@
 
     const interval = setInterval(async () => {
       attempts++;
-      const elapsed = Math.floor(attempts * 10 / 60);
-      const sec = (attempts * 10) % 60;
 
       // 1단계: 워크플로우 완료 체크
       if (!workflowDone) {
-        status.textContent = `수집 중... (${elapsed}분 ${sec}초)`;
         try {
           const res = await fetchWithTimeout(
             `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1`,
@@ -444,7 +442,6 @@
           const run = data.workflow_runs?.[0];
           if (run && run.status === 'completed') {
             workflowDone = true;
-            status.textContent = `수집 완료, 페이지 반영 중...`;
           }
         } catch (e) { /* 재시도 */ }
 
@@ -486,8 +483,6 @@
         });
         return;
       }
-
-      status.textContent = `페이지 반영 중... (${pagesAttempts * 10}초)`;
     }, 10000);
   }
 
@@ -496,3 +491,4 @@
 
 </body>
 </html>
+```
