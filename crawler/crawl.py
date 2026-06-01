@@ -1,7 +1,6 @@
-파일 읽는 시간 때문에 오래 걸려요. 지금은 최근에 읽어서 바로 드릴게요:
 
-```python
 import os
+import re
 import json
 import urllib.request
 import urllib.parse
@@ -51,6 +50,9 @@ STRICT_KEYWORDS = ["앱", "성지", "뜨는", "역대급 인파", "요즘", "디
 SYNONYM_GROUPS = [
     {"품절", "대란", "품절대란", "품절 대란"},
 ]
+
+# 단어 경계 체크 필요 키워드 (앞에 한글이 오면 다른 단어의 일부로 판단)
+WORD_BOUNDARY_KEYWORDS = {"화제", "1위"}
 
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
@@ -111,6 +113,13 @@ STOP_WORDS = {
     '으로', '이라', '라고', '이고', '으며', '만에', '까지', '부터', '만큼'
 }
 
+def keyword_in_text(kw, text):
+    """키워드가 텍스트에 독립적으로 포함됐는지 확인"""
+    if kw in WORD_BOUNDARY_KEYWORDS:
+        pattern = r'(?<![가-힣])' + re.escape(kw)
+        return bool(re.search(pattern, text))
+    return kw in text
+
 def get_synonym_group(kw):
     for i, group in enumerate(SYNONYM_GROUPS):
         if kw in group:
@@ -145,7 +154,6 @@ def fetch_news(keyword, display=10):
         return []
 
 def clean_html(text):
-    import re
     import html
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text)
@@ -159,7 +167,6 @@ def is_relevant(item):
     return True
 
 def normalize_title(text):
-    import re
     return re.sub(r'[^\w\s]', ' ', text)
 
 def is_similar_title(new_title, existing_titles, threshold=2):
@@ -223,7 +230,7 @@ def main():
             title = clean_html(item.get("title", ""))
             description = clean_html(item.get("description", ""))
 
-            keywords_in_title = [kw for kw in KEYWORD_PRIORITY if kw in title]
+            keywords_in_title = [kw for kw in KEYWORD_PRIORITY if keyword_in_text(kw, title)]
 
             if not keywords_in_title:
                 filtered_keyword_title += 1
@@ -233,13 +240,13 @@ def main():
                 filtered_keyword_title += 1
                 continue
 
-            tier1_in_title = any(kw in title for kw in TIER1_KEYWORDS)
+            tier1_in_title = any(keyword_in_text(kw, title) for kw in TIER1_KEYWORDS)
             base_score = 3 if tier1_in_title else 0
 
             deduped = deduplicate_by_synonym(keywords_in_title)
             title_bonus = len(deduped) - 1
 
-            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in deduped and kw in description]
+            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in deduped and keyword_in_text(kw, description)]
             deduped_desc = deduplicate_by_synonym(desc_keywords)
             desc_score = len(deduped_desc)
 
@@ -289,4 +296,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
