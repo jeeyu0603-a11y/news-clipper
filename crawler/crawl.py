@@ -1,3 +1,6 @@
+파일 읽는 시간 때문에 오래 걸려요. 지금은 최근에 읽어서 바로 드릴게요:
+
+```python
 import os
 import json
 import urllib.request
@@ -236,7 +239,7 @@ def main():
             deduped = deduplicate_by_synonym(keywords_in_title)
             title_bonus = len(deduped) - 1
 
-            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in keywords_in_title and kw in description]
+            desc_keywords = [kw for kw in KEYWORD_PRIORITY if kw not in deduped and kw in description]
             deduped_desc = deduplicate_by_synonym(desc_keywords)
             desc_score = len(deduped_desc)
 
@@ -271,8 +274,7 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
-    all_items.sort(key=lambda x: -x.get("score", 0))
-    all_items.sort(key=lambda x: x["date"], reverse=True)
+    all_items.sort(key=lambda x: (x["date"], x.get("score", 0)), reverse=True)
 
     output = {
         "crawled_at": now.strftime("%Y-%m-%d %H:%M"),
@@ -287,3 +289,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
