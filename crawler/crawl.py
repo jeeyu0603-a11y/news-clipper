@@ -55,6 +55,8 @@ SYNONYM_GROUPS = [
 
 WORD_BOUNDARY_KEYWORDS = {"화제", "1위", "매진"}
 
+EXCLUDE_IN_DESC = ["배우"]
+
 ALLOWED_DOMAINS = [
     "biz.chosun.com", "hankyung.com", "magazine.hankyung.com",
     "mk.co.kr", "biz.heraldcorp.com", "mt.co.kr", "edaily.co.kr",
@@ -165,6 +167,10 @@ def is_relevant(item):
     title = clean_html(item.get("title", ""))
     for word in EXCLUDE_KEYWORDS:
         if word in title:
+            return False
+    description = clean_html(item.get("description", ""))
+    for word in EXCLUDE_IN_DESC:
+        if word in description:
             return False
     return True
 
