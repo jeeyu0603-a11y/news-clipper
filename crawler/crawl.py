@@ -1,4 +1,3 @@
-
 import os
 import re
 import json
@@ -59,6 +58,10 @@ SYNONYM_GROUPS = [
 
 WORD_BOUNDARY_KEYWORDS = {"화제", "1위", "매진"}
 
+PER_KEYWORD_LIMIT = {
+    "올리브영": 3,
+}
+
 EXCLUDE_IN_DESC = ["배우"]
 
 ALLOWED_DOMAINS = [
@@ -111,8 +114,8 @@ EXCLUDE_KEYWORDS = [
     "장애인", "폭로", "재입고", "세일", "트렌드줌인", "책마을", "군대", "참변", "발대식", "해단식", "합의금", "대표팀", "수법", "과속", "투표율", "손해배상",
     "의혹", "논란", "해명", "결별", "열애설", "매치", "결승전", "감독", "무역수지",
     "임명", "선임", "인사", "영입", "정기주주총회", "주총", "기자간담회", "설명회", "IR", "전략적 파트너십",
-    "MZ 톡톡", "코트라", "인터뷰", "이벤트 진행", "하차", "포럼", "투자자", "유치",
-    "론칭 방송", "런칭 방송", "최낙삼", "칼럼", "[이커머스 PRO]","DMZ",
+    "MZ 톡톡", "코트라", "인터뷰", "이벤트 진행", "하차", "포럼", "투자자", "유치", "DMZ", "ET톡", "스페셜리포트",
+    "론칭 방송", "런칭 방송", "최낙삼", "칼럼", "[이커머스 PRO]",
 ]
 
 STOP_WORDS = {
@@ -179,7 +182,7 @@ def is_relevant(item):
     return True
 
 def normalize_title(text):
-    text = re.sub(r'(\w)-(\w)', r'\1\2', text)  # K-뷰티 → K뷰티
+    text = re.sub(r'(\w)-(\w)', r'\1\2', text)
     return re.sub(r'[^\w\s]', ' ', text)
 
 def is_similar_title(new_title, existing_titles, threshold=2):
@@ -294,6 +297,21 @@ def main():
     print(f"중복 제거: {filtered_duplicate}개")
     print(f"최종 통과: {len(all_items)}개")
 
+    # 키워드별 개수 제한 적용 (점수 높은 순으로 선별)
+    if PER_KEYWORD_LIMIT:
+        all_items.sort(key=lambda x: -x.get("score", 0))
+        keyword_counts = {}
+        limited_items = []
+        for item in all_items:
+            kw = item["keyword"]
+            limit = PER_KEYWORD_LIMIT.get(kw)
+            if limit is not None:
+                if keyword_counts.get(kw, 0) >= limit:
+                    continue
+                keyword_counts[kw] = keyword_counts.get(kw, 0) + 1
+            limited_items.append(item)
+        all_items = limited_items
+
     all_items.sort(key=lambda x: (x["date"], x.get("score", 0)), reverse=True)
 
     output = {
@@ -309,4 +327,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
