@@ -1,6 +1,42 @@
 {
-  "crawled_at": "2026-06-09 21:19",
+  "crawled_at": "2026-06-10 06:27",
   "items": [
+    {
+      "title": "“K뷰티 쇼핑지도 넓어졌다”… 동해·밀양·여수 올리브영 ‘외국인 특...",
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=1780992484&code=11151400&cp=nv",
+      "source": "www.kmib.co.kr",
+      "date": "2026-06-10",
+      "description": "이른바 ‘올다무(올리브영·다이소·무신사)’로 불리는 외국인 관광객 필수코스로 주목받은 덕이다. 특히 제주 함덕점과 경주황남점 등 외국인 주요 관광지에 출점한 특화 매장이 매출 증대에 톡톡한 공을 세웠다....",
+      "keyword": "다이소",
+      "score": 3
+    },
+    {
+      "title": "[르포] \"젠슨 황 기운 받으러 왔어요\"...K푸드, 젠슨황 방한에 특수 톡톡",
+      "url": "http://www.fnnews.com/news/202606081552032477",
+      "source": "www.fnnews.com",
+      "date": "2026-06-10",
+      "description": "주문하며 화제를 모으기도 했다. 한편, 황 CEO가 삼계탕을 즐긴 서울 종로구에 '토속촌'은 점심 시간이 끝난... 황 CEO가 다녀간 매장에 인파가 몰리고, 소비한 메뉴가 소셜네트워크서비스(SNS)에서 화제를 모으고 있기...",
+      "keyword": "화제",
+      "score": 2
+    },
+    {
+      "title": "\"K팝의 성공, 육성 시스템과 강력한 팬덤 덕\"",
+      "url": "https://starin.edaily.co.kr/news/newspath.asp?newsid=01079126645480408",
+      "source": "starin.edaily.co.kr",
+      "date": "2026-06-10",
+      "description": "그는 “과거에는 미국 시장과 일해야만 명성과 평판을 얻을 수 있다는 인식이 강했지만, 지금은 달라졌다”면서 “코로나19 대유행 이후 국적과 지역에 관계없이 좋은 곡을 더 많은 아티스트에게 전달하는 것이...",
+      "keyword": "유행",
+      "score": 1
+    },
+    {
+      "title": "20대 한국 성악가들, 국제콩쿠르서 잇따라 우승",
+      "url": "https://www.donga.com/news/People/article/all/20260610/134081319/2",
+      "source": "www.donga.com",
+      "date": "2026-06-10",
+      "description": "콩쿠르’에서 1위를 차지했다”고 9일 밝혔다. 벨베데레 콩쿠르는 세계 주요 오페라 극장 관계자들이... 부문 1위에 올랐으며, 바리톤 최준영(29)이 남성 부문 1위를 차지했다. 만 18∼32세 성악가를 대상으로 한 이...",
+      "keyword": "1위",
+      "score": 1
+    },
     {
       "title": "다시 돌아온 젤리슈즈, 패션 아이템으로 부활... Z세대 '젤꾸' 열풍",
       "url": "https://www.insight.co.kr/news/557722",
@@ -29,15 +65,6 @@
       "score": 5
     },
     {
-      "title": "\"노력하면 성공?\"...미국 Z세대는 ‘아메리칸 드림’ 안 믿는다",
-      "url": "https://magazine.hankyung.com/business/article/202606095573b",
-      "source": "magazine.hankyung.com",
-      "date": "2026-06-09",
-      "description": "미국 사회를 상징해온 ‘아메리칸 드림(American Dream)’에 대한 믿음이 젊은 세대를 중심으로 흔들리고 있는... 젊은 세대 사이에서 회의감이 커지고 있다는 분석이 나온다. AP통신은 8일(현지 시각) 시카고대...",
-      "keyword": "Z세대",
-      "score": 4
-    },
-    {
       "title": "“MZ 감성 입은 신세계까사”, ‘자주 압구정로데오점’ 오픈",
       "url": "https://sports.donga.com/economy/article/all/20260609/134061669/1",
       "source": "sports.donga.com",
@@ -47,12 +74,12 @@
       "score": 4
     },
     {
-      "title": "\"음식물처리기까지 판다고?\" 무신사, 다이소도 울고 갈 '생활템' 공습",
-      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04211526645480080",
-      "source": "www.edaily.co.kr",
+      "title": "\"노력하면 성공?\"...미국 Z세대는 ‘아메리칸 드림’ 안 믿는다",
+      "url": "https://magazine.hankyung.com/business/article/202606095573b",
+      "source": "magazine.hankyung.com",
       "date": "2026-06-09",
-      "description": "트렌드를 타는 의류는 시즌이 지나면 재고 부담이 커질 수 있지만 생활용품과 소형가전은 상대적으로 유행 변화가 적고 수요도 꾸준하다. 계절과 패션 트렌드에 따른 실적 변동성을 낮출 수 있는 셈이다. 안정적으로...",
-      "keyword": "유행",
+      "description": "젊은 세대일수록 미국을 다른 나라보다 특별한 국가로 인식하지 않는 경향도 두드러졌다. 30세 미만 미국 성인의 44%는 미국보다 더 나은 나라가 있다고 답했으며, 60세 이상에서는 이 비율이 22%에 그쳤다.",
+      "keyword": "미국 Z세대",
       "score": 4
     },
     {
@@ -87,17 +114,8 @@
       "url": "https://www.hankyung.com/article/2026060840421",
       "source": "www.hankyung.com",
       "date": "2026-06-09",
-      "description": "중국 MZ세대가 왕훙(중국 인플루언서)이 라이브커머스를 통해 판매하는 K패션 브랜드에 열광하면서다. 국내 패션 브랜드도 중국 진출을 위해 ‘왕훙 커머스’를 적극 활용하고 있다. 8일 중국 테크 미디어 36Kr에 따르면...",
-      "keyword": "MZ세대",
-      "score": 2
-    },
-    {
-      "title": "“일본 마음에 안 들지만 초밥은 못 참아”… 중국 MZ, 5시간 줄서서 먹...",
-      "url": "https://www.mk.co.kr/article/12069166",
-      "source": "www.mk.co.kr",
-      "date": "2026-06-09",
-      "description": "가성비 맛집으로 SNS 타고 인기 80개 넘는 접시 쌓은 영상 화제 중국 MZ 청년들이 일본 회전초밥 체인 스시로를 먹기 위해 5시간 넘게 줄을 서며 기다릴 정도로 스시로가 중국에서 예상 밖의 대박을 터뜨렸다. 경기...",
-      "keyword": "MZ",
+      "description": "왕훙 라이브커머스를 통해 소개된 K패션은 곧바로 샤오홍슈샵과 틱톡샵 등 스토어에서 팔린다. 중국 전문... 한국 브랜드는 이런 트렌드에 맞춰 왕훙 커머스를 활용해 중국 내 인지도를 높이고 있다. 서울시가 인디 패션...",
+      "keyword": "틱톡 트렌드",
       "score": 2
     },
     {
@@ -137,15 +155,6 @@
       "score": 2
     },
     {
-      "title": "[기자수첩] 20대의 초라한 투자 성적표",
-      "url": "http://www.fnnews.com/news/202606091859451608",
-      "source": "www.fnnews.com",
-      "date": "2026-06-09",
-      "description": "\"막차라도 타지 않으면 안 된다는 느낌이 들었다.\" 최근 마이너스 통장으로 1억원을 빌려 단일종목 레버리지에 투자한 30대 직장인의 말이다. 그는 코스피의 가파른 상승세를 \"사실상 마지막 사다리\"라고 표현했다. 포모...",
-      "keyword": "직장인",
-      "score": 2
-    },
-    {
       "title": "“회사는 경력 보는데 취준생은 자격증 준비만”…취업 사교육비 455만원",
       "url": "https://www.mk.co.kr/article/12069432",
       "source": "www.mk.co.kr",
@@ -155,21 +164,21 @@
       "score": 1
     },
     {
-      "title": "환율 1500원대 '뉴노멀'에 K푸드 비상…원가·해외투자 부담 커졌다",
-      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04847846645480080",
-      "source": "www.edaily.co.kr",
+      "title": "'무신사' 인기상품",
+      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=225712",
+      "source": "www.apparelnews.co.kr",
       "date": "2026-06-09",
-      "description": "최근 K푸드 열풍에 힘입어 해외 시장 공략에 나선 기업들은 투자 비용 증가라는 또 다른 과제에 직면했다. 공장 신설과 법인 투자, 현지 마케팅을 확대해야 하는 이들 기업은 같은 규모의 투자에도 더 많은 원화를...",
-      "keyword": "열풍",
+      "description": "신발은 올해 트렌드 경향이 가장 크게 바뀐 카테고리다. 스니커즈의 기능을 결합한 클로그와 메리제인, 샌들과 운동화를 결합한 여름 신발이 크게 각광을 받고 있다. '아디다스'는 이를 넘어 발렛 슈즈를 출시했는데 단숨에...",
+      "keyword": "트렌드",
       "score": 1
     },
     {
-      "title": "보이지 않는 것을 팔기①[테크트렌드]",
-      "url": "https://magazine.hankyung.com/business/article/202605284273b",
-      "source": "magazine.hankyung.com",
+      "title": "\"음식물처리기까지 판다고?\" 무신사, 다이소도 울고 갈 '생활템' 공습",
+      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04211526645480080",
+      "source": "www.edaily.co.kr",
       "date": "2026-06-09",
-      "description": "실물 없이 할 수 있는 홍보 영미권 책 시장에서는 최근 버추얼 굿즈(Virtual Goods)가 출현했다. 책을 구매한 소비자들에게 기념으로 주는 북커버, 책갈피, 엽서, 컵, 손수건, 노트, 볼펜을 굿즈라 한다. 그런데 이제는...",
-      "keyword": "굿즈",
+      "description": "국내에선 생활용품을 넘어 뷰티와 패션까지 상품군을 넓힌 균일가숍 다이소가 유사 사례로 거론된다. 다이소는 이 같은 카테고리 확장을 바탕으로 지난해 매출 4조원을 돌파했다. 올해는 5조원 돌파를 목전에 두고 있다....",
+      "keyword": "다이소",
       "score": 1
     },
     {
@@ -177,17 +186,8 @@
       "url": "https://www.sedaily.com/article/20053615?ref=naver",
       "source": "www.sedaily.com",
       "date": "2026-06-09",
-      "description": "CJ올리브영이 자체 뷰티 브랜드(PB)에 이어 굿즈로 영역을 넓히며 독자적인 상품 경쟁력을 키우고 있다. 단순... 브랜드 굿즈를 출시한 후 판매 채널을 확대하고 있다. 현재 올리브영N 성수와 센트럴 강남 타운, 광장마켓점...",
-      "keyword": "굿즈",
-      "score": 1
-    },
-    {
-      "title": "“샤오홍슈가 먼저 찾았다”…中 MZ 사로잡은 K패션 브랜드는",
-      "url": "https://www.sedaily.com/article/20053306?ref=naver",
-      "source": "www.sedaily.com",
-      "date": "2026-06-09",
-      "description": "하고하우스 관계자는 “﻿외국인 쇼핑 성지로 떠오른 한남동 플래그십 스토어에서는 중국인 고객 매출이 계속 증가하고 있다”며 “현지 소비자 반응을 살피면서 특화된 콘텐츠 확산을 이어갈 예정”이라고...",
-      "keyword": "성지",
+      "description": "CJ올리브영이 자체 뷰티 브랜드(PB)에 이어 굿즈로 영역을 넓히며 독자적인 상품 경쟁력을 키우고 있다. 단순... 9일 업계에 따르면 올리브영은 지난 3월 서울 중구 ‘올리브영 센트럴 명동 타운’에서 숄더백, 파우치 등...",
+      "keyword": "올리브영",
       "score": 1
     },
     {
@@ -245,15 +245,6 @@
       "score": 1
     },
     {
-      "title": "\"팬심 설레게 해볼까\" 오리온, 닥터유 제주용암수 '박지훈 라벨' 출시",
-      "url": "https://www.newsis.com/view/NISX20260609_0003661352",
-      "source": "www.newsis.com",
-      "date": "2026-06-09",
-      "description": "실제로 지난달 26일 닥터유몰에서 판매된 '박지훈 포토카드 패키지'는 하루만에 완판됐다. 더불어 지난달 닥터유몰 신규가입자는 전년 동월 대비 40% 늘었으며, 닥터유몰 내 닥터유 제주용암수 매출도 두 배 이상...",
-      "keyword": "완판",
-      "score": 1
-    },
-    {
       "title": "“1번 계란 어디서 팔아요?” 백화점 오픈런, 무슨 일? [언박싱]",
       "url": "https://biz.heraldcorp.com/article/10767035?ref=naver",
       "source": "biz.heraldcorp.com",
@@ -296,6 +287,15 @@
       "date": "2026-06-09",
       "description": "'경제학자의 의사결정법'을 펴낸 강민욱 고려대 교수 뇌 구조 예전 그대로인데 선택지는 폭발적으로 증가 인지능력이 변화 못따라가 소비습관·진로·가족계획… 현재편향이 미래설계 망쳐 '선저축 후소비' 생활화 등...",
       "keyword": "숏폼",
+      "score": 1
+    },
+    {
+      "title": "환율 1500원대 '뉴노멀'에 K푸드 비상…원가·해외투자 부담 커졌다",
+      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04847846645480080",
+      "source": "www.edaily.co.kr",
+      "date": "2026-06-09",
+      "description": "최근 K푸드 열풍에 힘입어 해외 시장 공략에 나선 기업들은 투자 비용 증가라는 또 다른 과제에 직면했다.... CJ푸드빌의 뚜레쥬르는 “이미 해외 시장에 드라이브를 건 만큼 투자 계획을 축소하거나 연기하는 방안은...",
+      "keyword": "K-푸드",
       "score": 1
     },
     {
@@ -407,15 +407,6 @@
       "score": 1
     },
     {
-      "title": "젠슨 황 엔비디아 CEO, 유퀴즈서 화사 향한 팬심 고백 \"신곡도 챙겨 듣는...",
-      "url": "https://www.insight.co.kr/news/557470",
-      "source": "www.insight.co.kr",
-      "date": "2026-06-08",
-      "description": "예상치 못한 글로벌 테크 거물의 '덕질 공인'에 유재석도 연신 감탄을 쏟아내며 맞장구를 쳤다. 최근 방한한 젠슨 황의 일거수일투족은 연일 국내 온·오프라인을 뜨겁게 달구는 중이다. 지난 5일 입국해 6일 '유 퀴즈...",
-      "keyword": "덕질",
-      "score": 1
-    },
-    {
       "title": "문구 덕후 모이는 인벤타리오에 '한글 굿즈' 뜬다",
       "url": "https://www.newsis.com/view/NISX20260608_0003659795",
       "source": "www.newsis.com",
@@ -458,33 +449,6 @@
       "date": "2026-06-07",
       "description": "둘째 날 역시 수많은 방문객의 발길이 끊이지 않았으나, 역대급 인파가 쏟아진 첫날에 비하면 상대적으로 숨통이 트인 수준이었다. KCCF 2026 테이블 벤더 구역 전경. 사진=지디넷코리아 대원미디어 관계자에 따르면 당초...",
       "keyword": "역대급 인파",
-      "score": 1
-    },
-    {
-      "title": "\"썸도 연애도 부담\"…Z세대 덮친 '짝사랑 불황' 현상[세계는Z금]",
-      "url": "https://view.asiae.co.kr/article/2026060415334057209",
-      "source": "view.asiae.co.kr",
-      "date": "2026-06-06",
-      "description": "편집자주Z세대(1990년대 후반~2010년대 초반 출생자)는 빠르게 변화하는 시대 속에서 문화와 트렌드를 주도하며, 사회 전반에서 새로운 기준을 만들어가는 세대로 주목받고 있다. [세계는Z금]에서는 전 세계 Z세대의...",
-      "keyword": "Z세대 트렌드",
-      "score": 4
-    },
-    {
-      "title": "'아침부터 800명 줄섰다'…덕후들 성지 되더니 '잭팟' 터진 곳",
-      "url": "https://www.hankyung.com/article/2026060501651",
-      "source": "www.hankyung.com",
-      "date": "2026-06-06",
-      "description": "◇오픈런 만든 ‘도파민 스테이션’ 5일 HDC그룹의 유통 계열사 아이파크몰에 따르면 아이파크몰 용산점의... 100~150명이 오픈런을 뛰고 있다. 인형뽑기 크레인은 하루 평균 3000만~4000만원, 가챠파크는 월평균 2억원...",
-      "keyword": "오픈런",
-      "score": 2
-    },
-    {
-      "title": "그냥 '핫플'인 줄 알았는데…'살고 싶은 동네' 1위 오른 곳",
-      "url": "https://www.hankyung.com/article/2026060607347",
-      "source": "www.hankyung.com",
-      "date": "2026-06-06",
-      "description": "서울 성수동 상권이 단순히 '힙한 동네'를 넘어 하나의 생활권으로 진화하고 있다. 카페와 편집숍을 찾아 잠깐 들르는 상권이 아니라, 브랜드를 경험하고 쇼핑하고 머무는 체류형 상권으로 바뀌고 있다는 분석이다. 6일...",
-      "keyword": "핫플",
       "score": 1
     }
   ]
