@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-15 15:29",
+  "crawled_at": "2026-06-15 15:46",
   "items": [
     {
       "title": "AI 보정 사진에 질린 Z세대... '디지털카메라' 열풍에 가격도 급등",
@@ -56,6 +56,15 @@
       "score": 2
     },
     {
+      "title": "상용근로자 수 26년만에 감소…20·30대서 19만명 줄었다",
+      "url": "https://www.donga.com/news/Economy/article/all/20260615/134112449/1",
+      "source": "www.donga.com",
+      "date": "2026-06-15",
+      "description": "AI가 청년층의 일자리를 대체하는 흐름도 나타나고 있다. 20대 상용 근로자는 정보통신업에서 5만7000명 줄어든 반면 30대 정보통신업 상용직은 2만6000명 늘었다. AI가 신입 채용 수요를 흡수하면서 소프트웨어...",
+      "keyword": "청년층",
+      "score": 2
+    },
+    {
       "title": "\"두산베어스 팬심 공략\"…락앤락, 한정판 3종 출시",
       "url": "https://www.newsis.com/view/NISX20260615_0003669644",
       "source": "www.newsis.com",
@@ -92,15 +101,6 @@
       "score": 1
     },
     {
-      "title": "케이뱅크, 무신사머니 통장·체크카드 사전 예약",
-      "url": "https://www.newsis.com/view/NISX20260615_0003669619",
-      "source": "www.newsis.com",
-      "date": "2026-06-15",
-      "description": "무신사 앱 내 이벤트 페이지에서 '사전 예약하기'를 누르면 저금통과 함께 최소 2000원에서 최대 5만원까지 랜덤 현금 리워드가 지급된다. 앞서 케이뱅크와 무신사페이먼츠는 지난해 라이프스타일 커머스 기반 금융...",
-      "keyword": "앱",
-      "score": 1
-    },
-    {
       "title": "틱톡서 유명한 美 가수 올리버 트리, 헬기 충돌로 32세에 사망",
       "url": "https://biz.heraldcorp.com/article/10771801?ref=naver",
       "source": "biz.heraldcorp.com",
@@ -119,30 +119,12 @@
       "score": 1
     },
     {
-      "title": "안전줄 안 맸다고 외쳤는데…40m 번지점프대서 20대女 내던져 사망 ‘충...",
-      "url": "https://biz.heraldcorp.com/article/10772009?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-06-15",
-      "description": "그는 번지점프 하기 전 자신의 SNS에 “도대체 누가 나를 다리에서 뛰어내리게 내버려둔 거야?”라며 농담조로 게시물을 올려 충격을 더했다. 이번 사건으로 현장에 있던 직원 3명을 포함해 총 6명이 체포됐다. 경찰에...",
-      "keyword": "SNS",
-      "score": 1
-    },
-    {
       "title": "2030이 반한 불교문화…불교문화엑스포 관람 청년층 65%",
       "url": "https://www.newsis.com/view/NISX20260615_0003669148",
       "source": "www.newsis.com",
       "date": "2026-06-15",
       "description": "대한민국불교문화엑스포에 방문한 관람객 중 2030세대가 절반을 넘었다. 지난 14일 대구 EXCO에서 막을 내린 '2026 대한민국불교문화엑스포'는 나흘간 수많은 관람객의 발길이 이어졌다. 15일 대한민국불교문화엑스포...",
       "keyword": "2030세대",
-      "score": 1
-    },
-    {
-      "title": "상용근로자 수 26년만에 감소…20·30대서 19만명 줄었다",
-      "url": "https://www.donga.com/news/Economy/article/all/20260615/134112449/1",
-      "source": "www.donga.com",
-      "date": "2026-06-15",
-      "description": "경제활동인구조사 마이크로데이터를 분석한 결과 지난달 20대 상용직은 16만4000명, 30대는 3만4000명... 20, 30대 제조업 상용 근로자는 1년 전보다 9만2000명(20대 3만6000명, 30대 5만6000명) 줄었다. 50대에서도...",
-      "keyword": "20대",
       "score": 1
     },
     {
