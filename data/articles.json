@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-15 14:18",
+  "crawled_at": "2026-06-15 15:29",
   "items": [
     {
       "title": "AI 보정 사진에 질린 Z세대... '디지털카메라' 열풍에 가격도 급등",
@@ -20,21 +20,21 @@
       "score": 5
     },
     {
+      "title": "'반짝 트렌드' 인기는 얼마나 갈까?...품절 대란이었던 '라부부', 지금은...",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=99638",
+      "source": "www.dailypop.kr",
+      "date": "2026-06-15",
+      "description": "현장 분위기만으로 인기를 단정할 수는 없지만, 과거처럼 한 캐릭터가 압도적인 존재감을 보이던 시기와는 다른 흐름이 감지됐다. 유행은 언제나 변화한다. SNS를 장악하고 오픈런 행렬을 만들었던 라부부도 예외는 아니었다.",
+      "keyword": "유행",
+      "score": 4
+    },
+    {
       "title": "\"스마트폰 사진은 너무 인위적\"…Z세대가 되살린 디카",
       "url": "https://www.hankyung.com/article/202606155859i",
       "source": "www.hankyung.com",
       "date": "2026-06-15",
       "description": "Z세대가 스마트폰 사진의 과도한 보정과 디지털 피로감에서 벗어나 독립형 디지털카메라를 다시 찾고 있다.... Z세대는 필름에도 강한 관심을 보이고 있다. 즉석에서 사진을 출력하는 후지필름 인스탁스 카메라 판매는...",
       "keyword": "Z세대",
-      "score": 3
-    },
-    {
-      "title": "'반짝 트렌드' 인기는 얼마나 갈까?...품절 대란이었던 '라부부', 지금은...",
-      "url": "http://www.dailypop.kr/news/articleView.html?idxno=99638",
-      "source": "www.dailypop.kr",
-      "date": "2026-06-15",
-      "description": "키링이 전 세계적인 인기를 끌며 품절 대란을 일으킨 라부부. 국내에서도 오픈런과 웃돈 거래가 이어질 정도로 뜨거운 관심을 받았다. 한때 팝마트의 대표 캐릭터였던 라부부는 지금도 같은 인기를 누리고 있을까. 직접...",
-      "keyword": "트렌드",
       "score": 3
     },
     {
@@ -47,15 +47,6 @@
       "score": 2
     },
     {
-      "title": "유튜브 보고 공포체험하러 간 대학생들…폐리조트서 30대 남성 시신 발...",
-      "url": "https://view.asiae.co.kr/article/2026061514044332537",
-      "source": "view.asiae.co.kr",
-      "date": "2026-06-15",
-      "description": "충북 충주의 한 폐리조트에서 공포 체험을 하던 대학생들이 30대 남성의 시신을 발견해 경찰이 수사에 나섰다. 15일 연합뉴스에 따르면 전날 오후 3시께 충주의 한 폐리조트 20층 옥상에서 20대 대학생 4명이 30대 남성...",
-      "keyword": "대학생",
-      "score": 2
-    },
-    {
       "title": "'숏폼 전쟁' 뛰어든 쇼박스… 릴숏과 글로벌 공략",
       "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02630566645482048",
       "source": "www.edaily.co.kr",
@@ -65,30 +56,12 @@
       "score": 2
     },
     {
-      "title": "'고용 버팀목' 상용직 26년5개월만에 첫 감소…2030세대 충격",
-      "url": "https://www.yna.co.kr/view/AKR20260613045900002?input=1195m",
-      "source": "www.yna.co.kr",
+      "title": "\"두산베어스 팬심 공략\"…락앤락, 한정판 3종 출시",
+      "url": "https://www.newsis.com/view/NISX20260615_0003669644",
+      "source": "www.newsis.com",
       "date": "2026-06-15",
-      "description": "상용직 감소는 20·30 청년세대에서 두드러졌다. 지난달 20대는 16만4천명, 30대는 3만4천명씩, 총 19만7천명 감소했는데 이는 2020년 12월(-21만7천명) 이후 가장 큰 규모다. 20·30대 상용직 감소는 제조업에서 두드러졌다....",
-      "keyword": "2030세대",
-      "score": 2
-    },
-    {
-      "title": "100만 눈앞에 둔 공포 영화 '백룸'…10·20대 관객이 절반 이상",
-      "url": "https://www.yna.co.kr/view/AKR20260615001200005?input=1195m",
-      "source": "www.yna.co.kr",
-      "date": "2026-06-15",
-      "description": "정지욱 평론가는 \"밈(Meme·온라인 유행 콘텐츠)으로 출발한 영화의 소재가 10대와 20대를 끌어들인 것으로 생각한다\"며 \"10대와 20대는 괴담을 확대·재생산해온 연령대로, 공포 영화의 가장 큰 소비자\"라고 설명했다....",
-      "keyword": "유행",
-      "score": 1
-    },
-    {
-      "title": "틱톡서 유명한 美 가수 올리버 트리, 헬기 충돌로 32세에 사망",
-      "url": "https://biz.heraldcorp.com/article/10771801?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-06-15",
-      "description": "유튜브에서 특유의 과장된 캐릭터와 시각적으로 강렬한 뮤직비디오로 해외 팬덤을 넓혀온 아티스트다. 국내에서도 틱톡과 유튜브 쇼츠를 통해 ‘Miss You’, ‘Life Goes On’ 등이 알려졌다. 스포티파이 월간...",
-      "keyword": "팬덤",
+      "description": "생활용품 기업 락앤락은 프로야구 두산베어스와 함께한 한정판 굿즈 3종을 선보인다고 15일 밝혔다. 이번 협업 상품은 ▲데일리 원터치 클립 텀블러 ▲실리콘 지퍼백 ▲토트 쿨러백으로 구성됐다. 원터치 클립 텀블러는 한...",
+      "keyword": "팬심",
       "score": 1
     },
     {
@@ -101,12 +74,57 @@
       "score": 1
     },
     {
+      "title": "폐리조트 공포체험 간 대학생들, 옥상서 30대男 시신 발견",
+      "url": "http://www.fnnews.com/news/202606151421527332",
+      "source": "www.fnnews.com",
+      "date": "2026-06-15",
+      "description": "A씨를 처음 발견한 이들은 대학생 4명으로 확인됐다. 이들은 유튜브에서 해당 폐리조트를 소개하는 공포 체험 영상을 시청한 뒤, 호기심에 현장을 방문했다가 숨져 있는 A씨를 목격하고 경찰에 신고했다. 경찰은...",
+      "keyword": "대학생",
+      "score": 1
+    },
+    {
+      "title": "iM뱅크, 무신사와 앱 신규 고객 혜택 이벤트",
+      "url": "https://www.sedaily.com/article/20055885?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-06-15",
+      "description": "iM뱅크는 국내 대표 패션·뷰티 플랫폼 무신사와 함께 iM뱅크 앱 신규 고객을 대상으로 최대 2만 2000원의 무신사 혜택을 제공하는 이벤트를 진행한다. 이벤트 기간은 이달 30일까지다. iM뱅크 앱 첫 로그인 시 1만...",
+      "keyword": "무신사",
+      "score": 1
+    },
+    {
+      "title": "케이뱅크, 무신사머니 통장·체크카드 사전 예약",
+      "url": "https://www.newsis.com/view/NISX20260615_0003669619",
+      "source": "www.newsis.com",
+      "date": "2026-06-15",
+      "description": "무신사 앱 내 이벤트 페이지에서 '사전 예약하기'를 누르면 저금통과 함께 최소 2000원에서 최대 5만원까지 랜덤 현금 리워드가 지급된다. 앞서 케이뱅크와 무신사페이먼츠는 지난해 라이프스타일 커머스 기반 금융...",
+      "keyword": "앱",
+      "score": 1
+    },
+    {
+      "title": "틱톡서 유명한 美 가수 올리버 트리, 헬기 충돌로 32세에 사망",
+      "url": "https://biz.heraldcorp.com/article/10771801?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-06-15",
+      "description": "과장된 캐릭터와 시각적으로 강렬한 뮤직비디오로 해외 팬덤을 넓혀온 아티스트다. 국내에서도 틱톡과 유튜브 쇼츠를 통해 ‘Miss You’, ‘Life Goes On’ 등이 알려졌다. 스포티파이 월간 청취자는 1100만 명을 넘겼다.",
+      "keyword": "틱톡",
+      "score": 1
+    },
+    {
       "title": "틱톡, 서울 중소기업 대상 디지털 마케팅 교육 'SMB 아카데미' 운영",
       "url": "https://magazine.hankyung.com/money/article/202606123016c",
       "source": "magazine.hankyung.com",
       "date": "2026-06-15",
       "description": "틱톡은 서울경제진흥원(SBA)과 협력해 서울 소재 중소기업을 대상으로 한 디지털 마케팅 교육 프로그램 '틱톡 SMB 아카데미'를 운영한다고 밝혔다. 교육은 6월 11일부터 총 8주간 진행된다. SMB 아카데미는 중소기업이 숏폼...",
       "keyword": "틱톡",
+      "score": 1
+    },
+    {
+      "title": "안전줄 안 맸다고 외쳤는데…40m 번지점프대서 20대女 내던져 사망 ‘충...",
+      "url": "https://biz.heraldcorp.com/article/10772009?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-06-15",
+      "description": "그는 번지점프 하기 전 자신의 SNS에 “도대체 누가 나를 다리에서 뛰어내리게 내버려둔 거야?”라며 농담조로 게시물을 올려 충격을 더했다. 이번 사건으로 현장에 있던 직원 3명을 포함해 총 6명이 체포됐다. 경찰에...",
+      "keyword": "SNS",
       "score": 1
     },
     {
@@ -254,22 +272,13 @@
       "score": 4
     },
     {
-      "title": "[비즈톡톡] 북중미 월드컵 마케팅 ‘치맥’보다 ‘팬덤’이 주목받는 이...",
-      "url": "https://biz.chosun.com/distribution/channel/2026/06/13/HY63A6XOIVDK7MPO2SEPKUUBKI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "source": "biz.chosun.com",
+      "title": "Z세대 78% \"중소 정규직보다 대기업 계약직\"…규모·인지도·커리어 고려",
+      "url": "https://www.newsis.com/view/NISX20260613_0003667948",
+      "source": "www.newsis.com",
       "date": "2026-06-13",
-      "description": "오전 경기 편성에 ‘치맥 특수’ 약화 전망 업계, 대표팀 MD·월드컵 공식 굿즈 앞세워 팬심 공략... 유통업계는 먹거리 중심 프로모션보다 팬심을 자극할 수 있는 굿즈와 체험형 콘텐츠 확대에 집중하는 모습입니다....",
-      "keyword": "팬심",
-      "score": 2
-    },
-    {
-      "title": "‘중소기업 정규직 vs. 대기업 계약직’… 취준생 선택은?",
-      "url": "https://www.kmib.co.kr/article/view.asp?arcid=0029963150&code=61121111&cp=nv",
-      "source": "www.kmib.co.kr",
-      "date": "2026-06-13",
-      "description": "김정현 진학사 캐치 본부장은 “Z세대 구직자들은 첫 직장을 선택할 때 정규직 여부만 보기보다 이후 커리어에 어떤 도움이 되는지를 함께 고려하는 경향이 강하다”며 “기업 입장에서도 해당 포지션에서 얻을 수 있는...",
-      "keyword": "Z세대",
-      "score": 1
+      "description": "13일 채용 플랫폼 진학사 캐치가 취준생 1457명을 대상으로 실시한 조사에 따르면, '첫 직장으로 대기업 계약직과 중소기업 정규직 중 어느 쪽을 선택하겠느냐'는 질문에 응답자의 78%가 대기업 계약직을 택했다. '첫 직장...",
+      "keyword": "취준생",
+      "score": 4
     },
     {
       "title": "MBTI 다음은 사주 오행?…식음료계로 번진 '운세 마케팅' [트렌드+]",
@@ -277,15 +286,6 @@
       "source": "www.hankyung.com",
       "date": "2026-06-13",
       "description": "지난달 말 서울 양재동 에이티(aT)센터에서 열린 국내 첫 '운세 박람회'에는 행사장 문이 열리기 전부터 500여명이 긴 줄을 서는 '오픈런' 진풍경이 연출됐으며 나흘간 진행된 행사의 사전 신청자 수만 1만명을 돌파했다....",
-      "keyword": "오픈런",
-      "score": 1
-    },
-    {
-      "title": "\"BTS 티켓팅보다 어렵더라\"…서울국제도서전, 올해도 오픈런 예고",
-      "url": "https://www.newsis.com/view/NISX20260612_0003667396",
-      "source": "www.newsis.com",
-      "date": "2026-06-13",
-      "description": "지난해에는 일부 출판사 부스마다 한정판 굿즈를 구매하려는 관람객들이 개장 전부터 줄을 서는 이른바 '오픈런' 풍경이 연출됐다. 올해도 미니북 키링, 문구류, 에코백 등 다양한 굿즈가 예고되면서 현장 열기가...",
       "keyword": "오픈런",
       "score": 1
     },
