@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-18 14:34",
+  "crawled_at": "2026-06-18 14:58",
   "items": [
     {
       "title": "유시몰, 도쿄 하라주쿠 팝업 성황…일본 MZ세대 사로잡았다",
@@ -128,15 +128,6 @@
       "score": 1
     },
     {
-      "title": "퇴근하고 또 매대 채운다…불안한 직장인들, '노동 게임'에 빠졌다",
-      "url": "https://www.newsis.com/view/NISX20260618_0003674126",
-      "source": "www.newsis.com",
-      "date": "2026-06-18",
-      "description": "다만 과거의 경영 게임이 사업 전체를 위에서 조정하는 방식이었다면, 요즘 노동 게임은 1인칭 시점에서 직접 일하는 감각을 강조한다. 이용자는 사장이면서 동시에 직원이다. 상품을 주문하고 가격을 정하는 사장 역할을...",
-      "keyword": "요즘",
-      "score": 1
-    },
-    {
       "title": "SNS 뒤집은 월드컵 '미녀 관중'…반전 정체에 '술렁'",
       "url": "https://www.hankyung.com/article/2026061843457",
       "source": "www.hankyung.com",
@@ -179,15 +170,6 @@
       "date": "2026-06-18",
       "description": "이날 유재석은 2030세대의 버스기사 취업률이 높아진 현상을 언급했다.이승준은 \"우리나라는 어쩔 수 없이 상명하복 수직적 기업 문화다. 버스기사는 그런 걱정이 전혀 없고 오로지 수평구조라서 상사에 대한 스트레스가...",
       "keyword": "2030세대",
-      "score": 1
-    },
-    {
-      "title": "1인 가구 중 취업 가구 비중 5년 만에 하락… 20·30대 낙폭 최대",
-      "url": "https://biz.chosun.com/policy/policy_sub/2026/06/18/ANZXIPC45VHG3AV7KM6LQWQR7Y/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "source": "biz.chosun.com",
-      "date": "2026-06-18",
-      "description": "청년층의 1인 취업가구 하락 폭이 전 연령층에서 가장 컸다. 15~29세와 30~39세 1인 취업가구 비중은... 데이터처 관계자는 “청년층의 고용 상황이 어렵다 보니, 1인 가구에서도 유사한 경향성이 확인되는...",
-      "keyword": "청년층",
       "score": 1
     },
     {
@@ -254,6 +236,15 @@
       "score": 3
     },
     {
+      "title": "유인원 옆에 'KOREA'…한국 한정판 낸 베이프, 완판 행렬",
+      "url": "https://www.hankyung.com/article/202606170986i",
+      "source": "www.hankyung.com",
+      "date": "2026-06-17",
+      "description": "그 결과 지난 10개월간 베이프 제품의 월별 거래액 증가율(전월 대비)은 평균 118%로 집계됐다. 무신사 트레이딩은 베이프 외에도 032c, 노아, 마린 세르 등 여러 글로벌 브랜드를 국내 시장에 안착시켜 왔다. 글로벌...",
+      "keyword": "거래액 증가",
+      "score": 3
+    },
+    {
       "title": "올여름 여행 트렌드는 ‘플레이케이션’…다이빙·골프·사이클링의 성...",
       "url": "https://www.mk.co.kr/article/12076169",
       "source": "www.mk.co.kr",
@@ -290,15 +281,6 @@
       "score": 2
     },
     {
-      "title": "청소년 SNS 규제 나선 호주·영국… 한국은 논의도 아직",
-      "url": "https://biz.chosun.com/it-science/ict/2026/06/17/55QOZD3H7ZHJJHZ4F4WWASU2RA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "source": "biz.chosun.com",
-      "date": "2026-06-17",
-      "description": "파이낸셜타임스(FT)와 BBC 등에 따르면 규제안에는 페이스북, 인스타그램, 스냅챗, 레딧, 틱톡, 엑스(X)... 호주는 지난해 12월 전 세계에서 처음으로 16세 미만 청소년의 페이스북, 인스타그램, 유튜브, 틱톡 등 주요 SNS...",
-      "keyword": "틱톡",
-      "score": 2
-    },
-    {
       "title": "오마카세 가던 MZ, 이젠 ‘젤꾸·볼꾸’…얇아진 지갑에 ‘가성비 취미...",
       "url": "https://www.donga.com/news/Society/article/all/20260617/134129784/1",
       "source": "www.donga.com",
@@ -326,15 +308,6 @@
       "score": 1
     },
     {
-      "title": "\"매달 100만원 넘게 쓰는데\"…등골 휘는 취준생들 '한숨'",
-      "url": "https://www.hankyung.com/article/2026061601661",
-      "source": "www.hankyung.com",
-      "date": "2026-06-17",
-      "description": "어학시험 응시료와 자격증 취득 비용이 잇달아 오르는 가운데 생성형 AI 서비스 이용료까지 새로운 취업 준비 비용으로 떠오르며 취업준비생의 부담이 가중되고 있다. 16일 잡코리아가 대졸 취업준비생 485명을...",
-      "keyword": "취업준비생",
-      "score": 1
-    },
-    {
       "title": "K푸드, 먹거리 넘어 문화로…160억 달러 수출 드라이브",
       "url": "https://www.mt.co.kr/economy/2026/06/17/2026061716040812723",
       "source": "www.mt.co.kr",
@@ -349,15 +322,6 @@
       "source": "www.apparelnews.co.kr",
       "date": "2026-06-17",
       "description": "스타 플로럴 워시드 코튼 재킷(네이비)은 지난 3월 출시 일주일 만에 초도 물량이 완판돼 4차 리오더 물량까지 투입했다. 시즌 사은품으로 기획됐다가 고객 요청에 따라 판매 상품으로 전환한 도트 시어 포인트 스카프와...",
-      "keyword": "완판",
-      "score": 1
-    },
-    {
-      "title": "유인원 옆에 'KOREA'…한국 한정판 낸 베이프, 완판 행렬",
-      "url": "https://www.hankyung.com/article/202606170986i",
-      "source": "www.hankyung.com",
-      "date": "2026-06-17",
-      "description": "일본 스트리트 패션 브랜드 베이프(A BATHING APE)의 한국 한정판 컬렉션이 발매 이틀 만에 완판됐다. 베이프의 국내 공식 유통을 맡고 있는 무신사의 브랜드 비즈니스 전문 조직 무신사 트레이딩은 지난 12일 무신사 온라인...",
       "keyword": "완판",
       "score": 1
     },
