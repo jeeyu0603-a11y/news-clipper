@@ -1,6 +1,15 @@
 {
-  "crawled_at": "2026-08-04 09:41",
+  "crawled_at": "2026-08-04 13:16",
   "items": [
+    {
+      "title": "“데이트 한 번에 30만원이라니”…미국 Z세대, 연애 안해? 못해!",
+      "url": "https://www.mk.co.kr/article/12116058",
+      "source": "www.mk.co.kr",
+      "date": "2026-08-04",
+      "description": "뉴욕타임스(NYT)는 3일(현지시간) 미국의 청년 세대가 이전 세대보다 데이트를 훨씬 적게 즐기는 ‘연애 후퇴(Romance Recession)’ 현상을 겪고 있다고 보도했다. 그 중심에는 연애 앱 피로도나 개인주의적 성향 같은 문화적...",
+      "keyword": "Z세대",
+      "score": 5
+    },
     {
       "title": "50여 개 브랜드 참여하는 '서울아트굿즈페스티벌', 올해 팬 부스 신설",
       "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=03020886645544040",
@@ -20,6 +29,15 @@
       "score": 2
     },
     {
+      "title": "\"결혼식에 비키니 입고 오면 어쩌나\"…美 '노출 패션' 유행에 갈등",
+      "url": "https://www.newsis.com/view/NISX20260804_0003735324",
+      "source": "www.newsis.com",
+      "date": "2026-08-04",
+      "description": "입힐 비상용 드레스를 신부가 직접 준비하는 사례까지 등장했다. 전문가들은 속옷을 겉옷처럼 입는 '네이키드 드레싱'이 패션 트렌드로 자리 잡았지만, 복장 예절을 둘러싼 입장의 차이는 당분간 계속될 것으로 보고 있다.",
+      "keyword": "패션 트렌드",
+      "score": 2
+    },
+    {
       "title": "[단독] 하루 15만명 ‘MZ 성지’ 홍대입구역에 출입구 새로 생긴다… “...",
       "url": "https://biz.chosun.com/real_estate/real_estate_general/2026/08/04/HC6XFUZ22FDCHCKUIPJZJM2YOM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
       "source": "biz.chosun.com",
@@ -29,30 +47,84 @@
       "score": 1
     },
     {
-      "title": "\"팬덤 AI 인프라 구축\"…일리오, 딥테크 팁스 이어 MIT ILP 선정",
-      "url": "https://www.mt.co.kr/future/2026/08/04/2026080315220649818",
-      "source": "www.mt.co.kr",
+      "title": "공연은 끝나도 굿즈는 남는다…'서울아트굿즈페스티벌' 내달 개막",
+      "url": "https://www.newsis.com/view/NISX20260804_0003735395",
+      "source": "www.newsis.com",
       "date": "2026-08-04",
-      "description": "팬덤 플랫폼 '팬심(FANCIM)'을 운영하는 일리오가 딥테크 팁스(TIPS)에 선정된 데 이어 MIT(매사추세츠공과대) ILP... 지원하는 팬덤 산업 특화 AI(인공지능) 기술을 개발한다. 팬심을 통해 누적 4만명 이상의 크리에이터를...",
+      "description": "올해는 팬들이 직접 참여하는 '팬 부스'까지 마련돼 공연예술 팬덤 문화를 함께 즐기는 축제로 꾸며진다.... 축제\"라며 \"올해는 팬덤 문화와 다양한 문화예술 분야로 외연을 넓혀 누구나 취향을 발견하고 함께 즐길 수 있는...",
       "keyword": "팬덤",
       "score": 1
     },
     {
-      "title": "인천국제공항공사, '대학생이 일하고 싶은 공기업' 9년째 1위",
-      "url": "https://www.yna.co.kr/view/AKR20260804028200003?input=1195m",
-      "source": "www.yna.co.kr",
+      "title": "\"팬덤 AI 인프라 구축\"…일리오, 딥테크 팁스 이어 MIT ILP 선정",
+      "url": "https://www.mt.co.kr/future/2026/08/04/2026080315220649818",
+      "source": "www.mt.co.kr",
       "date": "2026-08-04",
-      "description": "인크루트 조사…한국수자원공사 10계단 상승한 7위 인천국제공항공사가 '대학생이 일하고 싶은 공기업' 조사에서 9년 연속 1위 자리를 지켰다. 4일 HR테크 기업 인크루트가 대학생 1천811명을 대상으로 공공기관...",
+      "description": "팬덤 플랫폼 '팬심(FANCIM)'을 운영하는 일리오가 딥테크 팁스(TIPS)에 선정된 데 이어 MIT(매사추세츠공과대) ILP... 팬심을 통해 누적 4만명 이상의 크리에이터를 지원해 왔다. 일리오는 월 470만건 이상의 팬 활동 데이터를...",
+      "keyword": "팬심",
+      "score": 1
+    },
+    {
+      "title": "인천국제공항공사, '대학생이 일하고 싶은 공기업' 9년째 1위",
+      "url": "https://magazine.hankyung.com/job-joy/article/202608043697d",
+      "source": "magazine.hankyung.com",
+      "date": "2026-08-04",
+      "description": "인천국제공항공사가 '대학생이 일하고 싶은 공기업' 조사에서 9년 연속 1위 자리를 지켰다. 4일 인크루트가 대학생 1811명을 대상으로 공공기관 경영정보시스템 알리오(ALIO)에 공시된 시장형·준시장형 총 30개 기관에...",
       "keyword": "대학생",
       "score": 1
     },
     {
-      "title": "무신사 스탠다드 뷰티, 상반기 거래액 2.5배 급증",
-      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=226683",
-      "source": "www.apparelnews.co.kr",
+      "title": "깨끗한나라 '순수한면', 올리브영 홍대타운점서 '쿨링브리즈' 팝업",
+      "url": "https://www.etnews.com/20260804000089",
+      "source": "www.etnews.com",
       "date": "2026-08-04",
-      "description": "무신사(대표 조만호, 조남성) 뷰티의 자체 브랜드(PB) 무신사 스탠다드 뷰티가 초저가 스킨케어 제품 인기에 힘입어 올해 상반기 거래액이 전년 동기 대비 2.5배 성장했다. 이달 호주 오프라인 시장 진출에 이어 연내 중국...",
+      "description": "깨끗한나라의 여성용품 브랜드 '순수한면'은 오는 29일까지 서울 올리브영 홍대타운점에서 여름 신제품... 팝업 인증사진을 인스타그램에 올린 고객을 대상으로 올리브영 기프트카드 1만원권을 증정하는 이벤트도...",
+      "keyword": "올리브영",
+      "score": 1
+    },
+    {
+      "title": "무신사 스탠다드 뷰티, 상반기 거래액 사상 최대…연내 中 시장 공략",
+      "url": "https://www.sedaily.com/article/20075431?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-08-04",
+      "description": "무신사가 운영하는 뷰티 자체 브랜드(PB) ‘무신사 스탠다드 뷰티’는 초저가 제품 인기에 힘입어 올해 상반기 거래액이 최대치를 기록했다고 4일 밝혔다. 무신사 스탠다드 뷰티의 상반기 온오프라인 거래액은 전년 동기...",
       "keyword": "무신사",
+      "score": 1
+    },
+    {
+      "title": "'감다뒤' 검색하는 '인턴' 최민식, 'MZ 대표' 한소희를 만났을 때",
+      "url": "https://www.hankyung.com/article/202608043559H",
+      "source": "www.hankyung.com",
+      "date": "2026-08-04",
+      "description": "첫 출근의 설렘이 묻어나는 기호의 미소와 자신감 넘치는 선우의 표정이 대비를 이루며, \"오늘부터 출근합니다\"라는 문구가 직장인들의 공감을 자극한다. 함께 공개된 1차 예고편에서는 회사에 첫발을 내디딘 기호의...",
+      "keyword": "직장인",
+      "score": 1
+    },
+    {
+      "title": "무신사 vs 지그재그 '디스전' 벌이더니…둘 다 대박 터진 이유 [이슈+]",
+      "url": "https://www.hankyung.com/article/202608042978g",
+      "source": "www.hankyung.com",
+      "date": "2026-08-04",
+      "description": "프로모션을 진행해왔는데, 역시 지그재그와의 디스전과 세일 기간이 겹쳤다. 무신사 측은 \"올해 여름 무진장 프라이데이 거래액은 2830억원\"이라며 \"해당 프로모션이 처음 진행된 2022년 대비 5배 이상 늘어났다\"고 말했다.",
+      "keyword": "거래액",
+      "score": 1
+    },
+    {
+      "title": "안중근·유관순을 희화화... SNS서 퍼지는 AI 독립운동가 조롱 영상",
+      "url": "https://www.insight.co.kr/news/566265",
+      "source": "www.insight.co.kr",
+      "date": "2026-08-04",
+      "description": "제79주년 광복절을 앞두고 틱톡 등 주요 사회관계망서비스(SNS)에 인공지능(AI) 기술을 악용해 독립운동가를... 지난 삼일절 당시에도 AI 기술을 악용해 만든 조잡한 영상이 틱톡 등에 올라와 비판을 받은 바 있다. 현재...",
+      "keyword": "틱톡",
+      "score": 1
+    },
+    {
+      "title": "폭염 속 '잘 먹기' 제안…올리브영, 도심 웰니스 쉼터 운영",
+      "url": "https://www.mt.co.kr/living/2026/08/04/2026080409394273780",
+      "source": "www.mt.co.kr",
+      "date": "2026-08-04",
+      "description": "올리브베러 공식 인스타그램을 팔로우하고 현장 인증 사진을 올리면 기프트카드와 올더베러 제품 등을 증정하는 럭키드로우에도 참여할 수 있다. 현장에는 셀럽 카니와 킹키, 또또 등이 일일 아르바이트생으로 참여해...",
+      "keyword": "인스타그램",
       "score": 1
     },
     {
@@ -60,27 +132,27 @@
       "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=03430886645544040",
       "source": "www.edaily.co.kr",
       "date": "2026-08-04",
-      "description": "4일 모바일 중고차 플랫폼 첫차가 발표한 ‘8월 중고차 판매 통계’에 따르면 수입 중고차 판매 순위에서 테슬라 모델 3와 모델 Y가 각각 1위와 2위를 차지했다. 첫차는 “FSD 라이트 적용이 가능한 매물은 플랫폼에...",
-      "keyword": "1위",
+      "description": "첫차 관계자는 “8월 중고차 시장에서는 테슬라의 소프트웨어 호재가 주요 변수로 작용하고 있다”며 “가격과 소프트웨어 적용 가능 여부를 꼼꼼히 비교하는 2030세대의 구매 수요가 두드러진다”고 말했다. 한편...",
+      "keyword": "2030세대",
       "score": 1
     },
     {
-      "title": "\"잘 먹는 것도 웰니스\" 올리브영, 도심 곳곳 '팝업 트럭'",
-      "url": "https://www.newsis.com/view/NISX20260804_0003735176",
-      "source": "www.newsis.com",
+      "title": "20대 식생활 점수 50점…젊을수록 식습관 '빨간불'",
+      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04428006645544040",
+      "source": "www.edaily.co.kr",
       "date": "2026-08-04",
-      "description": "올리브베러 공식 인스타그램을 팔로우하고 현장 인증 사진을 올리면 럭키드로우 이벤트에도 참여할 수 있다. 올리브베러 기프트카드와 올더베러 제품 등이 경품으로 제공된다. 셀럽과 함께하는 현장 이벤트도...",
-      "keyword": "인스타그램",
+      "description": "연령별로는 20대가 50.3점으로 가장 낮았고 30대가 52.8점으로 뒤를 이었다. 이후 연령이 높아질수록 점수가 높아져 70세 이상은 66.1점으로 가장 높은 점수를 기록했다. 20·30대는 대부분 항목의 점수가 가장 낮았다. 특히...",
+      "keyword": "20대",
       "score": 1
     },
     {
-      "title": "자녀 해고 통보에 엄마가 항의... 미Z세대 직장의 파고든 '헬리콥터 부모...",
-      "url": "https://www.insight.co.kr/news/566046",
-      "source": "www.insight.co.kr",
-      "date": "2026-08-03",
-      "description": "Z세대(1990년대 중반~2010년대 초반 출생) 자녀의 직장 문제에까지 깊숙이 개입하고 있다고 보도했다. 미국... 온라인 이력서 플랫폼 제티(Zety)가 올해 1월 미국 Z세대 근로자 1001명을 대상으로 진행한 조사에 따르면...",
-      "keyword": "Z세대",
-      "score": 4
+      "title": "한국인 식생활평가 58.6점…20대 최저·70세 이상 최고",
+      "url": "https://www.yna.co.kr/view/AKR20260804064800530?input=1195m",
+      "source": "www.yna.co.kr",
+      "date": "2026-08-04",
+      "description": "전반적으로 잡곡, 과일, 우유 및 유제품 섭취가 부족했고, 연령별로는 20대의 식생활이 가장 건강하지... 연령별로는 20대가 50.3점으로 가장 낮았고, 다음으로 30대가 52.8점이었다. 연령이 높을수록 점수는 높아져 70세...",
+      "keyword": "20대",
+      "score": 1
     },
     {
       "title": "\"저녁 술자리는 부담, 편한 게 좋아\"…'아침 약속'에 푹 빠진 美Z세대",
@@ -88,7 +160,7 @@
       "source": "view.asiae.co.kr",
       "date": "2026-08-03",
       "description": "고물가에 저녁 외식 부담이 커진 데다 건강과 가성비까지 챙길 수 있다는 인식이 퍼지면서 Z세대와 밀레니얼 세대를 중심으로 '아침 약속'이 새로운 트렌드로 떠오르고 있다. \"저녁 외식은 부담\"…건강 중시 소비도 한몫...",
-      "keyword": "Z세대",
+      "keyword": "Z세대 트렌드",
       "score": 4
     },
     {
@@ -97,7 +169,16 @@
       "source": "weekly.donga.com",
       "date": "2026-08-03",
       "description": "범위는 넓고 단순히 공부한다고 정답을 알 수 있는 것도 아닌 Z세대의 ‘찐’ 트렌드를 1997년생이 알잘딱깔센(알아서 잘 딱 깔끔하고 센스 있게)하게 알려준다. Z세대의 아이디어는 거창하지 않다. 익숙한 재료를 새롭게...",
-      "keyword": "Z세대",
+      "keyword": "Z세대 트렌드",
+      "score": 4
+    },
+    {
+      "title": "자녀 해고 통보에 엄마가 항의... 미Z세대 직장의 파고든 '헬리콥터 부모...",
+      "url": "https://www.insight.co.kr/news/566046",
+      "source": "www.insight.co.kr",
+      "date": "2026-08-03",
+      "description": "온라인 이력서 플랫폼 제티(Zety)가 올해 1월 미국 Z세대 근로자 1001명을 대상으로 진행한 조사에 따르면, 응답자의 67%가 부모로부터 정기적인 커리어 조언을 받는다고 답했다. 부모가 채용 담당자에게 직접 연락한 적이...",
+      "keyword": "미국 Z세대",
       "score": 4
     },
     {
@@ -128,24 +209,6 @@
       "score": 2
     },
     {
-      "title": "‘노노재팬’ 옛말… 쿠팡·무신사·백화점까지 일본行",
-      "url": "https://biz.chosun.com/distribution/channel/2026/08/03/DOZSVOHRFRB2VHM7TPZNZXRFNQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "source": "biz.chosun.com",
-      "date": "2026-08-03",
-      "description": "올리브영은 지난 5월 ‘케이콘 재팬 2026’과 연계한 ‘올리브영 페스타 재팬 2026’을 통해 55개 K뷰티 브랜드를 소개하기도 했다. 특히 일본에서 K뷰티는 이미 일시적인 유행을 넘어 주요 소비재로 자리 잡았다는 평가가...",
-      "keyword": "올리브영",
-      "score": 2
-    },
-    {
-      "title": "K더마 본격 육성…올리브영, '어드밴스드 더마' 매장 650개 확대",
-      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=226628",
-      "source": "www.apparelnews.co.kr",
-      "date": "2026-08-03",
-      "description": "한편, 올리브영은 올해 1분기 K뷰티 열풍과 방한 외국인 증가세에 힘입어 호실적을 거뒀다. 올리브영 1분기 매출은 별도 기준 1조5,372억원, 순이익은 1,300억원을 기록했다. 이는 전년 동기 대비 매출은 24.5%, 순이익은 2.9...",
-      "keyword": "방한 외국인",
-      "score": 2
-    },
-    {
       "title": "호주 10대 81.5%가 법망 뚫었다…'청소년 SNS 금지' 한국은 다를까?",
       "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=04155766645543712",
       "source": "www.edaily.co.kr",
@@ -159,8 +222,8 @@
       "url": "http://www.dailypop.kr/news/articleView.html?idxno=101165",
       "source": "www.dailypop.kr",
       "date": "2026-08-03",
-      "description": "Z세대 사로잡는 체험형 브랜드 공간 'GEN KITCHEN' 오뚜기는 지난 7월 31일부터 8월 1일까지 일산 킨텍스에서... 이는 단순히 제품을 홍보하거나 유통하는 1차원적 마케팅을 넘어, 글로벌 e스포츠 팬덤인 Z세대의 놀이 문화...",
-      "keyword": "Z세대",
+      "description": "이를 통해 e스포츠 시청 층이자 미래 주요 소비층인 1020 세대에게 오뚜기라는 브랜드를 익숙하고 즐거운 존재로 각인시키는 계기를 마련했다. 위펀 협업 '카레콘볼'로 B2B 유통 채널 개척 마케팅 대상이 Z세대...",
+      "keyword": "1020세대",
       "score": 1
     },
     {
@@ -182,39 +245,12 @@
       "score": 1
     },
     {
-      "title": "오뚜기, 젠지 팬심 공략…LCK 현장에 'GEN KITCHEN' 운영",
-      "url": "https://www.etnews.com/20260803000155",
-      "source": "www.etnews.com",
-      "date": "2026-08-03",
-      "description": "오뚜기는 지난달 31일부터 이달 1일까지 경기 고양시 킨텍스에서 열린 '2026 LCK 팀 로드쇼 젠지 홈스탠드(HOUSE OF GEN.G)'에 참가해 체험형 브랜드 공간 '젠 키친(GEN KITCHEN)'을 운영했다고 3일 밝혔다. HOUSE OF GEN.G는 젠지...",
-      "keyword": "젠지",
-      "score": 1
-    },
-    {
       "title": "살 빼려고 일부러 기생충 감염?…SNS서 번지는 황당 다이어트, 뭔데?",
       "url": "https://www.etnews.com/20260803000240",
       "source": "www.etnews.com",
       "date": "2026-08-03",
       "description": "30일(현지시간) 뉴욕포스트는 최근 틱톡 등 SNS에서 #CyclosporaSkinny 해시태그를 단 게시물이 빠르게 늘고 있다고 보도했다. 게시물에는 기생충 감염 후 몸무게가 줄었다는 경험담이나 이를 희화화한 영상이 공유되고 있으며...",
       "keyword": "틱톡 해시태그",
-      "score": 1
-    },
-    {
-      "title": "[오늘과 내일/신수정]세계 홀린 K푸드, 이제 지역 살린다",
-      "url": "https://www.donga.com/news/Opinion/article/all/20260803/134415444/2",
-      "source": "www.donga.com",
-      "date": "2026-08-03",
-      "description": "지역에서 열릴 ‘K푸드 2막’ K푸드가 반짝 지나가는 유행에 그치지 않으려면 소비재 수출을 넘어서서 지속 가능한 산업 생태계로 전환해야 한다. 세계를 매료시킨 K푸드의 경쟁력은 원재료를 길러내는 지역 농가부터...",
-      "keyword": "유행",
-      "score": 1
-    },
-    {
-      "title": "'기독교인에 침 뱉기' 이스라엘 청년층 확산…반기독교 정서",
-      "url": "https://www.yna.co.kr/view/AKR20260803050100009?input=1195m",
-      "source": "www.yna.co.kr",
-      "date": "2026-08-03",
-      "description": "팔레스타인계 주민이 많은 동예루살렘과 그 안의 예루살렘 구시가지에는 기독교, 유대교, 이슬람교에서 성지로 여겨지는 장소들이 많이 있으며, 다양한 종교를 가진 신자들과 여행객들이 공존하고 있다. WSJ에 따르면...",
-      "keyword": "성지",
       "score": 1
     },
     {
@@ -254,30 +290,12 @@
       "score": 1
     },
     {
-      "title": "방한 외국인, 어디서 뭐하고 놀까…데이터로 본 한국관광 트렌드",
-      "url": "https://biz.heraldcorp.com/article/10828568?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-08-03",
-      "description": "첫 번째 세션에서는 지방공항으로 입국한 외국인의 지역별 이동 경로와 소비 패턴을 분석한 빅데이터를... 중국, 일본, 대만 등 주요 방한국과 사우디아라비아, 베트남, 프랑스 등 신흥 방한국의 세대별 방한관광 행태를...",
-      "keyword": "방한 외국인",
-      "score": 1
-    },
-    {
       "title": "덥고 쪼들리는데...1000원에 또 대박 친 다이소 폭염템 '이것'",
       "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05070886645543712",
       "source": "www.edaily.co.kr",
       "date": "2026-08-03",
       "description": "가격은 5000원이며 이미 온·오프라인 모두 품절인 상태다. 사용감이 준수하다는 후기가 이어지며 이를 찾는 소비자들이 더욱 늘고 있다. 같이 출시된 ‘쿨링 타월’은 멘톨 성분을 넣어 시원한 사용감을 강조했다. 목에...",
       "keyword": "품절대란",
-      "score": 1
-    },
-    {
-      "title": "2030 여성 ‘야구 덕심’ 잡는다…패션 브랜드·플랫폼, 구단 협업 굿즈...",
-      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=03060246645543712",
-      "source": "www.edaily.co.kr",
-      "date": "2026-08-03",
-      "description": "미나수와 SSG 랜더스 협업 상품은 지난달 24일 공개한 지 하루 만에 일부 상품의 전 사이즈가 품절됐고 이튿날인 25일 인천 SSG랜더스필드에 마련한 팝업 스토어에서도 물량이 빠르게 소진됐다. W컨셉 제안으로 협업한...",
-      "keyword": "품절",
       "score": 1
     },
     {
@@ -299,30 +317,12 @@
       "score": 1
     },
     {
-      "title": "키키, 오늘 틱톡서 신곡 '팝 오프 팝 오프' 선공개",
-      "url": "https://www.yna.co.kr/view/AKR20260803073300005?input=1195m",
-      "source": "www.yna.co.kr",
+      "title": "“외국인이 전체 매출 70% 차지”…올리브영, ‘K더마’ 키운다",
+      "url": "https://www.mk.co.kr/article/12115153",
+      "source": "www.mk.co.kr",
       "date": "2026-08-03",
-      "description": "강렬한 신시사이저 사운드 기반 '키키표 서머송' 걸그룹 키키가 3일 오후 6시 숏폼 플랫폼 틱톡을 통해 세 번째 미니앨범 타이틀곡 '팝 오프 팝 오프'(Pop Off Pop Off)를 선공개한다고 소속사 스타쉽엔터테인먼트가...",
-      "keyword": "틱톡",
-      "score": 1
-    },
-    {
-      "title": "한국필립모리스, 펜타포트서 대학생과 '쓰담대학' 친환경 캠페인 펼쳐",
-      "url": "http://www.dailypop.kr/news/articleView.html?idxno=101182",
-      "source": "www.dailypop.kr",
-      "date": "2026-08-03",
-      "description": "최근 2030 세대를 중심으로 운동에 환경보호 가치를 결합한 친환경 트렌드로 자리를 잡았으며, 누구나 일상에서 쉽게 실천할 수 있는 생활 밀착형 봉사 문화로 주목받고 있다. 참가자들은 올바른 쓰레기 분리배출과...",
-      "keyword": "2030세대",
-      "score": 1
-    },
-    {
-      "title": "무신사, 오사카에 마뗑킴 일본 4호점 오픈",
-      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=226655",
-      "source": "www.apparelnews.co.kr",
-      "date": "2026-08-03",
-      "description": "마뗑킴은 국내 컨템포러리 패션 브랜드로, 미니멀한 디자인과 감각적인 로고 플레이, 트렌디한 실루엣을 앞세워 2030세대를 중심으로 성장한 대표 K-패션 브랜드다. 대표 상품군은 로고 티셔츠, 후드, 니트, 데님, 아우터...",
-      "keyword": "2030세대",
+      "description": "올리브영은 이를 통해 ‘데일리 더마 케어’라는 새로운 스킨케어 트렌드를 육성한다는 전략이다.... 특히 외국인 관광객들이 한국 여행 중 피부 진단과 제품 체험까지 함께 경험하는 소비 패턴이 자리 잡으면서...",
+      "keyword": "여행 트렌드",
       "score": 1
     },
     {
