@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-08-06 09:44",
+  "crawled_at": "2026-08-06 09:46",
   "items": [
     {
       "title": "다시 ‘극장의 시간’?…Z세대는 왜 스마트폰을 내려놨나 [취향의 발견...",
@@ -9,15 +9,6 @@
       "description": "실제 정책주간지 ‘K-공감’이 지난 6월 MZ세대(밀레니얼+Z)를 대상으로 실시한 조사에서 응답자의 약 60%가 ‘큰 화면·사운드로 몰입하고 싶어서’ 영화관을 찾는다고 답했는데요. 올 상반기 IMAX·4D·스크린X 등 특별관...",
       "keyword": "Z세대",
       "score": 5
-    },
-    {
-      "title": "\"돈도 안 쓰고 시원해\"…폭염에 핫플된 '이곳'",
-      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02089366645544696",
-      "source": "www.edaily.co.kr",
-      "date": "2026-08-06",
-      "description": "인근 지하상가 중고 의류매장에서 쇼핑 중이던 김지혜(29) 씨도 “요즘 사회관계망서비스(SNS)에서 동묘가 유명해서 방문했는데 너무 더웠다”며 “이곳은 빈티지 의류를 실내에서 구매할 수 있어 요즘같이 덥고 주머니...",
-      "keyword": "요즘",
-      "score": 2
     },
     {
       "title": "미미박스 '카자', 영국 틱톡샵 론칭…유럽 공략 본격화",
@@ -38,11 +29,11 @@
       "score": 2
     },
     {
-      "title": "CJ제일제당, ‘푸드 AI 360’ 글로벌 확대… “AI로 K푸드 현지화 속도”",
-      "url": "https://biz.chosun.com/distribution/food/2026/08/06/HSWAIRNSOVEKFPLA2MDJRBGE3E/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "source": "biz.chosun.com",
+      "title": "인공지능 플랫폼으로 K푸드 세계화…CJ제일제당, 'Food AI 360' 글로벌 론...",
+      "url": "https://view.asiae.co.kr/article/2026080608433598190",
+      "source": "view.asiae.co.kr",
       "date": "2026-08-06",
-      "description": "CJ제일제당은 실시간 트렌드 분석부터 마케팅, 상품 기획·개발, 소비자 반응 시뮬레이션까지 지원하는 AI... 식품마케팅실과 AX(인공지능 전환)·DX(디지털 전환) 담당이 협업해 자체 개발한 ‘푸드 AI 360’은 트렌드...",
+      "description": "CJ제일제당은 동종 업계 최초로 실시간 트렌드 분석부터 마케팅, 상품 기획·개발, 소비자 반응... CJ제일제당이 자체 개발한 이 플랫폼은 트렌드 캐칭, 콘셉트 개발·평가, 시장 반응 모니터링으로 이어지는 기존 업무...",
       "keyword": "트렌드",
       "score": 1
     },
@@ -53,6 +44,15 @@
       "date": "2026-08-06",
       "description": "팀 쿡 애플 최고경영자(CEO)는 “한국 개발자 커뮤니티는 역동적인 기업가와 크리에이터, 기업으로 이루어져 있다”며 “이들이 앱 스토어와 강력한 애플 소프트웨어 및 하드웨어 생태계를 통해 최고의 결과물을...",
       "keyword": "앱스토어",
+      "score": 1
+    },
+    {
+      "title": "\"대체 어떤 집을 사라는 거야\"...30대 70%, 李정부에 성난 이유",
+      "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=03703126645544696",
+      "source": "www.edaily.co.kr",
+      "date": "2026-08-06",
+      "description": "당시 이 대통령은 서울시장 선거 결과와 관련해 ‘청년층 일각에서 더불어민주당이 실제 삶의 문제보다 도덕적 우월감이나 진영 담론에 더 집중해있고 청년을 정치적 상징으로만 소비해왔다’는 비판이 제기된 데...",
+      "keyword": "청년층",
       "score": 1
     },
     {
