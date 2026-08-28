@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-08-28 14:28",
+  "crawled_at": "2026-08-28 21:35",
   "items": [
     {
       "title": "\"사치 부리고 싶을 때 밀크폼 추가\"…美 Z세대 이끄는 '리틀 트리트 경...",
@@ -11,6 +11,15 @@
       "score": 6
     },
     {
+      "title": "양준혁 \"너무 맛있어, 야르~\" 외쳤다가…전현무 \"유행 종결\" 선언",
+      "url": "https://www.insight.co.kr/news/570746",
+      "source": "www.insight.co.kr",
+      "date": "2026-08-28",
+      "description": "야구 레전드 양준혁이 MZ세대 유행어를 따라하다가 오히려 유행을 끝내버리는 진풍경을 연출했다. 양준혁은 30일 방송되는 KBS2 '사장님 귀는 당나귀 귀'에서 아내 박현선과 함께 서울 용산의 핫플레이스를 찾았다. 이날...",
+      "keyword": "MZ세대",
+      "score": 5
+    },
+    {
       "title": "농심, 게임박람회 '게임스컴 2026' 참가…\"글로벌 MZ세대 접점 확대\"",
       "url": "https://www.newsis.com/view/NISX20260828_0003766429",
       "source": "www.newsis.com",
@@ -20,13 +29,40 @@
       "score": 5
     },
     {
-      "title": "전현무 ‘야르’ 유행 절단…양준혁 신조어 해석 ‘폭룡적’ (사당귀)",
-      "url": "https://sports.donga.com/ent/article/all/20260828/134561248/1",
-      "source": "sports.donga.com",
+      "title": "\"술 안 마신다더니 대낮부터?\"…Z세대 푹 빠진 뜻밖의 술자리",
+      "url": "https://view.asiae.co.kr/article/2026082810495636349",
+      "source": "view.asiae.co.kr",
       "date": "2026-08-28",
-      "description": "30일 방송되는 KBS 2TV ‘사장님 귀는 당나귀 귀’(약칭 ‘사당귀’)에서는 양준혁이 아내 박현선과 함께 MZ 세대의 핫플레이스로 떠오른 서울 용산을 방문하는 모습이 그려진다. 제작진에 따르면 이날 양준혁은 연 매출 총...",
-      "keyword": "MZ세대",
+      "description": "Z세대의 음주 문화를 바꾸고 있다. 24일 (현지시간) 가디언, 샬롯옵서버 등 외신 보도에 따르면 최근 글로벌 Z세대는 건강을 챙기면서도 사교적 즐거움을 포기하지 않는 대안으로 이른 시간대 음주를 선호하고 있다....",
+      "keyword": "Z세대",
+      "score": 4
+    },
+    {
+      "title": "[현장POP] 옷 고르고 바구니 가득 화장품 담고…홍대서 본 '올다무' 소비...",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=101998",
+      "source": "www.dailypop.kr",
+      "date": "2026-08-28",
+      "description": "올리브영·다이소·무신사를 묶어 부르는 이른바 '올다무'가 새로운 유통 강자로 떠오르고 있다. 뷰티... 홍대입구역 사거리 인근에서는 올리브영과 무신사, 다이소 매장을 차례로 만날 수 있다. 패션부터 뷰티...",
+      "keyword": "다이소",
       "score": 3
+    },
+    {
+      "title": "\"10대 SNS 하루 2시간\" 메타, 25조 합의…\"틱톡·유튜브도 동참해라\"",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=04696966645551912&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-08-28",
+      "description": "“자정엔 앱 닫히고 수업엔 무음”…10대 계정 디폴트 설정 바뀐다 밤 12시부터 오전 6시까지는 이용이 전면... 앱스토어 차원의 연령 확인 법안 마련을 계속 촉구할 예정이다. 기존의 13+ 콘텐츠 제한 규정, 미성년자 기본...",
+      "keyword": "앱스토어",
+      "score": 3
+    },
+    {
+      "title": "\"우리끼리 조용히 해요\"…3년 만에 1만4000곳 '우후죽순', MZ 몰리는 中",
+      "url": "https://view.asiae.co.kr/article/2026082815565128657",
+      "source": "view.asiae.co.kr",
+      "date": "2026-08-28",
+      "description": "중국에서 MZ세대(밀레니얼+Z세대)를 중심으로 24시간 무인 마작방에서 시간을 보내는 여가 문화가 빠르게 확산하고 있다. 28일 중국 매체 후슈망은 데이터 연구 미디어 DT상업관찰에서 발표한 내용을 인용해 2022년 문을...",
+      "keyword": "Z세대",
+      "score": 2
     },
     {
       "title": "주류 소비 둔화에도 야장·대학가는 활기…하이트진로, MZ 공략 강화",
@@ -38,12 +74,12 @@
       "score": 2
     },
     {
-      "title": "\"부모님 사드려야겠어요\"…요즘 뜨는 '효도템' 정체 [트렌드+]",
-      "url": "https://www.hankyung.com/article/202608288443g",
+      "title": "'종이 한장 4만원' 중고로 올리자마자…\"제가 살게요\" 진기록 [트렌드+]",
+      "url": "https://www.hankyung.com/article/202608289084g",
       "source": "www.hankyung.com",
       "date": "2026-08-28",
-      "description": "관심은 절반인데…10명 중 8명은 쓴다 28일 시장조사전문기업 엠브레인 트렌드모니터가 전국 만 19~69세 남녀 1000명 대상으로 실시한 '디지털(스마트) 헬스케어 관련 U&A 조사'에 따르면 '디지털 헬스케어에 관심이 있다...",
-      "keyword": "트렌드",
+      "description": "포토카드 열풍의 이면에는 '추억과 경험을 소장하려는 팬덤 심리'가 깔려 있다. 단순히 아티스트의 사진이 인쇄된 종이가 아니라, 특정 활동 시기의 감정과 기억을 박제해 소유하려는 욕구가 반영됐다는 분석이다. 최근...",
+      "keyword": "열풍",
       "score": 2
     },
     {
@@ -53,6 +89,15 @@
       "date": "2026-08-28",
       "description": "요즘, 여기 40년 만의 화려한 부활…다시 63빌딩으로 모여드는 까다로운 입맛들 퐁피두센터 개관 맞물려 대수술 저층 맛집·고층 스카이라인 다이닝 젊은 층과 신규 고객 유입 늘어 40년 된 빌딩이 다시 ‘핫플레이스’로...",
       "keyword": "핫플",
+      "score": 2
+    },
+    {
+      "title": "월 8000원에 언제든 영화관 와서 낮잠자라 했더니…직장인들 대환영 [차...",
+      "url": "https://biz.heraldcorp.com/article/10855756?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-08-28",
+      "description": "28일 홍콩 사우스차이나모닝포스트(SCMP)에 따르면 산시성 시안에 있는 루미아이 영화관이 지난해 4월부터 운영하는 ‘낮잠 서비스’가 현지 언론을 통해 알려진 뒤 소셜미디어(SNS) 등에서 화제가 되고 있다. 이 영화관은...",
+      "keyword": "화제",
       "score": 2
     },
     {
@@ -74,11 +119,20 @@
       "score": 2
     },
     {
-      "title": "\"팬덤 놀이터로 변신한 매장\" 메가MGC커피, IP 협업 참여 300만건",
-      "url": "https://www.newsis.com/view/NISX20260828_0003766357",
-      "source": "www.newsis.com",
+      "title": "\"한 달에 수십만원 써도 만족\"…'비밀의 단톡방' 뭐길래 [트렌드+]",
+      "url": "https://www.hankyung.com/article/202608289511g",
+      "source": "www.hankyung.com",
       "date": "2026-08-28",
-      "description": "지난달 단독 선출시한 극장판 '사랑의 하츄핑: 고래보석의 전설' 공식 굿즈는 출시 약 1주 만에 가맹점 발주 물량이 모두 소진됐으며 약 한 달 만에 전국 매장에서 완판됐다. 메가MGC커피는 전국 4400여개 매장망과...",
+      "description": "30대 직장인 문지연 씨도 \"지난해부터 카카오톡 과일 공동구매에 빠졌다\"며 \"방장은 가락시장에서 과일을 직접 떼와서 파시는 분인데, 백화점급 상품을 저렴하게 먹을 수 있어서 만족하고 있다. 부모님은 물론 주변...",
+      "keyword": "직장인",
+      "score": 2
+    },
+    {
+      "title": "“지스타만 갈 이유 없다”…게임사들, 글로벌 게임쇼·팬덤 행사로 발...",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03670326645551912&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-08-28",
+      "description": "(사진=디나미스 원) 엔씨가 퍼블리싱하고 디나미스 원이 개발한 신작 RPG ‘아스트라에 오라티오(Astrae Oratio)’는 지난 8월 일본 ‘코믹마켓’에 참가해 굿즈를 ‘완판’하는 성과를 보이기도 했다. 아스트라에...",
       "keyword": "완판",
       "score": 2
     },
@@ -92,57 +146,48 @@
       "score": 2
     },
     {
-      "title": "[소셜＋] 숏폼 대신 새 본다…2030 사로잡은 도심 속 '탐조'",
-      "url": "https://www.yna.co.kr/view/AKR20260826150500505?input=1195m",
-      "source": "www.yna.co.kr",
+      "title": "[사설] 확산되는 청소년 SNS 제한…한국도 더 늦출 수 없다",
+      "url": "https://www.fnnews.com/news/202608281029154495",
+      "source": "www.fnnews.com",
       "date": "2026-08-28",
-      "description": "먼 습지 대신 동네 공원으로…대학·직장가로 번진 '새 보기' 열풍 일상서 새로운 매력 발견…사진·앱으로 기록하며 '종추' 성취감도 정풍기 인턴기자 = \"새가 자유롭게 날아다니는 모습을 보고 있으면 묘하게 대리만족이...",
-      "keyword": "숏폼",
+      "description": "이미 틱톡·유튜브·스냅챗을 상대로도 유사한 소송이 잇따르고 있다. 메타의 합의가 업계 전반의 청소년 보호 기준을 높이는 계기가 될 수 있다는 뜻이다. 숏폼 콘텐츠의 무분별한 소비와 중독적 알고리즘, 유해 콘텐츠...",
+      "keyword": "틱톡",
       "score": 2
     },
     {
-      "title": "\"1분 만에 팔렸다\" 진기록…외국인들 중고거래에 몰려든 이유 [트렌드+]",
-      "url": "https://www.hankyung.com/article/202608289084g",
+      "title": "\"요즘 술을 안 먹어요\" 고민하더니…'음식 페어링'에 꽂혔다 [트렌드+]",
+      "url": "https://www.hankyung.com/article/202608288328g",
       "source": "www.hankyung.com",
       "date": "2026-08-28",
-      "description": "가로 5.5㎝, 세로 8.5㎝ 크기의 작은 종이 한 장을 구하기 위해 글로벌 팬덤이 국경을 넘나들고 있다. 앨범이나 이벤트 응모를 통해 비매품으로 주어지던 K팝 아이돌 '포토카드'가 희소성과 소장 가치를 지닌 독립된...",
+      "description": "국내 주류 시장이 구조적인 침체 국면에 접어들면서 업계의 생존 공식이 '단순 보틀(병) 판매'를 넘어 '식당가 미식 페어링'으로까지 영역을 넓히고 있다. 전반적인 음주 빈도와 음주량이 동시에 줄어들자, 유통 매대뿐...",
       "keyword": "트렌드",
       "score": 1
     },
     {
-      "title": "삼겹살집 떼창에서 '이슬라이브 페스티벌'까지... 참이슬이 11년간 20대...",
-      "url": "https://www.insight.co.kr/news/570269",
-      "source": "www.insight.co.kr",
+      "title": "문경 사과 케이크-제주 녹차 파운드…‘K푸드’ 잠재력 엿본다",
+      "url": "https://www.donga.com/news/Economy/article/all/20260828/134562955/1",
+      "source": "www.donga.com",
       "date": "2026-08-28",
-      "description": "11년 동안 출연 가수와 음악의 유행도 달라졌고 영상의 길이와 구성도 변했다. 반대로 끝까지 남은 것은 가수가 술잔을 앞에 두고 이야기를 나누다가 노래를 부른다는 기본 설정이다.이슬라이브는 포맷을 그대로...",
-      "keyword": "유행",
+      "description": "● 우리 농산물로 만든 K푸드 풍성 올해 에이팜쇼에서는 세계적인 K푸드 열풍에 함께 날개를 단 K농업의... 지역의 식재료와 향토음식, 식문화를 하나의 여행 콘텐츠로 묶어 세계적인 K 푸드 열풍을 지역 농산물 소비와...",
+      "keyword": "열풍",
       "score": 1
     },
     {
-      "title": "K-푸드 세계화, 이제 ‘법의 국경’을 넘어야 한다 [황우진의 글로벌 퍼...",
-      "url": "https://www.hankyung.com/article/202608289136i",
-      "source": "www.hankyung.com",
+      "title": "직장인들 사이엔 이미 소문났다…점심시간 우르르 몰려 '쿨쿨', 中서 뜬...",
+      "url": "https://view.asiae.co.kr/article/2026082817375484091",
+      "source": "view.asiae.co.kr",
       "date": "2026-08-28",
-      "description": "아니라 계약, 지식재산권, 통상과 규제에 대한 준비가 함께해야 한다. K-푸드가 세계적 유행을 넘어 지속할 수 있는 글로벌 산업이 되려면 이제 '잘 만드는 것'뿐 아니라 '안전하게 세계로 나가는 법'을 준비해야 한다.",
-      "keyword": "유행",
-      "score": 1
-    },
-    {
-      "title": "\"수치스러워\" 직장인들 '광대 연기'하더니…놀라운 일 벌어졌다",
-      "url": "https://www.hankyung.com/article/202608288628i",
-      "source": "www.hankyung.com",
-      "date": "2026-08-28",
-      "description": "그렇게 광대 연기에 재미를 붙인 그는 요즘 취미 삼아 보스턴아동병원의 어린 환자들 앞에서도 공연하고 있다. 광대 수업은 성황을 이루고 있다. 뉴욕에서 '클라운 짐(Clown Gym)'을 운영하는 줄리아 프록터 씨는 \"기업...",
-      "keyword": "요즘",
-      "score": 1
-    },
-    {
-      "title": "“8천원 내면 2시간 반동안을”…점심시간 영화관 간 직장인이 한 일",
-      "url": "https://www.mk.co.kr/article/12138775",
-      "source": "www.mk.co.kr",
-      "date": "2026-08-28",
-      "description": "중국 북서부의 한 영화관이 점심시간 휴식을 취할 수 있도록 조절 가능한 좌석을 통해 ‘낮잠 서비스’를 제공해 화제다. 28일 홍콩 사우스차이나모닝포스트(SCMP)에 따르면 산시성 시안에 있는 루미아이 영화관은...",
+      "description": "중국의 한 영화관이 직장인을 대상으로 점심시간 휴식을 취할 수 있도록 좌석을 제공하는 '낮잠 서비스'를 공개해 화제다. 28일 홍콩 사우스차이나모닝포스트(SCMP)에 따르면 중국 산시성 시안에 있는 루미아이 영화관은...",
       "keyword": "화제",
+      "score": 1
+    },
+    {
+      "title": "“굿즈만 팔아선 안 돼”…공연·전시·야장으로 확장된 유통가 콜라보",
+      "url": "https://www.donga.com/news/Economy/article/all/20260828/134562476/2",
+      "source": "www.donga.com",
+      "date": "2026-08-28",
+      "description": "● 더 위켄드 커피 마시고 내한공연까지…팬심을 브랜드 경험으로 프리미엄 커피 브랜드 네스프레소는... 아티스트와 협업한 제품을 소유하는 데서 나아가 실제 공연을 볼 기회까지 제공하며 팬심을 브랜드 경험으로...",
+      "keyword": "팬심",
       "score": 1
     },
     {
@@ -150,35 +195,62 @@
       "url": "https://www.newsis.com/view/NISX20260828_0003766642",
       "source": "www.newsis.com",
       "date": "2026-08-28",
-      "description": "동아오츠카는 나랑드사이다 모델로 최근 화제가 된 걸그룹 리센느를 발탁한 후 해당 제품의 매출이 뛰었다. 나랑드사이다는 리센느 발탁 이후인 지난달 21일부터 이달 21일까지 한 달간 주요 온라인 채널과 동아오츠카...",
-      "keyword": "화제",
+      "description": "K-팝 스타를 향한 '팬심'이 제품으로 이어지는 모습이다. 28일 업계에 따르면 방탄소년단(BTS)과 리센느(RESCENE) 등 K-팝 아티스트를 모델 및 앰배서더로 내세운 식품 기업들이 팬덤과 소비자의 주목을 받고 있다....",
+      "keyword": "팬심",
       "score": 1
     },
     {
-      "title": "숏폼 드라마부터 대하사극까지…AI 시대 ‘성역은 없다’",
-      "url": "https://biz.heraldcorp.com/article/10855393?ref=naver",
-      "source": "biz.heraldcorp.com",
+      "title": "팬덤이 여행을 움직인다…테마파크·호텔로 확산되는 IP 협업",
+      "url": "https://www.etnews.com/20260828000258",
+      "source": "www.etnews.com",
       "date": "2026-08-28",
-      "description": "제작해 화제를 모았다. 국내 상업 드라마에서 이만한 분량의 시퀀스가 통째로 AI로 완성된 것은 처음이다.... 큰 화제가 됐다. 회당 10분짜리, 총 20부작인 이 작품은 만듦새와 완성도에 대한 평가는 엇갈리지만, 완전히...",
-      "keyword": "화제",
-      "score": 1
-    },
-    {
-      "title": "에스네이처, 올리브영X산리오 IP 캠페인으로 기획세트 출시",
-      "url": "https://view.asiae.co.kr/article/2026082710403545831",
-      "source": "view.asiae.co.kr",
-      "date": "2026-08-28",
-      "description": "패키지와 굿즈를 만나볼 수 있다. 에스네이처의 시그니처 성분인 스쿠알란은 건강한 올리브 1알에서 단 0.2%만 추출되는 원료로, 피부 피지 구조와 유사해 뛰어난 흡수력을 자랑하며 피부 보습은 물론 피지 조절과 모공...",
+      "description": "식음·굿즈도 ‘풍성’ 스포츠와 K팝, 캐릭터 등 팬덤을 기반으로 한 지식재산권(IP) 협업이 여행업계로 빠르게 확산되고 있다. 과거 한정판 상품이나 굿즈 판매가 중심이었다면 최근에는 테마파크의 어트랙션부터 호텔...",
       "keyword": "굿즈",
       "score": 1
     },
     {
-      "title": "“바쁜 직장인을 위한 맞춤 명상”…MX 스쿨 수료생 3인이 개발한 명상...",
-      "url": "https://www.donga.com/news/It/article/all/20260828/134561887/1",
-      "source": "www.donga.com",
+      "title": "대학생 149명 '금융선생님' 된다…금감원 봉사단 활동 시작",
+      "url": "https://www.mt.co.kr/finance/2026/08/28/2026082809531461485",
+      "source": "www.mt.co.kr",
       "date": "2026-08-28",
-      "description": "직장인이 스트레스 해소법으로 명상을 접할 수 있는 기회가 늘고 있다. 기업이 임직원의 감정 관리를... 직장인 맞춤형 명상 앱 ‘마음퇴근’도 그중 하나다. 마음퇴근은 기존 명상 앱의 이용 방식에 대한 아쉬움에서...",
+      "description": "금융감독원이 전국 초·중·고등학생과 고령층을 대상으로 금융교육을 진행할 대학생 봉사단 149명을 새로 선발했다. 금감원은 28일 오후 이찬진 금융감독원장이 참석한 가운데 제14기 'FSS 대학생 금융교육 봉사단...",
+      "keyword": "고등학생",
+      "score": 1
+    },
+    {
+      "title": "“AI 써본 경험 쓰세요”…신입채용 새 문항에 취준생 ‘막막’",
+      "url": "https://www.sedaily.com/article/20084549?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-08-28",
+      "description": "기업들이 신입 채용에서 인공지능(AI)을 활용한 문제 해결 경험을 요구하면서 취업준비생들의 고민이 커지고 있다. 생성형 AI를 일상적으로 사용하면서도 정작 자기소개서에 어떤 경험을 내세워야 할지 막막하다는...",
+      "keyword": "취업준비생",
+      "score": 1
+    },
+    {
+      "title": "\"창문 있으면 경쟁\"…올 가을 고시원으로 내몰린 대학생",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=04178726645551912&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-08-28",
+      "description": "대학가 월세 가격 상승요인으로는 졸업 후 취업이 늦어져 원룸을 떠나지 못하는 취업생, 회사 밀집 지역 도심 월세 부담으로 대학가로 넘어온 직장인 등이 꼽힌다. 청년 1인 가구 수 증가도 영향을 미치고 있다....",
       "keyword": "직장인",
+      "score": 1
+    },
+    {
+      "title": "\"이성 동료와 단둘이 해외출장\"...결혼 앞둔 30대의 깊은 고민",
+      "url": "https://www.insight.co.kr/news/570766",
+      "source": "www.insight.co.kr",
+      "date": "2026-08-28",
+      "description": "30대 초반 직장인인 글쓴이는 4년 동안 교제한 연인과 본격적인 결혼 준비에 들어서면서 깊은 고민에 빠졌다. 본인은 출장이 없는 직무에 종사하지만, 상대방은 국내외를 막론하고 장단기 출장이 잦은 업무를 담당하고...",
+      "keyword": "직장인",
+      "score": 1
+    },
+    {
+      "title": "리센스메디컬, GS홈쇼핑서 ‘COOLOA 600’ 첫선… ‘전량 매진’ 미자 출...",
+      "url": "https://view.asiae.co.kr/article/2026082817005719056",
+      "source": "view.asiae.co.kr",
+      "date": "2026-08-28",
+      "description": "첫 방송에는 홈쇼핑 완판 행진을 이어가는 방송인 미자가 출연한다. COOLOA 600을 직접 사용해본 미자는 방송에서 제품 사용법과 실사용 후기를 시청자들에게 전달할 예정이다. 방송에서는 디바이스 본체와 부스터...",
+      "keyword": "완판",
       "score": 1
     },
     {
@@ -218,12 +290,21 @@
       "score": 1
     },
     {
-      "title": "메타, ‘청소년 SNS 중독’ 23조원 낸다",
-      "url": "https://www.donga.com/news/Economy/article/all/20260827/134559373/2",
-      "source": "www.donga.com",
+      "title": "\"참사 영상이 자동 재생됐다\" 네팔 홍수에 다시 불붙은 SNS 책임론",
+      "url": "https://view.asiae.co.kr/article/2026082814192020366",
+      "source": "view.asiae.co.kr",
       "date": "2026-08-28",
-      "description": "메타가 지불해야 할 총액은 메타와 유사한 소송을 벌이고 있는 틱톡, 유튜브, 스냅 등 다른 소셜미디어 기업과 주 정부의 추후 합의 여부에 따라 달라질 것으로 보인다. 이에 따라 메타는 우선 117억 달러(약 16조1460억 원)...",
-      "keyword": "틱톡",
+      "description": "일반 뉴스처럼 이용자가 기사나 영상을 직접 선택하는 방식과 달리 SNS의 숏폼·추천 피드에서는 영상을 넘기는 순간 예고 없이 사고 현장이 재생될 수 있기 때문이다. 네팔 현지 온라인 공간에서도 비슷한 움직임이...",
+      "keyword": "숏폼",
+      "score": 1
+    },
+    {
+      "title": "화장품·건기식 사려면 지금이 적기…CJ올리브영, 내달 5일까지 ‘올영...",
+      "url": "https://www.sedaily.com/article/20084506?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-08-28",
+      "description": "구매 시 10% 할인 받을 수 있는 올리브베러 첫 구매 쿠폰(온라인 전용)도 발급한다. 올리브영 관계자는 “이번 올영세일은 가을 메이크업 트렌드부터 데일리 웰니스, 글로벌 고객의 수요까지 폭넓게 반영했다”고 말했다.",
+      "keyword": "구매 트렌드",
       "score": 1
     },
     {
@@ -234,15 +315,6 @@
       "description": "큐빅과 보석 스티커 등을 붙여 화려하게 꾸미는 '비다즐링(Bedazzling)'이 Z세대의 새로운 꾸미기 트렌드로... Z세대에게는 오히려 새로운 스타일로 받아들여지고 있는 것으로 풀이된다. 다만 과거 스타일을 그대로...",
       "keyword": "Z세대",
       "score": 6
-    },
-    {
-      "title": "동대문서 ‘펜꾸’하고 백화점선 방탈출…‘오감 쇼핑’에 빠진 Z세대",
-      "url": "https://www.sedaily.com/article/20084175?ref=naver",
-      "source": "www.sedaily.com",
-      "date": "2026-08-27",
-      "description": "Z세대 사이에서 키보드 키링부터 스마트폰 케이스, 젤리 슈즈, 목걸이·팔찌 등 각종 ‘꾸미기의 성지’로... 최근 경험경제를 이끄는 ‘호모 엑스페리엔스’는 단연 Z세대다. 팝업스토어 전문기업 스위트스팟에...",
-      "keyword": "Z세대",
-      "score": 4
     },
     {
       "title": "[유행에서 주류로] ① 뉴욕 파고드는 K뷰티…'바이럴' 넘어 안착 노린다",
@@ -317,6 +389,15 @@
       "score": 1
     },
     {
+      "title": "학교앞 문방구 사라지는데…'문구박람회'엔 사람들 몰리는 이유 [트렌드...",
+      "url": "https://www.hankyung.com/article/202608275788g",
+      "source": "www.hankyung.com",
+      "date": "2026-08-27",
+      "description": "하지만 다이소, 쿠팡에 밀려서 도저히 버텨낼 재간이 없었습니다.\" 서울 양재동에서 몇십년 동안 대형 모닝글로리 매장을 운영하다 지난해 결국 폐업한 한 자영업자의 한탄이다. 다이소의 균일가 공세와 이커머스...",
+      "keyword": "다이소",
+      "score": 1
+    },
+    {
       "title": "스테이블코인으로 다이소 '상품권 깡'…금융위 \"규제 검토\"",
       "url": "https://www.edaily.co.kr/News/Read?newsId=03142246645551584&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "source": "www.edaily.co.kr",
@@ -335,30 +416,12 @@
       "score": 1
     },
     {
-      "title": "엄마도 못 막던 SNS, 메타가 25조원 내고 막는다",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=04270566645551584&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-08-27",
-      "description": "이번 합의는 유튜브와 틱톡 등 다른 온라인 플랫폼을 상대로 제기된 유사한 소송에도 영향을 미칠 것으로... 이미 틱톡, 유튜브, 스냅챗 등을 상대로 유사한 소송이 제기돼 있다. 메타는 다른 기업들도 합의에 참여하도록...",
-      "keyword": "틱톡",
-      "score": 1
-    },
-    {
-      "title": "\"쉽고 빠른 건 재미없잖아?\"...Z세대 사로잡은 '느린 메시지' 앱, 뭐길래...",
-      "url": "https://www.insight.co.kr/news/570135",
-      "source": "www.insight.co.kr",
-      "date": "2026-08-26",
-      "description": "메시지가 도착하기까지 몇 시간, 때로는 며칠씩 걸리는 독특한 메신저 앱들이 젊은 세대 사이에서 폭발적인 반응을 얻고 있다. 지난 22일(현지 시간) 뉴욕타임스(NYT)는 비둘기와 달팽이 등 동물의 실제 이동 속도로...",
-      "keyword": "Z세대",
-      "score": 4
-    },
-    {
       "title": "\"1만원 더 내도 꼭 붙여야 해\"…음료보다 비싼 '스티커' 유행이라는 中...",
       "url": "https://view.asiae.co.kr/article/2026082615165448064",
       "source": "view.asiae.co.kr",
       "date": "2026-08-26",
       "description": "최근 중국 MZ세대((밀레니얼+Z세대)를 중심으로 프랜차이즈 음료 컵에 맞춤형 스티커를 붙이는 '커스텀 컵 스티커'가 유행이다. 중국 하이보신문(海報新聞)은 26일 \"음료를 주문할 때 모바일 프로그램을 통해 간단히 그림을...",
-      "keyword": "Z세대",
+      "keyword": "중국 Z세대",
       "score": 3
     },
     {
@@ -398,15 +461,6 @@
       "score": 1
     },
     {
-      "title": "[소셜＋] \"충전 안 해도 되잖아\"…Z세대 귀에 다시 꽂힌 '줄이어폰'",
-      "url": "https://www.yna.co.kr/view/AKR20260824112000505?input=1195m",
-      "source": "www.yna.co.kr",
-      "date": "2026-08-25",
-      "description": "전문가들은 유선 이어폰 이용자 증가가 단순한 '복고풍 유행'을 넘어, 실용성을 따지면서도 자신의 취향과 감각을 중시하는 Z세대의 소비 성향이 반영된 결과로 풀이한다. 이수진 트렌드코리아 소비트렌드분석센터...",
-      "keyword": "Z세대 트렌드",
-      "score": 5
-    },
-    {
       "title": "비둘기 속도로 보내는 ‘초저속 메신저’ 뜬다…Z세대 ‘슬로우 테크’...",
       "url": "https://www.joongang.co.kr/article/25455991",
       "source": "www.joongang.co.kr",
@@ -425,12 +479,21 @@
       "score": 4
     },
     {
+      "title": "재치 있는 발상으로 Z세대 사로잡은 브랜드 마케팅",
+      "url": "https://weekly.donga.com/3/all/11/6359200/1",
+      "source": "weekly.donga.com",
+      "date": "2026-08-25",
+      "description": "범위는 넓고 단순히 공부한다고 정답을 알 수 있는 것도 아닌 Z세대의 ‘찐’ 트렌드를 1997년생이 알잘딱깔센(알아서 잘 딱 깔끔하고 센스 있게)하게 알려준다. Z세대는 새로운 것을 두려워하지 않는다. 오히려 도전...",
+      "keyword": "Z세대 트렌드",
+      "score": 4
+    },
+    {
       "title": "\"친구 따라 아이폰\" 10대 여심 '굳건'…20대는 '갤럭시'로 변심",
       "url": "https://www.hankyung.com/article/202608252301g",
       "source": "www.hankyung.com",
       "date": "2026-08-25",
       "description": "전날 오픈서베이가 공개한 'Z-알파세대 트렌드 리포트 2026'를 보면 10대 응답자 중 이 같이 묻는 항목에 애플을 선택한 답변은 54.2%로 조사됐다. 삼성전자는 38.2%에 그쳤다. 반면 20대는 삼성전자 52%, 애플 42.9%로...",
-      "keyword": "알파세대",
+      "keyword": "Z세대 트렌드",
       "score": 3
     },
     {
@@ -497,8 +560,8 @@
       "score": 1
     },
     {
-      "title": "엔화 스테이블코인으로 한국서 올리브영 쇼핑…JPYC 결제까지 5초 “생...",
-      "url": "https://biz.heraldcorp.com/article/10851099?ref=naver",
+      "title": "日 엔화 스테이블코인 ‘JPYC’로 韓 올리브영 상품권 산다",
+      "url": "https://biz.heraldcorp.com/article/10851272?ref=naver",
       "source": "biz.heraldcorp.com",
       "date": "2026-08-25",
       "description": "유니파이에서는 올리브영뿐 아니라 다이소·CU·이마트 등의 상품권도 JPYC로 살 수 있다. 구매한 상품권을 다시 엔화 스테이블코인으로 돌려받는 과정도 진행했다. 구매 내역에서 올리브영 3만원권 환불을 요청하자...",
