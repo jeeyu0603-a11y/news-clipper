@@ -1,32 +1,59 @@
 {
-  "crawled_at": "2026-10-29 15:50",
+  "crawled_at": "2026-10-30 08:42",
   "items": [
     {
-      "title": "입었다 하면 품절 대란…아이돌 뺨치는 '슈퍼 완판남' 이재용 [오너 브...",
-      "url": "https://www.hankyung.com/article/202610276977g",
+      "title": "“유튜브 잡아라”… 긴 영상에 도전하는 인스타그램·틱톡",
+      "url": "https://biz.chosun.com/it-science/ict/2026/10/30/DLV2R3CHSFE65OCXGBZFEMPOKA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+      "source": "biz.chosun.com",
+      "date": "2026-10-30",
+      "description": "‘숏폼 열풍’의 원조인 틱톡도 2024년부터 최대 1시간 길이의 동영상 지원 기능을 시험하기 시작했다. 한국에서는 올 여름 월드컵 기간에 맞춰 자체 제작한 연재형 롱폼 예능 ‘티키티키 타카타카 토크토크쇼’를...",
+      "keyword": "열풍",
+      "score": 3
+    },
+    {
+      "title": "면세점·약국에 들어선 K-굿즈…관광공사, 관광기념품 판로 확대",
+      "url": "https://www.hankyung.com/article/202610305014g",
       "source": "www.hankyung.com",
-      "date": "2026-10-29",
-      "description": "이 연구위원은 황 CEO 등 유명 기업인에 대한 팬덤이 형성되는 현상도 같은 흐름으로 봤다. 그는 \"요즘 소비자들은 경영자의 철학에 매력을 느끼고, 제품과 서비스 수준에 그에 걸맞는다고 판단할 때 반응한다\"고...",
-      "keyword": "팬덤",
-      "score": 3
-    },
-    {
-      "title": "유재석 \"SNS에는 자랑하고 싶은 걸 많이 올리지 않나... 비교하면 안 돼...",
-      "url": "https://www.insight.co.kr/news/579683",
-      "source": "www.insight.co.kr",
-      "date": "2026-10-29",
-      "description": "특히 윤홍균은 \"최근 2030세대 우울증 환자가 증가했다\"고 지적했다. 그는 \"일반적으로 20~30대는 근면성실하게 바쁘게 살아가는 시기인데, 요즘은 이 연령대에서도 한계를 느끼는 사람이 많다. 희망이 사라지면서 병원을...",
-      "keyword": "2030세대",
-      "score": 3
-    },
-    {
-      "title": "사진 올리면 제품 찾아준다...무신사, 이미지 검색 도입",
-      "url": "https://www.fnnews.com/news/202610291446525637",
-      "source": "www.fnnews.com",
-      "date": "2026-10-29",
-      "description": "지난 6월 선보인 'AI 트렌드 큐레이션'은 패션, 뷰티 트렌드를 반영해 상품을 소개한다. 목적형 구매를 위해 앱에 접속하는 사용자뿐만 아니라 구매 의도가 뚜렷하지 않은 고객에게 핵심 상품군을 제안해 온라인 쇼핑...",
+      "date": "2026-10-30",
+      "description": "송은경 공사 쇼핑숙박팀장은 \"관광기념품은 단순한 여행의 추억을 넘어, 한국의 문화와 매력을 세계에 알리는 K-굿즈로 진화하고 있다\"며 \"변화하는 관광객 소비 트렌드에 맞춰 새로운 유통 채널을 지속 발굴하고, 우수...",
       "keyword": "트렌드",
       "score": 2
+    },
+    {
+      "title": "“AI 포트폴리오, 50만원이면 뚝딱” 취준생 노리는 대행업체",
+      "url": "https://www.donga.com/news/Society/article/all/20261030/134936479/2",
+      "source": "www.donga.com",
+      "date": "2026-10-30",
+      "description": "그는 14일 신입 개발자로 지원하는 취업준비생을 가장한 제작 요청에 “50만 원이면 AI를 활용한 개발 프로젝트에 참여한 것처럼 결과물을 꾸며주고 포트폴리오까지 전부 만들어 주겠다”고 했다. 최근 취업 준비생을...",
+      "keyword": "취업준비생",
+      "score": 1
+    },
+    {
+      "title": "오사카 홀린 무신사…사흘간 1.5만명 발길",
+      "url": "https://www.sedaily.com/article/20108000?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-10-30",
+      "description": "같은 기간 무신사 글로벌 스토어의 오사카 지역 거래액도 전년 동기 대비 641% 증가했다. 무신사 관계자는 “해당 기간 거래액에서는 팝업을 통한 구매가 가장 큰 비중을 차지했다”고 말했다. 무신사는 2023년 11월 이후...",
+      "keyword": "거래액",
+      "score": 1
+    },
+    {
+      "title": "틱톡 “AI 슬롭의 시대, 돌파구는 진정성”",
+      "url": "https://www.joongang.co.kr/article/25474182",
+      "source": "www.joongang.co.kr",
+      "date": "2026-10-30",
+      "description": "인공지능(AI)이 만든 저품질 영상, 슬롭(slop)이 넘쳐나는 시대, 숏폼(짧은 동영상) 선두 주자 틱톡은 살아남을 수 있을까. 지난 27일 싱가포르에서 열린 ‘아시아태평양 책임 있는 미디어 포럼’에서 틱톡은 AI 영상 식별과...",
+      "keyword": "틱톡",
+      "score": 1
+    },
+    {
+      "title": "'1분 완판 신화' 다이닛이 성수에 문 연 첫 플래그십... 직접 가보니",
+      "url": "https://www.insight.co.kr/news/579662",
+      "source": "www.insight.co.kr",
+      "date": "2026-10-29",
+      "description": "2024년 5월 무신사 입점 첫날 여성 패션 부문 랭킹 1위에 올랐고, 대표 베스트셀러인 '리본 플랫 슈즈'와 '클라우드 미니백'은 발매 단 1분 만에 완판되는 기록을 세웠다. 론칭 2년 만에 매출 100억 원을 돌파하며 탄탄한 팬덤과...",
+      "keyword": "무신사",
+      "score": 3
     },
     {
       "title": "“한국 패션은 최첨단”…무신사, 일본 홀렸다",
@@ -38,12 +65,12 @@
       "score": 2
     },
     {
-      "title": "“재산 134조원”…中 최고 부자는 ‘틱톡’ 창업자 장이밍",
-      "url": "https://www.mk.co.kr/article/12189760",
-      "source": "www.mk.co.kr",
+      "title": "'승리의 여신: 니케', 4주년 업데이트 직후 국내 앱스토어 매출 1위 기록",
+      "url": "https://zdnet.co.kr/view/?no=20261029174322",
+      "source": "zdnet.co.kr",
       "date": "2026-10-29",
-      "description": "1년 새 재산 43%↑…2년 만에 다시 1위 딥시크 창업자 등 AI 신흥 부호 ‘상위권’ 동영상 플랫폼 틱톡의... 바이트댄스는 틱톡과 중국판 숏폼 플랫폼 더우인을 기반으로 사업을 키운 데 이어 AI 챗봇 더우바오를...",
-      "keyword": "틱톡",
+      "description": "시프트업이 개발하고 레벨 인피니트가 서비스하는 ‘승리의 여신: 니케’가 4주년 업데이트 당일 한국 애플 앱스토어 매출 1위에 올랐다. 일본과 대만에서도 앱스토어 매출 2위를 기록하며 주요 서비스 지역에서...",
+      "keyword": "앱스토어",
       "score": 2
     },
     {
@@ -65,47 +92,29 @@
       "score": 1
     },
     {
-      "title": "11년만에 돌아온 ‘캪틴큐’ 한정판 하루만에 완판",
-      "url": "https://www.donga.com/news/Economy/article/all/20261029/134930775/1",
-      "source": "www.donga.com",
+      "title": "하루키 '가호' 단숨에 1위…'트렌드 코리아 2027' 제쳤다 [주간 베스트셀...",
+      "url": "https://www.fnnews.com/news/202610291704262279",
+      "source": "www.fnnews.com",
       "date": "2026-10-29",
-      "description": "온라인에서 유행한 ‘캪틴큐를 마시면 다다음 날 깨어나 숙취가 없다’는 농담에서 착안해 제품 2병과 수면안대, ‘숙면 중’ 문고리 카드로 구성했다. 일반 슈퍼마켓을 시작으로 롯데마트와 롯데슈퍼, 농협 등으로...",
-      "keyword": "유행",
+      "description": "무라카미 하루키의 새 장편소설 '가호'가 '트렌드 코리아 2027'을 제치고 교보문고 종합 베스트셀러 정상에... 전주까지 선두였던 김난도 등의 '트렌드 코리아 2027'은 2위로 한 계단 내려왔다. '가호'는 '도시와 그...",
+      "keyword": "트렌드",
       "score": 1
     },
     {
-      "title": "체험 공간 강화…CJ올리브영, 올리브베러 성수점 개점",
-      "url": "https://view.asiae.co.kr/article/2026102911272434328",
-      "source": "view.asiae.co.kr",
+      "title": "가을 추위에도 삼성-KIA 3차전 만원관중…PS 44경기 연속 매진[PO]",
+      "url": "https://www.newsis.com/view/NISX20261029_0003847312",
+      "source": "www.newsis.com",
       "date": "2026-10-29",
-      "description": "유행에 민감한 젊은 층과 외국인 관광객이 모이는 성수 상권에서 건강관리 상품을 직접 맛보고 체험할 수 있도록 꾸몄다. '올리브베러 성수'는 고객이 처음 접하는 웰니스 상품을 직접 맛보고 탐색할 수 있는 체험형...",
-      "keyword": "유행",
-      "score": 1
-    },
-    {
-      "title": "넥슨, 게임음악 ‘디지털 악보 라이선싱’ 확대...숏폼 바이럴 타고 연...",
-      "url": "https://www.mk.co.kr/article/12189895",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-29",
-      "description": "친숙한 멜로디와 뛰어난 음악성, 편곡 확장성이 만든 바이럴 열풍 이처럼 넥슨 게임 배경음악들이 인플루언서들의 사랑을 받는 이유로는 20년 이상 축적된 탄탄한 지식재산권(IP) 파워와 높은 음악적 완성도를 꼽을...",
+      "description": "지난해에 이어 올해도 1200만 관중을 넘어선 프로야구의 흥행 열풍은 가을에도 불고 있다. 올해 포스트시즌은 LG 트윈스와 두산 베어스의 와일드카드 결정전, LG와 KIA의 준PO 3경기, 삼성과 KIA의 PO 1~2차전에...",
       "keyword": "열풍",
       "score": 1
     },
     {
-      "title": "세계적 상·전석 매진에도…'일무' 세종문화회관 재공연 안갯속",
-      "url": "https://www.newsis.com/view/NISX20261027_0003843623",
-      "source": "www.newsis.com",
+      "title": "외국인 소비 1조 돌파…글로벌 핫플 된 부산",
+      "url": "https://www.sedaily.com/article/20107915?ref=naver",
+      "source": "www.sedaily.com",
       "date": "2026-10-29",
-      "description": "최근 발표된 '2026년 상반기 KOPIS(공연예술통합전산망) 결산 보고서'에 따르면, 올해 상반기 무용 시장은 대형 화제작의 부재 속 한국무용과 현대무용 티켓판매액이 전년 동기 대비 각각 31%, 73% 급감하는 등 발레 공연을...",
-      "keyword": "화제",
-      "score": 1
-    },
-    {
-      "title": "'1분 완판 신화' 다이닛이 성수에 문 연 첫 플래그십... 직접 가보니",
-      "url": "https://www.insight.co.kr/news/579662",
-      "source": "www.insight.co.kr",
-      "date": "2026-10-29",
-      "description": "론칭 2년 만에 매출 100억 원을 돌파하며 탄탄한 팬덤과 브랜드 경쟁력을 입증한 다이닛은 이제 성수동... 온라인을 중심으로 빠르게 팬덤을 쌓아온 브랜드가 고객과 직접 만나는 접점을 넓히며 새로운 성장 동력을...",
+      "description": "롯데백화점은 30일 애니메이션·게임부터 피규어까지 각종 지식재산권(IP) 콘텐츠를 모은 전문관 ‘팬덤 스페이스’를 전국 최초로 부산본점에 선보인다. 매년 국제영화제와 게임 박람회 등 글로벌 콘텐츠 행사가...",
       "keyword": "팬덤",
       "score": 1
     },
@@ -119,6 +128,15 @@
       "score": 1
     },
     {
+      "title": "사진 한 장으로 상품 찾는다…무신사, AI 검색 '무신사 렌즈' 출시",
+      "url": "https://www.ngetnews.com/news/articleView.html?idxno=555331",
+      "source": "www.ngetnews.com",
+      "date": "2026-10-29",
+      "description": "뉴스저널리즘 최대성 기자 = 무신사가 사진 한 장으로 원하는 상품을 찾을 수 있는 인공지능(AI) 이미지 검색 서비스를 선보였다. 검색어를 입력하지 않아도 사진 속 상품을 인식해 무신사 스토어에서 판매하는 동일·유사...",
+      "keyword": "무신사",
+      "score": 1
+    },
+    {
       "title": "“미국서 오픈런까지”…K패션·뷰티 해외 팝업 ‘효자’ 됐다",
       "url": "https://www.edaily.co.kr/News/Read?newsId=04923286645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "source": "www.edaily.co.kr",
@@ -128,39 +146,30 @@
       "score": 1
     },
     {
+      "title": "“국뽕 굿즈 아닙니다”…황진이 시조가 침구로 재탄생한 이유는 [현장...",
+      "url": "https://www.mk.co.kr/article/12190233",
+      "source": "www.mk.co.kr",
+      "date": "2026-10-29",
+      "description": "국립중앙박물관 등에서 판매되는 문화상품 ‘뮷즈’가 품절 대란을 일으키는 등 인기를 끄는 가운데, 전통적인 소재를 일상에서 사용할 수 있는 제품으로 재해석하려는 시도도 이어지는 모습이다. 29CM가 한글...",
+      "keyword": "품절대란",
+      "score": 1
+    },
+    {
+      "title": "입었다 하면 품절 대란…아이돌 뺨치는 '슈퍼 완판남' 이재용 [오너 브...",
+      "url": "https://www.hankyung.com/article/202610276977g",
+      "source": "www.hankyung.com",
+      "date": "2026-10-29",
+      "description": "10만원대 운동화와 평범한 립밤도 이 회장의 선택을 받으면 품절 리스트에 오른다. 연예인 못지않은... 43만9000원짜리 제품이 사진 공개 다음 날 오전 SSF샵에서 품절됐고, 추가 생산한 물량도 소진됐다. 앞서 2014년 미국...",
+      "keyword": "품절대란",
+      "score": 1
+    },
+    {
       "title": "[컨콜]삼성전자 \"HBM4 매출, 전분기보다 3배↑…내년 HBM 완판\"",
       "url": "https://www.mt.co.kr/industry/2026/10/29/2026102911044261630",
       "source": "www.mt.co.kr",
       "date": "2026-10-29",
       "description": "회사는 \"내년 HBM 공급 물량 제품 경쟁력을 감안한 목표 수준의 가격으로 협상 완료돼 이미 솔드아웃(품절)된 상태\"라며 \"주요 고객들의 추가적인 HBM 공급 증량 요청이 지속 접수되고 있다\"고 했다.",
       "keyword": "품절",
-      "score": 1
-    },
-    {
-      "title": "AI는 성숙해질 시간을 주지않는다, 즉각성에 중독된 사람들 [북 트렌드...",
-      "url": "https://www.hankyung.com/article/202610292542i",
-      "source": "www.hankyung.com",
-      "date": "2026-10-29",
-      "description": "일반 대중이 읽기 어려운 ‘철학 에세이’ 분야지만, 출간되자마자 슈피겔 베스트셀러 논픽션 1위 자리를 차지했다. 책은 생성형 AI 기업들의 공습으로 ‘인간 정신의 정수’라고 할 수 있는 ‘창작’과 ‘스토리텔링’...",
-      "keyword": "1위",
-      "score": 1
-    },
-    {
-      "title": "숏폼 장악하더니…베스티, 4000일 만에 완전체 음악방송 선다",
-      "url": "https://www.mk.co.kr/article/12189899",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-29",
-      "description": "일본 오리콘 스트리밍 급상승 차트 3위와 유튜브 쇼츠 차트 9위에도 이름을 올렸다. 샤잠에서는 한국과 베트남, 태국 차트 1위를 기록하는 등 해외에서도 관심을 모았다. [지승훈 스타투데이 기자]",
-      "keyword": "1위",
-      "score": 1
-    },
-    {
-      "title": "생명보험재단, 직장인 고민 나누는 자살예방 캠페인 선봬",
-      "url": "https://www.mk.co.kr/article/12189893",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-29",
-      "description": "이번 콘텐츠는 자살예방과 생명존중 문화 확산을 위한 사회정보망서비스(SNS) 캠페인의 일환이다. 김영희가... 특히 젊은 세대의 접근성이 높은 SNS와 영상 콘텐츠를 활용해 일상 속 심리적 어려움에 대한 관심을 높이는...",
-      "keyword": "SNS",
       "score": 1
     },
     {
@@ -182,31 +191,13 @@
       "score": 1
     },
     {
-      "title": "\"90분 영상 올려도 광고 수익 없다\"…인스타그램 수익화 '시끌'",
-      "url": "https://zdnet.co.kr/view/?no=20261029090434",
-      "source": "zdnet.co.kr",
+      "title": "“AI가 만든 영상입니다”…이 한마디에 틱톡이 공들이는 이유[팩플]",
+      "url": "https://www.joongang.co.kr/article/25474093",
+      "source": "www.joongang.co.kr",
       "date": "2026-10-29",
-      "description": "피처스는 기존 숏폼 중심의 릴스와 달리 최대 90분 길이의 가로형 영상을 지원하는 기능이다. 크리에이터는 장편 영상의 일부를 릴스로 공유해 이용자들이 전체 콘텐츠를 발견하도록 유도할 수 있다. 인스타그램...",
+      "description": "크리에이터의 개성과 경험을 담은 중독성 강한 숏폼(짧은 영상)으로 젊은 세대를 사로잡으며 매섭게 추격하고 있지만, 중국 바이트댄스를 모회사로 둔 데 따른 개인정보 보호 우려가 꼬리표처럼 따라붙기도 한다. 이런...",
       "keyword": "숏폼",
       "score": 1
-    },
-    {
-      "title": "매운 K-푸드 즐기는 해외 바이어들",
-      "url": "https://www.yna.co.kr/view/PYH20261029127000060?input=1196m",
-      "source": "www.yna.co.kr",
-      "date": "2026-10-29",
-      "description": "29일 경기도 고양 킨텍스에서 열린 국내 최대 규모의 중소기업 우수상품 종합전시회 '지페어 코리아(G-FAIR KOREA) 2026'에서 해외 바이어들이 매운 K푸드를 시식하고 있다. 2026.10.29",
-      "keyword": "K-푸드",
-      "score": 1
-    },
-    {
-      "title": "인천대 마스코트 '횃불이', 대학을 넘어 지역사회 및 MZ세대와 소통하는...",
-      "url": "https://edu.donga.com/news/articleView.html?idxno=113245",
-      "source": "edu.donga.com",
-      "date": "2026-10-28",
-      "description": "인천대학교(총장 이인재)는 공식 마스코트 '횃불이'가 '2026 대한민국 캐릭터 어워즈'에서 대상을 수상했다고 밝혔다. '횃불이'는 대학의 상징인 횃불의 불꽃과 대학을 대표하는 사자를 모티브로 탄생한 캐릭터다. 횃불은...",
-      "keyword": "MZ세대",
-      "score": 5
     },
     {
       "title": "백화점엔 ‘에루샤’, 쇼핑몰엔 ‘올다무’…유통가 적과의 동침",
@@ -227,6 +218,15 @@
       "score": 4
     },
     {
+      "title": "“사람들 다 같이 우르르 뛰는 러닝크루 안 해요”…유행서 사라진 젊은...",
+      "url": "https://www.sedaily.com/article/20107095?ref=naver",
+      "source": "www.sedaily.com",
+      "date": "2026-10-28",
+      "description": "Z세대의 새 라이프스타일로 떠올랐다. 전문가들은 유행을 좇는 피로감이 이러한 흐름의 배경이라고 분석했다. 28일 구글 트렌드를 보면 디저트 유행이 불과 열흘 새 바뀌었다. 지난달 30일에는 과일 찹쌀떡 브랜드...",
+      "keyword": "Z세대 트렌드",
+      "score": 4
+    },
+    {
       "title": "“퓨전사극부터 생성형 AI까지”…한국스포츠레저, 스포츠토토 숏폼 공...",
       "url": "https://www.mk.co.kr/article/12188281",
       "source": "www.mk.co.kr",
@@ -234,33 +234,6 @@
       "description": "미디어 트렌드인 숏폼과 생성형 AI 기술, 퓨전사극 등 다채로운 기법이 도입되어 스포츠토토의 브랜드... 인스타그램, 틱톡 등 다양한 SNS 채널에 연계하여 국민 대상 공익 캠페인 콘텐츠로 적극 활용할 방침이다. [강대호...",
       "keyword": "틱톡 트렌드",
       "score": 4
-    },
-    {
-      "title": "[트라이씨 직장인 심리학]일터에서 효과적인 커뮤니케이션을 위한 심리...",
-      "url": "https://www.mk.co.kr/article/12188174",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-28",
-      "description": "‘콜 포비아(Call Phobia)’를 겪고 있어 전화 통화를 꺼리는 MZ세대의 경우 ‘문자 등 비대면 의사소통에 익숙해져서’, ‘나도 모르게 말실수를 할까 봐’, ‘말을 잘 못해서 등’의 이유로 대면이나 통화 대신 비동기...",
-      "keyword": "MZ세대",
-      "score": 3
-    },
-    {
-      "title": "'AI 앱' 제치고 앱스토어 1위…커미션 플랫폼 '크레페' 모바일로 확장",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03122566645617512&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-10-28",
-      "description": "이어 22일 선보인 안드로이드 앱도 구글 플레이스토어 예술·디자인 인기 앱 부문 3위에 올랐다. 쿠키플레이스에 따르면 앱 출시 당일 크레페는 엑스(X·옛 트위터) 국내 실시간 트렌드 상위권에도 이름을 올렸다. 웹에서...",
-      "keyword": "구글 트렌드",
-      "score": 3
-    },
-    {
-      "title": "“사람들 다 같이 우르르 뛰는 러닝크루 안 해요”…유행서 사라진 젊은...",
-      "url": "https://www.sedaily.com/article/20107095?ref=naver",
-      "source": "www.sedaily.com",
-      "date": "2026-10-28",
-      "description": "남들이 하는 것을 놓칠까 불안해하던 흐름 뒤로, 일부러 놓치는 즐거움을 택하는 ‘조모(JOMO)’가 Z세대의... 미국 Z세대를 중심으로 주목받다 국내에서도 하나의 라이프스타일로 언급되고 있다. OTT 대신 라디오, 배달...",
-      "keyword": "Z세대",
-      "score": 2
     },
     {
       "title": "[단독]돈벌이 수단 된 신종학폭 ‘야차룰’… 후원금 요구하고 SNS 판매",
@@ -326,15 +299,6 @@
       "score": 1
     },
     {
-      "title": "LG전자, 프리미엄 가전 구독 서비스…경험 중심 소비 트렌드 선도",
-      "url": "https://www.hankyung.com/article/2026102811851",
-      "source": "www.hankyung.com",
-      "date": "2026-10-28",
-      "description": "소유에서 경험 중심으로 옮겨가는 소비 트렌드에 맞춰 제품 판매 기업에서 서비스 중심 기업으로 체질을 바꾸고 있다는 게 회사 측 설명이다. 상담은 집 구조와 인테리어를 고려한 맞춤형으로 LG 베스트샵, SKS 서울 등...",
-      "keyword": "소비 트렌드",
-      "score": 1
-    },
-    {
       "title": "“빚내서 대학 가기 싫어요”… 美 Z세대가 눈 돌린 곳",
       "url": "https://magazine.hankyung.com/business/article/202610278342b",
       "source": "magazine.hankyung.com",
@@ -353,21 +317,21 @@
       "score": 4
     },
     {
-      "title": "'두쫀쿠' 열풍 이을 대형 트렌드는 '떡'…앞다퉈 출시 경쟁하는 편의점",
-      "url": "https://www.fnnews.com/news/202610261419526735",
-      "source": "www.fnnews.com",
-      "date": "2026-10-27",
-      "description": "과일을 넣은 찹쌀떡을 판매하는 '한정선'은 매장 곳곳에서 오픈런이 발생했고, 뒤이어 초콜릿 전문 브랜드 '고디바'에서 선보인 생초콜릿 찹쌀떡도 SNS에서 화제를 모으고 있다. 지난해 전국을 강타한 '두쫀쿠...",
-      "keyword": "오픈런",
-      "score": 4
-    },
-    {
       "title": "\"윈도XP 시절 그 물고기 배경 기억나?\"... 미국 젠지들이 환호하고 있는...",
       "url": "https://www.insight.co.kr/news/579312",
       "source": "www.insight.co.kr",
       "date": "2026-10-27",
       "description": "윈도 XP 시절을 떠올리게 하는 '프루티거 에어로(Frutiger Aero)' 디자인 감성이 미국 Z세대 사이에서 뜨거운... 온라인에서 시작된 이 트렌드는 실제 상품 시장으로 확산되고 있다. 주얼리 브랜드 '언저스트 주얼리(Unjust...",
       "keyword": "Z세대 트렌드",
+      "score": 3
+    },
+    {
+      "title": "'두쫀쿠' 열풍 이을 대형 트렌드는 '떡'…앞다퉈 출시 경쟁하는 편의점",
+      "url": "https://www.fnnews.com/news/202610261419526735",
+      "source": "www.fnnews.com",
+      "date": "2026-10-27",
+      "description": "네이버 검색량이 가장 많았던 시점을 100으로 놓고 비교한 지표에서 지난 6월 56이던 떡류 검색어 클릭량은... 9% 증가했다. 이달에는 모찌와 파베 초콜릿을 결합한 '모찌 파베 초콜릿 말차맛'을 추가하며 상품군을 넓히고...",
+      "keyword": "검색량 증가",
       "score": 3
     },
     {
@@ -413,78 +377,6 @@
       "date": "2026-10-27",
       "description": "수입 아젤라산 여드름 치료제가 품절을 반복하자 국내 제약사들이 잇달아 후발 제품을 내놓고 있다. 공급... 품절이 반복되자 소비자들은 재고가 있는 약국을 수소문하거나 해외 직구 방법을 찾기도 했다. 26일 업계에...",
       "keyword": "품절대란",
-      "score": 1
-    },
-    {
-      "title": "해운대블루라인파크, 3년 연속 SNS 대상...'부산병' 열풍 확산",
-      "url": "https://www.fnnews.com/news/202610261458488406",
-      "source": "www.fnnews.com",
-      "date": "2026-10-26",
-      "description": "해운대블루라인파크는 블로그와 유튜브, 인스타그램, 틱톡, 페이스북, 샤오홍슈(RED) 등 총 6개 공식 SNS... 현지 관광 트렌드와 이용자 특성을 반영한 콘텐츠로 부산의 해안 경관과 관광시설을 소개하고, 단순한 정보...",
-      "keyword": "틱톡 트렌드",
-      "score": 4
-    },
-    {
-      "title": "요즘 뜨는 동해시, 멋진 전천 인도교 12월 개통..매력 추가~밤의 핫플로...",
-      "url": "https://biz.heraldcorp.com/article/10915102?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-10-26",
-      "description": "특히 야간 경관조명 까지 설치돼, 요즘 뜨고 있는 동해관광에 밤의 명물 핫플레이스가 추가된다. 이번 인도교 조성은 동해시가 지속적으로 추진해 온 전천 친수공간 확충 노력의 연장선에 있다. 동해시는 그동안...",
-      "keyword": "핫플",
-      "score": 3
-    },
-    {
-      "title": "\"새벽 6시에 줄 서도 못 산다\"…편의점도 뛰어든 '이 디저트' [트렌드+]",
-      "url": "https://www.hankyung.com/article/202610263982g",
-      "source": "www.hankyung.com",
-      "date": "2026-10-26",
-      "description": "이른바 '떡픈런(떡+오픈런)' 열풍이 벌어질 만큼 떡 디저트 인기에 불이 붙자 편의점들도 떡 디저트를 잇달아... 실제로 오전 6시께 이미 현장 웨이팅이 마감되는 등 오픈런 경쟁이 치열하다. 화려한 단면과 쫀득한...",
-      "keyword": "오픈런",
-      "score": 3
-    },
-    {
-      "title": "2년전 트럼프 밀어준 히스패닉과 20대…이번엔 대거 등 돌리나",
-      "url": "https://www.yna.co.kr/view/AKR20261026000500071?input=1195m",
-      "source": "www.yna.co.kr",
-      "date": "2026-10-26",
-      "description": "흔히 Z세대의 정치적 행태를 문화적 쟁점이나 인터넷 트렌드의 관점에서 해석하려 하지만 이들의 선택을 좌우하는 건 결국 경제적 불안과 박탈감이라는 것이다. 폴리티코는 Z세대가 배신감을 느끼고 있으며 사회...",
-      "keyword": "Z세대 트렌드",
-      "score": 2
-    },
-    {
-      "title": "[동포의 창] 영상으로 전한 재일동포 청소년 목소리…숏폼 대회 성료",
-      "url": "https://www.yna.co.kr/view/AKR20261026063800371?input=1195m",
-      "source": "www.yna.co.kr",
-      "date": "2026-10-26",
-      "description": "디지털 세대인 MZ·알파 세대 청소년들이 친숙한 영상 매체인 '숏폼'을 활용해 창의력과 종합적인 한국어 구사 능력을 겨루는 무대로 꾸며졌다. 특히 올해 대회는 참가 대상을 관동 지역을 비롯해 중부, 동북, 홋카이도 등...",
-      "keyword": "알파세대",
-      "score": 1
-    },
-    {
-      "title": "무신사 엠프티, 中 신발 브랜드 '다프네 랩' 국내 첫 팝업",
-      "url": "https://www.fnnews.com/news/202610261003205101",
-      "source": "www.fnnews.com",
-      "date": "2026-10-26",
-      "description": "다프네 랩은 중국 여성 신발 기업 다프네가 2021년 출시한 디자이너 브랜드다. 자신만의 개성을 중시하는 Z세대를 겨냥해 실험적인 디자인을 선보이고 있다. 입체적인 굽과 과감한 형태가 특징인 롱부츠, 스포티한 요소를...",
-      "keyword": "중국 Z세대",
-      "score": 1
-    },
-    {
-      "title": "자격시험 응시료 반값에 AI 교육 무료…청년 취준생 부담 던다",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=02847046645616856&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-10-26",
-      "description": "기업들이 인공지능(AI) 활용 역량을 중요하게 여기면서 취업준비생 A씨는 공공 온라인 직업훈련 플랫폼에서 ‘인공지능(AI)과 데이터 이해하기’, ‘파이썬 프로그래밍’ 강의를 무료로 들었다. 정보처리기사 시험을...",
-      "keyword": "취준생",
-      "score": 1
-    },
-    {
-      "title": "[단독] 8억 성과급에 마이크론 밀렸다…취준생들 “삼하떨마”",
-      "url": "https://www.joongang.co.kr/article/25472710",
-      "source": "www.joongang.co.kr",
-      "date": "2026-10-26",
-      "description": "성과급 격차에…취준생 “삼하떨마” 하지만 국내 반도체 취업시장의 분위기가 예년과 다소 달라졌다는... 서울대 박사급 지원자 박모(29)씨는 “요즘 취준생 사이에서는 ‘삼하떨마’(삼성전자·SK하이닉스에 떨어지면...",
-      "keyword": "취준생",
       "score": 1
     }
   ]
