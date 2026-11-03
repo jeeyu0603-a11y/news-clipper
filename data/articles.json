@@ -1,14 +1,113 @@
 {
-  "crawled_at": "2026-11-02 16:29",
+  "crawled_at": "2026-11-03 10:27",
   "items": [
     {
-      "title": "\"괜찮아·진짜·언니\"…日 Z세대 사로잡은 '한본어'",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03273446645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "title": "\"귀신보다 무서운 주식 폭락\"…‘핼러윈 분장’ 풍자 나선 中 Z세대",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03512886645642112&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "source": "www.edaily.co.kr",
-      "date": "2026-11-02",
-      "description": "일본 Z세대(1990년대 중반~2010년대 초반 출생) 사이에서 한국어를 섞어 쓰는 ‘한본어’가 유행하고 있다.... 전문가들에 따르면 최근 몇 년 새 일본 대중문화와 광고, Z세대의 일상 대화에서 한국어나 이를 살짝 변형한...",
+      "date": "2026-11-03",
+      "description": "글로벌 AI주가 흔들리고 있는데다 중국내 소비 침체까지 장기화되면서, 본토 벤치마크 지수인 CSI 300 지수는 ‘베어마켓’(강세장에서 20% 이상 하락한 침체장)에 진입했다. 다만, 2일 중국 증시는 당국이 금융시장 지원을...",
+      "keyword": "글로벌 소비",
+      "score": 4
+    },
+    {
+      "title": "일본 광고서 한국어로 \"괜찮아요\"…Z세대 사로잡은 '한본어'",
+      "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5228672",
+      "source": "mbn.mk.co.kr",
+      "date": "2026-11-03",
+      "description": "일본 대중문화나 광고, 일상대화에서 현지 Z세대가 한국어 단어 또는 이를 약간 변형한 표현을 쓰는 사례가 늘고 있습니다. 한국어와 일본어를 합쳐 만든 신조어, 이른바 '한본어'가 확산하는 모습입니다. 미국 일간...",
       "keyword": "Z세대",
-      "score": 6
+      "score": 3
+    },
+    {
+      "title": "'역대 최다' 방한 외국인 지갑 열린다…K-푸드, 접점 확대",
+      "url": "https://www.newsis.com/view/NISX20261102_0003851614",
+      "source": "www.newsis.com",
+      "date": "2026-11-03",
+      "description": "서울 올리브영 센트럴 명동 타운과 부산 올리브영 남포 타운에서는 스트레이 키즈 포토존과 전용 매대를 설치하고 전통미를 담은 일월오봉도 랜드마크 패키지를 판매한다. 롯데웰푸드 관계자는 \"한국을 찾은 글로벌...",
+      "keyword": "올리브영",
+      "score": 2
+    },
+    {
+      "title": "밖으로 나간 현대백화점 '흰디'...굿즈 매출 73%↑",
+      "url": "https://www.mt.co.kr/living/2026/11/03/2026110309303596459",
+      "source": "www.mt.co.kr",
+      "date": "2026-11-03",
+      "description": "현대백화점은 고객 접점을 더 확대하기 위해 젠지(Gen Z) 세대와 외국인들에게 인기가 높은 라이프스타일 브랜드와 협업을 통해 흰디 콜라보 상품 출시를 계획하고 있다. 또 기존 소품·문구류 중심이던 자체 제작 굿즈도...",
+      "keyword": "Z세대",
+      "score": 1
+    },
+    {
+      "title": "\"괜찮아\" \"형·언니\"…日 젊은층서 유행하는 '한본어'",
+      "url": "https://www.yna.co.kr/view/AKR20261103006700072?input=1195m",
+      "source": "www.yna.co.kr",
+      "date": "2026-11-03",
+      "description": "일본 대중문화나 광고, 일상대화에서 현지 Z세대가 한국어 단어 또는 이를 약간 변형한 표현을 쓰는 사례가 늘고 있다. 한국어와 일본어를 합쳐 만든 신조어, 이른바 '한본어'가 확산하는 모습이다. 미국 일간 뉴욕타임스...",
+      "keyword": "Z세대",
+      "score": 1
+    },
+    {
+      "title": "\"트렌드 알려드립니다\" 무신사, 'AI 큐레이션' 적용 범위 확대",
+      "url": "https://www.newsis.com/view/NISX20261103_0003852309",
+      "source": "www.newsis.com",
+      "date": "2026-11-03",
+      "description": "무신사가 지난 6월 처음 도입된 ‘AI 트렌드 큐레이션'의 적용 범위를 패션과 뷰티 12개 카테고리로 확대했다고 3일 밝혔다. AI 트렌드 큐레이션은 인공지능(AI)이 플랫폼 외부의 패션·뷰티 트렌드를 선제적으로 분석해...",
+      "keyword": "트렌드",
+      "score": 1
+    },
+    {
+      "title": "[한미 FTA 20년-K푸드 해외진출]② ‘트럼프 관세 보호막’ 된 FTA…김치...",
+      "url": "https://biz.chosun.com/policy/policy_sub/2026/11/03/R2EIDHH5QVGD7AVTLSEUCKXKPI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+      "source": "biz.chosun.com",
+      "date": "2026-11-03",
+      "description": "최근 전 세계적인 한류 열풍과 건강식 수요 증가로 김치, 고추장, 막걸리 등 한국산 발효식품이 세계로 뻗어나가는 데도 FTA가 든든한 지원군이 되고 있다. 우리나라의 주요 수출 상대국 중 하나인 미국에서의...",
+      "keyword": "열풍",
+      "score": 1
+    },
+    {
+      "title": "\"20대 '텍스트힙' 열풍에 서점 매출 9%↑…작은 책방은 감소\"",
+      "url": "https://www.yna.co.kr/view/AKR20261102167400002?input=1195m",
+      "source": "www.yna.co.kr",
+      "date": "2026-11-03",
+      "description": "삼성카드 분석…\"문구류·팬시용품 등 구매도 영향준 듯\" 젊은 층 사이에서 '텍스트힙'(텍스트+힙하다) 열풍이 불면서 20대 서점 이용이 늘어난 것으로 나타났다. 3일 삼성카드 데이터랩에 따르면 올해 1∼9월...",
+      "keyword": "열풍",
+      "score": 1
+    },
+    {
+      "title": "피프티피프티, AI 캐릭터 ‘웨니’ 탄생…무대 밖에서도 팬심 공략",
+      "url": "https://www.mk.co.kr/article/12194379",
+      "source": "www.mk.co.kr",
+      "date": "2026-11-03",
+      "description": "AI 기술과 캐릭터를 접목한 이번 시도가 팬덤과의 소통에 어떤 새로운 재미를 더할지 관심이 쏠린다. 한편 피프티피프티는 오는 7일과 8일 고척스카이돔에서 열리는 ‘2026 KGMA’ 첫째 날 아티스트 데이에 출연해 무대를...",
+      "keyword": "팬덤",
+      "score": 1
+    },
+    {
+      "title": "횡성군, 공직자 참여 SNS 콘텐츠 눈길…관광 홍보 강화",
+      "url": "https://www.newsis.com/view/NISX20261103_0003852355",
+      "source": "www.newsis.com",
+      "date": "2026-11-03",
+      "description": "횡성군은 직원들이 콘텐츠 기획부터 출연까지 맡아 제작한 영상을 유튜브와 인스타그램, 블로그 등 공식 SNS 채널에 게시하며 주민과 방문객의 관심을 끌고 있다고 3일 밝혔다. 기존의 일방적인 군정 소식 전달에서 벗어나...",
+      "keyword": "인스타그램",
+      "score": 1
+    },
+    {
+      "title": "광주도시철도 2호선 사업 시민에 알린다…SNS 채널 개설",
+      "url": "https://www.newsis.com/view/NISX20261103_0003852295",
+      "source": "www.newsis.com",
+      "date": "2026-11-03",
+      "description": "전담팀은 지난달 27일 인스타그램과 페이스북 계정을 개설, 공사 현장 소식 등 게시글 4건을 올렸다. 또 전남광주통합특별시 대표 계정에도 도시철도 관련 게시글 5건을 홍보했다. 도시철도건설 관련 시 누리집도...",
+      "keyword": "인스타그램",
+      "score": 1
+    },
+    {
+      "title": "BTS, 남미 5개 도시 14회 공연 매진… 85만여명 동원",
+      "url": "https://www.kmib.co.kr/article/20261102502058",
+      "source": "www.kmib.co.kr",
+      "date": "2026-11-03",
+      "description": "칠레 산티아고의 숙소 검색량은 전년 대비 200% 늘어났다. 남미 투어를 마친 BTS는 오는 19일 대만 가오슝을 시작으로 태국 방콕, 말레이시아 쿠알라룸푸르, 싱가포르, 인도네시아 자카르타, 호주 멜버른과 시드니에서...",
+      "keyword": "검색량",
+      "score": 1
     },
     {
       "title": "엄마처럼 입고 엄마 단골집으로…美 Z세대 몰리자 석 달 매출 1조",
@@ -17,6 +116,15 @@
       "date": "2026-11-02",
       "description": "미국 Z세대가 2000년대 중반 교외 중산층 엄마처럼 차려입고 패밀리레스토랑 체인 ‘치즈케이크 팩토리’로... 하지만 정작 Z세대 손님들은 개의치 않는 분위기다. 피셔는 “백악관이 어떻게 생겼든 치즈케이크 팩토리가...",
       "keyword": "Z세대",
+      "score": 5
+    },
+    {
+      "title": "금감원 MZ세대, '베스트·워스트 상사' 뽑는다...조직 혼란상 반영",
+      "url": "https://www.fnnews.com/news/202611021604162474",
+      "source": "www.fnnews.com",
+      "date": "2026-11-02",
+      "description": "지난해 감독체계 개편 추진 및 지방 이전 이슈 등 일련의 혼란이 지속되면서 MZ세대 직원들을 중심으로 상사의 리더십을 직접 평가하고 싶다는 목소리가 분출한 것이 배경으로 꼽힌다. 2일 금융당국에 따르면 금감원...",
+      "keyword": "MZ세대",
       "score": 5
     },
     {
@@ -38,30 +146,30 @@
       "score": 4
     },
     {
-      "title": "\"이날만 기다렸다\"…과자 대신 편의점 가득 채운 '반전 정체' [트렌드+]",
-      "url": "https://www.hankyung.com/article/202611029033g",
-      "source": "www.hankyung.com",
-      "date": "2026-11-02",
-      "description": "렌티큘러 굿즈와 손거울 키링 세트 등을 포함한 전용 상품을 구성했으며, 트렌드랩 성수점에 팝업존을 마련했다. 애플리케이션(앱) 신규 가입 고객을 대상으로 무료 쿠폰을 지급하고, 초콜릿과 젤리 등을 대상으로 1+1...",
-      "keyword": "트렌드",
-      "score": 2
-    },
-    {
-      "title": "세계 식탁 파고든 'K푸드'…학계·외신 “글로벌 식품 일상 트렌드 부상...",
-      "url": "https://www.etnews.com/20261102000285",
-      "source": "www.etnews.com",
-      "date": "2026-11-02",
-      "description": "K팝·K드라마를 계기로 시작된 K푸드에 대한 관심이 실제 구매와 반복 소비로 이어지면서 일시적인 유행을... K푸드가 특정 국가의 유행을 넘어 글로벌 식품업계가 주목하는 차세대 맛과 메뉴의 하나로 자리 잡고 있다고 본...",
-      "keyword": "유행",
-      "score": 2
-    },
-    {
       "title": "“절까지 갈 기운 없어서”…20대가 만든 온라인 절, 100만명 홀렸다",
       "url": "https://biz.heraldcorp.com/article/10922730?ref=naver",
       "source": "biz.heraldcorp.com",
       "date": "2026-11-02",
       "description": "‘절에 가서 잠깐 쉬고 싶지만 취준생이라 절까지 갈 시간도, 기운도 없어서’ 만든 결과물이었다. 그가 산사를 소셜미디어(SNS)에 공개하자 한국을 넘어 해외에서까지 이용자가 몰렸다. 불교 국가인 대만에서는 하루 새...",
       "keyword": "취준생",
+      "score": 2
+    },
+    {
+      "title": "국중박 휩쓴 '단청 키캡', 5분만에 완판…석달새 3만개 뚫고 美 진출",
+      "url": "https://www.mt.co.kr/future/2026/11/02/2026110211054343775",
+      "source": "www.mt.co.kr",
+      "date": "2026-11-02",
+      "description": "국립중앙박물관 '뮷즈(MU:DS)' 열풍을 이끌었던 단청 키보드가 이번엔 손바닥만 한 열쇠고리로 돌아와 매진 행진을 이어가고 있다. 고가의 키보드 본체 대신 자판(키캡) 한 알을 떼어내 만든 '단청 키캡 키링'이 출시 석 달...",
+      "keyword": "완판",
+      "score": 2
+    },
+    {
+      "title": "짱구부터 포켓몬까지…편의점4사, 빼빼로데이 '굿즈 전쟁'",
+      "url": "https://www.mt.co.kr/living/2026/11/02/2026110215165941809",
+      "source": "www.mt.co.kr",
+      "date": "2026-11-02",
+      "description": "지난해 완판된 핫팩 인형과 키링을 비롯해 말랑이, 양털 담요, 무드등, 머그컵, 요가매트, 텀블러 등의 굿즈도 기획했다. CU는 상품을 직접 경험할 수 있도록 4일부터 12일까지 CU 성수디저트파크점에 포켓몬 콘셉트...",
+      "keyword": "완판",
       "score": 2
     },
     {
@@ -74,12 +182,12 @@
       "score": 2
     },
     {
-      "title": "목숨 건 \"시급 50배\" 꿀알바 흥행…30대도 남의 일 아니다",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=02866726645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
+      "title": "[K푸드 글로벌 확장]“맛은 기본, 기술은 무기”…세계인 식탁 홀린 K푸...",
+      "url": "https://www.etnews.com/20261030000299",
+      "source": "www.etnews.com",
       "date": "2026-11-02",
-      "description": "‘꿀알바’는 고액 아르바이트라는 소재에 공포와 판타지를 결합했지만 현실에서도 2030세대의 시간제 근로 비중은 높아지고 있다. 특히 20대는 전체 임금근로자가 줄어드는 가운데 시간제 근로자 비중에...",
-      "keyword": "2030세대",
+      "description": "자체 개발한 'Food AI 360'은 소비 트렌드 분석부터 상품 콘셉트 개발·평가, 시장 반응 점검까지 지원한다. 지난해 국내 사업부에 도입한 데 이어 올해 6월 미국으로 활용 범위를 넓혔다. 제품별로 살펴보면 비비고 냉동김밥은...",
+      "keyword": "소비 트렌드",
       "score": 2
     },
     {
@@ -92,15 +200,6 @@
       "score": 1
     },
     {
-      "title": "'연중 최고 매출' 잡아라... 편의점 4사, 빼빼로데이 앞두고 인기 IP 굿즈...",
-      "url": "https://www.insight.co.kr/news/580207",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-02",
-      "description": "학창 시절 다마고치를 키웠던 3040세대에는 향수를, 1020세대에는 캐릭터 특유의 귀여움을 전달한다는 구상이다.핫팩 인형과 키링, 말랑이, 양털 담요, 무드등, 머그컵, 텀블러 등 겨울철 휴식과 일상에서의 활용도를...",
-      "keyword": "1020세대",
-      "score": 1
-    },
-    {
       "title": "\"MZ 아이디어로 저당 시장 공략\".. 해태제과, 대학생 서포터즈 본격 가동",
       "url": "https://www.fnnews.com/news/202611021057121120",
       "source": "www.fnnews.com",
@@ -110,12 +209,12 @@
       "score": 1
     },
     {
-      "title": "화장품 대신 단백질 스무디…올리브영의 '웰니스' 실험[르포]",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03755606645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
+      "title": "침낭까지 챙겨와 '오픈런'…전국서 덕후 몰리더니 '대반전'",
+      "url": "https://www.hankyung.com/article/2026110209961",
+      "source": "www.hankyung.com",
       "date": "2026-11-02",
-      "description": "K사우나 트렌드를 반영한 사우나 용품과 잠옷 등 라이프스타일 상품, 차와 커피도 선보인다. 개점 이후 사흘 동안 올리브베러 성수의 외국인 매출액 비중은 50%가량으로 그동안 올리브영이 운영한 올리브베러 매장...",
-      "keyword": "트렌드",
+      "description": "지난달 21일 오전 아이파크몰 용산점 3층 도파민스테이션. ‘유희왕’ 팝업스토어 입구에 100ｍ에 달하는 긴 줄이 늘어섰다. 키오스크엔 ‘대기 97팀’이라는 안내가 떠 있었다. 매장 직원은 “지금 대기하면 입장까지...",
+      "keyword": "오픈런",
       "score": 1
     },
     {
@@ -128,39 +227,21 @@
       "score": 1
     },
     {
-      "title": "\"4년 만에 오빠~♥\"…연락 없던 동기 청첩장에 직장인 허탈",
-      "url": "https://www.insight.co.kr/news/580273",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-02",
-      "description": "A씨가 공개한 메시지에 따르면 해당 동기는 \"오빠, 요즘 너무 고생 많지?\"라는 친근한 인사와 함께 하트 이모티콘을 덧붙이며 접근했다. 이어 청첩장 모임을 언급하며 자신의 결혼식에 참석해 달라는 뜻을 전해왔다. 수년간...",
-      "keyword": "요즘",
-      "score": 1
-    },
-    {
-      "title": "[단독]‘대학생’ 대신 ‘20대’로…스타벅스, ‘캠퍼스 버디’ 연말 종...",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03811366645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-11-02",
-      "description": "스타벅스가 대학생·대학원생 전용 서비스 ‘캠퍼스 버디’를 올해 말 종료한다. 대학 재학 여부에... 캠퍼스 버디는 대학생과 대학원생을 대상으로 음료 할인 등의 혜택을 제공하는 서비스다. 주중 제조 음료 30...",
-      "keyword": "대학생",
-      "score": 1
-    },
-    {
-      "title": "크래프톤, AI 캐릭터 챗 ‘키프’ 출시…K팝 팬덤 공략",
-      "url": "https://www.sedaily.com/article/20109180?ref=naver",
-      "source": "www.sedaily.com",
-      "date": "2026-11-02",
-      "description": "키프는 14세 이상 이용자를 대상으로 iOS와 안드로이드 앱에서 한국어로 제공된다. 일부 대화는 무료로 즐길 수 있고 월 3900원을 내고 구독하면 채팅을 무제한으로 쓸 수 있다. 회사는 참여 아티스트를 늘리고 기능을...",
-      "keyword": "앱",
-      "score": 1
-    },
-    {
       "title": "[현장]떡볶이는 이미 '품절'…호찌민서 통한 GS25 'K푸드 전략'",
       "url": "https://www.newsis.com/view/NISX20261102_0003850623",
       "source": "www.newsis.com",
       "date": "2026-11-02",
       "description": "지난달 29일 오후 11시께 찾은 베트남 호찌민시의 한 GS25 편의점. 어둠이 내려앉은 거리에 익숙한 파란색 간판이 환하게 빛나고 있었다. 매장 앞에는 오토바이 여러 대가 세워져 있고, 유리창 너머로는 각종 먹거리가...",
       "keyword": "품절",
+      "score": 1
+    },
+    {
+      "title": "화장품 대신 단백질 스무디…올리브영의 '웰니스' 실험[르포]",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03755606645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-11-02",
+      "description": "평소 올리브영을 좋아했다는 말레이시아 여행객 40대 여성 사위트리(Sawittri)씨는 “올리브베러는 피부를... K사우나 트렌드를 반영한 사우나 용품과 잠옷 등 라이프스타일 상품, 차와 커피도 선보인다. 개점 이후 사흘...",
+      "keyword": "여행 트렌드",
       "score": 1
     },
     {
@@ -171,51 +252,6 @@
       "description": "또 마지막 세션에서는 관광 데이터 분석을 토대로 내년 국내여행 수요와 소비자 행태 변화 등을 전망하고, 관광업계와 지방자치단체가 주목해야 할 여행 트렌드를 핵심 키워드로 제시한다. 이번 세미나는 관광과...",
       "keyword": "여행 트렌드",
       "score": 1
-    },
-    {
-      "title": "BTS, 남미 5개 도시 14회 공연 매진…“관객 85만여명 동원”",
-      "url": "https://www.kmib.co.kr/article/20261102500643",
-      "source": "www.kmib.co.kr",
-      "date": "2026-11-02",
-      "description": "칠레 산티아고의 숙소 검색량은 전년 대비 200% 늘어났다. 남미 투어를 마친 BTS는 오는 19일 대만 가오슝을 시작으로 태국 방콕, 말레이시아 쿠알라룸푸르, 싱가포르, 인도네시아 자카르타, 호주 멜버른과 시드니에서...",
-      "keyword": "검색량",
-      "score": 1
-    },
-    {
-      "title": "\"한국도 프랑스처럼 대규모 시위 벌어질 수도\"…30대 70% 응답",
-      "url": "https://www.hankyung.com/article/2026110206617",
-      "source": "www.hankyung.com",
-      "date": "2026-11-02",
-      "description": "이어 20대(62.6%), 50대(60.7%), 60대(60.0%), 70세 이상(59.0%), 40대(57.3%) 순으로 나타났다. 프랑스 시위의 주원인으로 지목되는 생활비 상승과 교육 환경, 공공 서비스 문제가 한국에도 비슷하게 존재한다고 생각하느냐는...",
-      "keyword": "20대",
-      "score": 1
-    },
-    {
-      "title": "“산책중 아버지 폭죽 맞아 화상”…공분 일으킨 20대 사연, 알고보니",
-      "url": "https://biz.heraldcorp.com/article/10922863?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-11-02",
-      "description": "강원도 강릉의 강문해변에서 최근 폭죽에 맞아 아버지가 2도 화상을 입었다고 주장해 온라인상에서 눈길을 끈 사회관계망서비스(SNS) 게시물이 허위인 것으로 드러났다. 강릉경찰서는 명예훼손 혐의 등으로 인천에...",
-      "keyword": "20대",
-      "score": 1
-    },
-    {
-      "title": "이해인, 40억 건물주 됐는데 “매달 이자만 1300만원”…틱톡서 이자 갚...",
-      "url": "https://biz.heraldcorp.com/article/10922636?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-11-02",
-      "description": "숏폼 플랫폼인 틱톡에서 직접 라이브 방송을 진행해 수익을 내고, 실제 건물 대출 이자를 얼마나 충당할 수 있을지 시험해보겠다는 계획이다. 이해인은 앞서 지난 2월 32억원의 대출을 받아 40억원대 건물을 샀다고 밝혀...",
-      "keyword": "숏폼",
-      "score": 1
-    },
-    {
-      "title": "온누리교회 가정사역, 크리스천 MZ세대 위한 세미나 ‘러브다이브’ 개...",
-      "url": "https://www.kmib.co.kr/article/20261101500094",
-      "source": "www.kmib.co.kr",
-      "date": "2026-11-01",
-      "description": "온누리교회(이재훈 목사)가 가정사역의 일환으로20대 크리스천 대학청년들을 위한 결혼 및 연애 세미나 ‘러브다이브(Love Dive)’를 개최한다. 이번 세미나는 20대 청년들이 성경 말씀 안에서 연애관과 결혼관을...",
-      "keyword": "MZ세대",
-      "score": 6
     },
     {
       "title": "“콜라에 피클 넣어주세요”…SNS 달군 파격 조합 [식탐]",
@@ -245,31 +281,13 @@
       "score": 1
     },
     {
-      "title": "삼성 첫 오픈형 이어폰 '버즈 온' 통했다…사흘 만에 온라인 초도 완판",
-      "url": "https://view.asiae.co.kr/article/2026110109490026848",
-      "source": "view.asiae.co.kr",
-      "date": "2026-11-01",
-      "description": "삼성전자 공식 온라인몰인 삼성닷컴을 비롯해 쿠팡, 네이버 등 주요 e커머스에서는 현재 품절 상태로, 예약 배송을 통해서만 구매할 수 있다. 삼성닷컴에서는 이달 7일부터 순차 배송된다고 안내하고 있다. 버즈 온은...",
-      "keyword": "품절",
-      "score": 1
-    },
-    {
       "title": "“요가·야근중 홀짝”…MZ세대, 와인도 논알코올 '0.0' 찾는다[이 집! ...",
       "url": "https://www.edaily.co.kr/News/Read?newsId=02453446645618496&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "source": "www.edaily.co.kr",
       "date": "2026-10-31",
-      "description": "건강과 자기관리를 중시하는 MZ세대를 중심으로 음주 습관이 달라지고 있다. 술을 무조건 끊기보다는 마시는 양과 상황을 조절하려는 움직임이다. 맥주에서 출발한 논·비알코올 열풍이 이제 와인으로 번지는 모양새다....",
-      "keyword": "MZ세대",
+      "description": "논알코올 와인 시장에 대해서는 아직 초기 단계인 만큼 성장에 시간이 필요하다고 진단하면서도 저도주 트렌드와 맞물린 가능성에 주목했다. 질 세라는 “밀레니얼 세대부터 Z세대까지 알코올 소비를 줄이고...",
+      "keyword": "Z세대 트렌드",
       "score": 6
-    },
-    {
-      "title": "밤샘 오픈런에 굿즈 품절…‘먼작귀’ 신드롬",
-      "url": "https://www.mk.co.kr/article/12184159",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-31",
-      "description": "2022년 TV 애니메이션으로 제작되면서 한국에서도 MZ세대를 중심으로 인지도를 높였다. 지난 9월 30일 국내 개봉한 ‘극장판 치이카와: 인어 섬의 비밀’은 지난 10월 21일 기준 누적 관객 약 190만명을 돌파하며 박스오피스...",
-      "keyword": "MZ세대",
-      "score": 5
     },
     {
       "title": "대놓고, 귀엽게…덕질을 바꾼 작은 친구들",
@@ -286,17 +304,8 @@
       "source": "view.asiae.co.kr",
       "date": "2026-10-31",
       "description": "최근 중국에서는 세대를 뛰어넘어 어르신들과 함께 생활하고 교류하는 MZ세대(밀레니얼＋Z세대)가 늘어나고 있다. 저출생과 고령화가 중국의 심각한 사회적 이슈로 떠오르면서 유치원이 요양원으로 개조되고, 유치원...",
-      "keyword": "MZ세대",
+      "keyword": "중국 Z세대",
       "score": 3
-    },
-    {
-      "title": "서인영, 코로나19 초기 확진…“구급차로 이송” (‘유행꼰대’)",
-      "url": "https://www.mk.co.kr/article/12192365",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-31",
-      "description": "한편 ‘서인영의 유행꼰대’ ‘원조 트렌드 퀸’ 서인영과 ‘MZ 트렌드 해설사’ 미미미누의 거침 없는 세대 격돌 토크를 나누는 신상 트렌드 과외쇼로, 매주 목요일 오후 9시 방송된다. [김소연 스타투데이 기자]",
-      "keyword": "MZ세대",
-      "score": 2
     },
     {
       "title": "“마지막으로 노래방 갔던 게 언제였더라”…직장인의 밤이 달라졌다",
@@ -317,6 +326,15 @@
       "score": 2
     },
     {
+      "title": "밤샘 오픈런에 굿즈 품절…‘먼작귀’ 신드롬",
+      "url": "https://www.mk.co.kr/article/12184159",
+      "source": "www.mk.co.kr",
+      "date": "2026-10-31",
+      "description": "오픈런 행렬이 끊이지 않는 ‘용치마’ 덕에 용산 아이파크몰도 덩달아 붐빈다. 입장까지 비는 시간 동안... 이은희 명예교수는 “캐릭터를 갖고 싶어 하는 심리는 이해하지만 과도한 오픈런이나 고가 구매는 마케팅에...",
+      "keyword": "오픈런",
+      "score": 2
+    },
+    {
       "title": "패션 판 뒤집은 ‘운동화 덕후’",
       "url": "https://www.joongang.co.kr/article/25474531",
       "source": "www.joongang.co.kr",
@@ -324,60 +342,6 @@
       "description": "‘무지하게 신발 사진이 많이 저장된 곳’의 줄임말인 무신사는 경남 통영 출신 ‘운동화 덕후’ 조만호 대표가 고교생 때 연 온라인 동호회에서 출발했다. 작은 커뮤니티에서 회원 수 2882만 명, 거래액 5조원의 패션...",
       "keyword": "덕후",
       "score": 2
-    },
-    {
-      "title": "추억을 깨웠다…돌아온 그 맛 '완판 행렬'",
-      "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00003&news_seq_no=5228201",
-      "source": "mbn.mk.co.kr",
-      "date": "2026-10-31",
-      "description": "지난 14일 농심몰에서 진행한 3천명 한정 사전예약은 2시간 만에 마감됐고, 27일부터 시작한 온오프라인 판매에서도 품절 행진이 이어지고 있습니다. 농심이 지난해 되살린 '농심라면'도 흥행하며 재출시 이후 누적...",
-      "keyword": "품절",
-      "score": 1
-    },
-    {
-      "title": "불황엔 '추억 소환'…'캪틴큐' 하루 만에 완판",
-      "url": "https://magazine.hankyung.com/business/article/202610317359b",
-      "source": "magazine.hankyung.com",
-      "date": "2026-10-31",
-      "description": "지난 14일 농심몰 3천명 한정 사전예약은 2시간 만에 마감됐고, 27일 시작한 온오프라인 판매에서도 일부 채널은 품절이다. 농심이 지난해 재출시한 '농심라면'은 현재까지 2천600만개가 팔렸다. 옛 제품을 현대적으로...",
-      "keyword": "품절",
-      "score": 1
-    },
-    {
-      "title": "\"재출시만 기다렸다\" 관심 폭발…4만8000개 '완판' 터졌다",
-      "url": "https://www.hankyung.com/article/2026103173427",
-      "source": "www.hankyung.com",
-      "date": "2026-10-31",
-      "description": "농심은 지난 27일부터 온·오프라인에서 정식 판매를 시작했지만 일부 유통채널에서는 품절이 이어지고 있다. 볶음너구리는 2017년 출시된 뒤 2024년 단종됐다가 올해 다시 돌아온 제품이다. 기존 너구리의 굵은 면과...",
-      "keyword": "품절",
-      "score": 1
-    },
-    {
-      "title": "주차비 아끼고 인증샷만 남기는 2030 소비 트렌드 풍자한...강유미의 '현...",
-      "url": "https://www.insight.co.kr/news/579966",
-      "source": "www.insight.co.kr",
-      "date": "2026-10-30",
-      "description": "지난 29일 유튜브 채널 '강유미 yumi kang좋아서 하는 채널'이 공개한 영상 '현백코어'는 2030 세대의 핫플레이스로 자리 잡은 대형 백화점을 방문한 소비자의 시선을 날카로운 현실 풍자로 담아냈다. 영상은 고물가와...",
-      "keyword": "핫플레이스",
-      "score": 3
-    },
-    {
-      "title": "\"산리오도 제쳤다\" 핼러윈 굿즈 시장 뒤집은 '치이카와'...검색량 27배 폭...",
-      "url": "https://www.insight.co.kr/news/579838",
-      "source": "www.insight.co.kr",
-      "date": "2026-10-30",
-      "description": "지난해 인기를 끌었던 '산리오' 검색어를 제치고 치이카와가 상위권을 석권한 것이다. 인기 검색어 순위에서도 '치이카와 할로윈'이 1위를 기록했다. '할로윈 랏코', '할로윈 우사기', '할로윈 쿠리만쥬' 등 치이카와...",
-      "keyword": "검색어",
-      "score": 3
-    },
-    {
-      "title": "3시간 기다리던 이 식당, 또 대박?…강남 신세계서 ‘오픈런’ 펼쳐졌다",
-      "url": "https://www.mk.co.kr/article/12191623",
-      "source": "www.mk.co.kr",
-      "date": "2026-10-30",
-      "description": "28일 치폴레 2호점 개점 강남에서 시작된 치폴레 열풍이 백화점으로 옮겨붙었다. 미국 멕시칸 패스트캐주얼 브랜드 치폴레가 국내 두 번째 매장에서도 개점과 동시에 100팀 이상의 대기 고객을 모았다. 국내 첫 매장에서...",
-      "keyword": "오픈런",
-      "score": 1
     }
   ]
 }
