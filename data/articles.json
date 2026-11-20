@@ -1,31 +1,238 @@
 {
-  "crawled_at": "2026-11-19 17:31",
+  "crawled_at": "2026-11-20 17:13",
   "items": [
     {
-      "title": "\"스마트폰·SNS 지겨워\" 요즘 Z세대, 통화·문자만 되는 '덤폰' 찾는다",
-      "url": "https://www.insight.co.kr/news/582736",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-19",
-      "description": "전 세계적으로 젊은 세대들 사이에서 통화와 문자 기능만 가능한 초기 형태 휴대전화 수요가 늘고 있는... 서구권에서는 최근 2030세대를 중심으로 '덤폰(dumbphone)' 소비가 늘고 있다. 끊임없이 울리는 알림과...",
-      "keyword": "Z세대",
-      "score": 6
+      "title": "요즘 뜨는 Z세대 주말 유행",
+      "url": "https://weekly.donga.com/3/all/11/6465346/1",
+      "source": "weekly.donga.com",
+      "date": "2026-11-20",
+      "description": "범위는 넓고 단순히 공부한다고 정답을 알 수 있는 것도 아닌 Z세대의 ‘찐’ 트렌드를 1997년생이 알잘딱깔센(알아서 잘 딱 깔끔하고 센스 있게)하게 알려준다. Z세대에게 주말은 할 일이 정말 많은 날이다. 유행이 자주...",
+      "keyword": "Z세대 트렌드",
+      "score": 7
     },
     {
-      "title": "역대 최고 학력인데, 일자리도 집도 막막…거리로 나온 Z세대",
-      "url": "https://www.newsis.com/view/NISX20261119_0003875057",
-      "source": "www.newsis.com",
-      "date": "2026-11-19",
-      "description": "대학을 마치고 안정된 직장을 구해 부모 집에서 독립하는 일이 각국 Z세대에게 갈수록 어려워지고 있다. 미국 월스트리트저널(WSJ)은 18일(현지시간) 인도와 프랑스 파리, 독일 프랑크푸르트에서 청년들이 거리로 나온...",
+      "title": "월급 받아도 \"엄마 밥값 좀\"…'반쪽 독립' 택한 日 Z세대",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=02774886645647688&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-11-20",
+      "description": "일본에서 사회생활을 시작한 Z세대 직장인 10명 중 7명이 여전히 부모로부터 식비 등을 지원받는 것으로 나타났다. 마음은 부모에게서 독립했지만 지갑은 아직 독립하지 못한 ‘반쪽 독립’ 상태라는 분석이다. 일본...",
       "keyword": "Z세대",
+      "score": 5
+    },
+    {
+      "title": "“커피·술, 참지도 끊지도 마라”…직장인들 구원한 ‘이 음료’ [비크...",
+      "url": "https://www.joongang.co.kr/article/25480378",
+      "source": "www.joongang.co.kr",
+      "date": "2026-11-20",
+      "description": "리서치 기업 오픈서베이가 지난 9월 발표한 ‘MZ세대 주류 트렌드 리포트 2026’에 따르면 최근 1개월 내 술을 마신 20~39세는 67.2%로 2024년보다 4.9%포인트 줄었다. 반면 최근 1개월 내 주류 음용자 가운데 무알코올 주류를...",
+      "keyword": "MZ세대",
+      "score": 5
+    },
+    {
+      "title": "“인터넷 끊고 통화·문자만 돼서 더 좋다”…Z세대가 끌린다는 '이 폰...",
+      "url": "https://www.etnews.com/20261120000295",
+      "source": "www.etnews.com",
+      "date": "2026-11-20",
+      "description": "영국 가디언은 Z세대가 잦은 알림과 소셜미디어(SNS) 사용에 따른 피로를 줄이기 위해 '지루한 휴대전화'(The... 시장조사업체 민텔은 일반 휴대전화가 아직 제한적인 소비층을 대상으로 하지만, Z세대 5명 중 3명이...",
+      "keyword": "Z세대",
+      "score": 4
+    },
+    {
+      "title": "인터넷 절대 안 되는 ‘벽돌폰’인데 “갖고 싶다”…Z세대 사이서 뜬다...",
+      "url": "https://biz.heraldcorp.com/article/10944070?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-11-20",
+      "description": "최근 서구권 젊은 세대를 중심으로 기능을 단순화한 ‘덤폰’이 인기를 끌자 관련 수요 공략에 나선... 영국 가디언은 Z세대가 끊임없는 알림과 소셜미디어(SNS) 피로에서 벗어나기 위해 ‘지루한 폰’(The Boring Phone)...",
+      "keyword": "Z세대",
+      "score": 4
+    },
+    {
+      "title": "외국인 2000만명 ‘올다무’ 즐기지만…서울에 갇혔다",
+      "url": "https://www.joongang.co.kr/article/25480295",
+      "source": "www.joongang.co.kr",
+      "date": "2026-11-20",
+      "description": "‘올다무(올리브영·다이소·무신사)’ 쇼핑은 방한 외국인의 필수 코스가 된 지 오래다. 남대문시장에서 안경을 맞추고, 미용실에서 머리를 하는 외국인도 많다. 지난해 방한 외국인의 약 80%가 개별자유여행을 했다....",
+      "keyword": "다이소",
+      "score": 4
+    },
+    {
+      "title": "베네피아, 임직원 복지포인트 소비 분석… 세대별 소비 트렌드 공개",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=02099206645647688&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-11-20",
+      "description": "분석 결과 올해 거래액은 청년층(20~30대)이 전년 동기 대비 11.3%, 장년층(40~50대)이 6.4% 증가했다. 두 세대 모두 도서·음반 거래액이 71%대 늘어 가장 높은 증가율을 기록했다. 태블릿·게임 분야는 청년층 56.3%, 장년층 30....",
+      "keyword": "거래액",
+      "score": 4
+    },
+    {
+      "title": "[르포]\"연예인 오나요?\"…영하 추위에도 오픈런 'K뷰티 핫플'",
+      "url": "https://view.asiae.co.kr/article/2026112013294507494",
+      "source": "view.asiae.co.kr",
+      "date": "2026-11-20",
+      "description": "홍대는 외국인 관광객과 10~20대 등 트렌드를 이끄는 젊은 소비층이 즐겨 찾는 대표적인 상권이라는 점에서 '컬러그라운드 홍대'가 해외 소비자들의 반응을 확인하는 테스트베드가 될 전망이다. 4층은 일정 금액 이상 구매...",
+      "keyword": "트렌드",
       "score": 3
     },
     {
-      "title": "구호플러스, 페이크 퍼 재킷 물량 20%↑…Z세대 공략 나서",
-      "url": "https://www.mt.co.kr/living/2026/11/19/2026111909553845804",
+      "title": "방한 중국인 547만명…단체관광 늘면 '올다무' 고객 면세점 돌아올까",
+      "url": "https://www.newsis.com/view/NISX20261120_0003876670",
+      "source": "www.newsis.com",
+      "date": "2026-11-20",
+      "description": "면세점 중심이었던 중국인 관광객 쇼핑 수요가 '올다무'(올리브영·다이소·무신사)와 로컬 상권으로 분산되는 흐름에 매출이 영향을 받기도 했다. 이 같은 상황에서 중국인 단체 관광객이 늘어날 경우 다양한 쇼핑...",
+      "keyword": "다이소",
+      "score": 3
+    },
+    {
+      "title": "[수출 1조달러 달성]불닭 의존도 90%…'라면 쏠림' 뚜렷한 K푸드 명암",
+      "url": "https://view.asiae.co.kr/article/2026112011132603808",
+      "source": "view.asiae.co.kr",
+      "date": "2026-11-20",
+      "description": "업계 관계자는 \"K컬처의 화제성이 꺾이거나 매운맛 유행이 시들해진다면 K푸드 수출 전체가 역성장으로 갈 우려가 있다\"며 \"과일이나 쌀가공식품의 사례처럼 라면뿐 아니라 다른 품목들로 포트폴리오를...",
+      "keyword": "유행",
+      "score": 2
+    },
+    {
+      "title": "홈쇼핑은 매장·SNS로, 앱은 TV로…판매 채널 경계 허문다",
+      "url": "https://www.newsis.com/view/NISX20261120_0003876678",
+      "source": "www.newsis.com",
+      "date": "2026-11-20",
+      "description": "CJ온스타일은 크리에이터의 콘텐츠와 팬덤을 새로운 판매 접점으로 확보하고 있다. 홈쇼핑에서 쌓은 상품... 크리에이터의 콘텐츠 특성과 팬덤, 판매 성과를 상품 콘셉트와 고객 수요에 맞춰 분석하고 협업 상대를...",
+      "keyword": "팬덤",
+      "score": 2
+    },
+    {
+      "title": "노포 옆 MZ 성지… 100년 골목이 깨어난다",
+      "url": "https://www.kmib.co.kr/article/20261119502160",
+      "source": "www.kmib.co.kr",
+      "date": "2026-11-20",
+      "description": "만남의 장소로서의 기능은 세대를 이어가고 있다. 동성로에서 만난 중학교 3학년 손모군은 “생일 같은... 박 특보는 “사실상 기성세대, 관이 주도하던 동성로 살리기 정책이 이렇다 할 효과를 보지 못했다는 것을...",
+      "keyword": "MZ세대",
+      "score": 1
+    },
+    {
+      "title": "“10분에 1000명 비교”…K뷰티·K푸드 해외 마케팅에 뛰어든 AI",
+      "url": "https://www.donga.com/news/It/article/all/20261120/135053933/2",
+      "source": "www.donga.com",
+      "date": "2026-11-20",
+      "description": "윤 대표는 틱톡에서 특정 해시태그를 단 영상이 짧은 기간에 다수 게시되면 일부 콘텐츠가 추천 알고리즘을 통해 확산될 가능성이 커진다고 봤다. 다만 틱톡이 추천 알고리즘의 구체적인 작동 방식을 공개하지 않는 만큼...",
+      "keyword": "틱톡 해시태그",
+      "score": 1
+    },
+    {
+      "title": "13년만에 돌아온 GTA6…밤샘 중계에 광고 완판까지 역대급 특수",
+      "url": "https://www.mt.co.kr/world/2026/11/20/2026112011085613593",
       "source": "www.mt.co.kr",
+      "date": "2026-11-20",
+      "description": "밤샘 중계에 광고 완판까지…인플루언서 생태계 들썩 흥행 열풍은 스트리밍과 광고 시장으로 고스란히 번지고 있다. 게임 인플루언서들은 밤샘 생중계 마라톤에 들어갔다. 19일 블룸버그에 따르면 출시 후 26시간 동안...",
+      "keyword": "열풍",
+      "score": 1
+    },
+    {
+      "title": "K-푸드 열풍에 미국 간 ‘캔 김’",
+      "url": "https://biz.heraldcorp.com/article/10943651?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-11-20",
+      "description": "‘신안 천사김’ 미국 코스트코 수출...전남광주시·전남창조경제혁신센터 마케팅 지원 성과 K-푸드 열풍을 타고 장기 보관이 가능한 ‘캔(Can) 김’이 최대 유통업체인 미국 코스트코에 수출된다. 조미김의 이번 수출은...",
+      "keyword": "열풍",
+      "score": 1
+    },
+    {
+      "title": "“영하에도 100명 오픈런”…올리브영, 홍대서 ‘K색조’ 두 번째 엔진...",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03637526645647688&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "source": "www.edaily.co.kr",
+      "date": "2026-11-20",
+      "description": "아침 기온이 영하로 떨어진 홍대 거리, 건물 한 채가 온통 분홍빛으로 물들어 있었다. 그 벽을 따라 패딩 모자를 눌러쓴 사람들이 골목 안까지 줄을 섰다. 손에 입김을 불어가며 기다리는 이들 사이로 중국어 등 외국어도...",
+      "keyword": "오픈런",
+      "score": 1
+    },
+    {
+      "title": "무신사, '무진장 26 겨울 블프' 개막···일상 곳곳으로 혜택 확대",
+      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=229150",
+      "source": "www.apparelnews.co.kr",
+      "date": "2026-11-20",
+      "description": "이와 함께 구매 금액 구간별로 보상을 주는 '구매 챌린지', 매일 두 차례 최대 80% 할인 쿠폰 등을 무작위로 주는 '오픈런 뽑기', 누적 판매액 100억 원 단위로 쿠폰을 지급하는 '카운트업' 이벤트를 진행한다. 무신사머니...",
+      "keyword": "오픈런",
+      "score": 1
+    },
+    {
+      "title": "450만개 팔린 리엔케이 '선크림' 드디어 다이소에...\"K뷰티 확대\"",
+      "url": "https://www.mt.co.kr/living/2026/11/20/2026112014361155170",
+      "source": "www.mt.co.kr",
+      "date": "2026-11-20",
+      "description": "한편, 리엔케이는 올해 더현대 서울 '더 웰니스 하우스', '무신사 뷰티 홍대' 등 주요 오프라인 매장에 연이어 입점하며 소비자 접점을 활발하게 늘리고 있다. 아울러 미국 코스트코 온라인 및 오프라인 매장, 아마존...",
+      "keyword": "무신사",
+      "score": 1
+    },
+    {
+      "title": "\"전통 유통 기업 아냐\"...CJ올리브영, AI 앞세워 '글로벌 테크 플랫폼' ...",
+      "url": "https://zdnet.co.kr/view/?no=20261119112308",
+      "source": "zdnet.co.kr",
+      "date": "2026-11-20",
+      "description": "이 총괄은 \"올해 방한 외국인 고객의 올리브영 매출이 1조원을 돌파했다\"며 \"한국의 올리브영 매장 자체가 거대한 K뷰티 글로벌 쇼룸 역할을 하고 있다\"고 설명했다. 이어 \"매장을 방문했던 글로벌 고객들이 자국으로...",
+      "keyword": "방한 외국인",
+      "score": 1
+    },
+    {
+      "title": "올리브영 배달 '오늘드림' 글로벌 간다…이진희 올리브영 총괄 \"옴니채...",
+      "url": "https://view.asiae.co.kr/article/2026111916435329594",
+      "source": "view.asiae.co.kr",
+      "date": "2026-11-20",
+      "description": "방한 외국인이 국내 매장에서 화장품을 써보고 귀국한 뒤 글로벌몰에서 다시 산다는 설명이다. CJ올리브영에 따르면 올해 방한 외국인 고객 매출은 1조원을 넘어섰다. 글로벌몰 회원은 600만명을 돌파했고, 글로벌몰...",
+      "keyword": "방한 외국인",
+      "score": 1
+    },
+    {
+      "title": "올리브영, AI로 '스크롤 없는 쇼핑'…온오프라인·국경 허문다",
+      "url": "https://www.yna.co.kr/view/AKR20261119119700030?input=1195m",
+      "source": "www.yna.co.kr",
+      "date": "2026-11-20",
+      "description": "이승효 올리브영 프로덕트센터장은 \"한국과 미국, 역직구몰, 방한 외국인 고객 등 서비스 이용 형태가 다양해지고 있다\"며 \"각각의 서비스를 따로 보는 대신 올리브영의 옴니채널 경험을 여러 시장과 고객에게...",
+      "keyword": "방한 외국인",
+      "score": 1
+    },
+    {
+      "title": "동작구, '주민 추천 동작 8경' SNS 이벤트 내달 7일까지",
+      "url": "https://www.yna.co.kr/view/AKR20261120114000004?input=1195m",
+      "source": "www.yna.co.kr",
+      "date": "2026-11-20",
+      "description": "참여하려면 구청 공식 SNS(인스타그램, 블로그 등)를 구독한 뒤 이벤트 게시물에 추천 장소와 추천 이유 등을 댓글로 작성하면 된다. 추천 명소는 ▲ 역사·문화유산, 자연경관, 공원·산책길 등 휴식·여가 공간 ▲ 특색...",
+      "keyword": "인스타그램",
+      "score": 1
+    },
+    {
+      "title": "3분기 차주당 주담대 2억 빌렸다…30대 비중 역대 최대 [머니뭐니]",
+      "url": "https://biz.heraldcorp.com/article/10944185?ref=naver",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-11-20",
+      "description": "30대가 신규 주담대에서 차지하는 비중은 46.4%로 역대 가장 컸다. 한국은행이 20일 공개한 ‘차주별... 신규 주담대 연령별로는 30대(+776만원), 40대(+647만원) 등은 증가한 반면 20대(-746만원)와 50대(-237만원)는...",
+      "keyword": "30대",
+      "score": 1
+    },
+    {
+      "title": "\"건강은 자신 있다\"…20대, 아침 거르고 건강검진은 가장 덜 받았다 [혼...",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=104787",
+      "source": "www.dailypop.kr",
+      "date": "2026-11-20",
+      "description": "한편 같은 '1인가구 삶'이라도 청년층은 관리 습관과 의료비에서, 고령층은 질환과 활동 제약에서 서로 다른 건강 과제를 안고 있다고 볼 수 있다. 특히 청년층의 낮은 검진율과 의료비 부담은 정책 사각지대를...",
+      "keyword": "청년층",
+      "score": 1
+    },
+    {
+      "title": "구호플러스, 페이크 퍼·숏코트 앞세워 겨울 공략…Z세대 취향 반영",
+      "url": "https://www.newsis.com/view/NISX20261119_0003874304",
+      "source": "www.newsis.com",
       "date": "2026-11-19",
-      "description": "박세영 삼성물산 패션부문 구호플러스 팀장은 \"올겨울 여성복은 자유로운 레이어링으로 다양한 질감과 실루엣에 변주를 주는 것이 핵심\"이라며 \"페이크 퍼 재킷과 하이넥 코트 등 Z세대가 선호하는 아이템으로...",
-      "keyword": "Z세대",
+      "description": "삼성물산 패션부문의 여성복 브랜드 구호플러스(kuho plus)가 Z세대 취향을 반영한 겨울 신상품을 선보이며 젊은 여성 고객층 공략에 나섰다. 페이크 퍼 재킷과 숏·하프 코트 등 트렌드에 민감한 아우터를 중심으로 상품...",
+      "keyword": "Z세대 트렌드",
+      "score": 4
+    },
+    {
+      "title": "\"내가 역대급 고학력인데 일자리·집이 없어요\"…폭발한 전 세계 Z세대 ...",
+      "url": "https://view.asiae.co.kr/article/2026111918511963435",
+      "source": "view.asiae.co.kr",
+      "date": "2026-11-19",
+      "description": "세계 곳곳의 Z세대(1990년대 중반~2010년대 초반 출생)가 거리로 나서고 있다. 역대 최고 수준의 학력에도... 미국에서는 청년 유권자들이 이달 중간선거에서 집권당인 공화당 대신 민주당의 승리에 힘을 보탰다....",
+      "keyword": "미국 Z세대",
       "score": 3
     },
     {
@@ -47,15 +254,6 @@
       "score": 2
     },
     {
-      "title": "[수출 1조달러 시대]120억달러 넘어선 K푸드+…\"역대 최단기간\"",
-      "url": "https://view.asiae.co.kr/article/2026111917135905637",
-      "source": "view.asiae.co.kr",
-      "date": "2026-11-19",
-      "description": "신선농산물로는 처음으로 1억달러를 돌파한 포도를 포함해 기존 주력 제품인 라면·과자 등에 대한 열풍이 지속됨에 따른 것이다. 농림축산식품부는 11월 현재 K-푸드플러스(+) 수출액이 122억9000만달러로 120억달러를...",
-      "keyword": "열풍",
-      "score": 2
-    },
-    {
       "title": "\"초단기 유행도 탑승 가능\"…굿즈 생산 '5개월→2주'로 줄인 솔루션",
       "url": "https://www.mt.co.kr/future/2026/11/19/2026110211252723549",
       "source": "www.mt.co.kr",
@@ -74,39 +272,12 @@
       "score": 2
     },
     {
-      "title": "농심, 감바스짜파게티에 볶음너구리까지…라면 팬덤이 신메뉴 만든다",
-      "url": "https://www.hankyung.com/article/2026111964871",
-      "source": "www.hankyung.com",
+      "title": "목요일 연차 신청 32% 늘었다…직장인 달력 바꾸고 출시도 전에 2조원 번...",
+      "url": "https://view.asiae.co.kr/article/2026111913524738316",
+      "source": "view.asiae.co.kr",
       "date": "2026-11-19",
-      "description": "인스타그램에는 ‘볶음너구리 부활 캠페인 본부’라는 계정이 생겨 재출시를 바라는 의견과 서명을 모았다. 서울 성수동의 농심 안테나숍 ‘신라면 분식’에서도 수출용 볶음너구리가 매장 내 판매량 1위를 기록했다....",
-      "keyword": "인스타그램",
-      "score": 2
-    },
-    {
-      "title": "\"사무실 텅 비었다\"…전 세계 직장인 줄줄이 연차 낸 이유",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03345606645647360&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-11-19",
-      "description": "특히 젊은 층의 반응이 뜨거워 미국 정규직 근로자 1530명 대상 설문에서 Z세대는 32%, 밀레니얼 세대는 27%가 출시일에 쉴 계획이라고 답했다. 영국 인사관리업체 브라이트HR은 11~12월 영국 내 GTA6 관련 연차 사용이 총...",
-      "keyword": "Z세대",
-      "score": 1
-    },
-    {
-      "title": "숏폼 타고 빌보드까지…베스티 ‘연애의 조건’ 13년 만의 기적",
-      "url": "https://sports.donga.com/ent/article/all/20261119/135053801/1",
-      "source": "sports.donga.com",
-      "date": "2026-11-19",
-      "description": "새로운 플랫폼과 세대를 만나면 과거의 곡이라도 언제든 동시대 음악으로 재평가받을 수 있음을 시사한다. 동시에 빠르게 소비되고 잊히는 유행 속에서 케이팝 콘텐츠의 수명 자체가 한층 길어지고 있음을 증명하고 있다.",
-      "keyword": "유행",
-      "score": 1
-    },
-    {
-      "title": "‘12월 재혼’ 서인영 “이번에도 프러포즈 안 받아” (유행꼰대)",
-      "url": "https://www.mk.co.kr/article/12213478",
-      "source": "www.mk.co.kr",
-      "date": "2026-11-19",
-      "description": "19일 방송되는 티캐스트 E채널 예능 프로그램 ‘서인영의 유행꼰대’에는 방송인 양상국이 게스트로... 본격적인 수업에서는 2030세대 사이에서 유행하는 다양한 액티비티가 소개된다. 미미미누는 최근 개운산행...",
-      "keyword": "유행",
+      "description": "별도로 미국 정규직 근로자 1530명에게 물었더니 응답자의 18%가 GTA6 출시일에 쉴 계획이라고 답했다. Z세대는 32%, 밀레니얼 세대는 27%였다. 글로벌 인사 관리업체 리모트에서도 자사 플랫폼의 출시일 휴가 예약이...",
+      "keyword": "미국 Z세대",
       "score": 1
     },
     {
@@ -128,15 +299,6 @@
       "score": 1
     },
     {
-      "title": "그립이 발표한 내년 라이브 커머스 트렌드 'C.A.M.E.R.A'",
-      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=229120",
-      "source": "www.apparelnews.co.kr",
-      "date": "2026-11-19",
-      "description": "구매와 팬덤 형성을 이끄는 '관계형 커머스'로 발전했다고 분석했다. 창고형 라이브의 흥행과 생활·주방... 그립컴퍼니는 고객이 팬덤 활동의 일환으로 방송에 참여할 수 있도록 양방향 소통을 강화하는 전략을...",
-      "keyword": "팬덤",
-      "score": 1
-    },
-    {
       "title": "\"외국엔 없는 이 물건\"…해리포터 덕후들 공차 매장으로",
       "url": "https://www.hankyung.com/article/202611196622g",
       "source": "www.hankyung.com",
@@ -146,112 +308,22 @@
       "score": 1
     },
     {
-      "title": "한국에 푹 빠진 중국 MZ 여성들…FTA 타결에 뷰티株 '들썩' [분석+]",
-      "url": "https://www.hankyung.com/article/2026111961546",
+      "title": "김이 땅에서 나온다고?…세계 70% 휩쓴 K푸드의 파격 변신",
+      "url": "https://www.hankyung.com/article/202611197192g",
       "source": "www.hankyung.com",
       "date": "2026-11-19",
-      "description": "중국인 방한 지표는 꾸준히 개선됐고, 대중 수출도 최근 반등을 시작했기 때문에 이번 회담으로 이 흐름이... 아울러 \"올해 1~8월 올리브영 외국인 매출은 전년 대비 47% 늘었다\"며 \"반면 한국면세점협회에 따르면 상반기...",
+      "description": "풀무원은 지난달 김포국제공항 출국장 면세점에 첫 단독 브랜드관을 열고 '노을해심 김 선물세트'를 배치하며 방한 외국인 관광객 접점을 넓혔다. 기존 식품사뿐 아니라 제과 기업인 오리온도 지난해 말...",
       "keyword": "방한 외국인",
       "score": 1
     },
     {
-      "title": "\"정으로 와요\" 달라진 지스타, 팬심은 그대로",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03794966645647360&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
+      "title": "그립이 발표한 내년 라이브 커머스 트렌드 'C.A.M.E.R.A'",
+      "url": "http://www.apparelnews.co.kr/news/news_view/?idx=229120",
+      "source": "www.apparelnews.co.kr",
       "date": "2026-11-19",
-      "description": "국내 최대 게임 전시회 '지스타 2026'이 개막한 19일 부산 벡스코 (사진=안유리 기자) 직장인 장신지 씨는 1인칭 슈팅(FPS) 게임 ‘이스케이프 프롬 타르코프’에 등장하는 비밀 특수부대 ‘블랙 디비전’으로 변신해...",
-      "keyword": "직장인",
+      "description": "올해 3분기 창고형 라이브의 평균 시청자 수는 지난해 3분기보다 77.6% 증가했다. 방송당 평균 거래액은 일반 라이브의 약 2.1배였다. All-round(카테고리의 확장)는 패션·잡화 중심이던 라이브 쇼핑이 생활·주방·가전...",
+      "keyword": "거래액 증가",
       "score": 1
-    },
-    {
-      "title": "판 커지는 ‘AI 안경’ 전쟁…삼성 ‘완판’ 이어 애플도 참전",
-      "url": "https://biz.heraldcorp.com/article/10942602?ref=naver",
-      "source": "biz.heraldcorp.com",
-      "date": "2026-11-19",
-      "description": "삼성전자와 구글이 공동으로 개발한 인공지능(AI) 글라스가 공식 출시 전부터 돌풍을 일으키고 있다. 사전 예약에서 주요 제품이 순식간에 품절됐다. 애플도 내년 AI 글라스를 공개한다. 전 세계 AI 글라스 시장이...",
-      "keyword": "완판",
-      "score": 1
-    },
-    {
-      "title": "[마켓트렌드] “벌써 설레네”…유통가, 크리스마스 마케팅 본격화",
-      "url": "https://www.etnews.com/20261119000098",
-      "source": "www.etnews.com",
-      "date": "2026-11-19",
-      "description": "주말 패스트패스 입장권이 30분 만에 조기 완판됐다. 첫 주말 방문객은 4만명을 넘어설 것으로 예상된다. 패션업계도 크리스마스 마켓에 합류해 브랜드 경험을 확대한다. LF가 국내 전개하는 영국 브랜드 바버는 롯데타운...",
-      "keyword": "완판",
-      "score": 1
-    },
-    {
-      "title": "[그래픽] 20대 품목 수출액 현황",
-      "url": "https://www.yna.co.kr/view/GYH20261119001000044?input=1363m",
-      "source": "www.yna.co.kr",
-      "date": "2026-11-19",
-      "description": "19일 산업통상부에 따르면 2026년 1~10월 기준 반도체 수출액이 한국 총수출의 42.7%를 차지한 것으로 나타났다. minfo@yna.co.kr X(트위터) @yonhap_graphics 인스타그램 @yonhapgraphics",
-      "keyword": "인스타그램",
-      "score": 1
-    },
-    {
-      "title": "전도연, 데뷔 이후 첫 SNS 개설... 오스카 레이스 본격 시동",
-      "url": "https://www.insight.co.kr/news/582770",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-19",
-      "description": "지난 18일 전도연은 인스타그램 계정을 처음 개설하고 게시물을 올렸다. 그동안 개인 SNS를 하지 않았던 그의 계정 개설 소식에 업계와 팬들의 이목이 집중됐다. 전도연이 처음 올린 게시물은 이창동 감독의 신작...",
-      "keyword": "인스타그램",
-      "score": 1
-    },
-    {
-      "title": "\"결혼해야\" 20·30대 5%p 넘게 늘었지만…미혼 여성 10명 중 6명은 '선택...",
-      "url": "http://www.dailypop.kr/news/articleView.html?idxno=104766",
-      "source": "www.dailypop.kr",
-      "date": "2026-11-19",
-      "description": "20대는 44.7%, 30대는 49.1%가 결혼을 해야 한다고 답했다. 2년 전 39.7%, 43.9%보다 각각 5.0%p, 5.2%p 늘어 전체... 남녀가 결혼하지 않더라도 함께 살 수 있다는 응답은 미혼 78.2%, 20대 79.2%, 30대 79.9%로 전체(67.8%)보다 10%p 이상...",
-      "keyword": "20대",
-      "score": 1
-    },
-    {
-      "title": "사이버도박, 공급자까지 잡는다…범인 절반은 청년층",
-      "url": "https://view.asiae.co.kr/article/2026111912001528502",
-      "source": "view.asiae.co.kr",
-      "date": "2026-11-19",
-      "description": "20~30대 청년층만 해도 절반을 넘어설 정도로 집중되는 경향을 보였다. 도박 유형에 따라 연령 분포가 달라지는 것도 특징이다. 스포츠토토는 20~30대가 68.8%를 차지했고 경마·경륜·경정 등 도박 유형에선 50대 이상이...",
-      "keyword": "청년층",
-      "score": 1
-    },
-    {
-      "title": "\"샤오미 vs 삼성 붙는다면\"…한국인들 속마음 보니 '깜짝' [트렌드시그널...",
-      "url": "https://www.hankyung.com/article/202611184830g",
-      "source": "www.hankyung.com",
-      "date": "2026-11-19",
-      "description": "한경닷컴이 산업 맞춤형 인공지능(AI) 기업 뉴엔AI와 함께 소비 트렌드의 신호를 데이터로 포착해 소비자들의 생생한 목소리를 전합니다. 숫자 속에 숨겨진 '소비 민심'을 읽고 시장 변화와 트렌드를 짚습니다.",
-      "keyword": "소비 트렌드",
-      "score": 1
-    },
-    {
-      "title": "조폐公, '관광기념품博'서 화폐굿즈·카드형 골드 전시·판매",
-      "url": "https://www.fnnews.com/news/202611191105545448",
-      "source": "www.fnnews.com",
-      "date": "2026-11-19",
-      "description": "확인하고 구매할 수 있는 자리다. 조폐공사는 화폐 제조 부산물에 새로운 가치를 부여한 업사이클링 브랜드... 업사이클링 트렌드가 맞물린 사례로 평가된다. 조폐공사 특유의 정밀 압인 기술과 디자인 역량이 집약된...",
-      "keyword": "구매 트렌드",
-      "score": 1
-    },
-    {
-      "title": "“밥 안 줘도 되니까”… 벽돌 키우는 中 Z세대",
-      "url": "https://magazine.hankyung.com/business/article/202611185286b",
-      "source": "magazine.hankyung.com",
-      "date": "2026-11-18",
-      "description": "Z세대가 심리적 위안을 얻는다는 분석이다. 13일(현지 시각) 중국 매체 라디에 따르면, 최근 중국 소셜미디어(SNS)에서는 이른바 '벽돌 키우기(养砖头)'가 젊은 세대의 관심을 받고 있다. 길가에서 주운 벽돌에 물을 주고...",
-      "keyword": "Z세대",
-      "score": 5
-    },
-    {
-      "title": "방문객 80%가 2030... 강원도 '동해 묵호'가 MZ 사로잡은 이유 보니",
-      "url": "https://www.insight.co.kr/news/582545",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-18",
-      "description": "강원 동해시 묵호권역이 2030세대가 선택하는 체류형 관광지로 떠오르고 있다. SNS를 통해 입소문을 탄... 이번 조사에서 눈에 띄는 부분은 방문객 구성의 세대 변화다. 전체 응답자 중 80.6%가 20·30대였으며(20대 43.8...",
-      "keyword": "MZ세대",
-      "score": 4
     },
     {
       "title": "CJ올리브영, 홍대에 첫 ‘색조 특화’ 매장",
@@ -261,15 +333,6 @@
       "description": "영 MD들은 잘파세대(Z세대+알파세대)가 브랜드 인지도보다 개인 취향과 사용 목적에 따라 색조를 고른다는 점에 주목했다. 이에 브랜드가 아니라 제품 종류와 제형, 기능에 따라 나누는 ‘세그먼트 진열’을 도입했다....",
       "keyword": "잘파세대",
       "score": 4
-    },
-    {
-      "title": "‘짝, 짝’ 신발로 빌런 후려쳤다…MZ 줄 서는 ‘홍콩 핫플’ 정체",
-      "url": "https://www.joongang.co.kr/article/25479657",
-      "source": "www.joongang.co.kr",
-      "date": "2026-11-18",
-      "description": "신의 뜻을 전하는 통역사도 세대교체 중인가 보다. 30대 홍콩인 남성은 “제물까지 챙겨 승진을 빌었는데 점괘가 좋다”며 웃었다. 센트럴 인근의 만모 사원(文武廟)은 특히 학업 관련 기도발이 좋다고 소문났다. 지혜의...",
-      "keyword": "MZ세대",
-      "score": 2
     },
     {
       "title": "레드슬리퍼스 “팬덤 데이터로 아티스트의 가치 증명한다”",
@@ -290,29 +353,20 @@
       "score": 2
     },
     {
-      "title": "취준생 절반 이상 \"면접관은 사람이어야\"...AI 면접 외면받는 이유",
-      "url": "https://www.insight.co.kr/news/582577",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-18",
-      "description": "Z세대 구직자들이 AI를 면접 연습 도구로는 환영하지만, 실제 채용 면접관으로는 여전히 사람을 선호하는 것으로 나타났다. 지난 13일 진학사 캐치가 10월19일부터 27일까지 캐치 회원인 Z세대 구직자 1163명을 대상으로...",
-      "keyword": "Z세대",
-      "score": 1
-    },
-    {
-      "title": "“팝업 열었을 때보다 MZ 고객분들이 더 많이 찾는다”…소상공인들, 서...",
-      "url": "https://www.mk.co.kr/article/12212670",
-      "source": "www.mk.co.kr",
-      "date": "2026-11-18",
-      "description": "온·오프라인 판로 확대를 돕는 O2O(Online to Offline) 연계 매장으로 서울숲을 방문한 MZ 소비자들을 사로잡기 위해 K푸드·패션·뷰티·프레그런스 제품이 판매되고 있다. 각종 팝업스토어와 포토존을 마련해 젊은 고객들이...",
-      "keyword": "MZ",
-      "score": 1
-    },
-    {
       "title": "핫플 올라선 ‘W한남’… K패션·뷰티 성지 됐다",
       "url": "https://magazine.hankyung.com/business/article/202611183849b",
       "source": "magazine.hankyung.com",
       "date": "2026-11-18",
       "description": "패션 플랫폼 W컨셉의 플래그십 스토어 ‘W한남’이 오픈 한 달 만에 누적 방문객 2만5000명을 넘어섰다. 이 가운데 60%는 외국인 방문객이다. W한남은 지난달 16일 서울 한남동에 문을 연 W컨셉의 첫 단독 플래그십...",
+      "keyword": "핫플",
+      "score": 1
+    },
+    {
+      "title": "‘짝, 짝’ 신발로 빌런 후려쳤다…MZ 줄 서는 ‘홍콩 핫플’ 정체",
+      "url": "https://www.joongang.co.kr/article/25479657",
+      "source": "www.joongang.co.kr",
+      "date": "2026-11-18",
+      "description": "연말연시, 큰일을 앞두고 복을 비는 마음은 만국 공통이다. 새해에는 덜 아프고, 재물도 조금 더 모으고, 좋은 인연도 만나고 싶다. 홍콩에서는 이런 바람도 여행 일정이 된다. 사원에서 복을 빌고 길거리 무당에게...",
       "keyword": "핫플",
       "score": 1
     },
@@ -323,6 +377,15 @@
       "date": "2026-11-18",
       "description": "광화문 등 인근 직장인들이 점심시간과 근무 전 자투리 시간을 쪼개 ‘오픈런’ 대열에 가세하자 광화문광장은 걸음이 더뎌질 정도로 북적였다. 행사 주최 측 안전요원들은 “이동을 멈추지 말라” “패스트패스...",
       "keyword": "오픈런",
+      "score": 1
+    },
+    {
+      "title": "취준생 절반 이상 \"면접관은 사람이어야\"...AI 면접 외면받는 이유",
+      "url": "https://www.insight.co.kr/news/582577",
+      "source": "www.insight.co.kr",
+      "date": "2026-11-18",
+      "description": "Z세대 구직자들이 AI를 면접 연습 도구로는 환영하지만, 실제 채용 면접관으로는 여전히 사람을 선호하는 것으로 나타났다. 지난 13일 진학사 캐치가 10월19일부터 27일까지 캐치 회원인 Z세대 구직자 1163명을 대상으로...",
+      "keyword": "취준생",
       "score": 1
     },
     {
@@ -358,8 +421,17 @@
       "source": "biz.heraldcorp.com",
       "date": "2026-11-18",
       "description": "숙소 검색량은 전년 동기 대비 27% 증가했다. 지역 여행지란 에어비앤비 숙소의 대부분이 도심 밖 인구 밀도가 낮은 곳에 위치한 여행지를 말한다. Z세대 여행객의 국내 지역 여행지 숙소 검색량도 24% 늘며 젊은 세대에서도...",
-      "keyword": "검색량",
+      "keyword": "검색량 급증",
       "score": 1
+    },
+    {
+      "title": "Z세대 신조어 '모깅' 뜻 아시나요... 11월 첫주 구글 트렌드 검색량 최고...",
+      "url": "https://www.insight.co.kr/news/582415",
+      "source": "www.insight.co.kr",
+      "date": "2026-11-17",
+      "description": "Z세대는 이 단어를 새로운 방식으로 쓰고 있다. 실제로 누군가를 비하하기보다는 외모나 행동이 돋보이는 상황을 유머러스하게 묘사하는 표현으로 활용한다. 구글 트렌드 자료를 보면 최근 5년간 모깅에 대한 전 세계...",
+      "keyword": "Z세대 트렌드",
+      "score": 6
     },
     {
       "title": "올리브영, 색조 놀이터 '컬러 그라운드 홍대' 오픈",
@@ -371,12 +443,12 @@
       "score": 3
     },
     {
-      "title": "밥값보다 비싸도 '오픈런'... '1만원 디저트' 불티나는 이유",
-      "url": "https://www.fnnews.com/news/202611171853518380",
+      "title": "\"연봉 때문 아니었다\"…직장인 절반이 이직제안 거절한 이유",
+      "url": "https://www.fnnews.com/news/202611170948266606",
       "source": "www.fnnews.com",
       "date": "2026-11-17",
-      "description": "벨기에 프리미엄 초콜릿 브랜드 고디바가 선보인 프리미엄 모찌는 개당 7500~9000원대에 달하는 높은 가격에도 매장마다 오픈런과 조기 완판 행진을 이어가고 있다. 쫄깃한 찹쌀떡 안에 진한 고디바 초콜릿 가나슈와 생딸기...",
-      "keyword": "오픈런",
+      "description": "17일 업계에 따르면 비즈니스 네트워크 서비스 리멤버를 운영하는 리멤버앤컴퍼니는 '월간 HR 트렌드 리포트'를 발간하고 이 같이 분석했다. 최근 1년간 리멤버 채용솔루션에서 오간 스카웃 제안의 실제 응답 데이터와...",
+      "keyword": "트렌드 리포트",
       "score": 2
     },
     {
@@ -404,78 +476,6 @@
       "date": "2026-11-17",
       "description": "취업준비생이 면접관이 되고, 현직 팀장이 지원자로 나선다. 식품회사 대상이 유튜브에서 선보인 이색 웹예능 '거꾸로 면접'의 설정이다. 이처럼 기존 기업 홍보 방식에서 벗어나 소비자들에게 친근하게 다가간 콘텐츠가...",
       "keyword": "취준생",
-      "score": 1
-    },
-    {
-      "title": "Z세대가 한 단계 더 진화시킨 유행들",
-      "url": "https://weekly.donga.com/3/all/11/6458167/1",
-      "source": "weekly.donga.com",
-      "date": "2026-11-16",
-      "description": "범위는 넓고 단순히 공부한다고 정답을 알 수 있는 것도 아닌 Z세대의 ‘찐’ 트렌드를 1997년생이 알잘딱깔센(알아서 잘 딱 깔끔하고 센스 있게)하게 알려준다. 인스타그램 릴스, 틱톡 등 숏폼(쇼트폼) 플랫폼에서 활동하는...",
-      "keyword": "Z세대 트렌드",
-      "score": 8
-    },
-    {
-      "title": "“설마 시험장서 쓰려고?”…당근 검색량 233% 뛴 물건의 정체",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=04027846645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "source": "www.edaily.co.kr",
-      "date": "2026-11-16",
-      "description": "이번 검색량 급증의 배경에는 최근 불거진 세무사 시험 부정행위 사건이 있다. 앞서 올해 제63회 세무사 시험 수석 합격자는 1차 시험 400점 만점에 397.5점을 받은 것으로 알려져 화제를 모았다. 4개 과목 160문제 중 단 한...",
-      "keyword": "검색량 급증",
-      "score": 2
-    },
-    {
-      "title": "제니가 다녀가니 충주 온천도 ‘핫플’…스타들이 빠진 사우나의 매력",
-      "url": "https://sports.donga.com/ent/article/all/20261115/135010746/1",
-      "source": "sports.donga.com",
-      "date": "2026-11-16",
-      "description": "온천 ‘핫플’로 급부상 안소희, 10∼15분씩 3회 걸쳐 부기 빼 최화정은 40년째 냉수욕·외기욕 병행 [스포츠동아 이수진 기자] 블랙핑크 제니가 충주의 한 온천을 ‘핫플레이스’로 만들었다. 기온이 뚝 떨어지면서 따뜻한...",
-      "keyword": "핫플",
-      "score": 1
-    },
-    {
-      "title": "[오늘의신상]CU가 리센느 덕질 맛집으로…이번엔 캐릭터 굿즈",
-      "url": "https://view.asiae.co.kr/article/2026111608414099558",
-      "source": "view.asiae.co.kr",
-      "date": "2026-11-16",
-      "description": "CU는 이달 20일부터 그룹 리센느(RESCENE) 멤버 리브와 메이를 형상화한 캐릭터 '리트와 메트' 굿즈를 전국 110여 점포에서 판매한다고 16일 밝혔다. 굿즈는 인형, 티셔츠, 가방, 키링, 캔배지 등 총 27종이다. 신규 앨범...",
-      "keyword": "덕질",
-      "score": 1
-    },
-    {
-      "title": "4년 만에 매출 ‘천억’ 향수 만든 30대 사업가…2029년 연매출 5천억 도...",
-      "url": "https://www.mk.co.kr/article/12210258",
-      "source": "www.mk.co.kr",
-      "date": "2026-11-16",
-      "description": "향수 덕후가 향수 사업가로 본투스탠드아웃 운영 기업인 하우스바이림은 2020년 설립됐다. 창업자인 임호준 하우스바이림 대표는 어렸을 때부터 향수를 매우 좋아해서 꾸준히 사서 모으던 마니아이다. 언젠가 창업한다면...",
-      "keyword": "덕후",
-      "score": 1
-    },
-    {
-      "title": "\"올해도 품절 대란 예고?\"... 다이소몰, 크리스마스 신상 500여 종 푼다",
-      "url": "https://www.insight.co.kr/news/582289",
-      "source": "www.insight.co.kr",
-      "date": "2026-11-16",
-      "description": "다가오는 연말 홈파티와 인테리어를 합리적인 가격에 준비할 수 있는 온라인 기획전이 열린다. 16일 균일가 생활용품점 아성다이소는 온라인 쇼핑몰 다이소몰에서 '다이소 득템 대전 크리스마스 마켓' 행사를 진행한다고...",
-      "keyword": "품절대란",
-      "score": 1
-    },
-    {
-      "title": "‘단추 카메라’ 품절대란…수능 사흘 앞 “연기하자” AI 커닝 쇼크",
-      "url": "https://www.joongang.co.kr/article/25478925",
-      "source": "www.joongang.co.kr",
-      "date": "2026-11-16",
-      "description": "수험생들은 전날 세무사 시험에서 AI 부정행위를 자백한 한모 씨가 부정행위에 사용한 것으로 알려진 단추 카메라 세트가 인터넷 쇼핑몰에서 품절된 사진을 공유하면서 “감독관이 바로 앞에 있는 맨 앞줄에서도...",
-      "keyword": "품절대란",
-      "score": 1
-    },
-    {
-      "title": "검색량 420% 폭증한 '이 물건' 뭐길래…당근도 '경고' 날렸다",
-      "url": "https://www.hankyung.com/article/202611160048i",
-      "source": "www.hankyung.com",
-      "date": "2026-11-16",
-      "description": "검색량이 급증하자 당근은 이용자 보호 조치에 나섰다. 이날 정오부터 앱 내 공지사항을 통해 ‘시험 부정행위와 같은 불법적인 목적의 AI 안경 등 스마트기기 거래를 주의해 주세요’라는 제목의 안내문을 게시했다....",
-      "keyword": "검색량 급증",
       "score": 1
     }
   ]
